@@ -1,0 +1,33 @@
+# MATLAB temporary, autosave, build, and cache files
+*.asv
+*.autosave
+*.m~
+*~
+slprj/
+codegen/
+*.mex*
+*.mlappinstall
+
+# Generated intermediate results (retain the directory placeholder)
+/results/**
+!/results/.gitkeep
+
+# Logs, coverage, and temporary outputs
+*.log
+*.tmp
+*.temp
+coverage/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Intact V1 .fig and .png outputs under plots/v1_intact are intentionally
+# not ignored because selected model figures may be version-controlled.
