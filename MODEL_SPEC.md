@@ -46,8 +46,10 @@ This document describes the intact no-plant V2 implementation on branch `v2-no-p
 ## Current runtime-gate outcome
 
 - GPU: NVIDIA RTX 6000 Ada Generation.
-- Ordinary gradient evaluation: 7.966350 s; accelerated gradient evaluation: 2.300375 s; accelerated cache memory growth: 0 GiB.
-- Required 20-update end-to-end benchmark: 9.018914 s/update, 2.0469 GiB observed GPU memory, estimated 150.315 minutes for 1,000 updates and 450.946 minutes for 3,000 updates.
-- Benchmark loss decreased from 210.073044 to 208.422943 and remained finite.
-- A focused phase diagnosis found negligible task construction, packed clipping, and vector-Adam cost, but accelerated-gradient cache retracing after the first parameter update. The measured runtime gate therefore failed.
+- Root cause: the original warm-up/timing helper requested zero accelerated-function outputs, while the update loop requested loss and gradients. MATLAB keys traces by output count, so this created a second trace at the first apparent post-update call. New fixed-shape task values and Adam-updated parameter values do not add traces.
+- The execution path now keeps the eight trainable arrays in one fixed-order GPU `dlarray` vector, captures fixed GPU model tensors and configuration once, and uses one invariant two-output accelerated signature. Trial tensors remain fixed at 261 time samples with per-trial delay masks.
+- MATLAB performs a one-time slow internal optimization on the sixth cached call without increasing cache occupancy. Six fixed-signature calls are therefore completed before timed updates.
+- Exact-equivalence validation observed zero difference at tolerance `1e-6` in total loss, every loss component, parameters, every trainable gradient, gradient norm, cortical rates, velocity, and position.
+- Corrected required 20-update benchmark: mean 2.794626 s/update, median 2.778389 s/update, first timed update 2.926799 s, updates 2–20 mean 2.787670 s, 2.0469 GiB GPU memory, unchanged cache occupancy, and estimated 46.461 minutes for 1,000 updates. Loss decreased from 210.073044 to 208.422943 and remained finite.
+- The practical after-warm-up target of at most 3 s/update passes. The complete planned 3,000 updates would still estimate to 139.383 minutes, so the pre-existing 60-minute full-workflow launch guard remains active.
 - Stage A and Stage B were not launched. No trained intact model, intact evaluation, or required final plot set exists yet.

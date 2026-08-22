@@ -6,16 +6,20 @@ function benchmark = benchmark_v2_training(initialModel, params)
         params.training.trialsPerTarget, stream);
     deviceTask = prepare_v2_gradient_task(task, true);
     noise = sample_v2_noise(task, params, false, stream, true);
-    accelerated = dlaccelerate(@v2_model_gradients);
-
-    dlfeval(@v2_model_gradients, model, deviceTask, params, noise);
-    dlfeval(accelerated, model, deviceTask, params, noise);
-    wait(gpuDevice);
-    ordinarySeconds = time_gradients(@v2_model_gradients, model, ...
-        deviceTask, params, noise, params.training.benchmarkRepetitions);
+    [ordinary, parameterVector, optimizerLayout, ~] = ...
+        create_v2_gradient_engine(model, params, false);
+    [accelerated, ~, ~, ~] = create_v2_gradient_engine(model, params, true);
+    [~, ~] = dlfeval(ordinary, parameterVector, deviceTask, noise);
+    wait(gpu);
+    ordinarySeconds = time_gradients(ordinary, parameterVector, ...
+        deviceTask, noise, params.training.benchmarkRepetitions, gpu);
     memoryBeforeAccelerated = gpu.TotalMemory - gpu.AvailableMemory;
-    acceleratedSeconds = time_gradients(accelerated, model, ...
-        deviceTask, params, noise, params.training.benchmarkRepetitions);
+    acceleratedWarmupSeconds = warm_v2_accelerated_function( ...
+        accelerated, parameterVector, deviceTask, noise, gpu, ...
+        params.training.acceleratedWarmupCalls);
+    acceleratedTraceSeconds = acceleratedWarmupSeconds(1);
+    acceleratedSeconds = time_gradients(accelerated, parameterVector, ...
+        deviceTask, noise, params.training.benchmarkRepetitions, gpu);
     refreshedGpu = gpuDevice;
     memoryAfterAccelerated = refreshedGpu.TotalMemory - ...
         refreshedGpu.AvailableMemory;
@@ -25,27 +29,26 @@ function benchmark = benchmark_v2_training(initialModel, params)
     if useAccelerated
         gradientFunction = accelerated;
     else
-        gradientFunction = @v2_model_gradients;
+        gradientFunction = ordinary;
     end
 
-    [~, optimizerLayout] = pack_v2_trainables(model);
     optimizerMultiplier = v2_optimizer_multiplier_vector( ...
         optimizerLayout, params, true);
     average = [];
     averageSquared = [];
     losses = nan(params.training.benchmarkUpdates, 1);
-    startTime = tic;
+    updateSeconds = nan(params.training.benchmarkUpdates, 1);
+    cacheOccupancyBeforeUpdates = cache_occupancy(gradientFunction);
     for iteration = 1:params.training.benchmarkUpdates
+        updateStart = tic;
         task = sample_balanced_v2_task(params, ...
             params.training.trialsPerTarget, stream);
         deviceTask = prepare_v2_gradient_task(task, true);
         noise = sample_v2_noise(task, params, false, stream, true);
-        [loss, gradients] = dlfeval(gradientFunction, model, ...
-            deviceTask, params, noise);
-        gradientVector = pack_v2_trainables(gradients);
+        [loss, gradientVector] = dlfeval(gradientFunction, ...
+            parameterVector, deviceTask, noise);
         gradientVector = clip_gradient_vector(gradientVector, ...
             params.training.gradientThreshold);
-        parameterVector = pack_v2_trainables(model);
         [candidateVector, average, averageSquared] = adamupdate( ...
             parameterVector, gradientVector, average, averageSquared, ...
             iteration, params.training.stageALearnRate, ...
@@ -54,37 +57,67 @@ function benchmark = benchmark_v2_training(initialModel, params)
             params.training.adamEpsilon);
         parameterVector = parameterVector + optimizerMultiplier .* ...
             (candidateVector - parameterVector);
-        model = unpack_v2_trainables(model, parameterVector, optimizerLayout);
         losses(iteration) = double(gather(extractdata(loss)));
+        wait(gpu);
+        updateSeconds(iteration) = toc(updateStart);
     end
-    wait(gpuDevice);
-    elapsed = toc(startTime);
+    cacheOccupancyAfterUpdates = cache_occupancy(gradientFunction);
     refreshedGpu = gpuDevice;
     memoryAfterUpdates = refreshedGpu.TotalMemory - ...
         refreshedGpu.AvailableMemory;
     benchmark.gpuName = gpu.Name;
     benchmark.ordinaryGradientSeconds = ordinarySeconds;
+    benchmark.acceleratedTraceSeconds = acceleratedTraceSeconds;
+    benchmark.acceleratedWarmupSeconds = acceleratedWarmupSeconds;
+    benchmark.acceleratedWarmupTotalSeconds = ...
+        sum(acceleratedWarmupSeconds);
     benchmark.acceleratedGradientSeconds = acceleratedSeconds;
     benchmark.acceleratedMemoryGrowthBytes = memoryGrowth;
     benchmark.useAccelerated = useAccelerated;
     benchmark.updates = params.training.benchmarkUpdates;
-    benchmark.elapsedSeconds = elapsed;
-    benchmark.secondsPerUpdate = elapsed / params.training.benchmarkUpdates;
+    benchmark.updateSeconds = updateSeconds;
+    benchmark.elapsedSeconds = sum(updateSeconds);
+    benchmark.secondsPerUpdate = mean(updateSeconds);
+    benchmark.medianSecondsPerUpdate = median(updateSeconds);
+    benchmark.firstUpdateSeconds = updateSeconds(1);
+    if numel(updateSeconds) > 1
+        benchmark.updatesAfterFirstMeanSeconds = mean(updateSeconds(2:end));
+    else
+        benchmark.updatesAfterFirstMeanSeconds = updateSeconds(1);
+    end
     benchmark.estimatedSecondsFor1000Updates = ...
-        1000 * benchmark.secondsPerUpdate;
+        1000 * benchmark.updatesAfterFirstMeanSeconds;
     benchmark.estimatedSecondsFor3000Updates = ...
-        3000 * benchmark.secondsPerUpdate;
+        3000 * benchmark.updatesAfterFirstMeanSeconds;
     benchmark.gpuMemoryUsedAfterUpdatesBytes = memoryAfterUpdates;
     benchmark.firstLoss = losses(1);
     benchmark.finalLoss = losses(end);
+    benchmark.losses = losses;
+    benchmark.cacheOccupancyBeforeUpdates = cacheOccupancyBeforeUpdates;
+    benchmark.cacheOccupancyAfterUpdates = cacheOccupancyAfterUpdates;
+    benchmark.cacheReusedAcrossUpdates = ...
+        cacheOccupancyAfterUpdates == cacheOccupancyBeforeUpdates;
+    benchmark.runtimeTargetSecondsPerUpdate = ...
+        params.training.maximumSecondsPerUpdateAfterWarmup;
+    benchmark.runtimeTargetPassed = ...
+        benchmark.updatesAfterFirstMeanSeconds <= ...
+        benchmark.runtimeTargetSecondsPerUpdate;
 end
 
-function seconds = time_gradients(functionHandle, model, task, params, ...
-        noise, repetitions)
+function seconds = time_gradients(functionHandle, parameters, task, ...
+        noise, repetitions, gpu)
     startTime = tic;
     for repetition = 1:repetitions
-        dlfeval(functionHandle, model, task, params, noise);
+        [~, ~] = dlfeval(functionHandle, parameters, task, noise);
     end
-    wait(gpuDevice);
+    wait(gpu);
     seconds = toc(startTime) / repetitions;
+end
+
+function occupancy = cache_occupancy(functionHandle)
+    if isa(functionHandle, 'deep.AcceleratedFunction')
+        occupancy = functionHandle.Occupancy;
+    else
+        occupancy = NaN;
+    end
 end
