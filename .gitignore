@@ -8,9 +8,11 @@ codegen/
 *.mex*
 *.mlappinstall
 
-# Generated intermediate results (retain the directory placeholder)
+# Generated numerical and figure artifacts
 /results/**
 !/results/.gitkeep
+/plots/**
+!/plots/.gitkeep
 
 # Logs, coverage, and temporary outputs
 *.log
@@ -28,6 +30,3 @@ Desktop.ini
 .idea/
 *.swp
 *.swo
-
-# Intact V1 .fig and .png outputs under plots/v1_intact are intentionally
-# not ignored because selected model figures may be version-controlled.

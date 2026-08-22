@@ -6,6 +6,6 @@ function gpu = select_required_gpu(requiredName)
             return;
         end
     end
-    error('IsnModel:RequiredGpuNotFound', ...
+    error('Project:RequiredGpuNotFound', ...
         'Required GPU "%s" was not found.', requiredName);
 end
