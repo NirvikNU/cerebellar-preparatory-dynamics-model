@@ -8,6 +8,6 @@ The previous plant-based Hennequin ISN implementation is historical and remains 
 - annotated tag `pre-cleanup-plant-isn`
 - commit `ba6f6e968d9551bc02328d3a2176f3b4a8ecefa4`
 
-This branch intentionally removes the biomechanical plant, plant-specific workflows, and their generated artifacts. It retains only a minimal project scaffold, the official fixed Hennequin/why-prep-2 recurrent matrix with provenance, and a generic GPU-selection utility.
+This branch intentionally removes the biomechanical plant and uses a linear cortical-rate readout to two-dimensional velocity followed only by numerical position accumulation. The exact official Hennequin/why-prep-2 recurrent matrix remains fixed and hash-verified.
 
-The next planned step is implementation of a simplified no-plant cortical-cerebellar model. No new model has yet been specified, implemented, simulated, or trained on this branch.
+The intact no-plant V2 architecture is implemented with persistent one-hot target input, a target-independent go pulse, and a target-only relaxing 5-D cerebellar pathway. Static and smoke validation must pass before the implementation checkpoint; bounded intact training and acceptance evaluation follow. No cerebellar removal or lesion experiment is implemented.

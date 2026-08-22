@@ -4,8 +4,8 @@ This MATLAB repository studies cerebellar contributions to motor-cortical prepar
 
 ## Current branch scope
 
-- `v2-no-plant` is a clean development scaffold. No active scientific model, training workflow, simulator, or evaluation pipeline is implemented on this branch.
-- Do not infer or implement the no-plant architecture until the user provides and authorizes its specification.
+- `v2-no-plant` contains the explicitly authorized intact no-plant V2 architecture documented in `MODEL_SPEC.md`.
+- Validate and review the intact baseline before implementing any cerebellar removal or adaptation experiment.
 - Historical plant-based implementations remain recoverable from branch `v1-hennequin-isn`, annotated tag `pre-cleanup-plant-isn`, and checkpoint commit `ba6f6e968d9551bc02328d3a2176f3b4a8ecefa4`.
 - Do not rewrite, move, or delete the historical branch or tag from this branch.
 
@@ -22,7 +22,7 @@ This MATLAB repository studies cerebellar contributions to motor-cortical prepar
 - Define important scientific and training parameters centrally once implementation begins.
 - Keep model generation, training, analysis, validation, and plotting modular.
 - Do not add dependencies unless necessary and documented.
-- Do not create a workflow entry point until an authorized model specification exists.
+- `run_all.m` is the clean-session entry point for the implemented intact workflow. Respect its runtime gate and do not launch unbounded training.
 
 ## Reproducibility and MATLAB conventions
 
