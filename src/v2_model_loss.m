@@ -1,6 +1,9 @@
 function [totalLoss, components] = v2_model_loss(model, task, params, noise)
     n = params.model.numCorticalUnits;
-    state = model.baselineRates + params.noise.sigmaInitialHz * noise.initial;
+    state = model.baselineRates;
+    if noise.enabled
+        state = state + params.noise.sigmaInitialHz * noise.initial;
+    end
     position = state(1:2, :) * 0;
     integrationFraction = single(params.model.dtMs / params.model.tauMs);
     dynamicScale = single(sqrt(params.model.tauMs / params.model.dtMs));
@@ -46,8 +49,12 @@ function [totalLoss, components] = v2_model_loss(model, task, params, noise)
 
         if timeIndex < task.numTimeSteps
             latent = cTarget .* task.relaxationScale(timeIndex);
-            dynamicNoise = params.noise.sigmaDynamicHz * dynamicScale * ...
-                noise.dynamic(:, :, timeIndex);
+            if noise.enabled
+                dynamicNoise = params.noise.sigmaDynamicHz * ...
+                    dynamicScale * noise.dynamic(:, :, timeIndex);
+            else
+                dynamicNoise = state * 0;
+            end
             state = state + integrationFraction * (-state + ...
                 model.Wrec * rates + model.baselineDrive + ...
                 model.Wtarg * task.targetInput + ...

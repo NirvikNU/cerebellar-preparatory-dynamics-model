@@ -28,10 +28,11 @@ function benchmark = benchmark_v2_training(initialModel, params)
         gradientFunction = @v2_model_gradients;
     end
 
-    fields = v2_trainable_fields();
-    average = initialize_state(fields);
-    averageSquared = initialize_state(fields);
-    maximumMemory = memoryAfterAccelerated;
+    [~, optimizerLayout] = pack_v2_trainables(model);
+    optimizerMultiplier = v2_optimizer_multiplier_vector( ...
+        optimizerLayout, params, true);
+    average = [];
+    averageSquared = [];
     losses = nan(params.training.benchmarkUpdates, 1);
     startTime = tic;
     for iteration = 1:params.training.benchmarkUpdates
@@ -41,26 +42,26 @@ function benchmark = benchmark_v2_training(initialModel, params)
         noise = sample_v2_noise(task, params, false, stream, true);
         [loss, gradients] = dlfeval(gradientFunction, model, ...
             deviceTask, params, noise);
-        gradients = clip_gradient_struct(gradients, ...
+        gradientVector = pack_v2_trainables(gradients);
+        gradientVector = clip_gradient_vector(gradientVector, ...
             params.training.gradientThreshold);
-        for fieldIndex = 1:numel(fields)
-            name = fields{fieldIndex};
-            learnRate = params.training.stageALearnRate * ...
-                params.training.learningRateMultipliers.(name);
-            [model.(name), average.(name), averageSquared.(name)] = ...
-                adamupdate(model.(name), gradients.(name), ...
-                average.(name), averageSquared.(name), iteration, ...
-                learnRate, params.training.gradientDecayFactor, ...
-                params.training.squaredGradientDecayFactor, ...
-                params.training.adamEpsilon);
-        end
+        parameterVector = pack_v2_trainables(model);
+        [candidateVector, average, averageSquared] = adamupdate( ...
+            parameterVector, gradientVector, average, averageSquared, ...
+            iteration, params.training.stageALearnRate, ...
+            params.training.gradientDecayFactor, ...
+            params.training.squaredGradientDecayFactor, ...
+            params.training.adamEpsilon);
+        parameterVector = parameterVector + optimizerMultiplier .* ...
+            (candidateVector - parameterVector);
+        model = unpack_v2_trainables(model, parameterVector, optimizerLayout);
         losses(iteration) = double(gather(extractdata(loss)));
-        refreshedGpu = gpuDevice;
-        maximumMemory = max(maximumMemory, refreshedGpu.TotalMemory - ...
-            refreshedGpu.AvailableMemory);
     end
     wait(gpuDevice);
     elapsed = toc(startTime);
+    refreshedGpu = gpuDevice;
+    memoryAfterUpdates = refreshedGpu.TotalMemory - ...
+        refreshedGpu.AvailableMemory;
     benchmark.gpuName = gpu.Name;
     benchmark.ordinaryGradientSeconds = ordinarySeconds;
     benchmark.acceleratedGradientSeconds = acceleratedSeconds;
@@ -73,7 +74,7 @@ function benchmark = benchmark_v2_training(initialModel, params)
         1000 * benchmark.secondsPerUpdate;
     benchmark.estimatedSecondsFor3000Updates = ...
         3000 * benchmark.secondsPerUpdate;
-    benchmark.maximumObservedGpuMemoryBytes = maximumMemory;
+    benchmark.gpuMemoryUsedAfterUpdatesBytes = memoryAfterUpdates;
     benchmark.firstLoss = losses(1);
     benchmark.finalLoss = losses(end);
 end
@@ -86,11 +87,4 @@ function seconds = time_gradients(functionHandle, model, task, params, ...
     end
     wait(gpuDevice);
     seconds = toc(startTime) / repetitions;
-end
-
-function state = initialize_state(fields)
-    state = struct();
-    for fieldIndex = 1:numel(fields)
-        state.(fields{fieldIndex}) = [];
-    end
 end

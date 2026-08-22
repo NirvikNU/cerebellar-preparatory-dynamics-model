@@ -2,7 +2,7 @@
 
 ## Status
 
-This document describes the intact no-plant V2 implementation on branch `v2-no-plant`. The implementation must pass static, forward, gradient, and two-update smoke validation before its first implementation commit. Full training results are not accepted until the intact behavioral criteria pass and the user reviews them. No cerebellar removal, scaling, shuffle, time shift, adaptation, or lesion retraining is implemented.
+This document describes the intact no-plant V2 implementation on branch `v2-no-plant`. Static, forward, gradient, and two-update smoke validation passed before implementation commit `afee3d4bd6f304ef7ee9dfd2ee3b7f782c7f243f`. Full training results are not accepted until the intact behavioral criteria pass and the user reviews them. No cerebellar removal, scaling, shuffle, time shift, adaptation, or lesion retraining is implemented.
 
 ## Fixed cortical scaffold
 
@@ -42,3 +42,12 @@ This document describes the intact no-plant V2 implementation on branch `v2-no-p
 - Adam uses beta1 0.9, beta2 0.999, epsilon `1e-8`, global gradient clipping at 1, fixed validation sets, plateau learning-rate reduction, best-checkpoint preservation, and early stopping.
 - A 20-update RTX 6000 Ada benchmark must predict no more than 60 minutes for 3,000 updates before full training can start.
 - Intact targets: mean endpoint error at most 3 mm, worst target-averaged error at most 5 mm, deterministic pre-go RMS speed at most 0.002 m/s, terminal speed at most 0.02 m/s, stable hold, finite state, all-target success, and delay robustness.
+
+## Current runtime-gate outcome
+
+- GPU: NVIDIA RTX 6000 Ada Generation.
+- Ordinary gradient evaluation: 7.966350 s; accelerated gradient evaluation: 2.300375 s; accelerated cache memory growth: 0 GiB.
+- Required 20-update end-to-end benchmark: 9.018914 s/update, 2.0469 GiB observed GPU memory, estimated 150.315 minutes for 1,000 updates and 450.946 minutes for 3,000 updates.
+- Benchmark loss decreased from 210.073044 to 208.422943 and remained finite.
+- A focused phase diagnosis found negligible task construction, packed clipping, and vector-Adam cost, but accelerated-gradient cache retracing after the first parameter update. The measured runtime gate therefore failed.
+- Stage A and Stage B were not launched. No trained intact model, intact evaluation, or required final plot set exists yet.

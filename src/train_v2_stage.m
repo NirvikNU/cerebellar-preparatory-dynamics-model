@@ -25,9 +25,11 @@ function [learnedModel, history] = train_v2_stage( ...
         gradientFunction = dlaccelerate(gradientFunction);
     end
 
-    fields = v2_trainable_fields();
-    average = initialize_optimizer_state(fields);
-    averageSquared = initialize_optimizer_state(fields);
+    [~, optimizerLayout] = pack_v2_trainables(model);
+    optimizerMultiplier = v2_optimizer_multiplier_vector( ...
+        optimizerLayout, params, true);
+    average = [];
+    averageSquared = [];
     history = initialize_history(maxIterations, stageName, noisy, ...
         useAccelerated, gpu.Name);
     bestModel = [];
@@ -42,19 +44,20 @@ function [learnedModel, history] = train_v2_stage( ...
         noise = sample_v2_noise(task, params, noisy, noiseStream, true);
         [loss, gradients, components] = dlfeval(gradientFunction, ...
             model, deviceTask, params, noise);
-        [gradients, gradientNorm] = clip_gradient_struct(gradients, ...
+        gradientVector = pack_v2_trainables(gradients);
+        [gradientVector, gradientNorm] = clip_gradient_vector( ...
+            gradientVector, ...
             params.training.gradientThreshold);
-        for fieldIndex = 1:numel(fields)
-            name = fields{fieldIndex};
-            parameterRate = currentLearnRate * ...
-                params.training.learningRateMultipliers.(name);
-            [model.(name), average.(name), averageSquared.(name)] = ...
-                adamupdate(model.(name), gradients.(name), ...
-                average.(name), averageSquared.(name), iteration, ...
-                parameterRate, params.training.gradientDecayFactor, ...
-                params.training.squaredGradientDecayFactor, ...
-                params.training.adamEpsilon);
-        end
+        parameterVector = pack_v2_trainables(model);
+        [candidateVector, average, averageSquared] = adamupdate( ...
+            parameterVector, gradientVector, average, averageSquared, ...
+            iteration, currentLearnRate, ...
+            params.training.gradientDecayFactor, ...
+            params.training.squaredGradientDecayFactor, ...
+            params.training.adamEpsilon);
+        parameterVector = parameterVector + optimizerMultiplier .* ...
+            (candidateVector - parameterVector);
+        model = unpack_v2_trainables(model, parameterVector, optimizerLayout);
         history.loss(iteration) = scalar(loss);
         history.learningRate(iteration) = currentLearnRate;
         history.gradientNorm(iteration) = gradientNorm;
@@ -139,13 +142,6 @@ function [index, count, rate, noisy] = stage_settings(params, stageName)
     end
 end
 
-function state = initialize_optimizer_state(fields)
-    state = struct();
-    for fieldIndex = 1:numel(fields)
-        state.(fields{fieldIndex}) = [];
-    end
-end
-
 function history = initialize_history(count, stageName, noisy, ...
         accelerated, gpuName)
     history.loss = nan(count, 1);
@@ -204,8 +200,8 @@ function save_training_checkpoint(path, model, bestModel, average, ...
         averageSquared, history, iteration, learnRate, stageName)
     checkpoint.currentModel = gather_struct(model);
     checkpoint.bestModel = bestModel;
-    checkpoint.average = gather_struct(average);
-    checkpoint.averageSquared = gather_struct(averageSquared);
+    checkpoint.average = gather_value(average);
+    checkpoint.averageSquared = gather_value(averageSquared);
     checkpoint.history = trim_history(history, iteration);
     checkpoint.iteration = iteration;
     checkpoint.currentLearnRate = learnRate;
@@ -217,6 +213,17 @@ function save_training_checkpoint(path, model, bestModel, average, ...
         mkdir(outputDirectory);
     end
     save(path, 'checkpoint', '-v7.3');
+end
+
+function output = gather_value(value)
+    if isempty(value)
+        output = value;
+    else
+        if isa(value, 'dlarray')
+            value = extractdata(value);
+        end
+        output = gather(value);
+    end
 end
 
 function output = gather_struct(input)
