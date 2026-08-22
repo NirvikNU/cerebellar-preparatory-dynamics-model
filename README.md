@@ -1,13 +1,33 @@
 # Cerebellar Preparatory Dynamics Model
 
-`v2-no-plant` is the active development branch.
+`v3-romano-hennequin` is the active development branch. It contains the
+smoke-only scaffold for a Romano–Hennequin hybrid cortical model. No
+deterministic V3 training, neural-noise training, cerebellar removal, lesion,
+or adaptation experiment has run.
 
-The previous plant-based Hennequin ISN implementation is historical and remains recoverable from:
+The V3 scaffold uses one fixed 200-by-200 recurrent matrix. Orthogonal
+preparation-biased and movement-biased population bases are embedded in a
+single stable, strongly non-normal recurrent operator. The synaptic matrix
+does not switch at go; the target-independent go pulse can change the ReLU
+active set and therefore the local effective dynamics.
 
-- branch `v1-hennequin-isn`
-- annotated tag `pre-cleanup-plant-isn`
-- commit `ba6f6e968d9551bc02328d3a2176f3b4a8ecefa4`
+Cortex receives persistent 8-D one-hot target identity and a 75-ms
+target-independent go pulse. A target-only 8→12→5 cerebellar generator
+relaxes with a 150-ms time constant and projects through `Ucb`. Cortical rates
+are read out directly as two-dimensional velocity, and position is only its
+numerical integral. There is no biomechanical plant.
 
-This branch intentionally removes the biomechanical plant and uses a linear cortical-rate readout to two-dimensional velocity followed only by numerical position accumulation. The exact official Hennequin/why-prep-2 recurrent matrix remains fixed and hash-verified.
+Run `run_all.m` in a clean MATLAB session to execute structural and gradient
+smoke tests only. The entry point does not train the model.
 
-The intact no-plant V2 architecture is implemented with persistent one-hot target input, a target-independent go pulse, and a target-only relaxing 5-D cerebellar pathway. Static, forward, gradient, and two-update smoke validation passed. A technical runtime audit found that the original benchmark changed accelerated-function output arity and timed MATLAB's one-time trace optimization inside the update loop. The corrected fixed-signature RTX 6000 Ada path runs at approximately 2.79 seconds/update after warm-up. The first bounded deterministic Stage-A run completed 1,000 updates, followed by an authorized 500-update behavioral-stationarity refinement using an additional final-150-ms pre-go velocity-energy term. Endpoint, terminal-speed, hold, all-target, and finite-state checks pass, but pre-go RMS speed remains above criterion, so this is not an accepted intact baseline. No Stage-B noise training, cerebellar removal, or lesion experiment has run.
+Historical V2 is permanently preserved by:
+
+- branch `v2-no-plant`
+- annotated tag `v2-no-plant-final`
+- commit `7f8463976c0faaaebe5af653aebb12c2796ff44a`
+- external archive
+  `G:\My Drive\Monkey_codes\combined_analyses\cerebellar-preparatory-dynamics-model_archives\v2_no_plant_final_7f846397`
+
+The earlier plant-based Hennequin implementation remains recoverable from
+branch `v1-hennequin-isn`, tag `pre-cleanup-plant-isn`, and commit
+`ba6f6e968d9551bc02328d3a2176f3b4a8ecefa4`.
