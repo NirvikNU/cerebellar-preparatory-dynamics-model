@@ -2,12 +2,14 @@
 
 ## Status and boundary
 
-This document describes the first untrained V3 scaffold on branch
-`v3-romano-hennequin`. The authorized scope is structural, gradient,
-checkpoint, loss-mask, effective-dynamics, and neural-geometry smoke testing.
-No deterministic V3 training has been run. No neural-noise stage,
-cerebellar removal, lesion, adaptation, or phenotype-matching objective is
-implemented.
+This document describes the frozen V3 scaffold on branch
+`v3-romano-hennequin`. Structural and gradient smoke testing and the first
+2,000-update deterministic intact training run have completed. That run did
+not pass the frozen intact behavioral criteria; its configuration, metrics,
+diagnosis, artifacts, and recurrence-integrity check are recorded in
+`V3_DETERMINISTIC_TRAINING_REPORT.md`. No neural-noise stage, cerebellar
+removal, lesion, adaptation, parameter sweep, or phenotype-matching objective
+has been implemented or run.
 
 ## Cortical dynamics
 

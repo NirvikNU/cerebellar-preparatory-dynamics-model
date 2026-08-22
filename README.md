@@ -1,9 +1,12 @@
 # Cerebellar Preparatory Dynamics Model
 
 `v3-romano-hennequin` is the active development branch. It contains the
-smoke-only scaffold for a Romano–Hennequin hybrid cortical model. No
-deterministic V3 training, neural-noise training, cerebellar removal, lesion,
-or adaptation experiment has run.
+Romano–Hennequin hybrid cortical model and the completed first deterministic
+intact training run. The 2,000-update run is documented in
+`V3_DETERMINISTIC_TRAINING_REPORT.md`. It learned directionally correct reaches
+but failed the frozen stationarity, endpoint, terminal-speed, and hold-speed
+criteria. No neural-noise training, cerebellar removal, lesion, adaptation,
+parameter sweep, or post-result tuning has run.
 
 The V3 scaffold uses one fixed 200-by-200 recurrent matrix. Orthogonal
 preparation-biased and movement-biased population bases are embedded in a
@@ -19,6 +22,12 @@ numerical integral. There is no biomechanical plant.
 
 Run `run_all.m` in a clean MATLAB session to execute structural and gradient
 smoke tests only. The entry point does not train the model.
+
+Run `run_v3_deterministic_training.m` only when an explicitly authorized new
+deterministic run is intended. The generated checkpoints, numerical results,
+and editable/PNG plots remain ignored under `results/v3_hybrid/` and
+`plots/v3_hybrid/intact/`; their exact inventory and hashes are recorded in the
+training report.
 
 Historical V2 is permanently preserved by:
 
