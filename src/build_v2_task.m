@@ -32,6 +32,8 @@ function task = build_v2_task(params, trialsPerTarget, goTimeMs, targetIndex)
     movementEnd = goTimeMs' + params.task.movementDurationMs;
     holdEnd = movementEnd + params.task.holdDurationMs;
     preGoMask = single(timeMs < goTimeMs');
+    latePreGoMask = single(timeMs < goTimeMs' & timeMs >= ...
+        goTimeMs' - params.training.latePreGoWindowMs);
     movementMask = single(elapsed >= 0 & timeMs <= movementEnd);
     holdMask = single(timeMs > movementEnd & timeMs <= holdEnd);
     terminalMask = single(timeMs >= movementEnd - 50 & ...
@@ -53,6 +55,7 @@ function task = build_v2_task(params, trialsPerTarget, goTimeMs, targetIndex)
     task.goSignal = goSignal;
     task.relaxationScale = relaxationScale;
     task.preGoMask = preGoMask;
+    task.latePreGoMask = latePreGoMask;
     task.movementMask = movementMask;
     task.terminalMask = terminalMask;
     task.holdMask = holdMask;

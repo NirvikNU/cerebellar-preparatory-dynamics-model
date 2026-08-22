@@ -35,6 +35,8 @@ function diagnostics = compute_v2_diagnostics( ...
             params.validation.maxTargetAveragedEndpointErrorM;
     end
     preMask = logical(task.preGoMask);
+    late150Mask = preMask & task.timeMs >= task.goTimeMs' - 150;
+    late100Mask = preMask & task.timeMs >= task.goTimeMs' - 100;
     holdMask = logical(task.holdMask);
     movementMask = logical(task.movementMask);
     metrics.meanEndpointErrorM = mean(endpointErrors);
@@ -44,6 +46,11 @@ function diagnostics = compute_v2_diagnostics( ...
     metrics.allTargetsSuccessful = all(targetSuccess);
     metrics.meanTerminalSpeedMPerSec = mean(terminalSpeeds);
     metrics.preGoRmsSpeedMPerSec = sqrt(mean(double(speed(preMask)).^2));
+    metrics.final150PreGoRmsSpeedMPerSec = sqrt(mean( ...
+        double(speed(late150Mask)).^2));
+    metrics.final100PreGoRmsSpeedMPerSec = sqrt(mean( ...
+        double(speed(late100Mask)).^2));
+    metrics.maximumPreGoSpeedMPerSec = max(speed(preMask));
     metrics.maximumPreGoDisplacementM = max(displacement(preMask));
     metrics.meanHoldErrorM = mean(errorMagnitude(holdMask));
     metrics.maximumHoldErrorM = max(errorMagnitude(holdMask));
@@ -59,6 +66,25 @@ function diagnostics = compute_v2_diagnostics( ...
     metrics.terminalSpeedsMPerSec = terminalSpeeds;
     metrics.peakSpeedsMPerSec = peakSpeeds;
     metrics.timeToPeakSpeedMs = timeToPeakMs;
+    metrics.targetPreGoRmsSpeedMPerSec = nan(1, params.task.numTargets);
+    metrics.targetFinal150PreGoRmsSpeedMPerSec = ...
+        nan(1, params.task.numTargets);
+    metrics.targetFinal100PreGoRmsSpeedMPerSec = ...
+        nan(1, params.task.numTargets);
+    metrics.targetMaximumPreGoSpeedMPerSec = ...
+        nan(1, params.task.numTargets);
+    for targetIndex = 1:params.task.numTargets
+        targetTrials = task.targetIndex == targetIndex;
+        targetMask = repmat(targetTrials(:), 1, nTimes);
+        metrics.targetPreGoRmsSpeedMPerSec(targetIndex) = sqrt(mean( ...
+            double(speed(preMask & targetMask)).^2));
+        metrics.targetFinal150PreGoRmsSpeedMPerSec(targetIndex) = ...
+            sqrt(mean(double(speed(late150Mask & targetMask)).^2));
+        metrics.targetFinal100PreGoRmsSpeedMPerSec(targetIndex) = ...
+            sqrt(mean(double(speed(late100Mask & targetMask)).^2));
+        metrics.targetMaximumPreGoSpeedMPerSec(targetIndex) = ...
+            max(speed(preMask & targetMask));
+    end
 
     driveLabels = {'target', 'go', 'cerebellar', 'recurrent'};
     for driveIndex = 1:numel(driveLabels)

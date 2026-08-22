@@ -84,6 +84,8 @@ function weight = loss_weight(name, params)
             weight = training.preGoPositionLossWeight;
         case 'preGoVelocity'
             weight = training.preGoVelocityLossWeight;
+        case 'latePreGoVelocity'
+            weight = training.latePreGoVelocityLossWeight;
         case 'endpointUrgency'
             weight = training.endpointUrgencyLossWeight;
         case 'terminalPosition'

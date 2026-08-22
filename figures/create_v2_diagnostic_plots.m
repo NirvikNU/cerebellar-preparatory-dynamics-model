@@ -228,7 +228,7 @@ function files = plot_training(history, params)
     xlabel(ax1, 'Update'); ylabel(ax1, 'Loss'); title(ax1, 'Training and validation');
     apply_plot_style(ax1, params);
     ax2 = nexttile(layout); hold(ax2, 'on');
-    componentNames = {'preGoVelocity', 'terminalPosition', ...
+    componentNames = {'preGoVelocity', 'latePreGoVelocity', 'terminalPosition', ...
         'terminalVelocity', 'holdPosition', 'holdVelocity'};
     for index = 1:numel(componentNames)
         values = components.(componentNames{index});
@@ -257,6 +257,9 @@ function [loss, validation, rate, gradient, components, boundary] = ...
     validation = history.stageA.validationLoss;
     rate = history.stageA.learningRate;
     gradient = history.stageA.gradientNorm;
+    if isfield(history.stageA, 'refinementBoundaryIteration')
+        boundary = history.stageA.refinementBoundaryIteration;
+    end
     hasStageB = isfield(history, 'stageB') && ~isempty(history.stageB);
     if hasStageB
         boundary = numel(history.stageA.loss);
