@@ -10,7 +10,7 @@ function files = create_v2_diagnostic_plots( ...
     files = [files, plot_cortical_pca(deterministic, params)];
     files = [files, plot_preparatory_geometry(deterministic, params)];
     files = [files, plot_training(trainingHistory, params)];
-    if ~noisy.diagnostics.metrics.finite
+    if ~isempty(noisy) && ~noisy.diagnostics.metrics.finite
         warning('V2Model:NonfinitePlotInput', ...
             'Noisy evaluation contains nonfinite values.');
     end
@@ -102,9 +102,13 @@ function files = plot_delay_performance(delay, params)
         plot(ax, delay.deterministic.delayMs, scales(index) * ...
             delay.deterministic.(names{index}), 'ko-', ...
             'LineWidth', params.plot.lineWidth, 'DisplayName', 'Deterministic');
-        plot(ax, delay.noisy.delayMs, scales(index) * ...
-            delay.noisy.(names{index}), 'o-', 'Color', [0.4 0.4 0.4], ...
-            'LineWidth', params.plot.lineWidth, 'DisplayName', 'Noisy');
+        if isfield(delay, 'noisy') && ~isempty(delay.noisy)
+            plot(ax, delay.noisy.delayMs, scales(index) * ...
+                delay.noisy.(names{index}), 'o-', ...
+                'Color', [0.4 0.4 0.4], ...
+                'LineWidth', params.plot.lineWidth, ...
+                'DisplayName', 'Noisy');
+        end
         ylabel(ax, labels{index}); apply_plot_style(ax, params);
         if index == 1
             title(ax, 'Performance across instructed delay');
@@ -217,15 +221,21 @@ function files = plot_training(history, params)
     ax1 = nexttile(layout); hold(ax1, 'on');
     semilogy(ax1, loss, 'k-', 'LineWidth', params.plot.lineWidth);
     semilogy(ax1, validation, 'o', 'Color', [0.5 0.5 0.5], ...
-        'MarkerSize', 3); xline(ax1, boundary, 'k:');
+        'MarkerSize', 3);
+    if isfinite(boundary)
+        xline(ax1, boundary, 'k:');
+    end
     xlabel(ax1, 'Update'); ylabel(ax1, 'Loss'); title(ax1, 'Training and validation');
     apply_plot_style(ax1, params);
     ax2 = nexttile(layout); hold(ax2, 'on');
     componentNames = {'preGoVelocity', 'terminalPosition', ...
         'terminalVelocity', 'holdPosition', 'holdVelocity'};
     for index = 1:numel(componentNames)
-        plot(ax2, components.(componentNames{index}), ...
+        values = components.(componentNames{index});
+        updates = find(isfinite(values));
+        plot(ax2, updates, values(updates), 'o-', ...
             'LineWidth', params.plot.referenceLineWidth, ...
+            'MarkerSize', 3, ...
             'DisplayName', componentNames{index});
     end
     xlabel(ax2, 'Update'); ylabel(ax2, 'Unweighted component');
@@ -242,16 +252,26 @@ end
 
 function [loss, validation, rate, gradient, components, boundary] = ...
         combine_history(history)
-    boundary = numel(history.stageA.loss);
-    loss = [history.stageA.loss; history.stageB.loss];
-    validation = [history.stageA.validationLoss; ...
-        history.stageB.validationLoss];
-    rate = [history.stageA.learningRate; history.stageB.learningRate];
-    gradient = [history.stageA.gradientNorm; history.stageB.gradientNorm];
+    boundary = NaN;
+    loss = history.stageA.loss;
+    validation = history.stageA.validationLoss;
+    rate = history.stageA.learningRate;
+    gradient = history.stageA.gradientNorm;
+    hasStageB = isfield(history, 'stageB') && ~isempty(history.stageB);
+    if hasStageB
+        boundary = numel(history.stageA.loss);
+        loss = [loss; history.stageB.loss];
+        validation = [validation; history.stageB.validationLoss];
+        rate = [rate; history.stageB.learningRate];
+        gradient = [gradient; history.stageB.gradientNorm];
+    end
     names = fieldnames(history.stageA.trainingComponents);
     for index = 1:numel(names)
         name = names{index};
-        components.(name) = [history.stageA.trainingComponents.(name); ...
-            history.stageB.trainingComponents.(name)];
+        components.(name) = history.stageA.trainingComponents.(name);
+        if hasStageB
+            components.(name) = [components.(name); ...
+                history.stageB.trainingComponents.(name)];
+        end
     end
 end

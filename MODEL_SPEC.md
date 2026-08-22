@@ -52,4 +52,15 @@ This document describes the intact no-plant V2 implementation on branch `v2-no-p
 - Exact-equivalence validation observed zero difference at tolerance `1e-6` in total loss, every loss component, parameters, every trainable gradient, gradient norm, cortical rates, velocity, and position.
 - Corrected required 20-update benchmark: mean 2.794626 s/update, median 2.778389 s/update, first timed update 2.926799 s, updates 2–20 mean 2.787670 s, 2.0469 GiB GPU memory, unchanged cache occupancy, and estimated 46.461 minutes for 1,000 updates. Loss decreased from 210.073044 to 208.422943 and remained finite.
 - The practical after-warm-up target of at most 3 s/update passes. The complete planned 3,000 updates would still estimate to 139.383 minutes, so the pre-existing 60-minute full-workflow launch guard remains active.
-- Stage A and Stage B were not launched. No trained intact model, intact evaluation, or required final plot set exists yet.
+- At the runtime-optimization checkpoint, Stage A and Stage B had not been launched; the first bounded Stage-A result is recorded below.
+
+## First bounded Stage-A outcome
+
+- A Stage-A-only operational run completed the authorized 1,000 deterministic updates in 51.369 minutes on the RTX 6000 Ada. It used 64-trial balanced batches, eight trials per target, independently sampled 500:5:600-ms delays, fixed 261-sample tensors, validation every 50 updates, and recoverable checkpoints every 250 updates.
+- The best fixed-validation checkpoint was the final authorized update, 1,000, with validation loss 1.310932517 and training loss 1.209411860. Validation improved from update 950 to 1,000, so acquisition had not plateaued at the operational cap.
+- Canonical deterministic results from the best checkpoint: mean endpoint error 0.879 mm, worst target-averaged endpoint error 1.561 mm, terminal speed 0.003667 m/s, pre-go RMS speed 0.016264 m/s, mean hold error 0.944 mm, and mean hold speed 0.004313 m/s. All eight targets succeeded and all simulated values were finite.
+- Across 500–600-ms delays, mean endpoint error was 0.840–0.930 mm, worst target-averaged error 1.561–1.670 mm, terminal speed 0.003188–0.013793 m/s, pre-go RMS speed 0.009139–0.027336 m/s, hold error 0.917–0.984 mm, and hold speed 0.003952–0.006791 m/s.
+- Canonical and delay endpoint, worst-target, terminal-speed, hold-error, and hold-speed criteria passed. The deterministic pre-go RMS-speed criterion of 0.002 m/s failed canonically and across delays. Criteria were not changed.
+- Mean/max cortical firing rates were 11.142/109.861 Hz. PC1–PC3 explained 54.605%, 11.305%, and 9.896%; target-centroid separation at go was 13.756 Hz RMS per unit. Mean whole-trial drive norms were target 2.302, go 0.292, cerebellar 61.179, and recurrent 579.758.
+- The five largest weighted validation-loss contributions were pre-go velocity 0.599595, endpoint urgency 0.459518, terminal velocity 0.088265, pre-go position 0.071218, and hold velocity 0.033784.
+- The current evidence-based recommendation is to continue Stage A only if explicitly authorized. Stage B and lesion work have not run. For planning only, the intended primary Stage-B robustness level is 0.2 Hz; the inherited active configuration remains 0.5 Hz and was irrelevant to deterministic Stage A.
