@@ -1,0 +1,251 @@
+ M .gitignore
+ M AGENTS.md
+ M MODEL_SPEC.md
+ M README.md
+ D V3_DETERMINISTIC_TRAINING_REPORT.md
+ D V3_SMOKE_TEST_REPORT.md
+ D analysis/.gitkeep
+ D analysis/analyze_v3_effective_dynamics.m
+ D analysis/compute_v3_alignment_null.m
+ D analysis/compute_v3_behavioral_metrics.m
+ D analysis/compute_v3_neural_geometry.m
+ D analysis/evaluate_v3_canonical.m
+ D analysis/evaluate_v3_delay_range.m
+ D analysis/validate_v3_deterministic.m
+ D config/HENNEQUIN_ISN_PROVENANCE.md
+ D config/v3_deterministic_run_params.m
+ D config/v3_model_params.m
+ D config/why_prep_2_w_rec.txt
+ D figures/.gitkeep
+ D figures/create_v3_intact_plots.m
+ M figures/save_figure_bundle.m
+ D plots/.gitkeep
+ D results/.gitkeep
+ M run_all.m
+ D run_v3_deterministic_training.m
+ D run_v3_smoke_tests.m
+ D src/build_v3_task.m
+ D src/clip_gradient_vector.m
+ D src/compute_v3_cerebellar_target.m
+ D src/construct_v3_hybrid_recurrence.m
+ D src/create_v3_gradient_engine.m
+ D src/extract_v3_model.m
+ D src/initialize_v3_model.m
+ D src/move_v3_model.m
+ D src/pack_v3_trainables.m
+ D src/prepare_v3_gradient_task.m
+ D src/sample_balanced_v3_task.m
+ D src/sample_v3_noise.m
+ D src/select_required_gpu.m
+ D src/simulate_v3_model.m
+ D src/train_v3_deterministic.m
+ D src/unpack_v3_trainables.m
+ D src/v3_model_gradients.m
+ D src/v3_model_loss.m
+ D src/v3_optimizer_multiplier_vector.m
+ D src/v3_packed_model_gradients.m
+ D src/v3_trainable_fields.m
+ D src/warm_v3_accelerated_function.m
+?? THIRD_PARTY_PROVENANCE.md
+?? analysis/published_generator/analyze_published_generator.m
+?? analysis/published_generator/audit_stage1_gate1_ensemble.m
+?? analysis/published_generator/audit_stage1_gate1_failure.m
+?? analysis/published_generator/classify_target_torque_diagnostic.m
+?? analysis/published_generator/compare_native_matlab.m
+?? analysis/published_generator/evaluate_stage1_gate1_candidate.m
+?? analysis/published_generator/finalize_stage1_gate1_acceptance.m
+?? analysis/published_generator/finalize_stage1_gate1_ensemble_failure.m
+?? analysis/published_generator/finalize_target_torque_diagnostic.m
+?? analysis/published_generator/hash_tree.m
+?? analysis/published_generator/load_native_target_torque_benchmark.m
+?? analysis/published_generator/revalidate_stage1_accepted_ensemble.m
+?? analysis/published_generator/run_stage1_smoke_tests.m
+?? analysis/published_generator/sha256_file.m
+?? analysis/published_generator/summarize_saved_potency_trials.m
+?? analysis/published_generator/summarize_target_torque_benchmark.m
+?? analysis/published_generator/verify_pinned_reference.m
+?? analysis/stage_2a/analyze_stage2a.m
+?? analysis/stage_2a/bootstrap_network_median.m
+?? analysis/stage_2a/capture_stage2a_frozen_hashes.m
+?? analysis/stage_2a/finalize_stage2a_gate2.m
+?? analysis/stage_2a/finalize_stage2a_gate2_failure.m
+?? analysis/stage_2a/prepare_stage2a_conditional_acceptance.m
+?? analysis/stage_2a/revalidate_stage2a_ensemble.m
+?? analysis/stage_2a/revise_stage2a_figure_uncertainty.m
+?? analysis/stage_2a/run_stage2a_conditional_diagnostic.m
+?? analysis/stage_2a/run_stage2a_smoke_tests.m
+?? analysis/stage_2a/summarize_stage2a_ensemble.m
+?? analysis/stage_2a/validate_stage2a_conditional_components.m
+?? analysis/stage_2a/validate_stage2a_ensemble_components.m
+?? analysis/stage_2b_shared/analyze_gate2_active_set_diagnostics.m
+?? analysis/stage_2b_shared/analyze_stage2b_kao_gate3_network.m
+?? analysis/stage_2b_shared/analyze_stage2b_kao_lambda_sensitivity.m
+?? analysis/stage_2b_shared/analyze_stage2b_midprep_perturbations.m
+?? analysis/stage_2b_shared/audit_stage2b_kao_figure5_final.m
+?? analysis/stage_2b_shared/bh_adjust.m
+?? analysis/stage_2b_shared/compute_stage2b_kao_neural_geometry.m
+?? analysis/stage_2b_shared/covariance_constrained_alignment_null.m
+?? analysis/stage_2b_shared/finalize_stage2b_kao_figure5_freeze.m
+?? analysis/stage_2b_shared/finalize_stage2b_kao_lambda_sensitivity.m
+?? analysis/stage_2b_shared/finalize_stage2b_kao_presentation_revision.m
+?? analysis/stage_2b_shared/paired_wilcoxon_exact.m
+?? analysis/stage_2b_shared/run_kao_elsayed_alignment_replication.m
+?? analysis/stage_2b_shared/run_stage2b_comparative_analysis.m
+?? analysis/stage_2b_shared/run_stage2b_kao_gate3_ensemble.m
+?? analysis/stage_2b_shared/run_stage2b_presentation_revision_analysis.m
+?? analysis/stage_2b_shared/summarize_stage2b_kao_gate3.m
+?? analysis/stage_2b_shared/validate_stage2b_kao_gate3_complete.m
+?? analysis/stage_2b_shared/validate_stage2b_kao_gate3_components.m
+?? analysis/stage_2b_shared/validate_stage2b_source_gate.m
+?? analysis/stage_2b_shared/write_stage2b_kao_gate3_outputs.m
+?? artifacts/manifests/gate3a/README.md
+?? artifacts/manifests/gate3a/final_git_diff_stat.txt
+?? artifacts/manifests/gate3a/final_git_status.txt
+?? artifacts/manifests/gate3a/ignored_large_artifacts.csv
+?? artifacts/manifests/gate3a/path_mapping.csv
+?? artifacts/manifests/gate3a/postchange_code_provenance_sha256.csv
+?? artifacts/manifests/gate3a/postchange_scientific_payload_sha256.csv
+?? artifacts/manifests/gate3a/prechange_code_provenance_sha256.csv
+?? artifacts/manifests/gate3a/prechange_environment.md
+?? artifacts/manifests/gate3a/prechange_reference_cache_sha256.csv
+?? artifacts/manifests/gate3a/prechange_scientific_payload_sha256.csv
+?? artifacts/manifests/gate3a/proposed_gate3b_inventory.txt
+?? artifacts/manifests/gate3a/validation_report.md
+?? config/published_generator_config.m
+?? config/require_kao_reference.m
+?? config/stage_1_gate1_config.m
+?? config/stage_2a_config.m
+?? config/stage_2b_cerebellum_config.m
+?? config/stage_2b_kao_config.m
+?? figures/published_generator/create_stage1_figures.m
+?? figures/stage_2a/create_stage2a_figures.m
+?? figures/stage_2b_shared/create_gate2_active_set_figures.m
+?? figures/stage_2b_shared/create_stage2b_alignment_replication_figures.m
+?? figures/stage_2b_shared/create_stage2b_architecture_diagrams.m
+?? figures/stage_2b_shared/create_stage2b_comparative_figures.m
+?? figures/stage_2b_shared/create_stage2b_kao_gate3_figures.m
+?? figures/stage_2b_shared/create_stage2b_kao_lambda_sensitivity_figure.m
+?? figures/stage_2b_shared/create_stage2b_revised_figures.m
+?? plots/stage_1/diagnostics/active_set_gate2/fig/stage1_representative_active_set_raster_and_rate_heatmap.fig
+?? plots/stage_1/diagnostics/active_set_gate2/fig/stage1_switching_overlap_and_frozen_regime_test.fig
+?? plots/stage_1/diagnostics/active_set_gate2/png/stage1_representative_active_set_raster_and_rate_heatmap.png
+?? plots/stage_1/diagnostics/active_set_gate2/png/stage1_switching_overlap_and_frozen_regime_test.png
+?? plots/stage_1/fig/01_target_vs_generated_reaches.fig
+?? plots/stage_1/fig/02_motor_output_profiles.fig
+?? plots/stage_1/fig/03_cortical_population_trajectories.fig
+?? plots/stage_1/fig/04_optimal_initial_state_geometry.fig
+?? plots/stage_1/fig/05_initial_state_to_movement_mapping.fig
+?? plots/stage_1/fig/06_prospective_potency_spectrum.fig
+?? plots/stage_1/fig/07_potent_vs_null_perturbations.fig
+?? plots/stage_1/fig/08_firing_and_stability.fig
+?? plots/stage_1/png/01_target_vs_generated_reaches.png
+?? plots/stage_1/png/02_motor_output_profiles.png
+?? plots/stage_1/png/03_cortical_population_trajectories.png
+?? plots/stage_1/png/04_optimal_initial_state_geometry.png
+?? plots/stage_1/png/05_initial_state_to_movement_mapping.png
+?? plots/stage_1/png/06_prospective_potency_spectrum.png
+?? plots/stage_1/png/07_potent_vs_null_perturbations.png
+?? plots/stage_1/png/08_firing_and_stability.png
+?? plots/stage_2a/fig/01_tonic_input_and_fixed_point.fig
+?? plots/stage_2a/fig/02_cortical_preparation_and_movement.fig
+?? plots/stage_2a/fig/03_prospective_error_during_preparation.fig
+?? plots/stage_2a/fig/04_reaches_vs_preparation_duration.fig
+?? plots/stage_2a/fig/05_movement_error_vs_preparation_duration.fig
+?? plots/stage_2a/png/01_tonic_input_and_fixed_point.png
+?? plots/stage_2a/png/02_cortical_preparation_and_movement.png
+?? plots/stage_2a/png/03_prospective_error_during_preparation.png
+?? plots/stage_2a/png/04_reaches_vs_preparation_duration.png
+?? plots/stage_2a/png/05_movement_error_vs_preparation_duration.png
+?? plots/stage_2b_cerebellum/fig/01_stage2b_controller_derivation_and_fixed_points.fig
+?? plots/stage_2b_cerebellum/fig/02_stage2b_cortical_preparation_go_movement_trajectories.fig
+?? plots/stage_2b_cerebellum/fig/03_stage2b_preparatory_error_dynamics.fig
+?? plots/stage_2b_cerebellum/fig/04_stage2b_reaches_by_preparation_duration.fig
+?? plots/stage_2b_cerebellum/fig/05_stage2b_movement_error_by_preparation_duration.fig
+?? plots/stage_2b_cerebellum/fig/06_stage2b_control_input_dynamics_and_effort.fig
+?? plots/stage_2b_cerebellum/fig/07_stage2b_local_stability_and_finite_time_control.fig
+?? plots/stage_2b_cerebellum/fig/08_stage2b_nonlinear_perturbation_recovery_and_flow.fig
+?? plots/stage_2b_cerebellum/fig/09_stage2b_prep_move_alignment_and_null_distribution.fig
+?? plots/stage_2b_cerebellum/fig/10_stage2b_movement_amplification_and_prep_move_rotation.fig
+?? plots/stage_2b_cerebellum/png/01_stage2b_controller_derivation_and_fixed_points.png
+?? plots/stage_2b_cerebellum/png/02_stage2b_cortical_preparation_go_movement_trajectories.png
+?? plots/stage_2b_cerebellum/png/03_stage2b_preparatory_error_dynamics.png
+?? plots/stage_2b_cerebellum/png/04_stage2b_reaches_by_preparation_duration.png
+?? plots/stage_2b_cerebellum/png/05_stage2b_movement_error_by_preparation_duration.png
+?? plots/stage_2b_cerebellum/png/06_stage2b_control_input_dynamics_and_effort.png
+?? plots/stage_2b_cerebellum/png/07_stage2b_local_stability_and_finite_time_control.png
+?? plots/stage_2b_cerebellum/png/08_stage2b_nonlinear_perturbation_recovery_and_flow.png
+?? plots/stage_2b_cerebellum/png/09_stage2b_prep_move_alignment_and_null_distribution.png
+?? plots/stage_2b_cerebellum/png/10_stage2b_movement_amplification_and_prep_move_rotation.png
+?? plots/stage_2b_kao/diagnostics/active_set_gate2/fig/stage2a_vs_stage2b_kao_active_set_sufficiency.fig
+?? plots/stage_2b_kao/diagnostics/active_set_gate2/png/stage2a_vs_stage2b_kao_active_set_sufficiency.png
+?? plots/stage_2b_kao/diagnostics/lambda_sensitivity/fig/stage2b_kao_lambda_sensitivity_gain_speed_effort.fig
+?? plots/stage_2b_kao/diagnostics/lambda_sensitivity/png/stage2b_kao_lambda_sensitivity_gain_speed_effort.png
+?? plots/stage_2b_kao/fig/01_stage2b_controller_derivation_and_fixed_points.fig
+?? plots/stage_2b_kao/fig/02_stage2b_cortical_preparation_go_movement_trajectories.fig
+?? plots/stage_2b_kao/fig/03_stage2b_preparatory_error_dynamics.fig
+?? plots/stage_2b_kao/fig/04_stage2b_reaches_by_preparation_duration.fig
+?? plots/stage_2b_kao/fig/05_stage2b_movement_error_by_preparation_duration.fig
+?? plots/stage_2b_kao/fig/06_stage2b_cortical_and_controller_dimensionality.fig
+?? plots/stage_2b_kao/fig/07_stage2b_local_stability_and_finite_time_control.fig
+?? plots/stage_2b_kao/fig/08_stage2b_prospective_potency_geometry.fig
+?? plots/stage_2b_kao/fig/09_stage2b_prep_move_alignment_and_amplification.fig
+?? plots/stage_2b_kao/png/01_stage2b_controller_derivation_and_fixed_points.png
+?? plots/stage_2b_kao/png/02_stage2b_cortical_preparation_go_movement_trajectories.png
+?? plots/stage_2b_kao/png/03_stage2b_preparatory_error_dynamics.png
+?? plots/stage_2b_kao/png/04_stage2b_reaches_by_preparation_duration.png
+?? plots/stage_2b_kao/png/05_stage2b_movement_error_by_preparation_duration.png
+?? plots/stage_2b_kao/png/06_stage2b_cortical_and_controller_dimensionality.png
+?? plots/stage_2b_kao/png/07_stage2b_local_stability_and_finite_time_control.png
+?? plots/stage_2b_kao/png/08_stage2b_prospective_potency_geometry.png
+?? plots/stage_2b_kao/png/09_stage2b_prep_move_alignment_and_amplification.png
+?? run_stage_1.m
+?? run_stage_2a.m
+?? run_stage_2b_cerebellum.m
+?? run_stage_2b_kao.m
+?? src/published_generator/calibrate_source_faithful_generator.m
+?? src/published_generator/generate_source_faithful_recurrent.m
+?? src/published_generator/load_published_generator.m
+?? src/published_generator/optimize_source_target_torques.m
+?? src/published_generator/published_movement_input.m
+?? src/published_generator/simulate_published_arm.m
+?? src/published_generator/simulate_published_cortex.m
+?? src/published_generator/source_calibration_objective_adjoint.m
+?? src/published_generator/source_calibration_parameter_objective.m
+?? src/published_generator/source_calibration_unpack.m
+?? src/published_generator/source_calibration_unpack_vjp.m
+?? src/published_generator/source_target_hand_trajectories.m
+?? src/published_generator/source_target_torque_objective.m
+?? src/published_generator/source_target_torque_objective_adjoint.m
+?? src/stage_2a/compute_tonic_input.m
+?? src/stage_2a/simulate_naive_preparation.m
+?? src/stage_2a/simulate_stage2a_movements.m
+?? src/stage_2b_cerebellum/derive_stage2b_cerebellum_controller.m
+?? src/stage_2b_kao/derive_stage2b_kao_controller.m
+?? src/stage_2b_kao/simulate_stage2b_kao_preparation.m
+?? src/stage_2b_kao/simulate_stage2b_preparation.m
+?? third_party/kao_optimal_preparation/LICENSE_STATUS.md
+?? third_party/kao_optimal_preparation/NATIVE_REFERENCE_REPRODUCTION.md
+?? third_party/kao_optimal_preparation/README.md
+?? third_party/kao_optimal_preparation/REQUIRED_FILES.sha256
+?? third_party/kao_optimal_preparation/native_reference_manifest.tsv
+?? third_party/kao_optimal_preparation/setup_local_cache.ps1
+?? third_party/kao_optimal_preparation/verify_local_cache.ps1
+?? workflows/README.md
+?? workflows/diagnostics/stage_1/run_gate3a_stage1_validation.m
+?? workflows/diagnostics/stage_2a/run_gate3a_stage2a_validation.m
+?? workflows/diagnostics/stage_2a/run_stage_2a_figure_revision.m
+?? workflows/diagnostics/stage_2a/run_stage_2a_gate2_diagnostic.m
+?? workflows/diagnostics/stage_2b_kao/run_gate2_active_set_diagnostics.m
+?? workflows/diagnostics/stage_2b_kao/run_gate2_active_set_figure_refinement.m
+?? workflows/diagnostics/stage_2b_kao/run_gate3a_current_diagnostics_validation.m
+?? workflows/diagnostics/stage_2b_kao/run_gate3a_stage2b_kao_validation.m
+?? workflows/diagnostics/stage_2b_kao/run_stage_2b_kao_figure5_final_diagnostic.m
+?? workflows/diagnostics/stage_2b_kao/run_stage_2b_kao_lambda_sensitivity.m
+?? workflows/diagnostics/stage_2b_kao/run_stage_2b_kao_presentation_revision.m
+?? workflows/history/README.md
+?? workflows/history/run_stage_2b_alignment_architecture_revision.m
+?? workflows/history/run_stage_2b_presentation_revision.m
+?? workflows/stage_1/construction/run_stage_1_gate1.m
+?? workflows/stage_1/construction/run_stage_1_gate1_rejection_sampling.m
+?? workflows/stage_1/construction/run_stage_1_gate1_target_validation.m
+?? workflows/stage_1/construction/run_stage_1_target_torque_diagnostic.m

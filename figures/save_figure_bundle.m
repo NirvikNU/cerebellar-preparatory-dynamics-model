@@ -1,13 +1,14 @@
-function files = save_figure_bundle(figureHandle, basePath, params)
-    outputDirectory = fileparts(basePath);
-    if ~isfolder(outputDirectory)
-        mkdir(outputDirectory);
+function [figFile, pngFile] = save_figure_bundle(figureHandle, name, params)
+    if ~isfolder(params.plotsFigRoot)
+        mkdir(params.plotsFigRoot);
     end
-    figFile = [basePath, '.fig'];
-    pngFile = [basePath, '.png'];
+    if ~isfolder(params.plotsPngRoot)
+        mkdir(params.plotsPngRoot);
+    end
+    figFile = fullfile(params.plotsFigRoot, [name, '.fig']);
+    pngFile = fullfile(params.plotsPngRoot, [name, '.png']);
     savefig(figureHandle, figFile);
     exportgraphics(figureHandle, pngFile, ...
         'Resolution', params.plot.resolution, 'BackgroundColor', 'white');
-    files = {figFile, pngFile};
     close(figureHandle);
 end

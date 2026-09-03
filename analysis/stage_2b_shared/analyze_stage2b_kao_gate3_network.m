@@ -1,0 +1,641 @@
+function [result, representative] = analyze_stage2b_kao_gate3_network( ...
+        cfg, model, network, stage2aSaved, options)
+    arguments
+        cfg
+        model
+        network (1, 1) double
+        stage2aSaved
+        options.NullDraws (1, 1) double = cfg.analysis.randomSubspaceDraws
+        options.RunDenseMovement (1, 1) logical = true
+        options.RunCloud (1, 1) logical = true
+    end
+    tonicInput = model.xstar - model.W * max(model.xstar, 0) - model.h;
+    assert(max(abs(tonicInput - stage2aSaved.networkResult.tonicInput), [], ...
+        'all') < 1e-12);
+    kao = derive_stage2b_kao_controller(model, cfg);
+    stage2a = baseline_controller(model, tonicInput, kao.Q);
+    preparationA = simulate_naive_preparation(model, tonicInput, ...
+        cfg.preparation.maximumDurationS);
+    preparationK = simulate_stage2b_kao_preparation(model, kao, ...
+        cfg.preparation.maximumDurationS);
+    idealCortex = simulate_published_cortex(model, model.xstar, true);
+    [~, idealHand] = simulate_published_arm(model, idealCortex.torque);
+    ideal = struct('cortex', idealCortex, 'hand', idealHand);
+    result.controller = controller_summary(model, kao, network);
+    result.targetValidation = target_validation(cfg, model, ...
+        {stage2a, kao}, network);
+    [result.errorTimecourse, result.thresholds] = error_analysis(cfg, model, ...
+        {stage2a, kao}, {preparationA, preparationK}, network);
+    if options.RunDenseMovement
+        [result.movement, representativeReaches] = dense_movement_analysis( ...
+            cfg, model, {stage2a, kao}, {preparationA, preparationK}, ...
+            ideal, network);
+    else
+        result.movement = table();
+        representativeReaches = struct();
+    end
+    [result.inputDimension, result.inputTimecourse, result.effort] = ...
+        input_analysis(cfg, model, kao, preparationK, network);
+    goIndex = round(0.500 / model.samplingDt) + 1;
+    movementA = simulate_published_cortex(model, ...
+        squeeze(preparationA.states(goIndex, :, :)), true);
+    movementK = simulate_published_cortex(model, ...
+        squeeze(preparationK.states(goIndex, :, :)), true);
+    movementTimes = cfg.analysis.movementOnsetAfterControlRemovalS + ...
+        cfg.analysis.movementTimesFromOnsetS;
+    geometryA = compute_stage2b_kao_neural_geometry(model, preparationA, ...
+        movementA, cfg.analysis.preparationTimesS, movementTimes, "sd-floor-1");
+    geometryK = compute_stage2b_kao_neural_geometry(model, preparationK, ...
+        movementK, cfg.analysis.preparationTimesS, movementTimes, "sd-floor-1");
+    result.corticalDimensionality = dimensionality_table(network, ...
+        geometryA, geometryK);
+    projectNull = covariance_constrained_alignment_null(geometryK, ...
+        cfg.analysis.projectVarianceThreshold, options.NullDraws, ...
+        cfg.analysis.nullSeedBase + network);
+    sourceGeometry = compute_stage2b_kao_neural_geometry(model, preparationK, ...
+        movementK, cfg.analysis.preparationTimesS, movementTimes, "range-plus-5");
+    sourceNull = covariance_constrained_alignment_null(sourceGeometry, ...
+        cfg.analysis.sourceVarianceThreshold, options.NullDraws, ...
+        cfg.analysis.sourceNullSeedBase + network);
+    result.alignment = alignment_table(network, projectNull, ...
+        cfg.analysis.projectVarianceThreshold, geometryK.method, "Project K95");
+    result.sourceAlignment = alignment_table(network, sourceNull, ...
+        cfg.analysis.sourceVarianceThreshold, sourceGeometry.method, ...
+        "Kao/Elsayed K80 provenance");
+    result.alignmentNull = table(repmat(network, options.NullDraws, 1), ...
+        (1:options.NullDraws).', projectNull.nullValues, ...
+        'VariableNames', {'Network','Draw','AlignmentIndex'});
+    result.sourceAlignmentNull = table(repmat(network, options.NullDraws, 1), ...
+        (1:options.NullDraws).', sourceNull.nullValues, ...
+        'VariableNames', {'Network','Draw','AlignmentIndex'});
+    [result.local, result.finiteTime] = local_analysis(cfg, model, ...
+        {stage2a, kao}, network);
+    if options.RunCloud
+        result.cloud = cloud_analysis(cfg, model, {stage2a, kao}, network);
+    else
+        result.cloud = table();
+    end
+    [result.amplification, result.amplificationTargets] = ...
+        amplification_analysis(cfg, model, network);
+    representative = struct();
+    if network == cfg.ensemble.representativeIndex
+        representative.network = network;
+        representative.model = model;
+        representative.controllers = {stage2a, kao};
+        representative.preparations = {preparationA, preparationK};
+        representative.movements = {movementA, movementK};
+        representative.ideal = ideal;
+        representative.reaches = representativeReaches;
+        representative.geometry = geometryK;
+        if options.RunCloud
+            representative.flow = representative_flow(cfg, model, ...
+                {stage2a, kao}, result.local, result.cloud);
+        else
+            representative.flow = struct();
+        end
+    end
+end
+
+function controller = baseline_controller(model, tonicInput, Q)
+    controller.name = 'Stage 2A';
+    controller.Q = Q;
+    controller.effectiveFeedback = zeros(model.n);
+    controller.tonicInput = tonicInput;
+    controller.targetInput = tonicInput;
+    controller.K = zeros(0, model.n);
+    controller.inputDimension = 0;
+    controller.lambda = 0.1;
+    controller.careResidualRelative = NaN;
+end
+
+function output = controller_summary(model, controller, network)
+    output = table(network, controller.stateDimension, ...
+        controller.inputDimension, controller.lambda, trace(controller.Q), ...
+        controller.careResidualRelative, controller.gainFrobeniusNorm, ...
+        min(real(controller.closedLoopEigenvalues)), ...
+        max(real(controller.closedLoopEigenvalues)), ...
+        max(controller.fixedPointResidualNorm), rank(controller.B), ...
+        string(controller.sourceEquation), 'VariableNames', {'Network', ...
+        'StateDimension','FeedbackInputDimension','Lambda','QTrace', ...
+        'CareResidualRelative','GainFrobeniusNorm', ...
+        'MinimumCareClosedLoopRealEigenvalue', ...
+        'MaximumCareClosedLoopRealEigenvalue','MaximumFixedPointResidual', ...
+        'ActuatorRank','SourceEquation'});
+    assert(norm(controller.A - (model.W - eye(model.n)), 'fro') < 1e-12);
+end
+
+function output = target_validation(cfg, model, controllers, network)
+    count = numel(controllers) * model.nMovements;
+    networkColumn = repmat(network, count, 1);
+    controllerColumn = strings(count, 1);
+    target = zeros(count, 1);
+    fixed = zeros(count, 1);
+    spectral = zeros(count, 1);
+    jacobianError = zeros(count, 1);
+    previous = rng;
+    cleanup = onCleanup(@() rng(previous));
+    rng(2026090500 + network, 'twister');
+    directions = randn(model.n, 5);
+    directions = directions ./ vecnorm(directions, 2, 1);
+    epsilon = 1e-6;
+    row = 0;
+    for controllerIndex = 1:numel(controllers)
+        controller = controllers{controllerIndex};
+        for movement = 1:model.nMovements
+            row = row + 1;
+            xstar = model.xstar(:, movement);
+            D = diag(double(xstar > 0));
+            J = (-eye(model.n) + ...
+                (model.W + controller.effectiveFeedback) * D) / model.tau;
+            derivative = vector_field(xstar, movement, model, controller);
+            observed = zeros(size(directions));
+            for index = 1:size(directions, 2)
+                direction = directions(:, index);
+                observed(:, index) = (vector_field(xstar + epsilon * direction, ...
+                    movement, model, controller) - vector_field(xstar - ...
+                    epsilon * direction, movement, model, controller)) / ...
+                    (2 * epsilon);
+            end
+            controllerColumn(row) = string(controller.name);
+            target(row) = movement;
+            fixed(row) = norm(derivative);
+            spectral(row) = max(real(eig(J)));
+            jacobianError(row) = norm(observed - J * directions, 'fro') / ...
+                max(norm(J * directions, 'fro'), eps);
+        end
+    end
+    output = table(networkColumn, controllerColumn, target, fixed, spectral, ...
+        jacobianError, 'VariableNames', {'Network','Controller','Target', ...
+        'FixedPointResidualNorm','SpectralAbscissaPerS', ...
+        'JacobianDirectionalRelativeError'});
+    assert(max(fixed) < cfg.validation.fixedPointTolerance);
+    assert(max(jacobianError) < cfg.validation.jacobianDirectionalTolerance);
+    assert(all(spectral < 0));
+end
+
+function [timecourse, thresholds] = error_analysis(cfg, model, controllers, ...
+        preparations, network)
+    nTime = size(preparations{1}.states, 1);
+    nRows = numel(controllers) * nTime * model.nMovements;
+    networkColumn = repmat(network, nRows, 1);
+    controllerColumn = strings(nRows, 1);
+    target = zeros(nRows, 1);
+    timeS = zeros(nRows, 1);
+    stateFraction = zeros(nRows, 1);
+    prospectiveFraction = zeros(nRows, 1);
+    thresholdRows = numel(controllers) * model.nMovements * ...
+        numel(cfg.analysis.errorThresholds);
+    thresholdNetwork = repmat(network, thresholdRows, 1);
+    thresholdController = strings(thresholdRows, 1);
+    thresholdTarget = zeros(thresholdRows, 1);
+    thresholdValue = zeros(thresholdRows, 1);
+    thresholdTime = NaN(thresholdRows, 1);
+    row = 0;
+    thresholdRow = 0;
+    for controllerIndex = 1:numel(controllers)
+        controller = controllers{controllerIndex};
+        preparation = preparations{controllerIndex};
+        for movement = 1:model.nMovements
+            delta = preparation.states(:, :, movement) - ...
+                model.xstar(:, movement).';
+            delta0 = model.spontaneous - model.xstar(:, movement);
+            state = vecnorm(delta, 2, 2) / max(norm(delta0), eps);
+            q = sum((delta * controller.Q) .* delta, 2);
+            q0 = delta0.' * controller.Q * delta0;
+            q = q / max(q0, eps);
+            rows = row + (1:nTime);
+            controllerColumn(rows) = string(controller.name);
+            target(rows) = movement;
+            timeS(rows) = preparation.timesS;
+            stateFraction(rows) = state;
+            prospectiveFraction(rows) = q;
+            row = row + nTime;
+            for thresholdIndex = 1:numel(cfg.analysis.errorThresholds)
+                thresholdRow = thresholdRow + 1;
+                thresholdController(thresholdRow) = string(controller.name);
+                thresholdTarget(thresholdRow) = movement;
+                thresholdValue(thresholdRow) = ...
+                    cfg.analysis.errorThresholds(thresholdIndex);
+                found = find(q <= thresholdValue(thresholdRow), 1, 'first');
+                if ~isempty(found)
+                    thresholdTime(thresholdRow) = preparation.timesS(found);
+                end
+            end
+        end
+    end
+    timecourse = table(networkColumn, controllerColumn, target, timeS, ...
+        stateFraction, prospectiveFraction, 'VariableNames', {'Network', ...
+        'Controller','Target','PreparationTimeS','StateErrorFraction', ...
+        'ProspectiveErrorFraction'});
+    thresholds = table(thresholdNetwork, thresholdController, thresholdTarget, ...
+        thresholdValue, thresholdTime, 'VariableNames', {'Network', ...
+        'Controller','Target','ProspectiveErrorThreshold','FirstCrossingTimeS'});
+end
+
+function [output, representative] = dense_movement_analysis(cfg, model, ...
+        controllers, preparations, ideal, network)
+    durations = cfg.analysis.densePreparationDurationsS;
+    nDurations = numel(durations);
+    nRows = numel(controllers) * nDurations * model.nMovements;
+    networkColumn = repmat(network, nRows, 1);
+    controllerColumn = strings(nRows, 1);
+    target = zeros(nRows, 1);
+    durationS = zeros(nRows, 1);
+    stateFraction = zeros(nRows, 1);
+    prospectiveFraction = zeros(nRows, 1);
+    endpoint = zeros(nRows, 1);
+    handNrmse = zeros(nRows, 1);
+    torqueNrmse = zeros(nRows, 1);
+    representative = struct();
+    row = 0;
+    for controllerIndex = 1:numel(controllers)
+        preparation = preparations{controllerIndex};
+        indices = round(durations / model.samplingDt) + 1;
+        selected = preparation.states(indices, :, :);
+        goStates = reshape(permute(selected, [2, 3, 1]), model.n, []);
+        cortex = simulate_published_cortex(model, goStates, false);
+        [~, hand] = simulate_published_arm(model, cortex.torque);
+        for durationIndex = 1:nDurations
+            for movement = 1:model.nMovements
+                row = row + 1;
+                batch = (durationIndex - 1) * model.nMovements + movement;
+                delta = goStates(:, batch) - model.xstar(:, movement);
+                delta0 = model.spontaneous - model.xstar(:, movement);
+                actualHand = hand(:, [1, 3], batch);
+                referenceHand = ideal.hand(:, [1, 3], movement);
+                controllerColumn(row) = string(controllers{controllerIndex}.name);
+                target(row) = movement;
+                durationS(row) = durations(durationIndex);
+                stateFraction(row) = norm(delta) / max(norm(delta0), eps);
+                prospectiveFraction(row) = (delta.' * controllers{1}.Q * delta) ...
+                    / max(delta0.' * controllers{1}.Q * delta0, eps);
+                endpoint(row) = norm(actualHand(end, :) - referenceHand(end, :));
+                handNrmse(row) = normalized_rmse(actualHand - actualHand(1, :), ...
+                    referenceHand - referenceHand(1, :));
+                torqueNrmse(row) = normalized_rmse(cortex.torque(:, :, batch), ...
+                    ideal.cortex.torque(:, :, movement));
+            end
+        end
+        if network == cfg.ensemble.representativeIndex
+            canonical = cfg.analysis.representativeDurationsS;
+            canonicalIndices = round(canonical / 0.010) + 1;
+            representative(controllerIndex).controller = ...
+                string(controllers{controllerIndex}.name);
+            representative(controllerIndex).durationsS = canonical;
+            representative(controllerIndex).hand = zeros(size(hand, 1), 2, ...
+                model.nMovements, numel(canonical));
+            for index = 1:numel(canonical)
+                start = (canonicalIndices(index) - 1) * model.nMovements;
+                batches = start + (1:model.nMovements);
+                representative(controllerIndex).hand(:, :, :, index) = ...
+                    hand(:, [1, 3], batches);
+            end
+        end
+    end
+    output = table(networkColumn, controllerColumn, target, durationS, ...
+        stateFraction, prospectiveFraction, endpoint, handNrmse, torqueNrmse, ...
+        'VariableNames', {'Network','Controller','Target', ...
+        'PreparationDurationS','StateErrorFraction','ProspectiveErrorFraction', ...
+        'EndpointErrorM','HandTrajectoryNRMSE','TorqueNRMSE'});
+end
+
+function [dimension, timecourse, effort] = input_analysis(cfg, model, controller, ...
+        preparation, network)
+    sampleIndices = round((0:cfg.analysis.temporalSubsamplingS:0.500) ...
+        / model.samplingDt) + 1;
+    feedback = preparation.feedback(sampleIndices, :, :);
+    observations = reshape(permute(feedback, [1, 3, 2]), [], model.n);
+    observations = observations - mean(observations, 1);
+    singular = svd(observations, 'econ');
+    eigenvalues = singular .^ 2;
+    cumulative = cumsum(eigenvalues) / max(sum(eigenvalues), eps);
+    k95 = find(cumulative >= 0.95, 1, 'first');
+    participation = sum(eigenvalues) ^ 2 / max(sum(eigenvalues .^ 2), eps);
+    dimension = table(network, model.n, k95, participation, ...
+        numel(sampleIndices), model.nMovements, size(observations, 1), ...
+        'VariableNames', {'Network','NativeFeedbackDimensions','K95', ...
+        'ParticipationRatio','TimeSamples','Targets','Observations'});
+    norms = squeeze(vecnorm(preparation.feedback, 2, 2));
+    timecourse = table(repmat(network, size(norms, 1), 1), ...
+        preparation.timesS, median(norms, 2), mean(norms, 2), max(norms, [], 2), ...
+        'VariableNames', {'Network','PreparationTimeS', ...
+        'TargetMedianFeedbackNorm','TargetMeanFeedbackNorm', ...
+        'MaximumTargetFeedbackNorm'});
+    targetEffort = squeeze(sum(preparation.feedback .^ 2, [1, 2]));
+    targetEffort = controller.lambda * model.samplingDt / model.tau * ...
+        targetEffort;
+    effort = table(repmat(network, model.nMovements, 1), ...
+        (1:model.nMovements).', targetEffort, 'VariableNames', ...
+        {'Network','Target','LambdaWeightedFeedbackEffort'});
+end
+
+function output = dimensionality_table(network, stage2a, kao)
+    output = table([network; network; network; network], ...
+        ["Stage 2A"; "Stage 2B-Kao"; "Stage 2A"; "Stage 2B-Kao"], ...
+        ["Preparation"; "Preparation"; "Movement"; "Movement"], ...
+        [stage2a.preparationParticipationRatio; ...
+        kao.preparationParticipationRatio; stage2a.movementParticipationRatio; ...
+        kao.movementParticipationRatio], 'VariableNames', ...
+        {'Network','Controller','Epoch','ParticipationRatio'});
+end
+
+function output = alignment_table(network, result, threshold, method, analysis)
+    output = table(network, string(analysis), threshold, result.k, ...
+        result.observed, result.nullMean, result.nullMedian, result.nullSD, ...
+        result.nullLower95, result.nullUpper95, result.lowerTailP, ...
+        result.draws, result.seed, string(method), 'VariableNames', ...
+        {'Network','Analysis','VarianceThreshold','K','ObservedAlignment', ...
+        'NullMean','NullMedian','NullSD','NullLower95','NullUpper95', ...
+        'FiniteCorrectedLowerTailP','NullDraws','NullSeed','Preprocessing'});
+end
+
+function [local, finite] = local_analysis(cfg, model, controllers, network)
+    [qVectors, qValues] = eig(controllers{1}.Q, 'vector');
+    [qValues, order] = sort(real(qValues), 'descend');
+    qVectors = real(qVectors(:, order));
+    k = find(cumsum(max(qValues, 0)) / sum(max(qValues, 0)) >= 0.95, 1);
+    U = qVectors(:, 1:k);
+    G = U.' * controllers{1}.Q * U;
+    nLocal = numel(controllers) * model.nMovements;
+    networkColumn = repmat(network, nLocal, 1);
+    controllerColumn = strings(nLocal, 1);
+    target = zeros(nLocal, 1);
+    spectral = zeros(nLocal, 1);
+    qRate = zeros(nLocal, 1);
+    euclideanRate = zeros(nLocal, 1);
+    nFinite = nLocal * numel(cfg.analysis.finiteTimesS);
+    finiteNetwork = repmat(network, nFinite, 1);
+    finiteController = strings(nFinite, 1);
+    finiteTarget = zeros(nFinite, 1);
+    finiteTime = zeros(nFinite, 1);
+    finiteQ = zeros(nFinite, 1);
+    finiteEuclidean = zeros(nFinite, 1);
+    row = 0;
+    finiteRow = 0;
+    for controllerIndex = 1:numel(controllers)
+        controller = controllers{controllerIndex};
+        for movement = 1:model.nMovements
+            row = row + 1;
+            D = diag(double(model.xstar(:, movement) > 0));
+            J = (-eye(model.n) + ...
+                (model.W + controller.effectiveFeedback) * D) / model.tau;
+            qDerivative = U.' * (J.' * controllers{1}.Q + ...
+                controllers{1}.Q * J) * U;
+            controllerColumn(row) = string(controller.name);
+            target(row) = movement;
+            spectral(row) = max(real(eig(J)));
+            qRate(row) = max(real(eig(qDerivative, G)));
+            euclideanRate(row) = max(real(eig(0.5 * (J + J.'))));
+            for timeIndex = 1:numel(cfg.analysis.finiteTimesS)
+                finiteRow = finiteRow + 1;
+                duration = cfg.analysis.finiteTimesS(timeIndex);
+                transition = expm(J * duration);
+                H = (transition * U).' * controllers{1}.Q * ...
+                    (transition * U);
+                finiteController(finiteRow) = string(controller.name);
+                finiteTarget(finiteRow) = movement;
+                finiteTime(finiteRow) = duration;
+                finiteQ(finiteRow) = sqrt(max(real(eig(H, G))));
+                finiteEuclidean(finiteRow) = max(svd(transition));
+            end
+        end
+    end
+    local = table(networkColumn, controllerColumn, target, spectral, qRate, ...
+        euclideanRate, repmat(k, nLocal, 1), 'VariableNames', {'Network', ...
+        'Controller','Target','SpectralAbscissaPerS', ...
+        'WorstInstantaneousProspectiveRatePerS', ...
+        'WorstInstantaneousEuclideanRatePerS','Q95Dimensions'});
+    finite = table(finiteNetwork, finiteController, finiteTarget, finiteTime, ...
+        finiteQ, finiteEuclidean, 'VariableNames', {'Network','Controller', ...
+        'Target','TimeS','WorstQ95Gain','WorstEuclideanGain'});
+end
+
+function output = cloud_analysis(cfg, model, controllers, network)
+    previous = rng;
+    cleanup = onCleanup(@() rng(previous));
+    rng(cfg.analysis.cloudSeed + network, 'twister');
+    nDirections = cfg.analysis.cloudDirectionsPerTarget;
+    nRows = numel(controllers) * model.nMovements * nDirections;
+    networkColumn = repmat(network, nRows, 1);
+    controllerColumn = strings(nRows, 1);
+    target = zeros(nRows, 1);
+    directionIndex = zeros(nRows, 1);
+    nonlinearQ = zeros(nRows, 1);
+    linearQ = zeros(nRows, 1);
+    nonlinearEuclidean = zeros(nRows, 1);
+    linearEuclidean = zeros(nRows, 1);
+    row = 0;
+    Q = controllers{1}.Q;
+    magnitude = cfg.analysis.cloudPerturbationNorm;
+    for movement = 1:model.nMovements
+        directions = randn(model.n, nDirections);
+        directions = directions ./ vecnorm(directions, 2, 1);
+        initialDelta = magnitude * directions;
+        initial = model.xstar(:, movement) + initialDelta;
+        targetIndices = movement * ones(1, nDirections);
+        initialQ = sum((initialDelta.' * Q) .* initialDelta.', 2);
+        for controllerIndex = 1:numel(controllers)
+            controller = controllers{controllerIndex};
+            simulation = simulate_trials(model, controller, ...
+                cfg.analysis.cloudDurationS, initial, targetIndices);
+            finalDelta = simulation - model.xstar(:, movement);
+            D = diag(double(model.xstar(:, movement) > 0));
+            J = (-eye(model.n) + ...
+                (model.W + controller.effectiveFeedback) * D) / model.tau;
+            linearDelta = expm(J * cfg.analysis.cloudDurationS) * initialDelta;
+            finalQ = sum((finalDelta.' * Q) .* finalDelta.', 2);
+            predictedQ = sum((linearDelta.' * Q) .* linearDelta.', 2);
+            for direction = 1:nDirections
+                row = row + 1;
+                controllerColumn(row) = string(controller.name);
+                target(row) = movement;
+                directionIndex(row) = direction;
+                nonlinearQ(row) = finalQ(direction) / max(initialQ(direction), eps);
+                linearQ(row) = predictedQ(direction) / max(initialQ(direction), eps);
+                nonlinearEuclidean(row) = norm(finalDelta(:, direction)) / magnitude;
+                linearEuclidean(row) = norm(linearDelta(:, direction)) / magnitude;
+            end
+        end
+    end
+    output = table(networkColumn, controllerColumn, target, directionIndex, ...
+        repmat(magnitude, nRows, 1), nonlinearQ, linearQ, ...
+        nonlinearEuclidean, linearEuclidean, 'VariableNames', {'Network', ...
+        'Controller','Target','Direction','PerturbationNorm', ...
+        'NonlinearProspectiveFraction','LinearizedProspectiveFraction', ...
+        'NonlinearEuclideanFraction','LinearizedEuclideanFraction'});
+end
+
+function [curve, targetSummary] = amplification_analysis(cfg, model, network)
+    duration = cfg.analysis.amplificationDurationS;
+    nSteps = round(duration / model.dt);
+    sampleEvery = round(model.samplingDt / model.dt);
+    nSamples = nSteps / sampleEvery + 1;
+    x = model.xstar;
+    values = zeros(nSamples, model.nMovements);
+    denominator = vecnorm(model.xstar - model.spontaneous, 2, 1);
+    values(1, :) = 1;
+    sample = 1;
+    for step = 1:nSteps
+        rates = max(x, 0);
+        x = x + (model.dt / model.tau) * ...
+            (-x + model.W * rates + model.h);
+        if mod(step, sampleEvery) == 0
+            sample = sample + 1;
+            values(sample, :) = vecnorm(x - model.spontaneous, 2, 1) ...
+                ./ max(denominator, eps);
+        end
+    end
+    networkCurve = mean(values, 2);
+    networkCurve = networkCurve / networkCurve(1);
+    curve = table(repmat(network, nSamples, 1), ...
+        (0:(nSamples - 1)).' * model.samplingDt - ...
+        cfg.analysis.movementOnsetAfterControlRemovalS, networkCurve, ...
+        'VariableNames', {'Network','TimeFromModelMovementOnsetS', ...
+        'NormalizedAmplification'});
+    targetSummary = table(repmat(network, model.nMovements, 1), ...
+        (1:model.nMovements).', max(values, [], 1).', ...
+        'VariableNames', {'Network','Target','MaximumAmplificationFactor'});
+end
+
+function output = representative_flow(cfg, model, controllers, local, cloud)
+    kaoLocal = local(local.Controller == "Stage 2B-Kao", :);
+    kaoCloud = cloud(cloud.Controller == "Stage 2B-Kao", :);
+    profile = zeros(model.nMovements, 3);
+    for movement = 1:model.nMovements
+        rows = kaoCloud.Target == movement;
+        profile(movement, :) = [kaoLocal.SpectralAbscissaPerS(movement), ...
+            median(kaoCloud.NonlinearProspectiveFraction(rows)), ...
+            median(abs(log10(max(kaoCloud.NonlinearProspectiveFraction(rows), ...
+            realmin)) - log10(max(kaoCloud.LinearizedProspectiveFraction(rows), ...
+            realmin))))];
+    end
+    scale = max(std(profile, 0, 1), eps);
+    standardized = (profile - median(profile, 1)) ./ scale;
+    distances = vecnorm(standardized, 2, 2);
+    [~, selected] = min(distances);
+    output.selection = table((1:model.nMovements).', profile(:, 1), ...
+        profile(:, 2), profile(:, 3), distances, ...
+        (1:model.nMovements).' == selected, 'VariableNames', {'Target', ...
+        'SpectralAbscissaPerS','MedianNonlinearProspectiveFraction', ...
+        'MedianAbsoluteLog10LinearizationError','StandardizedMedianDistance', ...
+        'Selected'});
+    output.target = selected;
+    output.grid = flow_grid(cfg, model, controllers, selected);
+    output.trajectories = flow_trajectories(cfg, model, controllers, selected);
+end
+
+function output = flow_grid(cfg, model, controllers, target)
+    [vectors, values] = eig(controllers{1}.Q, 'vector');
+    [~, order] = sort(real(values), 'descend');
+    U = real(vectors(:, order(1:2)));
+    gridValues = linspace(-cfg.analysis.flowGridExtent, ...
+        cfg.analysis.flowGridExtent, cfg.analysis.flowGridPoints);
+    [X, Y] = meshgrid(gridValues, gridValues);
+    count = numel(controllers) * numel(X);
+    controllerColumn = strings(count, 1);
+    q1 = zeros(count, 1); q2 = zeros(count, 1);
+    nonlinearGamma = NaN(count, 1); linearGamma = NaN(count, 1);
+    nonlinearV1 = zeros(count, 1); nonlinearV2 = zeros(count, 1);
+    linearV1 = zeros(count, 1); linearV2 = zeros(count, 1);
+    outOfPlane = zeros(count, 1); masked = false(count, 1);
+    row = 0;
+    for controllerIndex = 1:numel(controllers)
+        controller = controllers{controllerIndex};
+        D = diag(double(model.xstar(:, target) > 0));
+        J = (-eye(model.n) + ...
+            (model.W + controller.effectiveFeedback) * D) / model.tau;
+        for point = 1:numel(X)
+            row = row + 1;
+            delta = U * [X(point); Y(point)];
+            derivative = vector_field(model.xstar(:, target) + delta, ...
+                target, model, controller);
+            linearDerivative = J * delta;
+            projected = U.' * derivative;
+            linearProjected = U.' * linearDerivative;
+            value = delta.' * controllers{1}.Q * delta;
+            controllerColumn(row) = string(controller.name);
+            q1(row) = X(point); q2(row) = Y(point);
+            nonlinearV1(row) = projected(1); nonlinearV2(row) = projected(2);
+            linearV1(row) = linearProjected(1); linearV2(row) = linearProjected(2);
+            outOfPlane(row) = norm(derivative - U * projected) / ...
+                max(norm(derivative), eps);
+            if value <= 1e-12
+                masked(row) = true;
+            else
+                nonlinearGamma(row) = 2 * delta.' * controllers{1}.Q * ...
+                    derivative / value;
+                linearGamma(row) = 2 * delta.' * controllers{1}.Q * ...
+                    linearDerivative / value;
+            end
+        end
+    end
+    output = table(controllerColumn, q1, q2, nonlinearGamma, linearGamma, ...
+        nonlinearV1, nonlinearV2, linearV1, linearV2, outOfPlane, masked, ...
+        'VariableNames', {'Controller','Q1','Q2','NonlinearGammaQPerS', ...
+        'LinearizedGammaQPerS','NonlinearVelocityQ1','NonlinearVelocityQ2', ...
+        'LinearizedVelocityQ1','LinearizedVelocityQ2', ...
+        'OutOfPlaneVelocityFraction','MaskedNearOrigin'});
+end
+
+function output = flow_trajectories(cfg, model, controllers, target)
+    [vectors, values] = eig(controllers{1}.Q, 'vector');
+    [~, order] = sort(real(values), 'descend');
+    U = real(vectors(:, order(1:2)));
+    angles = linspace(0, 2 * pi, cfg.analysis.flowTrajectoryCount + 1);
+    angles(end) = [];
+    starts = cfg.analysis.flowTrajectoryRadius * [cos(angles); sin(angles)];
+    output = cell(numel(controllers), 1);
+    for controllerIndex = 1:numel(controllers)
+        initial = model.xstar(:, target) + U * starts;
+        final = simulate_trials(model, controllers{controllerIndex}, ...
+            cfg.analysis.cloudDurationS, initial, ...
+            target * ones(1, size(initial, 2)), true);
+        output{controllerIndex} = final;
+    end
+end
+
+function final = simulate_trials(model, controller, durationS, initial, ...
+        targetIndices, storeTrajectory)
+    if nargin < 6
+        storeTrajectory = false;
+    end
+    nSteps = round(durationS / model.dt);
+    sampleEvery = round(model.samplingDt / model.dt);
+    x = initial;
+    if storeTrajectory
+        trajectory = zeros(nSteps / sampleEvery + 1, model.n, size(x, 2));
+        trajectory(1, :, :) = permute(x, [3, 1, 2]);
+        sample = 1;
+    end
+    targetRates = max(model.xstar(:, targetIndices), 0);
+    tonic = controller.tonicInput(:, targetIndices);
+    for step = 1:nSteps
+        rates = max(x, 0);
+        feedback = controller.effectiveFeedback * (rates - targetRates);
+        x = x + (model.dt / model.tau) * ...
+            (-x + model.W * rates + model.h + tonic + feedback);
+        if storeTrajectory && mod(step, sampleEvery) == 0
+            sample = sample + 1;
+            trajectory(sample, :, :) = permute(x, [3, 1, 2]);
+        end
+    end
+    if storeTrajectory
+        final = trajectory;
+    else
+        final = x;
+    end
+end
+
+function derivative = vector_field(x, target, model, controller)
+    rates = max(x, 0);
+    targetRates = max(model.xstar(:, target), 0);
+    derivative = (-x + model.W * rates + model.h + ...
+        controller.tonicInput(:, target) + ...
+        controller.effectiveFeedback * (rates - targetRates)) / model.tau;
+end
+
+function value = normalized_rmse(actual, reference)
+    numerator = sqrt(mean((actual - reference) .^ 2, 'all'));
+    denominator = max(max(reference, [], 'all') - min(reference, [], 'all'), eps);
+    value = numerator / denominator;
+end

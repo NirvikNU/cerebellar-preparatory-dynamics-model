@@ -1,0 +1,33 @@
+clear;
+projectRoot = fileparts(fileparts(fileparts(fileparts(mfilename('fullpath')))));
+addpath(genpath(projectRoot));
+cfg = stage_2b_kao_config(projectRoot);
+files = {
+    fullfile(projectRoot, 'analysis', 'stage_2b_shared', ...
+        'analyze_stage2b_kao_lambda_sensitivity.m');
+    fullfile(projectRoot, 'analysis', 'stage_2b_shared', ...
+        'finalize_stage2b_kao_lambda_sensitivity.m');
+    fullfile(projectRoot, 'figures', 'stage_2b_shared', ...
+        'create_stage2b_kao_lambda_sensitivity_figure.m');
+    mfilename('fullpath')};
+for index = 1:numel(files)
+    messages = checkcode(files{index}, '-id');
+    assert(isempty(messages), 'Code Analyzer reported an issue in %s.', ...
+        files{index});
+end
+component = analyze_stage2b_kao_lambda_sensitivity(cfg, ...
+    NetworkCount=1, MovementDurationsS=[0.100; 0.200], ...
+    SavePerNetwork=false);
+componentReproduction = component.results.reproduction( ...
+    component.results.reproduction.Lambda == 0.1, :);
+assert(max(componentReproduction.MaximumCanonicalGainDifference) <= 1e-12);
+assert(max(componentReproduction.MaximumCanonicalProspectiveDifference) <= 1e-12);
+assert(max(componentReproduction.MaximumCanonicalEndpointDifference) <= 1e-12);
+fprintf('Component validation passed. Launching the complete diagnostic once.\n');
+complete = analyze_stage2b_kao_lambda_sensitivity(cfg);
+report = finalize_stage2b_kao_lambda_sensitivity(cfg, complete, component);
+disp(report.summary.lambdaSummaries);
+fprintf(['STAGE 2B-KAO LAMBDA SENSITIVITY PASS: %d networks, %d lambdas; ' ...
+    'artifact manifest %d files; code manifest %d files.\n'], ...
+    complete.networkCount, numel(complete.lambdas), ...
+    report.artifactManifestFiles, report.codeManifestFiles);
