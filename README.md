@@ -26,7 +26,7 @@ mechanistic gates and the revised 2-mm endpoint gate passed. The historical
 Stage 2B-Kao is **ACCEPTED — FROZEN**. It reproduces the unrestricted
 200-dimensional theoretical optimal-feedback controller from the pinned Kao
 source and passes the source-equivalence gate. Stage
-2B-Cerebellum is also **COMPLETED — AWAITING SCIENTIFIC REVIEW**. It is a
+2B-Cerebellum is pending a clean analytical rebuild. It will be a
 separate normative capacity bound with the same derivation but a fixed
 13-dimensional actuator given by the leading eigenvectors of the frozen
 prospective-potency matrix `Q`. Neither stage is a biological cerebellar
@@ -42,7 +42,6 @@ circuit or a learned network.
 - `figures/published_generator/` — Stage 1 figure construction.
 - `figures/stage_2a/` — Gate-2-aware five-figure construction code.
 - `src/stage_2b_kao/` — published theoretical controller reproduction.
-- `src/stage_2b_cerebellum/` — fixed 13-dimensional normative controller.
 - `analysis/stage_2b_shared/` — shared comparative and mechanistic analyses.
 - `figures/stage_2b_shared/` — ten shared comparative figure builders.
 - `results/stage_1/current/` — accepted 10-cm ensemble and canonical audits.
@@ -55,11 +54,8 @@ circuit or a learned network.
 - `plots/stage_1/fig/` — eight matching editable MATLAB FIG files.
 - `plots/stage_2a/png/` — five accepted ensemble presentation PNGs.
 - `plots/stage_2a/fig/` — five matching editable MATLAB FIG files.
-- `results/stage_2b_kao/` and `results/stage_2b_cerebellum/` — machine-readable
-  Stage-2 controller and comparative outputs.
-- `plots/stage_2b_kao/{png,fig}/` and
-  `plots/stage_2b_cerebellum/{png,fig}/` — mirrored canonical comparative
-  figures after both controllers pass their derivation gates.
+- `results/stage_2b_kao/` — machine-readable Stage-2B-Kao controller outputs.
+- `plots/stage_2b_kao/{png,fig}/` — canonical figures for Stage 2B-Kao.
 - `workflows/stage_1/construction/` — authorized one-time construction and
   rejection-sampling runners, retained but not used for routine validation.
 - `workflows/diagnostics/` — current deterministic diagnostic and presentation
@@ -105,10 +101,7 @@ that diagnostic against an already completed isolated Gate-2 work tree.
 
 ## Running Stage 2B
 
-Run `run_stage_2b_kao.m` first. Stage 2B-Cerebellum is gated on successful
-verification against the pinned published formulation and is run separately
-with `run_stage_2b_cerebellum.m`. Both stages preserve the frozen movement
-generator and write only to their own Stage-2 paths.
+Run `run_stage_2b_kao.m` first. Stage 2B-Cerebellum is pending a clean analytical rebuild; its runner `run_stage_2b_cerebellum.m` currently remains as a non-executing stub.
 
 ## Frozen boundary
 

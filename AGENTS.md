@@ -62,17 +62,14 @@ eventual public release.
 - Stage 2B-Kao paths: `config/stage_2b_kao_config.m`,
   `src/stage_2b_kao/`, `results/stage_2b_kao/`, and
   `plots/stage_2b_kao/{png,fig}/`.
-- Stage 2B-Cerebellum paths: `config/stage_2b_cerebellum_config.m`,
-  `src/stage_2b_cerebellum/`, `results/stage_2b_cerebellum/`, and
-  `plots/stage_2b_cerebellum/{png,fig}/`.
+- Stage 2B-Cerebellum paths: Pending clean analytical rebuild.
 - Shared analyses and figures: `analysis/stage_2b_shared/` and
   `figures/stage_2b_shared/`.
 - Noncanonical construction and diagnostic runners: `workflows/`; scripts in
   `workflows/history/` are provenance-only.
 - Third-party metadata and local cache contract:
   `third_party/kao_optimal_preparation/`.
-- Stage 2B entry points: `run_stage_2b_kao.m` first, then
-  `run_stage_2b_cerebellum.m` only after the source-equivalence gate passes.
+- Stage 2B entry points: `run_stage_2b_kao.m` first. `run_stage_2b_cerebellum.m` is a non-executing stub.
 
 Use only Stage 1, Stage 2A, Stage 2B-Kao, and Stage 2B-Cerebellum terminology
 in the active tree.
@@ -88,8 +85,7 @@ in the active tree.
 - Run Code Analyzer and relevant smoke checks after code changes.
 - Generated numerical artifacts remain local unless the user requests them to
   be tracked. Accepted Stage-1 and Stage-2A PNG/FIG pairs are canonical assets.
-- Do not tune the Stage 2B-Cerebellum dimension, actuator orientation, or
-  effort penalty, and do not use downstream results to select a controller.
+- Stage 2B-Cerebellum is pending clean analytical rebuild.
 - Do not commit, tag, push, or rewrite Git history without explicit user
   authorization.
 - Record verified implementation history in the Notion Codex Development Log
