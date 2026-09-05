@@ -26,8 +26,9 @@ mechanistic gates and the revised 2-mm endpoint gate passed. The historical
 Stage 2B-Kao is **ACCEPTED — FROZEN**. It reproduces the unrestricted
 200-dimensional theoretical optimal-feedback controller from the pinned Kao
 source and passes the source-equivalence gate. Stage
-2B-Cerebellum is pending a clean analytical rebuild. It will be a
-separate normative capacity bound with the same derivation but a fixed
+2B-Cerebellum is **ACCEPTED — FROZEN** after Gate 4B-C. It is a
+separate 13-channel prospective-potency controller with the same derivation
+but a fixed
 13-dimensional actuator given by the leading eigenvectors of the frozen
 prospective-potency matrix `Q`. Neither stage is a biological cerebellar
 circuit or a learned network.
@@ -42,8 +43,9 @@ circuit or a learned network.
 - `figures/published_generator/` — Stage 1 figure construction.
 - `figures/stage_2a/` — Gate-2-aware five-figure construction code.
 - `src/stage_2b_kao/` — published theoretical controller reproduction.
+- `src/stage_2b_cerebellum/` — accepted 13-channel controller derivation.
 - `analysis/stage_2b_shared/` — shared comparative and mechanistic analyses.
-- `figures/stage_2b_shared/` — ten shared comparative figure builders.
+- `figures/stage_2b_shared/` — accepted Kao and Cerebellum figure construction.
 - `results/stage_1/current/` — accepted 10-cm ensemble and canonical audits.
 - `results/stage_1/audit_history/` — labeled benchmark and failed-run history.
 - `results/stage_2a/current/` — accepted conditional Gate-2 ensemble results,
@@ -56,6 +58,9 @@ circuit or a learned network.
 - `plots/stage_2a/fig/` — five matching editable MATLAB FIG files.
 - `results/stage_2b_kao/` — machine-readable Stage-2B-Kao controller outputs.
 - `plots/stage_2b_kao/{png,fig}/` — canonical figures for Stage 2B-Kao.
+- `results/stage_2b_cerebellum/current/` — frozen Gate-4B-C audit, controllers,
+  and network-first summaries (local/ignored).
+- `plots/stage_2b_cerebellum/{png,fig}/` — four reviewed Gate-4D figure pairs.
 - `workflows/stage_1/construction/` — authorized one-time construction and
   rejection-sampling runners, retained but not used for routine validation.
 - `workflows/diagnostics/` — current deterministic diagnostic and presentation
@@ -101,13 +106,43 @@ that diagnostic against an already completed isolated Gate-2 work tree.
 
 ## Running Stage 2B
 
-Run `run_stage_2b_kao.m` first. Stage 2B-Cerebellum is pending a clean analytical rebuild; its runner `run_stage_2b_cerebellum.m` currently remains as a non-executing stub.
+`run_stage_2b_kao.m` and `run_stage_2b_cerebellum.m` are scientific entry
+points for accepted/frozen stages; do not rerun them without separate
+authorization. Accepted Stage-2B-Cerebellum outputs are in
+`results/stage_2b_cerebellum/current/`. Presentation-only regeneration is
+`create_stage2b_cerebellum_gate4b_figures(stage_2b_cerebellum_config(pwd))`
+after adding `config/` and `figures/stage_2b_shared/` to the MATLAB path;
+it reads saved accepted outputs without rewriting scientific results.
+
+The Cerebellum contract is fixed per network: the descending top-13
+eigenvectors of normalized/symmetrized `Q_j` define `B_CB` (200x13),
+`R_CB = 0.1 I_13`, signed CARE gain `K_CB = -G`, and
+`F_CB = B_CB K_CB`. During PREP, `u = tonicInput + F_CB (r-rstar)`;
+tonic and feedback inputs are stored separately and both removed at GO.
+All 10 structural/stabilizability/CARE audits and all 80 target
+fixed-point/zero-feedback/Jacobian audits passed. The accepted network-median
+t95 is 14.0 +/- 0.35 ms; endpoint errors are 3.771 +/- 0.690 mm at 100 ms
+and 1.712 +/- 0.283 mm at 200 ms (network-bootstrap SE).
+
+The root runner is the bounded accepted-audit replay, not a fresh ensemble
+construction workflow. It uses the valid historical per-network cache at
+`results/stage_2b_cerebellum_gate4a_work/current/per_network/` and may write
+audit outputs; invoking it requires separate scientific-rerun authorization.
+Keep that cache. The old aggregate alongside it is historical only; the
+incorrect unrestricted-controller saves and duplicate runners were removed.
+Cache-generation source is retained as non-executable historical text in
+`workflows/history/stage_2b_cerebellum_gate4b/`. The exact cleanup inventory,
+frozen-result hashes, and verification record are in
+`artifacts/manifests/gate4e/`.
 
 ## Frozen boundary
 
 For every accepted member, do not retrain, retune, or replace `W_j`, its
 spontaneous state and baseline drive, eight `x*_{q,j}`, readout `C_j`, common
 movement input, two-link arm, or derived prospective-potency Gramian `Q_j`.
-Stage 2A and Stage 2B-Kao are frozen at their accepted results. Gate 3A changes
-only repository organization and dependency resolution; it does not alter or
-recompute any accepted controller.
+Stage 2A, Stage 2B-Kao, and Stage 2B-Cerebellum are frozen at their accepted
+results. Historical Gate 3A changed only repository organization and dependency
+resolution; it did not alter or recompute any accepted controller. Gate 4E
+checkpoints the accepted Gate-4B-C science and reviewed Gate-4D presentation;
+block, phenotype, prediction, noise, training, tuning, and adaptation remain
+outside this checkpoint.

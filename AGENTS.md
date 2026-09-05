@@ -37,6 +37,13 @@ eventual public release.
   validated ten-network results must not be retrained, retuned, or replaced.
   The Stage-2A 100-to-200-ms endpoint worsening is verified as a genuine
   feature of the naive trajectory, not an indexing or extraction error.
+- Stage 2B-Cerebellum is **ACCEPTED — FROZEN** after Gate 4B-C, with the
+  reviewed Gate-4D four-figure presentation. Each network uses the descending
+  top-13 eigenvectors of its normalized/symmetrized `Q_j`: `B_CB` is 200x13,
+  `R_CB = 0.1 I_13`, `K_CB = -G`, and `F_CB = B_CB K_CB`. Tonic input and
+  feedback remain separate: `u = tonicInput + F_CB (r-rstar)` during PREP;
+  both turn off at GO. Structural/stabilizability/CARE gates passed 10/10;
+  exact fixed-point/zero-feedback/active-set Jacobian gates passed 80/80.
 
 ## Active organization
 
@@ -62,14 +69,23 @@ eventual public release.
 - Stage 2B-Kao paths: `config/stage_2b_kao_config.m`,
   `src/stage_2b_kao/`, `results/stage_2b_kao/`, and
   `plots/stage_2b_kao/{png,fig}/`.
-- Stage 2B-Cerebellum paths: Pending clean analytical rebuild.
+- Stage 2B-Cerebellum paths: `config/stage_2b_cerebellum_config.m`,
+  `src/stage_2b_cerebellum/`, `results/stage_2b_cerebellum/current/`, and
+  `plots/stage_2b_cerebellum/{png,fig}/` (four matching figure pairs).
 - Shared analyses and figures: `analysis/stage_2b_shared/` and
   `figures/stage_2b_shared/`.
 - Noncanonical construction and diagnostic runners: `workflows/`; scripts in
   `workflows/history/` are provenance-only.
 - Third-party metadata and local cache contract:
   `third_party/kao_optimal_preparation/`.
-- Stage 2B entry points: `run_stage_2b_kao.m` first. `run_stage_2b_cerebellum.m` is a non-executing stub.
+- Stage 2B entry points: `run_stage_2b_kao.m` and `run_stage_2b_cerebellum.m`.
+  Both stages are accepted/frozen; do not rerun controller science without
+  separate authorization. Presentation-only regeneration uses saved outputs.
+- The Cerebellum root runner replays the bounded Gate-4B-C audit using the
+  retained per-network cache at `results/stage_2b_cerebellum_gate4a_work/current/per_network/`.
+  That ignored cache is required provenance, not an alternative controller.
+  The interrupted cache-generation source is non-executable historical text
+  under `workflows/history/stage_2b_cerebellum_gate4b/`.
 
 Use only Stage 1, Stage 2A, Stage 2B-Kao, and Stage 2B-Cerebellum terminology
 in the active tree.
@@ -85,7 +101,9 @@ in the active tree.
 - Run Code Analyzer and relevant smoke checks after code changes.
 - Generated numerical artifacts remain local unless the user requests them to
   be tracked. Accepted Stage-1 and Stage-2A PNG/FIG pairs are canonical assets.
-- Stage 2B-Cerebellum is pending clean analytical rebuild.
+- Stage 2B-Cerebellum is **ACCEPTED — FROZEN** after Gate 4B-C: the exact
+  network-specific top-13 prospective-potency actuator and accepted CARE
+  controllers/results must not be rederived, retuned, or replaced.
 - Do not commit, tag, push, or rewrite Git history without explicit user
   authorization.
 - Record verified implementation history in the Notion Codex Development Log
