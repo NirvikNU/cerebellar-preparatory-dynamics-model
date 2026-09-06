@@ -8,11 +8,11 @@ codegen/
 *.mex*
 *.mlappinstall
 
-# Generated numerical artifacts remain local.
-/results/**
+# Generated Stage-1 numerical artifacts remain local.
+/results/stage_1/**
 
 # Accepted per-stage PNG/FIG pairs are canonical project assets.
-/plots/**
+/plots/stage_1/**
 !/plots/stage_1/
 !/plots/stage_1/png/
 !/plots/stage_1/png/*.png
@@ -24,32 +24,6 @@ codegen/
 !/plots/stage_1/diagnostics/active_set_gate2/png/*.png
 !/plots/stage_1/diagnostics/active_set_gate2/fig/
 !/plots/stage_1/diagnostics/active_set_gate2/fig/*.fig
-!/plots/stage_2a/
-!/plots/stage_2a/png/
-!/plots/stage_2a/png/*.png
-!/plots/stage_2a/fig/
-!/plots/stage_2a/fig/*.fig
-!/plots/stage_2b_kao/
-!/plots/stage_2b_kao/png/
-!/plots/stage_2b_kao/png/*.png
-!/plots/stage_2b_kao/fig/
-!/plots/stage_2b_kao/fig/*.fig
-!/plots/stage_2b_kao/diagnostics/
-!/plots/stage_2b_kao/diagnostics/active_set_gate2/
-!/plots/stage_2b_kao/diagnostics/active_set_gate2/png/
-!/plots/stage_2b_kao/diagnostics/active_set_gate2/png/*.png
-!/plots/stage_2b_kao/diagnostics/active_set_gate2/fig/
-!/plots/stage_2b_kao/diagnostics/active_set_gate2/fig/*.fig
-!/plots/stage_2b_kao/diagnostics/lambda_sensitivity/
-!/plots/stage_2b_kao/diagnostics/lambda_sensitivity/png/
-!/plots/stage_2b_kao/diagnostics/lambda_sensitivity/png/*.png
-!/plots/stage_2b_kao/diagnostics/lambda_sensitivity/fig/
-!/plots/stage_2b_kao/diagnostics/lambda_sensitivity/fig/*.fig
-!/plots/stage_2b_cerebellum/
-!/plots/stage_2b_cerebellum/png/
-!/plots/stage_2b_cerebellum/png/*.png
-!/plots/stage_2b_cerebellum/fig/
-!/plots/stage_2b_cerebellum/fig/*.fig
 
 # Logs, coverage, and temporary outputs
 *.log

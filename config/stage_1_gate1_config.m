@@ -14,8 +14,6 @@ function cfg = stage_1_gate1_config(projectRoot)
     cfg.gate1.targetDurationS = 0.6;
     cfg.gate1.targetDtS = 1e-3;
     cfg.gate1.targetTorqueSeed = 20260831;
-    cfg.gate1.generatedNetworkSeeds = 2026083101:2026083109;
-    cfg.gate1.calibrationSeeds = 2026084100:2026084109;
     cfg.gate1.rejectionSampling.recurrentSeedStart = 2026083110;
     cfg.gate1.rejectionSampling.calibrationSeedStart = 2026084110;
     cfg.gate1.rejectionSampling.acceptedCount = 10;
@@ -29,7 +27,6 @@ function cfg = stage_1_gate1_config(projectRoot)
     cfg.gate1.rejectionSampling.auditRoot = fullfile( ...
         cfg.gate1.rejectionSampling.workRoot, 'audit');
     cfg.gate1.networkCount = 10;
-    cfg.gate1.pinnedMember = 1;
     cfg.gate1.n = 200;
     cfg.gate1.nE = 160;
     cfg.gate1.nI = 40;
@@ -60,5 +57,5 @@ function cfg = stage_1_gate1_config(projectRoot)
     cfg.gate1.validation.maxEndpointErrorM = 0.02;
     cfg.gate1.validation.targetRadiusToleranceM = 2e-4;
     cfg.gate1.sourceCommit = cfg.upstreamCommit;
-    cfg.gate1.status = 'GATE 1 / STAGE 1 ONLY';
+    cfg.gate1.status = 'ACCEPTED - FROZEN / STAGE 1 ONLY';
 end

@@ -1,148 +1,113 @@
-# Motor Preparation Model
+# Stage 1 — frozen movement-generation foundation
 
-This repository contains one model developed sequentially through Stage 1,
-Stage 2A, Stage 2B-Kao, and Stage 2B-Cerebellum.
+**Stage-1-only reset validated:** RESET-S1-REPO-01-R1 completed the physical
+cleanup and the single 80-movement forward regression without changing frozen
+scientific assets. See `artifacts/manifests/stage1_reset/REPORT.md` for the
+archive, preservation and validation evidence; the final checkpoint/push
+receipt is recorded externally and in the current Notion handoff.
 
-## Current state
+The active scientific foundation is ten accepted, independently generated
+source-faithful movement networks. Preparation awaits a separate design task.
+The repository name is retained for continuity; it does not imply that a new
+preparatory or cerebellar architecture has been implemented.
 
-Stage 1 is **ACCEPTED — FROZEN**. The current project model is the first ten
-independently generated source-faithful ISNs that passed every predeclared
-movement-fidelity criterion for the eight experimental 10-cm reaches. Each
-member has its own recurrent matrix `W_j`, calibrated common readout `C_j`, and
-eight calibrated initial states `x*_{q,j}`. The released Kao realization is
-preserved separately as an untouched source/provenance benchmark; the project
-ensemble is not Kao's unpublished original ten-network ensemble.
+Each 200-unit ReLU network (160E/40I) has its own frozen recurrent weights,
+spontaneous state, baseline drive, eight calibrated movement initial states,
+rank-2 excitatory readout and prospective-potency matrix. Its initial state
+selects the target; the common movement input and two-link arm do not change
+across targets. Internal integration is **0.2 ms**, saved sampling **1 ms**,
+and cortical tau **150 ms**. Source rates are not automatically Hz.
 
-Stage 2A is **ACCEPTED — FROZEN** under the predeclared conditional Gate-2
-interpretation. The analytical target-specific tonic input was propagated
-independently across all ten frozen Stage-1 members, with no training, noise,
-or parameter change. Exact fixed-point Jacobians were stable for all 80
-network-target pairs. The four historical 5-s full-state misses converged to
-the intended fixed points during the authorized 40-s extension and were
-94.09–99.15% low-potency by Euclidean residual energy. All original
-mechanistic gates and the revised 2-mm endpoint gate passed. The historical
-1% full-state threshold is retained as descriptive QC, not a hard gate.
+All 80 accepted network–target movements passed recorded validation: maximum
+angular error 1.806438 degrees and endpoint error 0.00363731 m. These are
+validated reaches, not mathematically exact trajectories. Initial states are
+not asserted to be unique optima or movement-period fixed points.
 
-Stage 2B-Kao is **ACCEPTED — FROZEN**. It reproduces the unrestricted
-200-dimensional theoretical optimal-feedback controller from the pinned Kao
-source and passes the source-equivalence gate. Stage
-2B-Cerebellum is **ACCEPTED — FROZEN** after Gate 4B-C. It is a
-separate 13-channel prospective-potency controller with the same derivation
-but a fixed
-13-dimensional actuator given by the leading eigenvectors of the frozen
-prospective-potency matrix `Q`. Neither stage is a biological cerebellar
-circuit or a learned network.
+## Layout
 
-## Repository layout
+- `src/published_generator/`: frozen loading/forward dynamics and retained
+  source-faithful construction helpers.
+- `config/`: Stage-1 settings and required-reference check.
+- `analysis/published_generator/`: validation, source equivalence and Stage-1
+  diagnostic methods.
+- `figures/published_generator/`: canonical and retained active-set plotting;
+  shared style/save helpers remain directly under `figures/`.
+- `results/stage_1/current/`: accepted ensemble, target bundle, audits and
+  primary analysis (local-only).
+- `results/stage_1/audit_history/`: successful construction/acceptance and
+  pinned-benchmark replication provenance, not failed candidates.
+- `plots/stage_1/{png,fig}/`: eight canonical matching figure pairs.
+- `results/stage_1/diagnostics/active_set_gate2/` and
+  `plots/stage_1/diagnostics/active_set_gate2/{png,fig}/`: retained Stage-1
+  active-set data and two matching figure pairs. The directory suffix is a
+  preserved provenance identifier, not an active gate instruction.
+- `workflows/stage_1/construction/`: successful construction entry points,
+  retained for reproduction only; do not rerun without separate authorization.
+- `workflows/diagnostics/stage_1/`: bounded validation entry point.
+- `third_party/kao_optimal_preparation/`: source attribution, licensing,
+  checksums and local-cache setup.
+- `artifacts/manifests/stage1_reset/`: current reset report, dependency audit
+  and preservation/move evidence.
 
-- `config/` — stage-specific configurations and dependency checks.
-- `src/published_generator/` — published cortical and arm forward models.
-- `src/stage_2a/` — analytical tonic input and naive preparation dynamics.
-- `analysis/published_generator/` — equivalence, potency, and smoke analyses.
-- `analysis/stage_2a/` — convergence, movement-error, and acceptance analyses.
-- `figures/published_generator/` — Stage 1 figure construction.
-- `figures/stage_2a/` — Gate-2-aware five-figure construction code.
-- `src/stage_2b_kao/` — published theoretical controller reproduction.
-- `src/stage_2b_cerebellum/` — accepted 13-channel controller derivation.
-- `analysis/stage_2b_shared/` — shared comparative and mechanistic analyses.
-- `figures/stage_2b_shared/` — accepted Kao and Cerebellum figure construction.
-- `results/stage_1/current/` — accepted 10-cm ensemble and canonical audits.
-- `results/stage_1/audit_history/` — labeled benchmark and failed-run history.
-- `results/stage_2a/current/` — accepted conditional Gate-2 ensemble results,
-  diagnostics, audits, and machine-readable summaries for all 10 networks.
-- `results/stage_2a/audit_history/` — the initial stopped-gate audit and the
-  preserved prior single-network Stage-2A artifacts.
-- `plots/stage_1/png/` — eight accepted presentation-ready PNG figures.
-- `plots/stage_1/fig/` — eight matching editable MATLAB FIG files.
-- `plots/stage_2a/png/` — five accepted ensemble presentation PNGs.
-- `plots/stage_2a/fig/` — five matching editable MATLAB FIG files.
-- `results/stage_2b_kao/` — machine-readable Stage-2B-Kao controller outputs.
-- `plots/stage_2b_kao/{png,fig}/` — canonical figures for Stage 2B-Kao.
-- `results/stage_2b_cerebellum/current/` — frozen Gate-4B-C audit, controllers,
-  and network-first summaries (local/ignored).
-- `plots/stage_2b_cerebellum/{png,fig}/` — four reviewed Gate-4D figure pairs.
-- `workflows/stage_1/construction/` — authorized one-time construction and
-  rejection-sampling runners, retained but not used for routine validation.
-- `workflows/diagnostics/` — current deterministic diagnostic and presentation
-  runners.
-- `workflows/history/` — superseded runners retained with provenance labels.
-- `third_party/kao_optimal_preparation/` — tracked attribution, checksums, and
-  setup/verification scripts; unlicensed payloads remain in ignored
-  `local_cache/`.
-- `artifacts/manifests/` — lightweight Git-trackable cleanup and provenance
-  records.
-- `MODEL_SPEC.md` — mathematical and scientific specification.
-- `THIRD_PARTY_PROVENANCE.md` — upstream source and reference provenance.
+## Bounded validation
 
-## Running Stage 1
+From the repository in a clean MATLAB session:
 
-Run `run_all.m` for bounded smoke validation only.
+```matlab
+run_all
+run_stage_1
+```
 
-Run `run_stage_1.m` for deterministic analysis of accepted member 1 and
-regeneration of the eight matching PNG/FIG figure pairs. It verifies the
-10-member audit and pinned benchmark but performs no optimization or training.
+`run_all` checks the native source reference with a five-sample smoke segment.
+`run_stage_1` checks the ten frozen members against saved acceptance metrics
+and available primary trajectories. Neither trains, recalibrates, runs long
+diagnostics, regenerates figures, nor overwrites canonical results. Do not use
+whole-project `genpath` or rely on a previously populated MATLAB session.
 
-The accepted ensemble was generated once by
-`workflows/stage_1/construction/run_stage_1_gate1_rejection_sampling.m`. That
-gated construction script uses one preassigned recurrent/calibration seed pair
-per attempt and never retries a failed realization. It is not part of routine
-deterministic regeneration.
+MATLAB R2025b is the verified runtime. Forward regression uses base MATLAB and
+the retained project functions. Broader retained analysis/construction code
+uses Control System Toolbox (`lyap`), Statistics and Machine Learning Toolbox
+(e.g. correlation/bootstrap summaries), Deep Learning Toolbox
+(`lbfgsState/lbfgsupdate`), and Parallel Computing Toolbox for GPU-aware
+construction helpers. These construction/diagnostic dependencies do not
+authorize their execution during routine validation.
 
-Stage 1 uses the ignored project-local cache at
-`third_party/kao_optimal_preparation/local_cache/`. On a fresh clone, follow
-`third_party/kao_optimal_preparation/README.md` and run its setup/verification
-scripts. `run_all.m` fails with that actionable instruction when the verified
-native package is absent; it never silently substitutes a historical result.
+## Local-only assets and source provenance
 
-## Running Stage 2A
+The accepted numerical bundles and pinned native package remain intentionally
+ignored, not embedded in a fresh Git clone. Obtain an authorized project-data
+copy from the maintainers and verify its preservation manifest; do not rebuild
+accepted members as a substitute for missing data. For the native package,
+follow `third_party/kao_optimal_preparation/README.md` and run its
+`verify_local_cache.ps1`. Loading fails explicitly if the cache is absent.
 
-`run_stage_2a.m` is the complete deterministic 10-network Gate-2 entry point.
-It loads each accepted Stage-1 member independently, writes first to the
-isolated `results/stage_2a_gate2_work/` tree, and then applies the frozen-point
-stability, extended-convergence, and Q-potency conditional diagnostics. The
-canonical tree may be installed only when every predeclared criterion passes.
-`workflows/diagnostics/stage_2a/run_stage_2a_gate2_diagnostic.m` reruns only
-that diagnostic against an already completed isolated Gate-2 work tree.
+The separate untouched released Kao realization is pinned at
+`40077d2da16e68ab2ab2cff59ec692b97315980b`. It is not an eleventh accepted
+network. The ignored cache includes the pinned source, 167-file native export,
+exporter, paper and local toolchain. Upstream controller-named modules remain
+inside that untouched dependency, not as active project controllers.
+No software-license grant was identified at the pinned revision; do not
+redistribute its source or generated payload by adding it to this repository.
+See `THIRD_PARTY_PROVENANCE.md` and `LICENSE_STATUS.md` in the dependency
+directory. Existing tracked Stage-1 PNG/FIG assets remain tracked.
 
-## Running Stage 2B
+Scientific specification: [MODEL_SPEC.md](MODEL_SPEC.md).
 
-`run_stage_2b_kao.m` and `run_stage_2b_cerebellum.m` are scientific entry
-points for accepted/frozen stages; do not rerun them without separate
-authorization. Accepted Stage-2B-Cerebellum outputs are in
-`results/stage_2b_cerebellum/current/`. Presentation-only regeneration is
-`create_stage2b_cerebellum_gate4b_figures(stage_2b_cerebellum_config(pwd))`
-after adding `config/` and `figures/stage_2b_shared/` to the MATLAB path;
-it reads saved accepted outputs without rewriting scientific results.
+## Management and archive boundary
 
-The Cerebellum contract is fixed per network: the descending top-13
-eigenvectors of normalized/symmetrized `Q_j` define `B_CB` (200x13),
-`R_CB = 0.1 I_13`, signed CARE gain `K_CB = -G`, and
-`F_CB = B_CB K_CB`. During PREP, `u = tonicInput + F_CB (r-rstar)`;
-tonic and feedback inputs are stored separately and both removed at GO.
-All 10 structural/stabilizability/CARE audits and all 80 target
-fixed-point/zero-feedback/Jacobian audits passed. The accepted network-median
-t95 is 14.0 +/- 0.35 ms; endpoint errors are 3.771 +/- 0.690 mm at 100 ms
-and 1.712 +/- 0.283 mm at 200 ms (network-bootstrap SE).
+[Agent Instructions — Current Task](https://www.notion.so/3c826c94be30817d8f51d9f6c8c2bc19)
+is the executable authority.
+[Agent Log — Run Outputs](https://www.notion.so/3d326c94be3081e897a2e5e0c855c4c0)
+records actual outcomes;
+[Agent Handoff](https://www.notion.so/3c826c94be308156a677c50c2106fb37) and
+[START HERE](https://www.notion.so/3d226c94be308194adadf691ed5822a2)
+give the current state and continuation point.
+The [Stage-1 foundation](https://www.notion.so/3c426c94be308184a8e9d89034b8a477)
+and its four support pages remain active.
 
-The root runner is the bounded accepted-audit replay, not a fresh ensemble
-construction workflow. It uses the valid historical per-network cache at
-`results/stage_2b_cerebellum_gate4a_work/current/per_network/` and may write
-audit outputs; invoking it requires separate scientific-rerun authorization.
-Keep that cache. The old aggregate alongside it is historical only; the
-incorrect unrestricted-controller saves and duplicate runners were removed.
-Cache-generation source is retained as non-executable historical text in
-`workflows/history/stage_2b_cerebellum_gate4b/`. The exact cleanup inventory,
-frozen-result hashes, and verification record are in
-`artifacts/manifests/gate4e/`.
-
-## Frozen boundary
-
-For every accepted member, do not retrain, retune, or replace `W_j`, its
-spontaneous state and baseline drive, eight `x*_{q,j}`, readout `C_j`, common
-movement input, two-link arm, or derived prospective-potency Gramian `Q_j`.
-Stage 2A, Stage 2B-Kao, and Stage 2B-Cerebellum are frozen at their accepted
-results. Historical Gate 3A changed only repository organization and dependency
-resolution; it did not alter or recompute any accepted controller. Gate 4E
-checkpoints the accepted Gate-4B-C science and reviewed Gate-4D presentation;
-block, phenotype, prediction, noise, training, tuning, and adaptation remain
-outside this checkpoint.
+Retired work belongs in the verified timestamped sibling archive documented
+in the reset report. It is OUTDATED / NOT ACTIVE / DO NOT EXECUTE and is
+excluded from active paths, test discovery and agent context. Git history is
+preserved; no historical model is thereby active. Consult the reset report
+for the actual completion/validation state, rather than inferring completion
+from this layout description.

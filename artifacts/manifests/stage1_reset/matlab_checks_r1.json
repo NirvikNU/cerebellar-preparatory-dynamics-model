@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "matlabVersion": "25.2.0.3042426 (R2025b) Update 1",
+  "changedFileCount": 10,
+  "codeAnalyzer": [
+    {
+      "file": "run_all.m",
+      "findings": []
+    },
+    {
+      "file": "run_stage_1.m",
+      "findings": []
+    },
+    {
+      "file": "config/stage_1_gate1_config.m",
+      "findings": []
+    },
+    {
+      "file": "analysis/published_generator/revalidate_stage1_accepted_ensemble.m",
+      "findings": []
+    },
+    {
+      "file": "analysis/published_generator/analyze_stage1_active_set_diagnostics.m",
+      "findings": []
+    },
+    {
+      "file": "analysis/published_generator/bootstrap_network_median.m",
+      "findings": []
+    },
+    {
+      "file": "figures/published_generator/create_stage1_active_set_figures.m",
+      "findings": []
+    },
+    {
+      "file": "workflows/diagnostics/stage_1/run_gate3a_stage1_validation.m",
+      "findings": []
+    },
+    {
+      "file": "workflows/stage_1/construction/run_stage_1_gate1_rejection_sampling.m",
+      "findings": []
+    },
+    {
+      "file": "workflows/stage_1/construction/run_stage_1_gate1_target_validation.m",
+      "findings": []
+    }
+  ],
+  "dependencyFiles": [
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\analyze_published_generator.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\analyze_stage1_active_set_diagnostics.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\bootstrap_network_median.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\evaluate_stage1_gate1_candidate.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\hash_tree.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\revalidate_stage1_accepted_ensemble.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\run_stage1_smoke_tests.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\sha256_file.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\summarize_target_torque_benchmark.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\analysis\\published_generator\\verify_pinned_reference.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\config\\published_generator_config.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\config\\require_kao_reference.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\config\\stage_1_gate1_config.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\figures\\apply_plot_style.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\figures\\published_generator\\create_stage1_active_set_figures.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\figures\\published_generator\\create_stage1_figures.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\figures\\save_figure_bundle.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\run_all.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\run_stage_1.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\calibrate_source_faithful_generator.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\generate_source_faithful_recurrent.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\load_published_generator.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\optimize_source_target_torques.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\published_movement_input.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\simulate_published_arm.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\simulate_published_cortex.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_calibration_objective_adjoint.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_calibration_parameter_objective.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_calibration_unpack.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_calibration_unpack_vjp.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_target_hand_trajectories.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_target_torque_objective.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\src\\published_generator\\source_target_torque_objective_adjoint.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\workflows\\diagnostics\\stage_1\\run_gate3a_stage1_validation.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\workflows\\stage_1\\construction\\run_stage_1_gate1_rejection_sampling.m",
+    "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\workflows\\stage_1\\construction\\run_stage_1_gate1_target_validation.m"
+  ],
+  "products": [
+    {
+      "Name": "MATLAB",
+      "Version": "25.2",
+      "ProductNumber": 1,
+      "Certain": true
+    },
+    {
+      "Name": "Control System Toolbox",
+      "Version": "25.2",
+      "ProductNumber": 3,
+      "Certain": true
+    },
+    {
+      "Name": "Deep Learning Toolbox",
+      "Version": "25.2",
+      "ProductNumber": 12,
+      "Certain": true
+    },
+    {
+      "Name": "Statistics and Machine Learning Toolbox",
+      "Version": "25.2",
+      "ProductNumber": 19,
+      "Certain": true
+    },
+    {
+      "Name": "Parallel Computing Toolbox",
+      "Version": "25.2",
+      "ProductNumber": 80,
+      "Certain": true
+    }
+  ],
+  "retiredPathsRequired": false,
+  "isolatedPath": true,
+  "diagnosticLoadPassed": true,
+  "diagnosticFigurePairs": 2
+}

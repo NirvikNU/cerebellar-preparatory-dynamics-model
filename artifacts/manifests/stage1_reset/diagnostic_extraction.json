@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source": "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\results\\stage_2b_kao\\diagnostics\\active_set_gate2\\gate2_active_set_diagnostics_complete.mat",
+  "destination": "G:\\My Drive\\Monkey_codes\\combined_analyses\\cerebellar-preparatory-dynamics-model\\results\\stage_1\\diagnostics\\active_set_gate2\\stage1_active_set_saved.mat",
+  "stage1TableFields": [
+    "stage1Target",
+    "stage1Overlap",
+    "stage1ActiveCurve",
+    "stage1Network",
+    "stage1ActiveCurveNetwork",
+    "frozenRegimeTarget",
+    "frozenRegimeCurve",
+    "frozenRegimeNetwork",
+    "frozenRegimeCurveNetwork"
+  ],
+  "tablesReopenedExactlyEqual": true,
+  "representativeReopenedExactlyEqual": true,
+  "stage1ValidationRows": 10,
+  "canonicalFilesOverwritten": false,
+  "simulationsRun": 0
+}
