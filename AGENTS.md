@@ -1,9 +1,10 @@
 # Repository Guidelines
 
 This MATLAB repository retains the accepted Stage-1 movement generator and its
-complete reproducibility, validation and diagnostic support. Preparation is
-awaiting a separately authorized design task. Do not implement a new model from
-historical instructions.
+complete reproducibility, validation and diagnostic support. The separately
+authorized STAGE2-LAMBDA-SWEEP-01 adds full-dimensional optimal-feedback
+preparation; it is not scientifically accepted until user review. Do not
+implement a new model from historical instructions.
 
 RESET-S1-REPO-01-R1 completed physical retirement and bounded Stage-1
 validation. Read `artifacts/manifests/stage1_reset/REPORT.md` for preservation
@@ -51,6 +52,16 @@ Cleanup completion does not authorize a new preparatory model.
   `THIRD_PARTY_PROVENANCE.md` and its setup/verification instructions.
   Preserve its pinned checkout and licensing boundary.
 - Current cleanup evidence is under `artifacts/manifests/stage1_reset/`.
+- Stage-2 controller, analysis and figures are in `src/stage_2/`,
+  `analysis/stage_2/` and `figures/stage_2/`; configuration is
+  `config/stage_2_config.m`. Read the predeclared specification under
+  `artifacts/manifests/stage2_lambda_sweep/` before any Stage-2 work.
+- `run_stage_2('figures')` uses saved analysis only. `simulate` refuses to
+  overwrite existing network caches. Do not bypass this protection, change the fixed
+  lambda/perturbation/statistical plan, or tune from observed outcomes.
+- Stage-2 caches in `results/stage_2/current/cache/` remain local-only;
+  compact outputs/audits and the five `plots/stage_2/{png,fig}/` pairs are
+  reviewed checkpoint content. Higher lambda is not a literal lesion.
 
 ## Safety and reproducibility
 

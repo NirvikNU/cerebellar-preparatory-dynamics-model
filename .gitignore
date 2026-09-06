@@ -11,6 +11,9 @@ codegen/
 # Generated Stage-1 numerical artifacts remain local.
 /results/stage_1/**
 
+# Stage-2 trajectory/controller caches are local; compact audit/results stay tracked.
+/results/stage_2/current/cache/
+
 # Accepted per-stage PNG/FIG pairs are canonical project assets.
 /plots/stage_1/**
 !/plots/stage_1/

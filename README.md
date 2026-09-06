@@ -1,4 +1,4 @@
-# Stage 1 — frozen movement-generation foundation
+# Frozen Stage 1 and full-dimensional Stage-2 preparation
 
 **Stage-1-only reset validated:** RESET-S1-REPO-01-R1 completed the physical
 cleanup and the single 80-movement forward regression without changing frozen
@@ -7,9 +7,10 @@ archive, preservation and validation evidence; the final checkpoint/push
 receipt is recorded externally and in the current Notion handoff.
 
 The active scientific foundation is ten accepted, independently generated
-source-faithful movement networks. Preparation awaits a separate design task.
-The repository name is retained for continuity; it does not imply that a new
-preparatory or cerebellar architecture has been implemented.
+source-faithful movement networks. STAGE2-LAMBDA-SWEEP-01 adds a separately
+authorized full-dimensional Kao optimal-feedback controller, without changing
+that foundation. Stage 2 is not scientifically accepted until user review.
+It is a normative control model, not a cerebellar circuit or literal lesion.
 
 Each 200-unit ReLU network (160E/40I) has its own frozen recurrent weights,
 spontaneous state, baseline drive, eight calibrated movement initial states,
@@ -49,7 +50,32 @@ not asserted to be unique optima or movement-period fixed points.
 - `artifacts/manifests/stage1_reset/`: current reset report, dependency audit
   and preservation/move evidence.
 
-## Bounded validation
+## Stage-2 reproducibility
+
+The complete pre-run specification is in
+`artifacts/manifests/stage2_lambda_sweep/PREREGISTRATION.md` and the
+[Stage-2 Technical Specification](https://www.notion.so/3d326c94be30816cbe53d67f3f0cd31f).
+Configuration: `config/stage_2_config.m`; controller/dynamics: `src/stage_2/`;
+population analysis/statistics/tests: `analysis/stage_2/`; plotting:
+`figures/stage_2/`. The fixed lambda sweep is `[0.1 0.2 0.5 1 2 5 10 100]`.
+
+```matlab
+run_stage_2('test')     % bounded synthetic and source-algebra checks
+run_stage_2('figures')  % regenerate five PNG/FIG pairs from saved analysis.mat
+```
+
+`run_stage_2('analyze')` recomputes metrics from the local validated sweep cache;
+`run_stage_2('simulate')` executes the authorized fixed sweep and refuses to
+overwrite existing network caches. A pre-network technical-failure retry is
+allowed only when no network cache/success receipt exists and original input
+hashes still match. Neither operation trains or recalibrates Stage 1.
+Do not remove a cache to bypass this protection. Large trajectory/controller
+caches stay ignored in `results/stage_2/current/cache/`; compact analysis,
+configuration and audits stay in `results/stage_2/current/`. Figure pairs are
+under `plots/stage_2/{png,fig}/`. MATLAB Control System Toolbox is required for
+the algebraic controller design. No archived model is an active dependency.
+
+## Bounded Stage-1 validation
 
 From the repository in a clean MATLAB session:
 

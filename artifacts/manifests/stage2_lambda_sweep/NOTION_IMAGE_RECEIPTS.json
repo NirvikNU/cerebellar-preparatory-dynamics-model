@@ -1,0 +1,35 @@
+{
+  "status": "Five native images attached and fetched with captions; no placeholders",
+  "images": [
+    {
+      "figure": "result_1_preparation_trajectories.png",
+      "notionFileUploadId": "3d326c94-be30-81da-9801-00b2513eaf46",
+      "bytes": 126070,
+      "status": "uploaded"
+    },
+    {
+      "figure": "result_2_controller_operation.png",
+      "notionFileUploadId": "3d326c94-be30-8132-9def-00b2694e7815",
+      "bytes": 221000,
+      "status": "uploaded"
+    },
+    {
+      "figure": "result_3_prep_move_alignment.png",
+      "notionFileUploadId": "3d326c94-be30-8128-b5fd-00b22066ee58",
+      "bytes": 88851,
+      "status": "uploaded"
+    },
+    {
+      "figure": "diagnostic_1_pr_lambda.png",
+      "notionFileUploadId": "3d326c94-be30-8146-9e42-00b24d7c7cde",
+      "bytes": 80454,
+      "status": "uploaded"
+    },
+    {
+      "figure": "diagnostic_2_alignment_lambda.png",
+      "notionFileUploadId": "3d326c94-be30-8198-88ab-00b2449a4eec",
+      "bytes": 190997,
+      "status": "uploaded"
+    }
+  ]
+}

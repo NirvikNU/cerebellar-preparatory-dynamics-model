@@ -1,4 +1,4 @@
-# Stage-1 movement-generator specification
+# Stage-1 foundation and Stage-2 optimal-feedback specification
 
 ## Accepted scope
 
@@ -7,7 +7,8 @@ source-faithful ISNs passing all predeclared checks for eight 10-cm targets.
 Each has its own recurrent matrix, spontaneous state/baseline, calibrated
 common readout and eight calibrated movement initial states. The unchanged
 released Kao realization is a separate benchmark, not an ensemble member.
-Preparation awaits a separately authorized design task.
+STAGE2-LAMBDA-SWEEP-01 separately authorizes full-dimensional optimal-feedback
+preparation on this frozen foundation. Stage 2 awaits scientific review.
 
 Source: Kao, Sadabadi & Hennequin, Neuron 2021, *Optimal anticipatory control
 as a theory of motor preparation: A thalamo-cortical circuit model*; official
@@ -121,4 +122,45 @@ Current authority and outcomes are maintained in
 [Agent Handoff](https://www.notion.so/3c826c94be308156a677c50c2106fb37) and
 [START HERE](https://www.notion.so/3d226c94be308194adadf691ed5822a2).
 Retired preparatory/comparison/phenotype work is external, historical and
-not a specification for the new architecture. No new model is implemented.
+not a specification for the new architecture.
+
+## Stage 2 — full-dimensional optimal-feedback preparation
+
+The pre-run methods and exact analysis plan are preserved in
+`artifacts/manifests/stage2_lambda_sweep/PREREGISTRATION.md`. They were written
+in Notion before the first Stage-2 simulation. This addition never changes
+the accepted Stage-1 scientific payload.
+
+For each member, use `A=W-I`, `B=I200` and the source-defined trace-200
+normalization of the frozen observability Gramian. Solve
+`A'P + PA - P*P/lambda + Q = 0`; the signed full-state gain is `K=-P/lambda`.
+The nonlinear controller is `u=tonic+K*(ReLU(x)-ReLU(x*))`, with
+`tonic=x*-h-W*ReLU(x*)`. Equivalently the pinned implementation adds
+`x*-h-(W+K)*ReLU(x*)` and `K*ReLU(x)`. At GO remove preparation input and
+feedback and use the unchanged Stage-1 movement drive/readout/arm.
+
+The fixed sweep is `[0.1,0.2,0.5,1,2,5,10,100]`, reference 0.1. Standard
+preparation is 500 ms; demonstration releases are 25/50/100/200 ms for member1.
+Native integration remains 0.2 ms, saved sampling 1 ms, tau 150 ms. Population
+epochs are Prep -100:10:0 and Move 0:10:100 ms relative to release. The shared
+reference normalization/null window concatenates -500:10:0 GO and
+-50:10:450 MO, retaining overlap. Per-neuron reference SD has a fixed floor
+of1 source-rate unit. Target means are removed per condition/time.
+
+PR uses covariance eigenvalues. Alignment projects reference Prep variance
+onto comparison top15 PCs; 1000 covariance-biased random15D subspaces define
+expected alignment. Networks (n10) are the independent units; summaries are
+median with 10,000-network-bootstrap SE, and predeclared exact sign-flip/BH
+tests are specified in the preregistration. No adaptive K or lambda.
+
+The approved Fig.4F analogue uses isotropic Gaussian state perturbations,
+SD0.10,100 trials per target, seed20260907, all80 network-targets,500ms,
+reference lambda, no process noise. It measures squared state error in the
+top/bottom-ten Q directions. Source-unspecified choices are explicit; this
+is not claimed as an exact numerical reproduction. Initial norm/active-set
+changes are descriptive and cannot trigger amplitude tuning.
+
+Source-output prospective error uses `(ReLU(x)-x*)'Q(ReLU(x)-x*)`, distinct
+from state error when negative coordinates occur. Both are saved and named.
+Higher lambda restricts optimal-control usage normatively; it does not
+represent a literal cerebellar lesion/circuit or establish new predictions.

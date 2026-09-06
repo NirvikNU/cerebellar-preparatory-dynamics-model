@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "startedUTC": "2026-09-06 23:11:17",
+  "completedUTC": "2026-09-06 23:17:08",
+  "networks": 10,
+  "lambdaConditions": 8,
+  "targetConditions": 640,
+  "perturbationTrials": 8000,
+  "protectedFilesUnchanged": 132,
+  "configHash": "99273abe2c69c61bfca40d9eb7edad9400d5cb8646f374c1a2aa72e03d849c5a",
+  "preregHash": "7447fb8aae0cb19871dde12d65f03ae1dec6a9680fde0ca9dd6a6319a4ab817b",
+  "finiteTrajectories": true
+}

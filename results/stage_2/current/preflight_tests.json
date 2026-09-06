@@ -1,0 +1,9 @@
+{
+  "sentinelExact": true,
+  "identicalAlignment": 1,
+  "orthogonalAlignment": 0,
+  "isotropicNullMean": 0.375149548288889,
+  "sourceAlgebraError": 1.9095836023552692E-14,
+  "careRelativeResidual": 1.0306567809300246E-14,
+  "status": "PASS"
+}

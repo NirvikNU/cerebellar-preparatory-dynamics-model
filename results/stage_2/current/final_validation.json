@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "protectedFilesUnchanged": 132,
+  "codeAnalyzerFiles": 16,
+  "codeAnalyzerIssues": [],
+  "figurePairs": 5,
+  "pngsReopened": 5,
+  "exactSignflipSanity": true,
+  "bhSanity": true,
+  "cacheFilesHashed": 10,
+  "matlabVersion": "25.2.0.3042426 (R2025b) Update 1"
+}

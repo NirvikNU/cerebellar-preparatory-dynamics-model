@@ -1,0 +1,44 @@
+function cfg = stage_2_config(projectRoot)
+    if nargin < 1, projectRoot = fileparts(fileparts(mfilename('fullpath'))); end
+    cfg.task = 'STAGE2-LAMBDA-SWEEP-01';
+    cfg.projectRoot = projectRoot;
+    cfg.startCheckpoint = '8e677171d5f616eb0e8cba8c79d564b56c098174';
+    cfg.sourceCommit = '40077d2da16e68ab2ab2cff59ec692b97315980b';
+    cfg.lambda = [0.1 0.2 0.5 1 2 5 10 100];
+    cfg.referenceIndex = 1;
+    cfg.networkCount = 10;
+    cfg.targetCount = 8;
+    cfg.dt = 0.0002;
+    cfg.savedDt = 0.001;
+    cfg.tau = 0.15;
+    cfg.preparationMs = 500;
+    cfg.demoMs = [25 50 100 200];
+    cfg.prepEpochMs = -100:10:0;
+    cfg.moveEpochMs = 0:10:100;
+    cfg.fullReferenceMs = [-500:10:0 -50:10:450];
+    cfg.fullReferenceDefinition = 'GO -500:10:0 concatenated with MO -50:10:450; overlap retained; GO=MO';
+    cfg.floor = 1;
+    cfg.floorUnits = 'source-rate units; model analogue, not Hz';
+    cfg.pcCount = 15;
+    cfg.nullDraws = 1000;
+    cfg.nullSeedBase = 20260908;
+    cfg.bootstrapDraws = 10000;
+    cfg.bootstrapSeed = 20260909;
+    cfg.perturbationSeed = 20260907;
+    cfg.perturbationSD = 0.10;
+    cfg.perturbationTrials = 100;
+    cfg.perturbationMs = 500;
+    cfg.perturbationDirections = 10;
+    cfg.perturbationDefinition = 'Approved analogue: isotropic Gaussian initial states; no process noise; no tuning';
+    cfg.signFlipStatistic = 'absolute mean paired difference; all 1024 signs; ties tolerance 1e-12*max(1,abs(statistic))';
+    cfg.bhFamilies = 'seven PR-vs-reference; seven motor-error-at-200ms-vs-reference; seven observed-vs-expected AI';
+    cfg.slopeTests = 'per-network OLS vs log10(lambda); PR and deficit individually exact sign-flip';
+    cfg.ensembleRoot = fullfile(projectRoot, 'results', 'stage_1', 'current', 'ensemble');
+    cfg.resultsRoot = fullfile(projectRoot, 'results', 'stage_2', 'current');
+    cfg.cacheRoot = fullfile(cfg.resultsRoot, 'cache');
+    cfg.plotsPngRoot = fullfile(projectRoot, 'plots', 'stage_2', 'png');
+    cfg.plotsFigRoot = fullfile(projectRoot, 'plots', 'stage_2', 'fig');
+    cfg.preregistrationPage = 'https://www.notion.so/3d326c94be30816cbe53d67f3f0cd31f';
+    cfg.plot = struct('fontSize',16,'tickDirection','out','axisColor',[0.15 0.15 0.15], ...
+        'axisLineWidth',1,'resolution',160);
+end

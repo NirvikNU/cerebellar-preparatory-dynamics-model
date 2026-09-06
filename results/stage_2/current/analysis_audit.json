@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "maxIndependentPRError": 6.2172489379008766E-15,
+  "maxIndependentCapturedVarianceError": 7.7715611723760958E-16,
+  "maxIndependentAlignmentError": 7.7715611723760958E-16,
+  "maxIndependentBootstrapSEError": 0,
+  "minimumPrep15Variance": 0.99963734377587543,
+  "minimumMove15Variance": 0.9981091790940696,
+  "allEffortStepsDecrease": true,
+  "effortIncreasingSteps": 0,
+  "maximumCAREResidual": 3.3392671264863509E-14,
+  "maximumFixedPointError": 2.1316282072803006E-14,
+  "maximumClosedLoopPole": -0.18732807139953273,
+  "allSelfAlignmentOne": true,
+  "floorClampedNeuronCounts": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "initialNormQuantiles": [
+    1.1332551649438287,
+    1.2780717799086028,
+    1.4109176803456112,
+    1.5497906990132166,
+    1.6918172588274492
+  ],
+  "activeChangeFractionQuantiles": [
+    0,
+    0,
+    0,
+    0.005,
+    0.01
+  ]
+}
