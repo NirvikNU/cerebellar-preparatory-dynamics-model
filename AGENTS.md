@@ -91,6 +91,20 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+STAGE3-CORTICAL-STATE-FEASIBILITY-01 authorizes the separate Stage-3
+full-state sufficient-mechanism model. Stage 1 and completed Stage 2 remain
+protected. Read `artifacts/manifests/stage3_cortical_state_feasibility/PLAN.md`
+and `DERIVATION.md` before Stage-3 work. The 6-by-6 alpha/beta grid, three
+seeded direction realizations per network, admissibility limits and
+geometry-only selection rules are predeclared and must not be relaxed from
+outcomes. Large reference/grid trajectories are local-only in
+`results/stage_3/current/cache/`; compact map, registry, statistics and audits
+are checkpoint content. Four new figure pairs live in `plots/stage_3/`.
+`run_stage_3` has explicit reference/sweep/consequences/figures/validate actions;
+completed numerical outputs are protected against accidental overwrite.
+Prediction, noise, learning, adaptation and another model remain deferred.
+Completion and a Git checkpoint do not constitute scientific acceptance.
+
 Read [Agent Instructions — Current Task](https://www.notion.so/3c826c94be30817d8f51d9f6c8c2bc19)
 for executable authority. Maintain
 [Agent Log — Run Outputs](https://www.notion.so/3d326c94be3081e897a2e5e0c855c4c0),

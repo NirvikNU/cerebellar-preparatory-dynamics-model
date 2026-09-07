@@ -1,0 +1,57 @@
+{
+  "pr": {
+    "median": [
+      3.3922713619995291,
+      6.9992701001553481
+    ],
+    "se": [
+      0.12925461835614954,
+      4.9346483273688427E-5
+    ]
+  },
+  "alignment": {
+    "median": [
+      0.020083564090647897,
+      0.5871524869940925
+    ],
+    "se": [
+      0.00068267143452947711,
+      0.0054153298243064174
+    ]
+  },
+  "earlyErrorMM": {
+    "median": [
+      1.248073456299161E-13,
+      32.019097961165272
+    ],
+    "se": [
+      7.8363976799975748E-15,
+      0.63935493756391149
+    ]
+  },
+  "prTest": {
+    "p": 0.001953125,
+    "meanDifference": 3.4975180767145062,
+    "medianDifference": 3.6069987381558182,
+    "medianDifferenceSE": 0.12920532251239264
+  },
+  "alignmentTest": {
+    "p": 0.001953125,
+    "meanDifference": -0.570516621176958,
+    "medianDifference": -0.56849558713321591,
+    "medianDifferenceSE": 0.0046334735073845484
+  },
+  "earlyTest": {
+    "p": 0.001953125,
+    "meanDifference": 31.984401640446691,
+    "medianDifference": 32.019097961165166,
+    "medianDifferenceSE": 0.63935493756389683
+  },
+  "geometryQ": [
+    0.001953125,
+    0.001953125
+  ],
+  "family": "PR Block-Intact and AI Observed-Expected; early movement separate",
+  "independentN": 10,
+  "bootstrapDraws": 10000
+}

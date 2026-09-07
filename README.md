@@ -1,4 +1,4 @@
-# Frozen Stage 1 and full-dimensional Stage-2 preparation
+# Frozen movement foundation and preparatory controllers
 
 **Stage-1-only reset validated:** RESET-S1-REPO-01-R1 completed the physical
 cleanup and the single 80-movement forward regression without changing frozen
@@ -84,6 +84,44 @@ caches stay ignored in `results/stage_2/current/cache/`; compact analysis,
 configuration and audits stay in `results/stage_2/current/`. Figure pairs are
 under `plots/stage_2/{png,fig}/`. MATLAB Control System Toolbox is required for
 the algebraic controller design. No archived model is an active dependency.
+
+## Stage-3 reproducibility
+
+Stage 3 — Cerebellar Correction of Cortical Preparation is an independently
+derived, deterministic full-state sufficient-mechanism construction. It is
+not an anatomical circuit, learned policy or independent prediction of the
+geometry used to construct its states. Stage 1 and Stage 2 stay unchanged.
+Scientific acceptance requires user review.
+
+Bounded missing-evidence recovery matched all 45 authorized cases, and the
+independent saved-output audit passed without changing original results.
+Read `artifacts/manifests/stage3_cortical_state_feasibility/RECOVERY_REPORT.md`
+for the actual final validation/publication/checkpoint receipt and limitations.
+The original figure/evidence-stop reports remain historical provenance.
+Do not rerun completed caches or infer scientific acceptance from a checkpoint.
+
+Read `artifacts/manifests/stage3_cortical_state_feasibility/PLAN.md`,
+`DERIVATION.md` and the machine-readable `PREDECLARED_CONFIG.json` before
+execution. New code is under `src/stage_3/`, `analysis/stage_3/`,
+`figures/stage_3/` and `config/stage_3_config.m`. The explicit runner orders
+`reference`, `sweep`, then `consequences`; existing numerical outputs refuse
+overwrite. `figures` reads completed outputs and creates exactly four pairs;
+`validate` independently checks saved computations and preservation.
+`run_stage_3_recovery` is restricted to the frozen recovery whitelist and
+refuses repeated integration. Its recovered raw evidence remains local under
+`results/stage_3/current/cache/evidence_recovery/`. `run_stage_3_finalize`
+offers cache-only figure/report/validation actions, gated on the recovery
+audit; it cannot invoke references, sweep, movements or solution selection.
+
+The full 1080-point map records successes, failures and nonlinear-untested
+points. The selected registry is frozen before block movement evaluation.
+Both policies share the cortical term; block removes sustained cerebellar
+correction and its state feedback. Movement outcomes never select states.
+No common feasible point is a valid result, not permission to change the grid.
+Reference/grid trajectory caches remain ignored in
+`results/stage_3/current/cache/`; compact map/registry/statistics are retained
+under `results/stage_3/current/`, figures under `plots/stage_3/{png,fig}/`.
+No prediction, noise, learning or adaptation is performed.
 
 ## Bounded Stage-1 validation
 

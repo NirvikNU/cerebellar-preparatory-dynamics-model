@@ -1,4 +1,4 @@
-# Stage-1 foundation and Stage-2 optimal-feedback specification
+# Frozen foundation and current preparatory-model specifications
 
 ## Accepted scope
 
@@ -175,3 +175,51 @@ Source-output prospective error uses `(ReLU(x)-x*)'Q(ReLU(x)-x*)`, distinct
 from state error when negative coordinates occur. Both are saved and named.
 Higher lambda restricts optimal-control usage normatively; it does not
 represent a literal cerebellar lesion/circuit or establish new predictions.
+
+## Stage 3 — cerebellar correction of cortical preparation
+
+The complete derivation, bounded grid, limits, seeds and sampling rules are
+predeclared in `artifacts/manifests/stage3_cortical_state_feasibility/`.
+This new inverse-design model preserves the frozen Stage-1 generator and all
+completed Stage-2 computations. It is not scientifically accepted until review.
+
+For `f(x)=-x+W*ReLU(x)+h`, keep the cortical policy
+`uC=-f(xB)-kappa*(x-xB)` identical within each intact/block pair. Add
+`uCB=b-nu*(x-x*)`, with `b=f(xB)-f(x*)+kappa*(x*-xB)` when intact.
+Block removes both sustained correction and state feedback, not feedback
+alone. Gains are fixed from the frozen norm: `kappa=max(0,norm(W,2)-1)+3`,
+`nu=3`. The full-state/full-actuation controller acts on subthreshold x too;
+it is not an anatomically constrained E/I or learned cerebellar circuit.
+
+Starting at the shared spontaneous state, prepare for 500 ms with native
+0.2-ms Euler integration, 1-ms saved sampling and 10-ms analysis sampling.
+GO removes all preparation inputs and releases the actual achieved state to
+the unchanged movement drive, readout and arm; premovement output is gated.
+No target-state reset or post-GO correction is introduced.
+
+Freeze a new intact per-neuron SD and full covariance from GO -500:10:0 plus
+kinematic-MO -50:10:450 before constructing block states. No SD floor or
+Stage-2 scaling is imported. Settled target-centered normalized states have
+factorization `YI=U*sqrt(Lambda)*Z`; retain every measured positive-rank
+direction. `YB=(alpha*U*sqrt(Lambda)+beta*V)*Z` uses seeded orthogonal V,
+the same target coordinates, and the intact target-mean rate baseline.
+Negative proposed rates are infeasible, never clipped. Three directions and
+a fixed 6-by-6 grid are screened in each of ten networks. Activity, separate
+input components, state norms, total modulation and settling have finite
+predeclared modeling bounds; they are not physiological estimates.
+
+Primary geometry uses actual GO -100:10:0 trajectories. PR uses all covariance
+eigenvalues; directed intact-to-block alignment uses the common maximum
+minimum PC count strictly exceeding 95% variance and the intact top-K
+variance denominator. The 10,000-draw covariance-constrained null uses this
+Stage-3 intact full reference, with predeclared Monte Carlo margin. Settled
+theorem and measured finite-window results are kept distinct.
+
+The full analytical/physical/finite-window intersection determines feasible
+solutions. A common primary and additional spanning samples are selected
+without movement outcomes, and their complete policies are saved before
+movement evaluation. Early hand RMS error uses each frozen comparator's
+MO+[0:200] ms, common GO times across conditions, in millimetres. Networks
+are independent n=10; multiple states/directions are nested. Geometry is
+constructed, movement consequences are measured independently, and neither
+implies a prediction deficit. Empty-region outcomes are retained unchanged.

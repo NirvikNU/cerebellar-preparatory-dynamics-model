@@ -1,0 +1,15 @@
+{
+  "task": "STAGE3-CORTICAL-STATE-FEASIBILITY-01",
+  "status": "PASS",
+  "scope": "Post-stop read-only preservation check, not final scientific validation",
+  "before_manifest": "PROTECTED_BEFORE.csv",
+  "protected_files": 233,
+  "protected_bytes": 1225280632,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "method": "PowerShell Get-FileHash -LiteralPath -Algorithm SHA256 for each exact before-manifest path; missing files also counted as failures",
+  "completed_date_utc": "2026-09-07",
+  "scientific_assets_modified": false,
+  "final_independent_scientific_audit_run": false,
+  "commit_or_push_performed": false
+}

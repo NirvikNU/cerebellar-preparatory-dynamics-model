@@ -1,0 +1,13 @@
+{
+  "task": "STAGE3-CORTICAL-STATE-FEASIBILITY-01",
+  "instruction_page": "3c826c94be30817d8f51d9f6c8c2bc19",
+  "instruction_updated_utc": "2026-09-07T20:57:42.493Z",
+  "parent": "3d426c94be3081e4b13bdf8a91d0baf6",
+  "technical_specification": "3d426c94be30813b81b9c6e55861a5b4",
+  "presentation_ready_summary": "3d426c94be308104862cce331a0661e2",
+  "results": "3d426c94be30817eab3ffe5f952f1f5c",
+  "diagnostics_sensitivity": "3d426c94be30818988a2f9a409023f0b",
+  "plan_written_read_back_before_sweep": true,
+  "native_child_count": 4,
+  "stage1_stage2_scientific_pages_modified": false
+}

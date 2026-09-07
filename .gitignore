@@ -14,6 +14,9 @@ codegen/
 # Stage-2 trajectory/controller caches are local; compact audit/results stay tracked.
 /results/stage_2/current/cache/
 
+# Stage-3 reference/preparation trajectories remain local.
+/results/stage_3/current/cache/
+
 # Accepted per-stage PNG/FIG pairs are canonical project assets.
 /plots/stage_1/**
 !/plots/stage_1/

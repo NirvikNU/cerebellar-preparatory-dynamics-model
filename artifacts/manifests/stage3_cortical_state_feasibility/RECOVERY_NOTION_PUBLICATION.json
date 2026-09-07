@@ -1,0 +1,59 @@
+{
+  "task": "STAGE3-EVIDENCE-RECOVERY-01",
+  "resultsPage": "3d426c94be30817eab3ffe5f952f1f5c",
+  "diagnosticsPage": "3d426c94be30818988a2f9a409023f0b",
+  "nativeChildCount": 4,
+  "images": [
+    {
+      "file_upload_id": "3d426c94-be30-814b-bdb1-00b260b192cb",
+      "filename": "result_1_preparation_and_movement.png",
+      "content_type": "image/png",
+      "content_length": 182244,
+      "status": "uploaded",
+      "markdown_source": "file-upload://3d426c94-be30-814b-bdb1-00b260b192cb",
+      "suggested_markdown": "<image src=\"file-upload://3d426c94-be30-814b-bdb1-00b260b192cb\"></image>",
+      "caption": "Figure 1. Cerebellar correction establishes movement-appropriate preparation. A: mean target distance to the frozen movement-valid state during 500-ms preparation; faint lines denote ten networks, thick lines the network median and shading the 10,000-whole-network-bootstrap SE. B: all eight targets for prespecified network 1, with target colours, intact solid reaches and block dashed reaches on matched axes. C: target-averaged RMS hand-position discrepancy over each frozen comparator’s kinematic-MO+[0:200] ms, using identical GO times and millimetres; paired networks and median ± bootstrap SE. Actual achieved GO states enter the unchanged movement drive/readout/arm. The numerical-zero intact discrepancy establishes comparator fidelity, not empirical accuracy. No movement outcome selected the solution.",
+      "figPath": "plots/stage_3/fig/result_1_preparation_and_movement.fig",
+      "pngPath": "plots/stage_3/png/result_1_preparation_and_movement.png"
+    },
+    {
+      "file_upload_id": "3d426c94-be30-818e-973a-00b2a7833af7",
+      "filename": "result_2_preparatory_geometry.png",
+      "content_type": "image/png",
+      "content_length": 194603,
+      "status": "uploaded",
+      "markdown_source": "file-upload://3d426c94-be30-818e-973a-00b2a7833af7",
+      "suggested_markdown": "<image src=\"file-upload://3d426c94-be30-818e-973a-00b2a7833af7\"></image>",
+      "caption": "Figure 2. Cerebellar removal changes preparatory population geometry. A: measured GO −100:10:0 covariance eigenspectra as fractions of total variance, with explicit Intact/Block condition legend; median ± whole-network-bootstrap SE. B: all-eigenvalue PR. C: intact prep projected onto block top-K PCs, divided by intact top-K variance, versus 10,000-draw covariance-constrained expected alignment. Values in C are fractions (multiply by 100 for percent). Common K=max(KI,KB), with each minimum strictly exceeding 95% variance; common K=7 for every primary pair. Network n=10; paired points/lines are networks, not additional solutions. These geometric effects are imposed construction constraints, not independent predictions.",
+      "figPath": "plots/stage_3/fig/result_2_preparatory_geometry.fig",
+      "pngPath": "plots/stage_3/png/result_2_preparatory_geometry.png"
+    },
+    {
+      "file_upload_id": "3d426c94-be30-815a-9b70-00b2992a4972",
+      "filename": "diagnostic_1_feasible_solution_map.png",
+      "content_type": "image/png",
+      "content_length": 240939,
+      "status": "uploaded",
+      "markdown_source": "file-upload://3d426c94-be30-815a-9b70-00b2992a4972",
+      "suggested_markdown": "<image src=\"file-upload://3d426c94-be30-815a-9b70-00b2992a4972\"></image>",
+      "caption": "Diagnostic Figure 1. Feasible cortical-state solutions and generality. A: actual α–normalized-β grid for network 1/direction 1. Purple triangles identify analytical sufficiency; blue squares identify physical/dynamic admissibility; green dots identify their intersection with both finite-window geometry criteria; orange dots identify measured successes outside the sufficient bound. Negative-rate, modulation and endpoint rejection symbols denote nonlinear-untested points and may overlap. The dashed line is the conservative sufficient boundary; solid black is equal normalized variance, and gray contours show total normalized modulation α²+βnorm². The star marks the primary Results setting; circles/text show the parameter positions of network 1’s direction-1/2/3 samples, not an assertion that all belong to the displayed direction-1 realization. B: certified-feasible fraction over exactly 30 network/direction sets at each tested grid coordinate. No interpolation between points certifies a continuous feasible region; admissibility bounds are modelling assumptions.",
+      "figPath": "plots/stage_3/fig/diagnostic_1_feasible_solution_map.fig",
+      "pngPath": "plots/stage_3/png/diagnostic_1_feasible_solution_map.png"
+    },
+    {
+      "file_upload_id": "3d426c94-be30-819a-ba76-00b25fb8bdb4",
+      "filename": "diagnostic_2_component_removal.png",
+      "content_type": "image/png",
+      "content_length": 206261,
+      "status": "uploaded",
+      "markdown_source": "file-upload://3d426c94-be30-819a-ba76-00b25fb8bdb4",
+      "suggested_markdown": "<image src=\"file-upload://3d426c94-be30-819a-ba76-00b25fb8bdb4\"></image>",
+      "caption": "Diagnostic Figure 2. Contributions of sustained correction and state feedback. Four policies preserve each network’s cortical term, initial state and gains: Intact, remove sustained correction b only, remove cerebellar feedback only, and remove both. A: target-mean terminal distance to x* in model-state units. B: all-eigenvalue PR from actual GO −100:10:0 activity. C: expected minus observed intact-to-policy alignment (fractions; positive indicates below-null), using each comparison’s common strictly->95% PC count and matched covariance-constrained null. Thin paired lines/dots are ten networks; large markers and error bars are network medians ± 10,000-whole-network-bootstrap SE. There are no new inferential tests on these descriptive component comparisons. Partial-removal results come from actual dynamics, not assigned equilibria.",
+      "figPath": "plots/stage_3/fig/diagnostic_2_component_removal.fig",
+      "pngPath": "plots/stage_3/png/diagnostic_2_component_removal.png"
+    }
+  ],
+  "nativeCaptionReadback": true,
+  "scientificAcceptance": false,
+  "notes": "Initial MIME-type upload requests rejected; new upload slots with explicit image/png succeeded. Exact signed-URL caption edit rejected without mutation; authorized page-content replacement preserved all numerical tables and produced four native image captions. No unresolved publication error."
+}

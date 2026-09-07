@@ -1,0 +1,172 @@
+{
+  "task": "STAGE3-CORTICAL-STATE-FEASIBILITY-01",
+  "status": "COMPUTED; scientific review pending",
+  "declaredPoints": 1080,
+  "nonlinearTested": 696,
+  "analyticallySufficient": 453,
+  "physical": 696,
+  "empiricalPhysical": 413,
+  "certifiedFeasible": 335,
+  "outsideBoundEmpiricalSuccess": 78,
+  "negativeRate": 108,
+  "modulationEnvelopeRejected": 318,
+  "endpointBoundsRejected": 0,
+  "primaryGridIndex": 5,
+  "additionalSolutionCount": 30,
+  "statistics": {
+    "pr": {
+      "median": [
+        3.3922713619995291,
+        6.9992701001553481
+      ],
+      "se": [
+        0.12925461835614954,
+        4.9346483273688427E-5
+      ]
+    },
+    "alignment": {
+      "median": [
+        0.020083564090647897,
+        0.5871524869940925
+      ],
+      "se": [
+        0.00068267143452947711,
+        0.0054153298243064174
+      ]
+    },
+    "earlyErrorMM": {
+      "median": [
+        1.248073456299161E-13,
+        32.019097961165272
+      ],
+      "se": [
+        7.8363976799975748E-15,
+        0.63935493756391149
+      ]
+    },
+    "prTest": {
+      "p": 0.001953125,
+      "meanDifference": 3.4975180767145062,
+      "medianDifference": 3.6069987381558182,
+      "medianDifferenceSE": 0.12920532251239264
+    },
+    "alignmentTest": {
+      "p": 0.001953125,
+      "meanDifference": -0.570516621176958,
+      "medianDifference": -0.56849558713321591,
+      "medianDifferenceSE": 0.0046334735073845484
+    },
+    "earlyTest": {
+      "p": 0.001953125,
+      "meanDifference": 31.984401640446691,
+      "medianDifference": 32.019097961165166,
+      "medianDifferenceSE": 0.63935493756389683
+    },
+    "geometryQ": [
+      0.001953125,
+      0.001953125
+    ],
+    "family": "PR Block-Intact and AI Observed-Expected; early movement separate",
+    "independentN": 10,
+    "bootstrapDraws": 10000
+  },
+  "preparationProtocols": 755,
+  "movementTargetRollouts": 432,
+  "maxAnalyticFinitePRDifference": 2.042810365310288E-14,
+  "maxAnalyticFiniteAIDifference": 0.010513316665093031,
+  "maxNullSE": 0.000967257251702054,
+  "maxNullHalfDifference": 0.00273618195641701,
+  "HoeffdingRadius": 0.026933861344527098,
+  "sensitivity": [
+    {
+      "label": "nonorthogonality_0.05",
+      "rateRealizable": true,
+      "status": "computed, not used for selection",
+      "prIntact": 3.3511315589718609,
+      "prBlock": 6.9985026135676867,
+      "observed": 0.03541938866875504,
+      "expected": 0.56602263320481483,
+      "K": 7,
+      "stateError": 3.4245399030015937,
+      "inputMax": [
+        162.05500268954708,
+        162.72902856949554,
+        11.212081810085122,
+        173.88545645038332,
+        149.95916190888784
+      ],
+      "rateMax": 2.2018440794055611,
+      "settle": 7.9245597195855881E-15,
+      "kappa": 42.682056820744776
+    },
+    {
+      "label": "nonorthogonality_0.1",
+      "rateRealizable": true,
+      "status": "computed, not used for selection",
+      "prIntact": 3.3511315589718604,
+      "prBlock": 6.9975070245513882,
+      "observed": 0.054882693163796965,
+      "expected": 0.56602263320481316,
+      "K": 7,
+      "stateError": 3.3376616661956784,
+      "inputMax": [
+        158.44872683040018,
+        159.04357222767263,
+        10.955659841661275,
+        169.94481841640115,
+        149.95916190888784
+      ],
+      "rateMax": 2.2018440794055611,
+      "settle": 7.9094721164519418E-15,
+      "kappa": 42.682056820744776
+    },
+    {
+      "label": "gain_margin_0.9",
+      "rateRealizable": true,
+      "status": "computed, not used for selection",
+      "prIntact": 3.3511315589718604,
+      "prBlock": 6.9992529052815176,
+      "observed": 0.020301854027503178,
+      "expected": 0.56595340257846738,
+      "K": 7,
+      "stateError": 3.5099006008105893,
+      "inputMax": [
+        164.45880352145403,
+        165.21285976003747,
+        11.464637654929547,
+        176.61995929806272,
+        148.98678070157564
+      ],
+      "rateMax": 2.2018440794055616,
+      "settle": 8.0878655564691527E-15,
+      "kappa": 42.382056820744779
+    },
+    {
+      "label": "gain_margin_1.1",
+      "rateRealizable": true,
+      "status": "computed, not used for selection",
+      "prIntact": 3.3511315589718644,
+      "prBlock": 6.9992529052815211,
+      "observed": 0.020301854027503206,
+      "expected": 0.56602678723659738,
+      "K": 7,
+      "stateError": 3.5099006008105893,
+      "inputMax": [
+        166.74625643325913,
+        167.4936511092653,
+        11.464637654929547,
+        178.90226192224443,
+        150.93157675869222
+      ],
+      "rateMax": 2.2018440794055611,
+      "settle": 7.84825169746867E-15,
+      "kappa": 42.982056820744774
+    }
+  ],
+  "primaryAlpha": 0.1,
+  "primaryBetaNormalized": 1,
+  "stepCheck": {
+    "curveRelative": 0.0017693804188788646,
+    "goRelative": 1.4414903357832829E-15
+  }
+}
