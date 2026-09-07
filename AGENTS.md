@@ -56,7 +56,14 @@ Cleanup completion does not authorize a new preparatory model.
   `analysis/stage_2/` and `figures/stage_2/`; configuration is
   `config/stage_2_config.m`. Read the predeclared specification under
   `artifacts/manifests/stage2_lambda_sweep/` before any Stage-2 work.
-- `run_stage_2('figures')` uses saved analysis only. `simulate` refuses to
+- R2 current neural geometry uses `config/stage_2_geometry_config.m` and
+  `results/stage_2/current/neural_geometry_r2/`. Read `R2_PLAN.md` in the
+  Stage-2 manifest folder. Original floor/K15/GO=MO neural metrics are
+  superseded; original analysis/renderer files retain execution provenance
+  and unchanged Results Figures 1-2, not a current neural-analysis fallback.
+- `run_stage_2('figures')` uses saved R2 analysis and revises only Results 3
+  and Diagnostics 1-2. `validate` checks these outputs and preservation.
+  `simulate` refuses to
   overwrite existing network caches. Do not bypass this protection, change the fixed
   lambda/perturbation/statistical plan, or tune from observed outcomes.
 - Stage-2 caches in `results/stage_2/current/cache/` remain local-only;

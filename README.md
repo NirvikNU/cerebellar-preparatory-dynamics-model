@@ -61,10 +61,20 @@ population analysis/statistics/tests: `analysis/stage_2/`; plotting:
 
 ```matlab
 run_stage_2('test')     % bounded synthetic and source-algebra checks
-run_stage_2('figures')  % regenerate five PNG/FIG pairs from saved analysis.mat
+run_stage_2('figures')  % R2: regenerate only Results 3 and Diagnostics 1-2
+run_stage_2('validate') % R2: bounded saved-output and preservation checks
 ```
 
-`run_stage_2('analyze')` recomputes metrics from the local validated sweep cache;
+`run_stage_2('analyze')` recomputes only R2 neural-geometry metrics from the
+local validated sweep cache, after the saved R2 cache/SD preflight passes.
+Current outputs for these three figures are in
+`results/stage_2/current/neural_geometry_r2/`; see
+`artifacts/manifests/stage2_lambda_sweep/R2_PLAN.md` for the corrected contract.
+The original `analysis.mat` and original analysis/plotting helpers preserve
+the unchanged Results Figures 1-2 and original execution provenance; their
+floor/K15/GO=MO neural-geometry fields are superseded, not current results.
+Do not call the original five-figure renderer to regenerate current R2 figures.
+
 `run_stage_2('simulate')` executes the authorized fixed sweep and refuses to
 overwrite existing network caches. A pre-network technical-failure retry is
 allowed only when no network cache/success receipt exists and original input

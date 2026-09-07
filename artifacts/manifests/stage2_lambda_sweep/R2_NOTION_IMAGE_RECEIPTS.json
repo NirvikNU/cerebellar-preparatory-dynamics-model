@@ -1,0 +1,32 @@
+{
+  "status": "Three R2 native images attached; Results1-2 exact original native images and captions preserved",
+  "revised": [
+    {
+      "figure": "result_3_prep_move_alignment.png",
+      "notionFileUploadId": "3d426c94-be30-8124-8bce-00b2fbf0ad12",
+      "bytes": 95555
+    },
+    {
+      "figure": "diagnostic_1_pr_lambda.png",
+      "notionFileUploadId": "3d426c94-be30-815f-bdce-00b26bf6ea13",
+      "bytes": 100620
+    },
+    {
+      "figure": "diagnostic_2_alignment_lambda.png",
+      "notionFileUploadId": "3d426c94-be30-812a-a672-00b2d35ef841",
+      "bytes": 197027
+    }
+  ],
+  "preserved": [
+    {
+      "figure": "result_1_preparation_trajectories.png",
+      "notionFileUploadId": "3d326c94-be30-81da-9801-00b2513eaf46",
+      "bytes": 126070
+    },
+    {
+      "figure": "result_2_controller_operation.png",
+      "notionFileUploadId": "3d326c94-be30-8132-9def-00b2694e7815",
+      "bytes": 221000
+    }
+  ]
+}

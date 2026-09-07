@@ -1,0 +1,152 @@
+{
+  "task": "STAGE2-LAMBDA-SWEEP-01-R2",
+  "base": "4938fe927b59a04322f018d5e8742d9047213c02",
+  "note": "Precommit hashes, excluding this manifest itself. Caches and original numerical/scientific assets unchanged; see original manifest and R2 validation.",
+  "files": [
+    {
+      "Path": "AGENTS.md",
+      "Bytes": 5928,
+      "SHA256": "2ebf82b10d9cd18291d17498ce9fa6f0341b1c3435ac14cddd54fdf4322b6a53"
+    },
+    {
+      "Path": "analysis/stage_2/analyze_stage2_geometry.m",
+      "Bytes": 7178,
+      "SHA256": "9ab7ede147c0ad1873008625cae6e12751e950636824456c8cffcb550a033e25"
+    },
+    {
+      "Path": "analysis/stage_2/preflight_stage2_geometry.m",
+      "Bytes": 3824,
+      "SHA256": "bf785de4877d079cabf01199377fa76454dd284f2aba059e78bb3cd6e7031a6c"
+    },
+    {
+      "Path": "analysis/stage_2/stage2_geometry_population.m",
+      "Bytes": 5374,
+      "SHA256": "ca44a2f0ae84b26e15fcc161f0a7b4b2469a0ba950bb7fe31db57069bc176ce4"
+    },
+    {
+      "Path": "analysis/stage_2/validate_stage2_geometry.m",
+      "Bytes": 5632,
+      "SHA256": "47b8230cfbf0b456be239d1a7ba3d31ae8cb9192e9db35de5231a65679503abe"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/R2_NOTION_IMAGE_RECEIPTS.json",
+      "Bytes": 929,
+      "SHA256": "27cba94b9300d52705eeded21351db9f6b7645d768c6b4ab544413648abf4996"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/R2_PLAN.md",
+      "Bytes": 3813,
+      "SHA256": "31f024331f90d5b2576c67b4a8742ca336abadd78841e22e3e700611c3ca7b79"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/R2_REPORT.md",
+      "Bytes": 14029,
+      "SHA256": "d70df0c5d8e99cf81bfcb246af36ba9d35568de6b3fb597624af14698c090bec"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/REPORT.md",
+      "Bytes": 10571,
+      "SHA256": "15c59f3b201f8cfa4d2319afee7f67fe0c294ee5b9b2ae71082ad6d4e9525c8b"
+    },
+    {
+      "Path": "config/stage_2_geometry_config.m",
+      "Bytes": 1352,
+      "SHA256": "6a7b62619f6d6e8d5f642a72134176bac434c16239a61d44e7d6ddbb304b2c31"
+    },
+    {
+      "Path": "figures/stage_2/create_stage2_geometry_figures.m",
+      "Bytes": 4002,
+      "SHA256": "2b0e69dc6c767d828a66fe5542c19ea022709dba9114c49d2483a4f712b0dd84"
+    },
+    {
+      "Path": "MODEL_SPEC.md",
+      "Bytes": 9162,
+      "SHA256": "8dbb4133ec4f2e0e42c1edbcc7643ea53bac726734ec3acc83ad8f4c3b6fa224"
+    },
+    {
+      "Path": "plots/stage_2/fig/diagnostic_1_pr_lambda.fig",
+      "Bytes": 11308,
+      "SHA256": "89a3748d410ab97a5db2834aac8ee3921c6df40ee147bb1ea514e965095bea57"
+    },
+    {
+      "Path": "plots/stage_2/fig/diagnostic_2_alignment_lambda.fig",
+      "Bytes": 23648,
+      "SHA256": "0e66c206e9078c35aea268ab01dd12da6892543b24dc05ed852338b58c5bc4f8"
+    },
+    {
+      "Path": "plots/stage_2/fig/result_3_prep_move_alignment.fig",
+      "Bytes": 9736,
+      "SHA256": "a70a46dd9f6da37ad6ac7ac7210c4bee7da15da0a27759d29785b6ee92c3b9ba"
+    },
+    {
+      "Path": "plots/stage_2/png/diagnostic_1_pr_lambda.png",
+      "Bytes": 100620,
+      "SHA256": "eeb7c44cd1cc77a55d5c974a5c689ebb6074817d01758d6084deec674b1bb3a8"
+    },
+    {
+      "Path": "plots/stage_2/png/diagnostic_2_alignment_lambda.png",
+      "Bytes": 197027,
+      "SHA256": "992d51977a6e902fe15c02af701f8b7410bcf0acd9f0f7e67b72052f1fd5fca6"
+    },
+    {
+      "Path": "plots/stage_2/png/result_3_prep_move_alignment.png",
+      "Bytes": 95555,
+      "SHA256": "65b419546ed2c78daf25ebf9b604486399dbd651851efa260f5f450874134a06"
+    },
+    {
+      "Path": "README.md",
+      "Bytes": 8231,
+      "SHA256": "88c3a3f787c9a36a8105c3b4f139a3f77071699a264d3d225fccc17a14939919"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/analysis.mat",
+      "Bytes": 844726,
+      "SHA256": "922f5ea01548fa3ed70fd0e43c564a5cdb2cac1d1d9b95606dc5fd1d66927034"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/cache_preflight.json",
+      "Bytes": 189449,
+      "SHA256": "8fea4bc9fc8870388cb4fea09e4d61fe6e9d4f064284da21e1d6fddbecfe58a7"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/configuration.json",
+      "Bytes": 4633,
+      "SHA256": "5bbddf19291935e58698ee37ebc180eedda898b78d43654113843f96d6f22517"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/final_validation.json",
+      "Bytes": 898,
+      "SHA256": "7f4e6cd6ac66f43164ec1b331d96959e7a09cc3d59dd72f9c5cf8b53002aa6ce"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/network_metrics.csv",
+      "Bytes": 9572,
+      "SHA256": "9f3d5333b10a17a12f303a5a53aa00a278293833ce23835de3e0d8e83702e545"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/network_paired_metrics.csv",
+      "Bytes": 1302,
+      "SHA256": "2cdbaed1bb1389967580734a3d12dc01061ab2e3d21c52d15e2a3ac1dd4b7b47"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/planned_tests.csv",
+      "Bytes": 1674,
+      "SHA256": "6d05c207fe9d3bc1c980b3a6a19ccdd0f58038848245bafb9298c0b157501838"
+    },
+    {
+      "Path": "results/stage_2/current/neural_geometry_r2/summary.json",
+      "Bytes": 7453,
+      "SHA256": "646ba91f9846647a2d47b9aca4087589808c899e3bb8de5ba956b751f504087c"
+    },
+    {
+      "Path": "results/stage_2/current/NEURAL_GEOMETRY_STATUS.md",
+      "Bytes": 1160,
+      "SHA256": "0e8a5a4fa4fe26d44db9104a4cbdc72ae5787b7998cfdb42d3d0445673faa19f"
+    },
+    {
+      "Path": "run_stage_2.m",
+      "Bytes": 1036,
+      "SHA256": "3a97171bb92dec05223fdacfe6d38517458510fb884cb17febcb1d6b85daeb39"
+    }
+  ]
+}

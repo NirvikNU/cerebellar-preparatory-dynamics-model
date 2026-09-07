@@ -10,9 +10,11 @@ function run_stage_2(mode)
     if strcmp(mode,'simulate')
         run_stage2_sweep(cfg);
     elseif strcmp(mode,'analyze')
-        analyze_stage2(cfg);
+        analyze_stage2_geometry(stage_2_geometry_config(root));
     elseif strcmp(mode,'figures')
-        create_stage2_figures(cfg);
+        create_stage2_geometry_figures(stage_2_geometry_config(root));
+    elseif strcmp(mode,'validate')
+        validate_stage2_geometry(stage_2_geometry_config(root));
     elseif strcmp(mode,'test')
         disp(test_stage2(cfg));
     else

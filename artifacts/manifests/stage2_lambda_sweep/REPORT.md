@@ -1,6 +1,10 @@
 # STAGE2-LAMBDA-SWEEP-01 — scientific review report
 
-Status: computed and numerically validated; **not scientifically accepted**.
+Status: original execution computed and numerically validated; **not scientifically accepted**.
+The floor/K15/GO=MO neural-geometry results below are historical and superseded
+by STAGE2-LAMBDA-SWEEP-01-R2; see R2_PLAN.md and the R2 report/receipts.
+Controller, prospective-error, effort, perturbation and Results Figures1-2
+remain unchanged and valid original execution evidence.
 The approved sweep was run on all ten frozen Stage-1 networks without training,
 retuning or modifying their scientific payload. The only model-run repair was
 a cache allocation corrected to the actual frozen 599-sample movement output.

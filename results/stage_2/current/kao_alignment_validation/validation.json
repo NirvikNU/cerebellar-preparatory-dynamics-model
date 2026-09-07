@@ -1,0 +1,17 @@
+{
+  "maxScaleError": 0,
+  "maxCenterError": 1.1102230246251565E-16,
+  "maxProjectionError": 3.6082248300317588E-16,
+  "maxKVarianceError": 6.6613381477509392E-16,
+  "maxIndependentNullError": 7.7715611723760958E-16,
+  "maxBootstrapSEError": 0,
+  "protectedStage1Files": 132,
+  "priorManifestFiles": 29,
+  "cacheHashesMatched": 10,
+  "neuronSentinel": true,
+  "windowsVerified": 80,
+  "status": "PASS",
+  "codeAnalyzerFiles": 3,
+  "figReopened": true,
+  "pngReopened": true
+}

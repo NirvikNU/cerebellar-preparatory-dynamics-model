@@ -1,0 +1,276 @@
+{
+  "status": "R2 COMPUTED / VALIDATED; SCIENTIFIC REVIEW PENDING",
+  "lambda": [
+    0.1,
+    0.2,
+    0.5,
+    1,
+    2,
+    5,
+    10,
+    100
+  ],
+  "summary": {
+    "pr": {
+      "median": [
+        3.5795507901133226,
+        3.5805184886701813,
+        3.5784972410113478,
+        3.5667849949248414,
+        3.5304758497854229,
+        3.4196920389332766,
+        3.35084083351491,
+        3.343100618149748
+      ],
+      "se": [
+        0.08495491479531872,
+        0.088657127675966854,
+        0.092804211570606712,
+        0.09575381631268555,
+        0.089142901445755582,
+        0.088469785655064026,
+        0.099399544103687634,
+        0.070678162037438957
+      ]
+    },
+    "observed": {
+      "median": [
+        0.99999999999999989,
+        0.997995093876766,
+        0.98822264378076929,
+        0.97204532719282111,
+        0.94555812589131616,
+        0.89680796723732215,
+        0.85368660954446485,
+        0.72265205032860647
+      ],
+      "se": [
+        6.114792910355635E-16,
+        0.00030417886721970474,
+        0.0019855684964926652,
+        0.0045250924434444431,
+        0.00810857619447735,
+        0.012912369008073793,
+        0.015308271904541822,
+        0.016856518510042731
+      ]
+    },
+    "expected": {
+      "median": [
+        0.47354088412700812,
+        0.47354088412700812,
+        0.47354088412700812,
+        0.47986963839056451,
+        0.47986963839056451,
+        0.49000927542225414,
+        0.49000927542225414,
+        0.50522086893313434
+      ],
+      "se": [
+        0.0095574600201739548,
+        0.0095574600201739548,
+        0.0095574600201739548,
+        0.010811643260072935,
+        0.010811643260072935,
+        0.012703082555764311,
+        0.012703082555764311,
+        0.0072591348439963073
+      ]
+    },
+    "deficit": {
+      "median": [
+        -0.52645911587299166,
+        -0.52445169439957251,
+        -0.51394481441572593,
+        -0.49195029140135316,
+        -0.46568848750075165,
+        -0.41707336131621287,
+        -0.37180096699794135,
+        -0.23246962577873587
+      ],
+      "se": [
+        0.0095574600201740311,
+        0.0096003287046398725,
+        0.0091881576025661747,
+        0.007458111036746839,
+        0.0052226541290208628,
+        0.01288670729691626,
+        0.013712705935980127,
+        0.021001428119971459
+      ]
+    },
+    "prepMoveObserved": {
+      "median": 0.57036471860799687,
+      "se": 0.019452472665698422
+    },
+    "prepMoveExpected": {
+      "median": 0.73341752740762267,
+      "se": 0.0065324282627595744
+    }
+  },
+  "prSlopeTest": {
+    "p": 0.00390625,
+    "meanDifference": -0.059627967387930206,
+    "medianDifference": -0.059626153736232874,
+    "medianDifferenceSE": 0.012036639086301528
+  },
+  "deficitSlopeTest": {
+    "p": 0.001953125,
+    "meanDifference": 0.10441743946887927,
+    "medianDifference": 0.10456683678489297,
+    "medianDifferenceSE": 0.0070721649325600437
+  },
+  "prepMoveTest": {
+    "p": 0.001953125,
+    "meanDifference": -0.15550920196225304,
+    "medianDifference": -0.15945532169868354,
+    "medianDifferenceSE": 0.012662255381063267
+  },
+  "tests": [
+    {
+      "p": 0.51171875,
+      "meanDifference": -0.0033684833323599063,
+      "medianDifference": -0.00075939792709989185,
+      "medianDifferenceSE": 0.0030970936136074,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 0.2,
+      "q": 0.51171875
+    },
+    {
+      "p": 0.234375,
+      "meanDifference": -0.013920613115629487,
+      "medianDifference": -0.0030652578644057016,
+      "medianDifferenceSE": 0.0080968566292467653,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 0.5,
+      "q": 0.2734375
+    },
+    {
+      "p": 0.12109375,
+      "meanDifference": -0.030812873793317631,
+      "medianDifference": -0.021262669436801884,
+      "medianDifferenceSE": 0.017396148862563257,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 1,
+      "q": 0.16953125
+    },
+    {
+      "p": 0.05859375,
+      "meanDifference": -0.056724553804864984,
+      "medianDifference": -0.0487964349723542,
+      "medianDifferenceSE": 0.027330716250353111,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 2,
+      "q": 0.1025390625
+    },
+    {
+      "p": 0.021484375,
+      "meanDifference": -0.10281139240203978,
+      "medianDifference": -0.072099673859636226,
+      "medianDifferenceSE": 0.045648015037886791,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 5,
+      "q": 0.050130208333333336
+    },
+    {
+      "p": 0.0078125,
+      "meanDifference": -0.137034983497762,
+      "medianDifference": -0.084056233855158924,
+      "medianDifferenceSE": 0.0566728477387926,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 10,
+      "q": 0.02734375
+    },
+    {
+      "p": 0.0078125,
+      "meanDifference": -0.15072263439267397,
+      "medianDifference": -0.16139544139065132,
+      "medianDifferenceSE": 0.030395655429300547,
+      "family": "Prep PR: lambda-reference",
+      "lambda": 100,
+      "q": 0.02734375
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.52297571603356741,
+      "medianDifference": 0.52445169439957251,
+      "medianDifferenceSE": 0.0096003287046398725,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 0.2,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.51130711759254344,
+      "medianDifference": 0.51394481441572593,
+      "medianDifferenceSE": 0.0091881576025661747,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 0.5,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.48798966379869479,
+      "medianDifference": 0.49195029140135316,
+      "medianDifferenceSE": 0.007458111036746839,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 1,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.46017100390671822,
+      "medianDifference": 0.46568848750075165,
+      "medianDifferenceSE": 0.0052226541290208628,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 2,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.40561601545334353,
+      "medianDifference": 0.41707336131621287,
+      "medianDifferenceSE": 0.01288670729691626,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 5,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.36219132953034261,
+      "medianDifference": 0.37180096699794135,
+      "medianDifferenceSE": 0.013712705935980127,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 10,
+      "q": 0.001953125
+    },
+    {
+      "p": 0.001953125,
+      "meanDifference": 0.21948122713073462,
+      "medianDifference": 0.23246962577873587,
+      "medianDifferenceSE": 0.021001428119971459,
+      "family": "Prep alignment: observed-expected",
+      "lambda": 100,
+      "q": 0.001953125
+    }
+  ],
+  "audit": {
+    "status": "PASS",
+    "maxIndependentPRError": 8.8817841970012523E-15,
+    "maxIndependentVarianceError": 8.8817841970012523E-16,
+    "maxIndependentAlignmentError": 2.1094237467877974E-15,
+    "maxIndependentBootstrapSEError": 0,
+    "sentinelExact": true,
+    "minimumSD": 0.17448332975921999,
+    "maximumSD": 0.63671775487194227,
+    "prepCommonKRange": [
+      5,
+      7
+    ],
+    "prepMoveCommonKRange": [
+      11,
+      13
+    ],
+    "minimumCommonCapturedVariance": 0.95006004535716515
+  }
+}

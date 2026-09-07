@@ -141,17 +141,28 @@ feedback and use the unchanged Stage-1 movement drive/readout/arm.
 
 The fixed sweep is `[0.1,0.2,0.5,1,2,5,10,100]`, reference 0.1. Standard
 preparation is 500 ms; demonstration releases are 25/50/100/200 ms for member1.
-Native integration remains 0.2 ms, saved sampling 1 ms, tau 150 ms. Population
-epochs are Prep -100:10:0 and Move 0:10:100 ms relative to release. The shared
-reference normalization/null window concatenates -500:10:0 GO and
--50:10:450 MO, retaining overlap. Per-neuron reference SD has a fixed floor
-of1 source-rate unit. Target means are removed per condition/time.
+Native integration remains 0.2 ms, saved sampling 1 ms, tau 150 ms.
+STAGE2-LAMBDA-SWEEP-01-R2 supersedes only the three neural-geometry analyses.
+Kinematic MO is each target/network/lambda's first saved hand-speed sample
+reaching 20% of its own peak; it is not GO. The reference normalization/null
+window concatenates -500:10:0 GO and target-specific -50:10:450 kinematic MO,
+retaining overlap. Use the actual lambda0.1 per-neuron sample SD, with no
+source-unit floor; stop for zero/numerically degenerate SD rather than dropping
+neurons or inventing a scale. Apply that vector to all lambdas. Align each
+target's epoch before removing target means per condition/relative time.
 
-PR uses covariance eigenvalues. Alignment projects reference Prep variance
-onto comparison top15 PCs; 1000 covariance-biased random15D subspaces define
-expected alignment. Networks (n10) are the independent units; summaries are
-median with 10,000-network-bootstrap SE, and predeclared exact sign-flip/BH
-tests are specified in the preregistration. No adaptive K or lambda.
+Diagnostic PR and reference-to-lambda alignment use GO -100:10:0 ms.
+Results Figure3 uses lambda0.1 prep cue150:10:450 ms and movement kinematic
+MO -50:10:350 ms. PR uses covariance eigenvalues. For each alignment pair,
+find minimum counts K1 and K2 capturing strictly >95% variance; use common
+K=max(K1,K2) for both numerator/denominator and all1000 covariance-biased null
+draws. Reference prep variance is projected onto comparison PCs, normalized
+by variance captured by reference's own K PCs. Networks (n10) are independent;
+summaries are median with10,000-network-bootstrap SE and exact sign-flip/BH
+tests. See R2_PLAN.md for indexing, seeds, numerical checks and scope.
+The original floor/K15/GO=MO neural-geometry results are superseded; original
+controller, prospective-error analysis, perturbations and Results Figures1-2
+remain unchanged. No outcome-selected lambda or PC count is authorized.
 
 The approved Fig.4F analogue uses isotropic Gaussian state perturbations,
 SD0.10,100 trials per target, seed20260907, all80 network-targets,500ms,

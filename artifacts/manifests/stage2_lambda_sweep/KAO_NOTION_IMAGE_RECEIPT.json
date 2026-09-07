@@ -1,0 +1,20 @@
+{
+  "task": "STAGE2-KAO-ALIGNMENT-VALIDATION-01",
+  "page": "3d326c94be3081348a8bffdd51348a42",
+  "image": {
+    "file_upload_id": "3d426c94-be30-8151-8086-00b20cb00546",
+    "filename": "result_4_kao_prep_move_alignment.png",
+    "content_type": "image/png",
+    "content_length": 105764,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3d426c94-be30-8151-8086-00b20cb00546",
+    "suggested_markdown": "<image src=\"file-upload://3d426c94-be30-8151-8086-00b20cb00546\"></image>"
+  },
+  "preservedExistingImageIDs": [
+    "3d326c94-be30-81da-9801-00b2513eaf46",
+    "3d326c94-be30-8132-9def-00b2694e7815",
+    "3d426c94-be30-8124-8bce-00b2fbf0ad12",
+    "3d426c94-be30-815f-bdce-00b26bf6ea13",
+    "3d426c94-be30-812a-a672-00b2d35ef841"
+  ]
+}

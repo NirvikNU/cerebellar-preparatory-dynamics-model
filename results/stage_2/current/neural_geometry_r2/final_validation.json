@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "protectedStage1FilesUnchanged": 132,
+  "controllerAndResultsFigures12Unchanged": true,
+  "revisedFIGsReopened": 3,
+  "revisedPNGsReopened": 3,
+  "independentExactTests": 17,
+  "maxPairedBootstrapSEError": 0,
+  "independentBHFamilies": 2,
+  "syntheticIsotropicNullMean": 0.25304747392521748,
+  "codeAnalyzerFiles": 7,
+  "codeAnalyzerIssues": [],
+  "analysisAudit": {
+    "status": "PASS",
+    "maxIndependentPRError": 8.8817841970012523E-15,
+    "maxIndependentVarianceError": 8.8817841970012523E-16,
+    "maxIndependentAlignmentError": 2.1094237467877974E-15,
+    "maxIndependentBootstrapSEError": 0,
+    "sentinelExact": true,
+    "minimumSD": 0.17448332975921999,
+    "maximumSD": 0.63671775487194227,
+    "prepCommonKRange": [
+      5,
+      7
+    ],
+    "prepMoveCommonKRange": [
+      11,
+      13
+    ],
+    "minimumCommonCapturedVariance": 0.95006004535716515
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "task": "STAGE2-KAO-ALIGNMENT-VALIDATION-01",
+  "base": "4938fe927b59a04322f018d5e8742d9047213c02",
+  "status": "PASS: ready for combined checkpoint",
+  "preservation": {
+    "priorManifestFilesUnchanged": 29,
+    "priorStagedFilesPreserved": 30,
+    "priorStopReceiptPreserved": true,
+    "protectedStage1FilesUnchanged": 132,
+    "cacheHashesMatched": 10,
+    "existingStage2FigurePairsUnchanged": 5,
+    "existingControllerAndNumericalOutputsUnchanged": true,
+    "simulationsRun": 0,
+    "existingScientificAnalysesRerun": 0
+  },
+  "validation": {
+    "receipt": "results/stage_2/current/kao_alignment_validation/validation.json",
+    "analysisJobExit": 0,
+    "figureLayoutReopenJobExit": 0,
+    "codeAnalyzerFiles": 3,
+    "codeAnalyzerIssues": 0,
+    "finalFigurePNGVisuallyReviewed": true,
+    "finalFigureFIGReopened": true
+  },
+  "notion": {
+    "pages": {
+      "parent": "3d326c94be3081718cb2e138574b99fc",
+      "spec": "3d326c94be30816cbe53d67f3f0cd31f",
+      "summary": "3d326c94be30814aa5a1eff9d6ec5c31",
+      "results": "3d326c94be3081348a8bffdd51348a42",
+      "diag": "3d326c94be3081598d2afdc612e9e4e5",
+      "handoff": "3c826c94be308156a677c50c2106fb37",
+      "start": "3d226c94be308194adadf691ed5822a2",
+      "log": "3d326c94be3081e897a2e5e0c855c4c0"
+    },
+    "currentScientificPagesVerified": 7,
+    "parentChildPagesPreserved": 4,
+    "resultImageCount": 4,
+    "diagnosticImageCount": 2,
+    "priorFiveImageObjectURLsUnchanged": true,
+    "results12CaptionsUnchanged": true,
+    "existingNumericalTablesUnchanged": true,
+    "obsoleteNarrativeMatches": 0,
+    "oldLogEntriesNotEdited": true
+  },
+  "files": [
+    {
+      "Path": "run_stage_2_kao_validation.m",
+      "Bytes": 2505,
+      "SHA256": "f13fe7c66879eb49db0b7c3f82ca387f9e7350dcf8b0dc0136548c9d01a35483"
+    },
+    {
+      "Path": "analysis/stage_2/analyze_stage2_kao_validation.m",
+      "Bytes": 7371,
+      "SHA256": "f425123304fc8809e7a1cb7a8eff9d0a6b017f5ac13fc4beaa2bf608bb0892cd"
+    },
+    {
+      "Path": "figures/stage_2/create_stage2_kao_figure.m",
+      "Bytes": 1265,
+      "SHA256": "398b3c52121f24f5aa05537f5c2335885b62d07e7db7c1c4c875ab2da80e0ea3"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/KAO_VALIDATION_PLAN.md",
+      "Bytes": 4417,
+      "SHA256": "346eb75aae91691d81f3de1ef541b81d86111c74765a3a1a8d2612064521920d"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/KAO_VALIDATION_REPORT.md",
+      "Bytes": 4767,
+      "SHA256": "38da03b9c3c286479c70a03af59e424ced19072d6d1efe8ae754689cfe45b93e"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/KAO_NOTION_IMAGE_RECEIPT.json",
+      "Bytes": 759,
+      "SHA256": "3b28b48bffcb8318f24b92962fa733d7eb818a2406488e7606f96343c5a6d981"
+    },
+    {
+      "Path": "artifacts/manifests/stage2_lambda_sweep/R2_CHECKPOINT_STOP.md",
+      "Bytes": 2070,
+      "SHA256": "f7ae86f8ab6d169cd0524c57a0fa2ca6cb41e87b77fbedbbe56611e884e9fafd"
+    },
+    {
+      "Path": "plots/stage_2/fig/result_4_kao_prep_move_alignment.fig",
+      "Bytes": 9879,
+      "SHA256": "8156b445a4fcf761aea3c890cf54ad3f58df63145aaf956d07cc230c54beafab"
+    },
+    {
+      "Path": "plots/stage_2/png/result_4_kao_prep_move_alignment.png",
+      "Bytes": 105764,
+      "SHA256": "21ef00254ce9e294a6ceb2d45d7c478ee27c19c0a0df506902358f3697918ab1"
+    },
+    {
+      "Path": "results/stage_2/current/kao_alignment_validation/analysis.mat",
+      "Bytes": 823224,
+      "SHA256": "f1acda976569bebf7169342ad33ca95f63dcbc2edc3a808e389e56a636a80f7e"
+    },
+    {
+      "Path": "results/stage_2/current/kao_alignment_validation/summary.json",
+      "Bytes": 1487,
+      "SHA256": "02505a8b8301d557ce2d289c0483b741c92ee7c949ba557a174832315467105d"
+    },
+    {
+      "Path": "results/stage_2/current/kao_alignment_validation/network_metrics.csv",
+      "Bytes": 1671,
+      "SHA256": "03ce5a68b9252df6f10770e4c14e50eab8c6db3276672ecf33cd1b5bf3485ac0"
+    },
+    {
+      "Path": "results/stage_2/current/kao_alignment_validation/validation.json",
+      "Bytes": 475,
+      "SHA256": "b1f6fb6ab7c6cbdbb155bd7c288a4fe87868363813e9490eaba71828f70a76a1"
+    }
+  ],
+  "note": "This additive manifest excludes itself. Prior completed-file hashes are in R2_FILE_MANIFEST.json, verified unchanged. The preserved historical R2_CHECKPOINT_STOP.md has one pre-existing blank line at EOF, intentionally retained byte-for-byte; the new-report EOF warning was fixed. LF/CRLF staging notices are normal configured line-ending conversion, not an integrity failure. Final commit/push receipt belongs in Agent Log/Handoff/START HERE after remote verification."
+}
