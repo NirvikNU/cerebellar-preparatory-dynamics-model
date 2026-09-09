@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "page": "3d426c94be30818988a2f9a409023f0b",
+  "uploadId": "3d626c94-be30-814c-b784-00b2f5a84f66",
+  "contentLength": 258336,
+  "caption": "Diagnostic Figure 2. Cerebellar gain × preparation-time dynamics with a fixed cortical policy. Rows A/B/C show instantaneous target-mean error in the full 200-dimensional cortical state (model-state units), all-eigenvalue preparatory PR, and expected-minus-observed intact-to-policy alignment (fractions; positive means below-null). Columns compare sustained correction b present versus absent; x is preparation time relative to GO and y is feedback gain ν=0:0.5:6. Every cell is a median across ten networks (n=10), after the unchanged eight-target aggregation. PR/alignment use inclusive trailing 100-ms windows sampled every 10 ms and the frozen intact per-neuron normalization. The reference is the accepted intact trajectory (b present, ν=3) over the matching window; use the common minimum strictly >95%-variance K and original 10,000-draw covariance-constrained null, seed and full-reference bias. Within each row the two color scales are identical. Dashed lines mark ν=3; GO-edge squares identify the four original policies: b present at ν=0/3 is remove feedback/intact, and b absent at ν=0/3 is remove both/remove b. Those terminal cells reproduce the original saved metrics within declared tolerance. α=0.1, βnorm=1, κ, cortical policy, initial states and all non-swept quantities are fixed. This is a descriptive effective-controller decomposition, not an anatomical claim; no new inferential tests or error bars.",
+  "nativeImages": 2,
+  "preservedFirstUploadId": "3d426c94-be30-815a-9b70-00b2992a4972",
+  "specUpdated": true,
+  "resultsTextUnchanged": true,
+  "summaryAndParentUnchanged": true,
+  "childPages": 4
+}

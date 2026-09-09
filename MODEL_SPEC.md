@@ -223,3 +223,24 @@ MO+[0:200] ms, common GO times across conditions, in millimetres. Networks
 are independent n=10; multiple states/directions are nested. Geometry is
 constructed, movement consequences are measured independently, and neither
 implies a prediction deficit. Empty-region outcomes are retained unchanged.
+
+### Fixed-gain/time mechanistic diagnostic
+
+The primary geometry and accepted nu=3 policy remain unchanged. The separate
+bounded descriptive diagnostic uses only nu=0:.5:6 at alpha=.1 and normalized
+beta=1, with fixed kappa, cortical policy, selected states and initial states.
+Compare uC+b-nu*(x-x*) against uC-nu*(x-x*) in all ten networks/eight targets.
+Reuse valid original trajectories; integrate each missing gain/policy once,
+without movement or reselection. Native .2 ms, saved 1 ms, population 10 ms.
+Display endpoints GO=-400:10:0: instantaneous full-200D state error and trailing
+inclusive 100-ms PR/alignment. Both normalization and null bias remain the
+original intact full-reference metric. Reference covariance in the alignment
+numerator/top-K denominator is the intact trajectory's matching time window;
+common K is minimum strictly >95% for both compared conditions. Reuse the
+original seed and 10,000 covariance-biased random subspaces by network/K,
+not a terminal expected scalar. The mean-projector trace is algebraically
+the mean of those same draws and is independently audited against QR.
+Network medians (n=10), no new inference; six paired-color-scale heatmaps in
+Diagnostic Figure 2. All original four-policy GO cells must match preserved
+metrics before replacement. This is an effective-controller decomposition,
+not an anatomical assertion, tuning objective or new scientific acceptance.

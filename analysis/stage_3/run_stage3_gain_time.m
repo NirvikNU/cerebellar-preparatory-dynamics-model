@@ -1,0 +1,34 @@
+function out = run_stage3_gain_time(action)
+    % Bounded diagnostic only; never dispatches reference, map or movement.
+    root=fileparts(fileparts(fileparts(mfilename('fullpath'))));
+    addpath(fullfile(root,'config'),fullfile(root,'src','stage_3'), ...
+        fullfile(root,'analysis','stage_3'),fullfile(root,'figures','stage_3'), ...
+        fullfile(root,'figures'),fullfile(root,'analysis','published_generator'));
+    cfg=stage_3_config(root);
+    switch action
+        case 'compute', out=stage3_gain_time(cfg);
+        case 'figure', out=stage3_gain_time_figure(cfg);
+        case 'validate', out=stage3_audit_rendered(cfg); disp(out);
+        case 'check'
+            files={'analysis/stage_3/run_stage3_gain_time.m', ...
+                'analysis/stage_3/stage3_gain_time.m', ...
+                'analysis/stage_3/stage3_gain_time_prepare.m', ...
+                'analysis/stage_3/stage3_gain_time_check_figure.m', ...
+                'analysis/stage_3/stage3_gain_time_compact.m', ...
+                'analysis/stage_3/stage3_gain_time_review.m', ...
+                'analysis/stage_3/stage3_audit_rendered.m', ...
+                'figures/stage_3/stage3_figures.m', ...
+                'figures/stage_3/stage3_gain_time_figure.m'};
+            for j=1:numel(files)
+                issues=checkcode(fullfile(root,files{j}),'-id');
+                if ~isempty(issues), disp(files{j}); disp(struct2table(issues)); end
+                assert(isempty(issues),'GainTime:CodeAnalyzer','Code Analyzer failed.');
+            end
+            sentinel=reshape(1:11*200*8,11,200,8);
+            g=stage3_geometry(sentinel,(1:200).');
+            independent=stage3_recovery_geometry(sentinel,(1:200).');
+            assert(max(abs(g.matrix-independent.matrix),[],'all')<1e-10);
+            out=struct('CodeAnalyzer','PASS','neuronSentinel','PASS'); disp(out);
+        otherwise, error('GainTime:Action','Only check/compute/figure/validate are supported.');
+    end
+end

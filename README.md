@@ -1,5 +1,10 @@
 # Frozen movement foundation and preparatory controllers
 
+Active local repository: `E:\PROJECTS\Nirvik_Sinha_Data\cerebellar-preparatory-dynamics-model`.
+The manually relocated sibling `cerebellar-preparatory-dynamics-model_archive`
+is preservation-only, not an active dependency. Historical receipts retain
+their original paths; do not execute against the retired Google Drive path.
+
 **Stage-1-only reset validated:** RESET-S1-REPO-01-R1 completed the physical
 cleanup and the single 80-movement forward regression without changing frozen
 scientific assets. See `artifacts/manifests/stage1_reset/REPORT.md` for the
@@ -122,6 +127,43 @@ Reference/grid trajectory caches remain ignored in
 `results/stage_3/current/cache/`; compact map/registry/statistics are retained
 under `results/stage_3/current/`, figures under `plots/stage_3/{png,fig}/`.
 No prediction, noise, learning or adaptation is performed.
+
+### Bounded gain-by-preparation-time diagnostic
+
+`STAGE3-DIAGNOSTIC-GAIN-TIME-01` preserves all prior scientific results and
+replaces only `diagnostic_2_component_removal` with six heatmaps: full-200D
+state error, PR and expected-minus-observed alignment, each for sustained
+correction present/absent. The fixed gain grid is `nu=0:0.5:6`; preparation
+endpoints are GO `-400:10:0` ms. Geometry uses trailing 100-ms windows, frozen
+intact-reference normalization/covariance, matched-window intact reference
+activity and the original 10,000-draw null. All other parameters are fixed.
+The four original policy endpoints are numerical validation anchors, not
+newly selected examples. Cells show network medians (n=10), without new tests.
+
+The maintained diagnostic entry point is under `analysis/stage_3/`:
+
+```matlab
+addpath(fullfile(pwd,'analysis','stage_3'))
+run_stage3_gain_time('check')
+run_stage3_gain_time('figure')   % saved-output rendering only
+run_stage3_gain_time('validate') % saved figures; no model integration
+```
+
+The separately authorized `compute` action refuses to overwrite any existing
+gain-time cache/output; it cannot run movement, references, the feasibility
+sweep or solution selection. New raw evidence remains ignored/local under
+`results/stage_3/current/cache/gain_time/`; network-level results and compact
+summaries are in `results/stage_3/current/gain_time/`. See `GAIN_TIME_PLAN.md`
+and final receipts in `artifacts/manifests/stage3_cortical_state_feasibility/`.
+The existing Stage-3 figure runner selects this current diagnostic once its
+validated output exists. The original four-policy code remains historical
+reproducibility support, not an alternative current figure.
+
+Root-level runners retain their documented public names. Nonempty historical
+Stage-3 console logs are organized under the existing manifest directory's
+`execution_logs/`; old receipts use the same basenames. Root organization is
+recorded in `GAIN_TIME_ROOT_ORGANIZATION.csv`. Scientific results, caches,
+audit manifests and prior stop receipts are retained, not cleanup targets.
 
 ## Bounded Stage-1 validation
 

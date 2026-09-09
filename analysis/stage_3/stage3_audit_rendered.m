@@ -4,6 +4,12 @@ function audit = stage3_audit_rendered(cfg)
     audit=struct('status','PASS','maxAbsoluteError',0,'comparisons',0);
     names={'result_1_preparation_and_movement','result_2_preparatory_geometry','diagnostic_2_component_removal'};
     for figureIndex=1:3
+        if figureIndex==3 && isfile(fullfile(cfg.resultsRoot,'gain_time','gain_time.mat'))
+            current=stage3_gain_time_check_figure(cfg);
+            audit.comparisons=audit.comparisons+current.heatmaps;
+            audit.maxAbsoluteError=max(audit.maxAbsoluteError,current.maxAbsoluteError);
+            continue;
+        end
         f=openfig(fullfile(cfg.plotsFigRoot,[names{figureIndex} '.fig']),'invisible');
         cleaner=onCleanup(@()close(f));
         axesList=findall(f,'Type','axes');
@@ -33,7 +39,11 @@ function audit = stage3_audit_rendered(cfg)
         end
         clear cleaner;
     end
-    stage3_write_json(fullfile(cfg.manifestRoot,'RENDERED_VALUE_AUDIT.json'),audit);
+    receipt='RENDERED_VALUE_AUDIT.json';
+    if isfile(fullfile(cfg.resultsRoot,'gain_time','gain_time.mat'))
+        receipt='GAIN_TIME_ALL_FIGURES_AUDIT.json';
+    end
+    stage3_write_json(fullfile(cfg.manifestRoot,receipt),audit);
 
     function checkBars(ax,values)
         [med,se]=independent(values,r.bootstrapIndices); objects=findall(ax,'Type','errorbar');

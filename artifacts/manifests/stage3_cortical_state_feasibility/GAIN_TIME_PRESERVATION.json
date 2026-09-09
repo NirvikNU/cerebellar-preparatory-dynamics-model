@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "baselineFiles": 420,
+  "scientificFilesUnchanged": 253,
+  "stage12ProtectedUnchanged": 233,
+  "unexpectedChanges": 0,
+  "changes": [
+    {
+      "path": "MODEL_SPEC.md",
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "status": "modified"
+    },
+    {
+      "path": "stage3_code_preflight.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_derivation_preflight.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_diagnostic2_headroom_review.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_evidence_recovery.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_final_validation.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_finalization_code_mask_fixed.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_finalization_code_mask_test.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_finalize_evidence.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_independent_recovery_audit.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_output_code_review.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_audit_code_fixed.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_audit_code.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_figures_exports_fixed.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_figures_exports.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_final_validation.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_inventory.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_recovery_preflight.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_reference.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "stage3_sweep.log",
+      "status": "moved_or_removed"
+    },
+    {
+      "path": "analysis\\stage_3\\stage3_audit_rendered.m",
+      "status": "modified"
+    },
+    {
+      "path": "artifacts\\manifests\\stage3_cortical_state_feasibility\\gain_time_preservation.ps1",
+      "status": "modified"
+    },
+    {
+      "path": "figures\\stage_3\\stage3_figures.m",
+      "status": "modified"
+    },
+    {
+      "path": "plots\\stage_3\\fig\\diagnostic_2_component_removal.fig",
+      "status": "modified"
+    },
+    {
+      "path": "plots\\stage_3\\png\\diagnostic_2_component_removal.png",
+      "status": "modified"
+    }
+  ],
+  "utc": "2026-09-09T17:24:57.0697124Z"
+}

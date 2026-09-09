@@ -11,6 +11,11 @@ function paths = stage3_figures(cfg,figureIndices)
     blue=[.1 .5 .7]; orange=[.85 .325 .1]; gray=[.55 .55 .55];
     paths=cell(4,2);
     for figIndex=figureIndices
+        if figIndex==4 && isfile(fullfile(cfg.resultsRoot,'gain_time','gain_time.mat'))
+            current=stage3_gain_time_figure(cfg);
+            paths(figIndex,:)={current.fig,current.png};
+            continue;
+        end
         f=figure('Visible','off','Color','w','Position',[50 50 1600 650]);
         if figIndex==3
             f.Position=[50 50 1700 850];
