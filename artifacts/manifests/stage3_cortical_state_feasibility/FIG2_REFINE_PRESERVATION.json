@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "baselineFiles": 687,
+  "unchanged": 679,
+  "allowedChanges": [
+    "MODEL_SPEC.md",
+    "README.md",
+    "analysis\\stage_3\\run_stage3_gain_time.m",
+    "analysis\\stage_3\\stage3_audit_rendered.m",
+    "analysis\\stage_3\\stage3_gain_time_check_figure.m",
+    "figures\\stage_3\\stage3_gain_time_figure.m",
+    "plots\\stage_3\\fig\\diagnostic_2_component_removal.fig",
+    "plots\\stage_3\\png\\diagnostic_2_component_removal.png"
+  ],
+  "stage12ProtectedUnchanged": 233,
+  "removedFiles": 0,
+  "utc": "2026-09-10T08:38:42.9958851Z"
+}

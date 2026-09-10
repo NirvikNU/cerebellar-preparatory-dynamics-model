@@ -1,0 +1,593 @@
+{
+  "status": "PASS",
+  "dimensionOrder": "network,gain,policy,endpoint",
+  "stateCells": 15860,
+  "definedPopulationCells": 13000,
+  "maskedPopulationCellsPerMetric": 2860,
+  "oldIntervalBitwiseUnchanged": true,
+  "checks": 173150,
+  "maxError": 8.8817841970012523E-15,
+  "Krange": [
+    5,
+    7
+  ],
+  "newNullK": [],
+  "reusedPreparations": 260,
+  "newPreparations": 0,
+  "panelLimits": [
+    [
+      [
+        1.687124120624672E-14,
+        2.8125697307643103
+      ],
+      [
+        2.8125697307643103,
+        3.465834710880773
+      ]
+    ],
+    [
+      [
+        3.3922709464918959,
+        3.3929201545107603
+      ],
+      [
+        6.9790059378642981,
+        6.9996712965771088
+      ]
+    ],
+    [
+      [
+        -0.49623227210119847,
+        -0.495531647586071
+      ],
+      [
+        0.48854853838404544,
+        0.56849558713321713
+      ]
+    ]
+  ],
+  "anchors": [
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -490,
+      "stateError": 0.149085762058539,
+      "PR": 3.3927941429267419,
+      "observed": 0.99999091569476284,
+      "expected": 0.50376772789880153,
+      "deficit": -0.49622312716141764
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -480,
+      "stateError": 0.0081676445984892113,
+      "PR": 3.3929201545107603,
+      "observed": 0.999997331891054,
+      "expected": 0.50412189430393239,
+      "deficit": -0.49587542097432918
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -460,
+      "stateError": 2.5683864368559358E-5,
+      "PR": 3.3927144456653493,
+      "observed": 0.99999937339814993,
+      "expected": 0.50430313066785759,
+      "deficit": -0.49569623884042
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -450,
+      "stateError": 1.4543049488525318E-6,
+      "PR": 3.3926442841414781,
+      "observed": 0.99999960653219522,
+      "expected": 0.50433754396886021,
+      "deficit": -0.49566206010713576
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": -400,
+      "stateError": 7.7234299201720346E-13,
+      "PR": 3.3924756858490555,
+      "observed": 0.99999990531427829,
+      "expected": 0.50440429121998043,
+      "deficit": -0.4955956134960397
+    },
+    {
+      "bPresent": 1,
+      "nu": 0,
+      "endpointGOms": 0,
+      "stateError": 1.9196181954641567E-14,
+      "PR": 3.3922713619995317,
+      "observed": 1,
+      "expected": 0.50446835241392851,
+      "deficit": -0.49553164758607132
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -490,
+      "stateError": 0.12055003534514247,
+      "PR": 3.3927323151552935,
+      "observed": 0.99999999999999989,
+      "expected": 0.50376772789880153,
+      "deficit": -0.49623227210119847
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -480,
+      "stateError": 0.0053411561190013345,
+      "PR": 3.3927607085152722,
+      "observed": 0.99999999999999989,
+      "expected": 0.50412189430393239,
+      "deficit": -0.495878105696068
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -460,
+      "stateError": 1.0987457980551986E-5,
+      "PR": 3.3925920960502083,
+      "observed": 1.0000000000000004,
+      "expected": 0.50430313066785759,
+      "deficit": -0.495696869332143
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -450,
+      "stateError": 5.0316603620196764E-7,
+      "PR": 3.3925397980205574,
+      "observed": 1.0000000000000004,
+      "expected": 0.50433754396886021,
+      "deficit": -0.49566245603114029
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": -400,
+      "stateError": 9.2633542543248985E-14,
+      "PR": 3.3924171215367744,
+      "observed": 1.0000000000000002,
+      "expected": 0.50440429121998043,
+      "deficit": -0.495595708780019
+    },
+    {
+      "bPresent": 1,
+      "nu": 3,
+      "endpointGOms": 0,
+      "stateError": 1.8019841444745376E-14,
+      "PR": 3.3922713619995291,
+      "observed": 1,
+      "expected": 0.50446835241392851,
+      "deficit": -0.49553164758607121
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -490,
+      "stateError": 0.0973879039796228,
+      "PR": 3.3926681432039478,
+      "observed": 0.99999420111608339,
+      "expected": 0.50376772789880153,
+      "deficit": -0.49622643449839732
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -480,
+      "stateError": 0.0034864852117932506,
+      "PR": 3.3926419446709444,
+      "observed": 0.99999834717781932,
+      "expected": 0.50412189430393239,
+      "deficit": -0.49587644240271467
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -460,
+      "stateError": 4.683419659379825E-6,
+      "PR": 3.3925055557934578,
+      "observed": 0.999999608946387,
+      "expected": 0.50430313066785759,
+      "deficit": -0.49569647579461562
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -450,
+      "stateError": 1.7330163173439677E-7,
+      "PR": 3.3924663561961088,
+      "observed": 0.99999975353540527,
+      "expected": 0.50433754396886021,
+      "deficit": -0.495662207994289
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": -400,
+      "stateError": 1.8109987013180724E-14,
+      "PR": 3.3923763386695311,
+      "observed": 0.99999994024467176,
+      "expected": 0.50440429121998043,
+      "deficit": -0.4955956486400393
+    },
+    {
+      "bPresent": 1,
+      "nu": 6,
+      "endpointGOms": 0,
+      "stateError": 1.6871258366010703E-14,
+      "PR": 3.3922713619995326,
+      "observed": 1,
+      "expected": 0.50446835241392851,
+      "deficit": -0.49553164758607132
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -490,
+      "stateError": 3.3932838795929694,
+      "PR": 6.9992375756253269,
+      "observed": 0.020178325853310121,
+      "expected": 0.58612602766249811,
+      "deficit": 0.56753913212925311
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -480,
+      "stateError": 3.4621967860321536,
+      "PR": 6.9996712965771088,
+      "observed": 0.020131036368362068,
+      "expected": 0.58663972405876375,
+      "deficit": 0.567994329889604
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -460,
+      "stateError": 3.4658260377556966,
+      "PR": 6.9996055793845464,
+      "observed": 0.020106602854006721,
+      "expected": 0.58690633725369912,
+      "deficit": 0.56825518683116816
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -450,
+      "stateError": 3.4658342914926843,
+      "PR": 6.9995601831375955,
+      "observed": 0.020101874352032246,
+      "expected": 0.586957341778547,
+      "deficit": 0.56830501908853126
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": -400,
+      "stateError": 3.4658347108806788,
+      "PR": 6.9994430205077016,
+      "observed": 0.020092600448451074,
+      "expected": 0.58705665648929983,
+      "deficit": 0.56840202246832661
+    },
+    {
+      "bPresent": 0,
+      "nu": 0,
+      "endpointGOms": 0,
+      "stateError": 3.465834710880773,
+      "PR": 6.9992701001553481,
+      "observed": 0.0200835640906479,
+      "expected": 0.58715248699409206,
+      "deficit": 0.56849558713321535
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -490,
+      "stateError": 3.1920588089911197,
+      "PR": 6.9942574321950417,
+      "observed": 0.054882702793965135,
+      "expected": 0.58612602766249811,
+      "deficit": 0.53432422882632258
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -480,
+      "stateError": 3.2396948274701449,
+      "PR": 6.9946459036530424,
+      "observed": 0.0548450321695155,
+      "expected": 0.58663972405876375,
+      "deficit": 0.53474963984392843
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -460,
+      "stateError": 3.2416958664815594,
+      "PR": 6.994621659008585,
+      "observed": 0.054825683293425249,
+      "expected": 0.58690633725369912,
+      "deficit": 0.53496794648020018
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -450,
+      "stateError": 3.241698852829423,
+      "PR": 6.9945944585691535,
+      "observed": 0.054821977597478477,
+      "expected": 0.586957341778547,
+      "deficit": 0.53500947751896777
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": -400,
+      "stateError": 3.24169897435869,
+      "PR": 6.9945186093273781,
+      "observed": 0.054814764407847147,
+      "expected": 0.58705665648929983,
+      "deficit": 0.53509010154924552
+    },
+    {
+      "bPresent": 0,
+      "nu": 3,
+      "endpointGOms": 0,
+      "stateError": 3.2416989743586981,
+      "PR": 6.9944153429424238,
+      "observed": 0.054807808611378891,
+      "expected": 0.58715248699409206,
+      "deficit": 0.53516757445477214
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -600,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -500,
+      "stateError": 2.8125697307643103,
+      "PR": null,
+      "observed": null,
+      "expected": null,
+      "deficit": null
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -490,
+      "stateError": 3.011123049673305,
+      "PR": 6.9790059378642981,
+      "observed": 0.10159770607435611,
+      "expected": 0.58612602766249811,
+      "deficit": 0.48854853838404544
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -480,
+      "stateError": 3.043740019390341,
+      "PR": 6.9792842453622672,
+      "observed": 0.10158732161139329,
+      "expected": 0.58663972405876375,
+      "deficit": 0.48876923042216558
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -460,
+      "stateError": 3.0448329809174375,
+      "PR": 6.9792752669654146,
+      "observed": 0.10158220218466907,
+      "expected": 0.58690633725369912,
+      "deficit": 0.48887766073194872
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -450,
+      "stateError": 3.04483404723646,
+      "PR": 6.9792588323747884,
+      "observed": 0.10158130409499781,
+      "expected": 0.586957341778547,
+      "deficit": 0.48889758189123683
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": -400,
+      "stateError": 3.0448340820433355,
+      "PR": 6.9792118269698147,
+      "observed": 0.10157966557679282,
+      "expected": 0.58705665648929983,
+      "deficit": 0.48893549025899957
+    },
+    {
+      "bPresent": 0,
+      "nu": 6,
+      "endpointGOms": 0,
+      "stateError": 3.0448340820433355,
+      "PR": 6.9791465973985733,
+      "observed": 0.1015782321724836,
+      "expected": 0.58715248699409206,
+      "deficit": 0.48897090881297345
+    }
+  ],
+  "redundantNullFiles": [
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n01.mat",
+      "sha256": "a29107e9852371c9bd3df901385e55ec6ba01bc282a145ab7784b52a2ccbccd0",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n01.mat",
+      "preservedSourceSHA256": "ca4881cb65b9063fef920d765e50473cf65c8fadf3eece546d6bb6c4257e38a3"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n02.mat",
+      "sha256": "fa14454f8b4eaeb4bea82ff60022fa5662bb3e8705297030a33b05c184e656ac",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n02.mat",
+      "preservedSourceSHA256": "66e3ff62925112d09a80b2e8e32c49b2862d1e62fc4ceed82adac23de3f4635b"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n03.mat",
+      "sha256": "61113d3607e302bafe8af4687a0c88e5da507c1fc97c93ec6d7a4a193fb0e2ea",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n03.mat",
+      "preservedSourceSHA256": "99630b80019835d827cd1dbe808a8ee50f3fdaad1ccdc6d34fd5457003d7fbd0"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n04.mat",
+      "sha256": "73b3ccff08e59830f5ccb44e33156537b8fc077c764ad428934564489a486469",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n04.mat",
+      "preservedSourceSHA256": "31d2eb7766934ef8aed3b20793c74f89993b50af3affe7778fd3a6f63334e79b"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n05.mat",
+      "sha256": "92199d04f4b23a971d87066e4c9e04bf761bdc63c5ad12df85de5223c9df673f",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n05.mat",
+      "preservedSourceSHA256": "607f3cdf4c5a40e060fb1014a904442c2bab420f86a7534a215629e4e05108d9"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n06.mat",
+      "sha256": "3771aa603a6a617814eea9cf74bd892a95e741e25ea06febdfcf6fc44cf91823",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n06.mat",
+      "preservedSourceSHA256": "373f6ffedafbabadef0660f89176e21af87802631532352be0ead17d8d3933aa"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n07.mat",
+      "sha256": "56da29f9b991a536e7c1e61d8567efc3b519391307cf0a979e54f19bd624f47d",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n07.mat",
+      "preservedSourceSHA256": "e540a5d936f3bbe1c44bacdf5a454d775e6803e88a24cbac36874df62a9ae239"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n08.mat",
+      "sha256": "4b851a23ddda9cc40da708d647c30b9b6c2cd1af66329a151602d1bdf1e51359",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n08.mat",
+      "preservedSourceSHA256": "b3fa4d865c52fd6f168ede1c3cf8bfdccf95ca1b0589c2ace18dba0d23f14402"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n09.mat",
+      "sha256": "580b17ed8a06e44f1553cd9171ea73727fd4d7b4dd92bce37fc1aaebe6f99f57",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n09.mat",
+      "preservedSourceSHA256": "cc2bc60e230807aec5919a2193513cd5d6db2f6d9969989dee65e750bbf91cd3"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n10.mat",
+      "sha256": "c2d0352139d097c9406730764055776a9b04807c4cbad2cfff700ccd60fb772b",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n10.mat",
+      "preservedSourceSHA256": "6d1dc2a795d2d35f61ccdad2cc314ec7e27cbf01e4353faa79ecb1de27dfedc8"
+    }
+  ]
+}

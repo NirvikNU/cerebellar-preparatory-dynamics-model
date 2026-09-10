@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "task": "STAGE3-DIAGNOSTIC-FIG2-REFINE-01",
+  "diagnosticsPage": "3d426c94-be30-8189-88a2-f9a409023f0b",
+  "specPage": "3d426c94-be30-813b-81b9-c6e55861a5b4",
+  "newImageUpload": "3d726c94-be30-8161-bed2-00b22f460ab8",
+  "newImageBytes": 343434,
+  "preservedDiagnostic1Upload": "3d426c94-be30-815a-9b70-00b2992a4972",
+  "nativeImages": 2,
+  "caption": "Diagnostic Figure 2. Cerebellar gain × cue/preparation time with a fixed cortical policy. All six panels share the −600:0-ms GO-relative x-axis; the cue/preparation onset is −500 ms and GO is 0. Rows A/B/C show instantaneous target-mean full-200D state error (model-state units), all-eigenvalue PR, and expected-minus-observed intact-to-policy alignment (fractions; positive means below-null). Columns show b present/absent; y is ν=0:0.5:6. Cells are medians across ten networks (n=10), using all eight targets. Controller-free frozen spontaneous-equilibrium dynamics provide baseline support from −700 ms and exactly match the frozen cue state. All preparation trajectories are reused unchanged. PR/alignment retain inclusive trailing 100-ms windows sampled every 10 ms, frozen intact per-neuron SD, per-time target centering, matching-window intact reference, common minimum strictly >95%-variance K, and the original 10,000-draw covariance-constrained null/seed/full-reference bias. Gray PR/alignment cells through cue have zero target-centered covariance and are undefined, not zero-valued; the first valid population endpoint is −490 ms. Each panel has independently determined linear color limits and its own labeled colorbar: colors are not quantitatively comparable across panels because color limits differ. Cue is dotted, ν=3 dashed, and GO marked at the right boundary. GO squares map to the original four policies: b present at ν=0/3 is remove feedback/intact; b absent at ν=0/3 is remove both/remove b. The original −400:0 arrays and four-policy GO anchors remain unchanged within validated tolerance. α=0.1, βnorm=1, κ, cortical policy, initial states and all non-swept quantities are fixed. Numerical-zero late state error is not a biological effect. Descriptive effective-controller decomposition only, not an anatomical claim; no new inferential tests or error bars.",
+  "readback": "Complete scientific body matches intended edits modulo native image serialization and Markdown escapes; all unrelated tables and first image preserved.",
+  "summaryAndResults": "Read and unchanged; no stale Diagnostic Figure 2 time/scale references.",
+  "resolvedPublicationIssue": "Targeted replacement could not match Notion's temporary signed image URL. In-place full-body replacement preserved every unrelated section and reused the existing Diagnostic Figure 1 upload; complete readback verified."
+}

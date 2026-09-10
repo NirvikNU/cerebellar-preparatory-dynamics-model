@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "rootItems": 22,
+  "removed": [
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n01.mat",
+      "bytes": 1528578,
+      "sha256": "a29107e9852371c9bd3df901385e55ec6ba01bc282a145ab7784b52a2ccbccd0",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n01.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n02.mat",
+      "bytes": 1528562,
+      "sha256": "fa14454f8b4eaeb4bea82ff60022fa5662bb3e8705297030a33b05c184e656ac",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n02.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n03.mat",
+      "bytes": 1528569,
+      "sha256": "61113d3607e302bafe8af4687a0c88e5da507c1fc97c93ec6d7a4a193fb0e2ea",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n03.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n04.mat",
+      "bytes": 1528668,
+      "sha256": "73b3ccff08e59830f5ccb44e33156537b8fc077c764ad428934564489a486469",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n04.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n05.mat",
+      "bytes": 1528731,
+      "sha256": "92199d04f4b23a971d87066e4c9e04bf761bdc63c5ad12df85de5223c9df673f",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n05.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n06.mat",
+      "bytes": 1528751,
+      "sha256": "3771aa603a6a617814eea9cf74bd892a95e741e25ea06febdfcf6fc44cf91823",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n06.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n07.mat",
+      "bytes": 1528593,
+      "sha256": "56da29f9b991a536e7c1e61d8567efc3b519391307cf0a979e54f19bd624f47d",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n07.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n08.mat",
+      "bytes": 1528314,
+      "sha256": "4b851a23ddda9cc40da708d647c30b9b6c2cd1af66329a151602d1bdf1e51359",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n08.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n09.mat",
+      "bytes": 1528374,
+      "sha256": "580b17ed8a06e44f1553cd9171ea73727fd4d7b4dd92bce37fc1aaebe6f99f57",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n09.mat"
+    },
+    {
+      "path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\refined\\null_n10.mat",
+      "bytes": 1528703,
+      "sha256": "c2d0352139d097c9406730764055776a9b04807c4cbad2cfff700ccd60fb772b",
+      "reason": "New refinement serialization duplicates every original null-evidence field; MATLAB isequal PASS; no new null K",
+      "preservedSource": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\results\\stage_3\\current\\cache\\gain_time\\null_n10.mat"
+    }
+  ],
+  "preservation": "All original null evidence retained; no scientific information lost",
+  "utc": "2026-09-10T08:38:17.9046796Z"
+}

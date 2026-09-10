@@ -43,6 +43,9 @@ function audit = stage3_audit_rendered(cfg)
     if isfile(fullfile(cfg.resultsRoot,'gain_time','gain_time.mat'))
         receipt='GAIN_TIME_ALL_FIGURES_AUDIT.json';
     end
+    if isfile(fullfile(cfg.resultsRoot,'gain_time','refined','gain_time.mat'))
+        receipt='FIG2_REFINE_ALL_FIGURES_AUDIT.json';
+    end
     stage3_write_json(fullfile(cfg.manifestRoot,receipt),audit);
 
     function checkBars(ax,values)

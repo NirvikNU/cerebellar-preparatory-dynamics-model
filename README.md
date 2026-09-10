@@ -130,15 +130,22 @@ No prediction, noise, learning or adaptation is performed.
 
 ### Bounded gain-by-preparation-time diagnostic
 
-`STAGE3-DIAGNOSTIC-GAIN-TIME-01` preserves all prior scientific results and
+`STAGE3-DIAGNOSTIC-FIG2-REFINE-01` preserves all prior scientific results and
 replaces only `diagnostic_2_component_removal` with six heatmaps: full-200D
 state error, PR and expected-minus-observed alignment, each for sustained
 correction present/absent. The fixed gain grid is `nu=0:0.5:6`; preparation
-endpoints are GO `-400:10:0` ms. Geometry uses trailing 100-ms windows, frozen
+endpoints are GO `-600:10:0` ms, with cue at -500 ms. Geometry uses trailing 100-ms windows, frozen
 intact-reference normalization/covariance, matched-window intact reference
 activity and the original 10,000-draw null. All other parameters are fixed.
 The four original policy endpoints are numerical validation anchors, not
 newly selected examples. Cells show network medians (n=10), without new tests.
+
+The frozen spontaneous equilibrium supplies controller-free baseline support
+through GO -700:-500 ms, independently checked against the frozen cue state.
+All 260 preparation trajectories are reused. Target-centered covariance is
+zero through cue: PR/alignment cells there are undefined and explicitly gray,
+not assigned zero. Each panel has its own finite-value linear color scale;
+colors are not quantitatively comparable across panels.
 
 The maintained diagnostic entry point is under `analysis/stage_3/`:
 
@@ -155,6 +162,12 @@ sweep or solution selection. New raw evidence remains ignored/local under
 `results/stage_3/current/cache/gain_time/`; network-level results and compact
 summaries are in `results/stage_3/current/gain_time/`. See `GAIN_TIME_PLAN.md`
 and final receipts in `artifacts/manifests/stage3_cortical_state_feasibility/`.
+Current expanded outputs are in `gain_time/refined/`; parent-directory outputs
+retain prior numerical provenance, not an alternative current renderer.
+Refinement baseline evidence is local-only under `cache/gain_time/refined/`.
+`refine-baseline` and `refine-compute` refuse completed-output overwrite; they
+are provenance entry points, not permission to repeat the completed task.
+See `FIG2_REFINE_PLAN.md` and `FIG2_REFINE_REPORT.md` in the same manifest folder.
 The existing Stage-3 figure runner selects this current diagnostic once its
 validated output exists. The original four-policy code remains historical
 reproducibility support, not an alternative current figure.
