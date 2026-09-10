@@ -90,93 +90,68 @@ configuration and audits stay in `results/stage_2/current/`. Figure pairs are
 under `plots/stage_2/{png,fig}/`. MATLAB Control System Toolbox is required for
 the algebraic controller design. No archived model is an active dependency.
 
-## Stage-3 reproducibility
+## Stage-3 reproducibility — biological-controller revision
 
-Stage 3 — Cerebellar Correction of Cortical Preparation is an independently
-derived, deterministic full-state sufficient-mechanism construction. It is
-not an anatomical circuit, learned policy or independent prediction of the
-geometry used to construct its states. Stage 1 and Stage 2 stay unchanged.
-Scientific acceptance requires user review.
+Stage 3 combines fixed state setting with structured prospective-error feedback
+on the unchanged Stage-1 foundation. Scientific acceptance requires user review.
+The current analysis path is `results/stage_3/current/biological_revision/resume_02/`.
+Read `BIO_RESUME_PLAN.md` and `BIO_RESUME_REPORT.md` in
+`artifacts/manifests/stage3_cortical_state_feasibility/` for authority,
+validation status, results, preservation, publication and checkpoint evidence.
 
-Bounded missing-evidence recovery matched all 45 authorized cases, and the
-independent saved-output audit passed without changing original results.
-Read `artifacts/manifests/stage3_cortical_state_feasibility/RECOVERY_REPORT.md`
-for the actual final validation/publication/checkpoint receipt and limitations.
-The original figure/evidence-stop reports remain historical provenance.
-Do not rerun completed caches or infer scientific acceptance from a checkpoint.
+The frozen primary geometry remains alpha=.1, normalized beta=1, direction1,
+all ten networks/eight targets. The residual gain kappa0 is the analytically
+minimum local-stability shift; the prospective controller reuses the exact
+saved Stage-2 state-design P/Q at lambda=.1, with L=P/lambda. Intact input is
+u0+b-L*(x-x*); full block is u0. The same u0 is used in every component-removal
+policy. No controller, geometry or movement parameter is tuned from outcomes.
 
-Read `artifacts/manifests/stage3_cortical_state_feasibility/PLAN.md`,
-`DERIVATION.md` and the machine-readable `PREDECLARED_CONFIG.json` before
-execution. New code is under `src/stage_3/`, `analysis/stage_3/`,
-`figures/stage_3/` and `config/stage_3_config.m`. The explicit runner orders
-`reference`, `sweep`, then `consequences`; existing numerical outputs refuse
-overwrite. `figures` reads completed outputs and creates exactly four pairs;
-`validate` independently checks saved computations and preservation.
-`run_stage_3_recovery` is restricted to the frozen recovery whitelist and
-refuses repeated integration. Its recovered raw evidence remains local under
-`results/stage_3/current/cache/evidence_recovery/`. `run_stage_3_finalize`
-offers cache-only figure/report/validation actions, gated on the recovery
-audit; it cannot invoke references, sweep, movements or solution selection.
+RESUME-02 explicitly retires only the predecessor's 500-ms relative Block
+settling cutoff of1e-4. All other retained bounds remain enforced. Achieved
+distance to xB/x*, prospective error and functional readiness are outcomes,
+not new arbitrary terminal-distance gates. The REVISION-01 stop and its native
+network1 cache remain unchanged historical evidence.
 
-The full 1080-point map records successes, failures and nonlinear-untested
-points. The selected registry is frozen before block movement evaluation.
-Both policies share the cortical term; block removes sustained cerebellar
-correction and its state feedback. Movement outcomes never select states.
-No common feasible point is a valid result, not permission to change the grid.
-Reference/grid trajectory caches remain ignored in
-`results/stage_3/current/cache/`; compact map/registry/statistics are retained
-under `results/stage_3/current/`, figures under `plots/stage_3/{png,fig}/`.
-No prediction, noise, learning or adaptation is performed.
+Preparation uses native0.2 ms/saved1 ms and the unchanged500-ms cue-to-GO delay.
+Population windows use10-ms sampling, frozen Stage-3 neuron SD/full-reference
+null bias, GO -100:10:0, and the common minimum >95%-variance PC rule. Movement
+uses actual achieved GO states without resetting them, the unchanged movement
+drive/readout/arm, and the frozen comparator's MO+[0:200]-ms early-error window.
+Networks are the independent unit; bootstrap/error bars and exact tests retain
+their existing definitions. No prediction, noise, learning or adaptation.
 
-### Bounded gain-by-preparation-time diagnostic
-
-`STAGE3-DIAGNOSTIC-FIG2-REFINE-01` preserves all prior scientific results and
-replaces only `diagnostic_2_component_removal` with six heatmaps: full-200D
-state error, PR and expected-minus-observed alignment, each for sustained
-correction present/absent. The fixed gain grid is `nu=0:0.5:6`; preparation
-endpoints are GO `-600:10:0` ms, with cue at -500 ms. Geometry uses trailing 100-ms windows, frozen
-intact-reference normalization/covariance, matched-window intact reference
-activity and the original 10,000-draw null. All other parameters are fixed.
-The four original policy endpoints are numerical validation anchors, not
-newly selected examples. Cells show network medians (n=10), without new tests.
-
-The frozen spontaneous equilibrium supplies controller-free baseline support
-through GO -700:-500 ms, independently checked against the frozen cue state.
-All 260 preparation trajectories are reused. Target-centered covariance is
-zero through cue: PR/alignment cells there are undefined and explicitly gray,
-not assigned zero. Each panel has its own finite-value linear color scale;
-colors are not quantitatively comparable across panels.
-
-The maintained diagnostic entry point is under `analysis/stage_3/`:
+The four canonical figure pairs remain under `plots/stage_3/{png,fig}/`:
+Results1 preparation/movement; Results2 population geometry; Diagnostic1
+revalidated fixed-grid feasibility; Diagnostic2 five four-policy time panels.
+Diagnostic2 uses common GO -600:0 ms, cue-500, validated pre-cue support and
+explicitly undefined zero-covariance PR/alignment through cue. It is no longer
+an isotropic nu-gain heatmap. Historical sampled-solution/sensitivity outcomes
+must not be presented as revised biological-controller results.
 
 ```matlab
-addpath(fullfile(pwd,'analysis','stage_3'))
-run_stage3_gain_time('check')
-run_stage3_gain_time('figure')   % saved-output rendering only
-run_stage3_gain_time('validate') % saved figures; no model integration
+run_stage_3('validate') % bounded current saved-output/figure check, no simulations
+run_stage_3('figures')  % current audited outputs only; regenerates four pairs
 ```
 
-The separately authorized `compute` action refuses to overwrite any existing
-gain-time cache/output; it cannot run movement, references, the feasibility
-sweep or solution selection. New raw evidence remains ignored/local under
-`results/stage_3/current/cache/gain_time/`; network-level results and compact
-summaries are in `results/stage_3/current/gain_time/`. See `GAIN_TIME_PLAN.md`
-and final receipts in `artifacts/manifests/stage3_cortical_state_feasibility/`.
-Current expanded outputs are in `gain_time/refined/`; parent-directory outputs
-retain prior numerical provenance, not an alternative current renderer.
-Refinement baseline evidence is local-only under `cache/gain_time/refined/`.
-`refine-baseline` and `refine-compute` refuse completed-output overwrite; they
-are provenance entry points, not permission to repeat the completed task.
-See `FIG2_REFINE_PLAN.md` and `FIG2_REFINE_REPORT.md` in the same manifest folder.
-The existing Stage-3 figure runner selects this current diagnostic once its
-validated output exists. The original four-policy code remains historical
-reproducibility support, not an alternative current figure.
+These public actions route to the biological-controller results once their
+independent audit exists. Historical reference/sweep/consequence actions are
+then refused. The historical gain renderer cannot overwrite current figures.
+Individual `stage3_bio_*` phase functions preserve reproduction provenance and
+refuse overwriting completed outputs; they are not authorization to rerun
+completed simulations. All native preparation/movement/map caches remain
+ignored under `results/stage_3/current/cache/biological_revision/`.
 
-Root-level runners retain their documented public names. Nonempty historical
-Stage-3 console logs are organized under the existing manifest directory's
-`execution_logs/`; old receipts use the same basenames. Root organization is
-recorded in `GAIN_TIME_ROOT_ORGANIZATION.csv`. Scientific results, caches,
-audit manifests and prior stop receipts are retained, not cleanup targets.
+### Historical predecessor and preservation
+
+The isotropic proof-of-principle controller, original selected-state registry,
+1080-point geometric construction, recovery evidence and gain-time arrays are
+retained. Their controller-dependent numerical values are historical, not
+fallback current results. The previous figure bundles are preserved in Git at
+`166d2bbc15cb6a9f0b4d9b7c061e48b180b9b68b`. Original derivation/plan,
+`RECOVERY_REPORT.md`, `FIG2_REFINE_REPORT.md`, `BIO_PLAN.md` and
+`BIO_STOP_REPORT.md` preserve the scientific and execution history.
+The target geometry, neuron scaling and full-reference null covariance are
+explicitly reused frozen dependencies; the old isotropic controller is not.
 
 ## Bounded Stage-1 validation
 

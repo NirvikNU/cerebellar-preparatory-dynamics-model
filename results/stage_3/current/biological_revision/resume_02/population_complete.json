@@ -1,0 +1,7 @@
+{
+  "primaryPass": true,
+  "networkCount": 10,
+  "policyCount": 4,
+  "elapsedSeconds": 264.1345264,
+  "preCueMask": "All population endpoints <= -500 undefined"
+}

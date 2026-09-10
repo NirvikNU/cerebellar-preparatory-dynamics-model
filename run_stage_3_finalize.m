@@ -5,6 +5,14 @@ function output = run_stage_3_finalize(action)
         fullfile(root,'figures','stage_3'),fullfile(root,'figures'), ...
         fullfile(root,'analysis','stage_2'),fullfile(root,'analysis','published_generator'));
     cfg=stage_3_config(root);
+    if isfile(fullfile(cfg.resultsRoot,'biological_revision','resume_02','independent_audit.json'))
+        switch action
+            case 'figures', output=stage3_bio_figures;
+            case 'validate', output=stage3_bio_checkpoint_check;
+            otherwise, error('Stage3:Historical','The isotropic finalization report is historical, not current output.');
+        end
+        return;
+    end
     audit=jsondecode(fileread(fullfile(cfg.manifestRoot,'RECOVERY_INDEPENDENT_AUDIT.json')));
     assert(strcmp(audit.status,'PASS'),'Independent recovery audit must pass first.');
     switch action

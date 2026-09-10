@@ -91,6 +91,19 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02 is the current controller revision.
+Read BIO_RESUME_PLAN.md and BIO_RESUME_REPORT.md in the Stage-3 manifest
+folder before work. The saved REVISION-01 kappa0/P/Q/L and primary geometry
+are immutable. Only the old 500-ms Block settling cutoff1e-4 was explicitly
+retired; incomplete convergence is an outcome, not permission to relax other
+bounds or tune. Current saved outputs are biological_revision/resume_02;
+run_stage_3 validate/figures route there after independent validation.
+Old isotropic results, gain heatmaps and the prior stop remain historical.
+Never call historical renderers to overwrite current figures. Full details
+and actual completion/checkpoint status remain in Notion and the run report.
+
+### Historical Stage-3 construction authority
+
 STAGE3-CORTICAL-STATE-FEASIBILITY-01 authorizes the separate Stage-3
 full-state sufficient-mechanism model. Stage 1 and completed Stage 2 remain
 protected. Read `artifacts/manifests/stage3_cortical_state_feasibility/PLAN.md`

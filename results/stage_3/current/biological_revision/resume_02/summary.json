@@ -1,0 +1,509 @@
+{
+  "task": "STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02",
+  "statistics": {
+    "pr": {
+      "median": [
+        3.40236460985964,
+        7.0024505631115357
+      ],
+      "se": [
+        0.1239275492769317,
+        0.00035157489264875494
+      ]
+    },
+    "alignment": {
+      "median": [
+        0.019935111495280246,
+        0.58712852198974663
+      ],
+      "se": [
+        0.000491848019015951,
+        0.0051978234800855727
+      ]
+    },
+    "earlyErrorMM": {
+      "median": [
+        0.00034113073234168906,
+        32.1813832827591
+      ],
+      "se": [
+        0.000245044550713332,
+        0.65208634540617461
+      ]
+    },
+    "prTest": {
+      "p": 0.001953125,
+      "meanDifference": 3.5013856553256444,
+      "medianDifference": 3.5994406544517372,
+      "medianDifferenceSE": 0.12395885905717975
+    },
+    "alignmentTest": {
+      "p": 0.001953125,
+      "meanDifference": -0.56981663343167666,
+      "medianDifference": -0.56840877522278621,
+      "medianDifferenceSE": 0.00493394104142834
+    },
+    "earlyTest": {
+      "p": 0.001953125,
+      "meanDifference": 32.017237021159183,
+      "medianDifference": 32.181063376400516,
+      "medianDifferenceSE": 0.6528812661905723
+    },
+    "geometryQ": [
+      0.001953125,
+      0.001953125
+    ],
+    "family": "PR Block-Intact and AI Observed-Expected; early movement separate",
+    "independentN": 10,
+    "bootstrapDraws": 10000
+  },
+  "policies": [
+    "Intact",
+    "Remove feedback",
+    "Remove b",
+    "Block"
+  ],
+  "primaryK": 7,
+  "diagnosticKRange": [
+    3,
+    7
+  ],
+  "map": {
+    "rows": 1080,
+    "tested": 696,
+    "physical": 696,
+    "feasible": 335,
+    "empirical": 413,
+    "primaryPass": true,
+    "retiredCriterion": "500-ms relative Block distance <=1e-4 only; distances remain saved",
+    "elapsedSeconds": 288.7422255
+  },
+  "audit": {
+    "status": "PASS",
+    "checks": 23002,
+    "maxAbsoluteError": 4.8316906031686813E-13,
+    "nativeTransitions": 800000,
+    "networkCount": 10,
+    "policyCount": 4,
+    "newSimulations": 0,
+    "settlingPassFail": "Retired, not tested",
+    "primaryPhenotype": true,
+    "mapPrimary": true,
+    "movementConsequence": true
+  },
+  "go": {
+    "distanceStar": {
+      "median": [
+        0.074848542034098353,
+        0.17768957436163782,
+        3.60167723969385,
+        3.4653034610184861
+      ],
+      "se": [
+        0.0051130203701076887,
+        0.0097806356617824979,
+        0.045247328627113559,
+        0.012459651107985952
+      ]
+    },
+    "distanceBlock": {
+      "median": [
+        3.4666920047572343,
+        3.4724283135237632,
+        2.7543206066184793,
+        0.1138077280670812
+      ],
+      "se": [
+        0.012430506810581141,
+        0.012981267020573001,
+        0.055240752054038833,
+        0.0056276485065500613
+      ]
+    },
+    "normalizedEQ": {
+      "median": [
+        1.9871485425553547E-8,
+        0.00011853383470575708,
+        0.035865455446037177,
+        0.86502716569936178
+      ],
+      "se": [
+        4.5022246353374378E-9,
+        2.3014848477791875E-5,
+        0.0014724957276523326,
+        0.022779686739821874
+      ]
+    },
+    "pr": {
+      "median": [
+        3.40236460985964,
+        3.4399138071029602,
+        4.07542246109898,
+        7.0024505631115357
+      ],
+      "se": [
+        0.1239275492769317,
+        0.12002510075878499,
+        0.14996585898248493,
+        0.00035157489264875494
+      ]
+    },
+    "observed": {
+      "median": [
+        0.99999999999999933,
+        0.99407942616842537,
+        0.13308748492883504,
+        0.019935111495280246
+      ],
+      "se": [
+        5.0974845410163646E-16,
+        0.00063607291300119277,
+        0.010928818340072272,
+        0.000491848019015951
+      ]
+    },
+    "expected": {
+      "median": [
+        0.5033029965090503,
+        0.51817919373134524,
+        0.58712852198974663,
+        0.58712852198974663
+      ],
+      "se": [
+        0.017852925830277196,
+        0.015741903908261239,
+        0.0051978234800855727,
+        0.0051978234800855727
+      ]
+    },
+    "deficit": {
+      "median": [
+        -0.49669700349094903,
+        -0.47590023243708018,
+        0.44155055373936453,
+        0.56840877522278621
+      ],
+      "se": [
+        0.01785292583027721,
+        0.016036319711945149,
+        0.013206673542386112,
+        0.00493394104142834
+      ]
+    }
+  },
+  "afterCueMs": [
+    50,
+    100,
+    200
+  ],
+  "readiness": {
+    "timeMs": [
+      50,
+      100,
+      200
+    ],
+    "policies": [
+      {
+        "eq": {
+          "median": [
+            0.00096858524639008715,
+            9.74458551645629E-5,
+            5.8768027318036048E-6
+          ],
+          "se": [
+            8.2323383568943051E-5,
+            1.2029593230322238E-5,
+            7.9042561693424647E-7
+          ]
+        },
+        "state": {
+          "median": [
+            0.47499411123942908,
+            0.36546445004874278,
+            0.20433643011857458
+          ],
+          "se": [
+            0.012763645406753737,
+            0.0097026669363432985,
+            0.0069727476174447113
+          ]
+        }
+      },
+      {
+        "eq": {
+          "median": [
+            0.54214923950457261,
+            0.22468554696144802,
+            0.041072684047380556
+          ],
+          "se": [
+            0.0068707610232792505,
+            0.0055669799609322944,
+            0.0017786347719416079
+          ]
+        },
+        "state": {
+          "median": [
+            0.86384408538603208,
+            0.78525991812922125,
+            0.46148079288507571
+          ],
+          "se": [
+            0.0045990362377680552,
+            0.0086991189639485482,
+            0.016188979389991108
+          ]
+        }
+      },
+      {
+        "eq": {
+          "median": [
+            0.02952158640276,
+            0.03506735440471833,
+            0.035911766428989217
+          ],
+          "se": [
+            0.0011492893405672354,
+            0.0013923325146960538,
+            0.001473599188959223
+          ]
+        },
+        "state": {
+          "median": [
+            0.92443665544175879,
+            1.0993574943616888,
+            1.237879579833379
+          ],
+          "se": [
+            0.0085667245174245073,
+            0.012947585943073076,
+            0.014378857204880163
+          ]
+        }
+      },
+      {
+        "eq": {
+          "median": [
+            0.93427268976571842,
+            0.89366666769776981,
+            0.852053180659205
+          ],
+          "se": [
+            0.0326909600323983,
+            0.043152236780817373,
+            0.021011076638175939
+          ]
+        },
+        "state": {
+          "median": [
+            1.095918614303375,
+            1.1961408328656546,
+            1.2493860130323311
+          ],
+          "se": [
+            0.010950139815755874,
+            0.012426009595133332,
+            0.00638175679739999
+          ]
+        }
+      }
+    ]
+  },
+  "crossings": [
+    {
+      "eq50ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          3,
+          5
+        ],
+        "pooledTargetMedianMs": 3
+      },
+      "eq90ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          8,
+          17
+        ],
+        "pooledTargetMedianMs": 10
+      },
+      "state50ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          17,
+          110
+        ],
+        "pooledTargetMedianMs": 46
+      },
+      "state90ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          248,
+          403
+        ],
+        "pooledTargetMedianMs": 305
+      }
+    },
+    {
+      "eq50ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          49,
+          60
+        ],
+        "pooledTargetMedianMs": 55
+      },
+      "eq90ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          125,
+          162
+        ],
+        "pooledTargetMedianMs": 138
+      },
+      "state50ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          139,
+          228
+        ],
+        "pooledTargetMedianMs": 186
+      },
+      "state90ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          362,
+          496
+        ],
+        "pooledTargetMedianMs": 434
+      }
+    },
+    {
+      "eq50ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          3,
+          5
+        ],
+        "pooledTargetMedianMs": 3
+      },
+      "eq90ms": {
+        "achievedTargets": 80,
+        "totalTargets": 80,
+        "rangeMs": [
+          8,
+          21
+        ],
+        "pooledTargetMedianMs": 10
+      },
+      "state50ms": {
+        "achievedTargets": 0,
+        "totalTargets": 80,
+        "rangeMs": [],
+        "pooledTargetMedianMs": null
+      },
+      "state90ms": {
+        "achievedTargets": 0,
+        "totalTargets": 80,
+        "rangeMs": [],
+        "pooledTargetMedianMs": null
+      }
+    },
+    {
+      "eq50ms": {
+        "achievedTargets": 2,
+        "totalTargets": 80,
+        "rangeMs": [
+          125,
+          192
+        ],
+        "pooledTargetMedianMs": 158.5
+      },
+      "eq90ms": {
+        "achievedTargets": 0,
+        "totalTargets": 80,
+        "rangeMs": [],
+        "pooledTargetMedianMs": null
+      },
+      "state50ms": {
+        "achievedTargets": 0,
+        "totalTargets": 80,
+        "rangeMs": [],
+        "pooledTargetMedianMs": null
+      },
+      "state90ms": {
+        "achievedTargets": 0,
+        "totalTargets": 80,
+        "rangeMs": [],
+        "pooledTargetMedianMs": null
+      }
+    }
+  ],
+  "blockRelativeGoRange": [
+    0.0267414302576941,
+    0.0595735475410386
+  ],
+  "blockRelativeGoNetworkMaxMedian": 0.053037153608130452,
+  "feasibleCountsByNetworkDirection": [
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      11,
+      11,
+      11
+    ],
+    [
+      13,
+      12,
+      13
+    ]
+  ],
+  "readinessInterpretation": "Per-target crossing ranges are descriptive, not independent n=80 inference. EQ curves average target-specific cue-normalized error within network; state curves normalize the target-mean distance by its target-mean cue distance."
+}

@@ -1,5 +1,9 @@
 function paths = stage3_figures(cfg,figureIndices)
     % Four planned figures only; missing primary is displayed, never replaced.
+    if isfile(fullfile(cfg.resultsRoot,'biological_revision','resume_02','independent_audit.json'))
+        paths=stage3_bio_figures;
+        return;
+    end
     s=load(fullfile(cfg.resultsRoot,'consequences.mat'),'result'); r=s.result;
     map=stage3_logical_flags(readtable(fullfile(cfg.resultsRoot,'feasibility_map.csv')));
     if nargin<2, figureIndices=1:4; end

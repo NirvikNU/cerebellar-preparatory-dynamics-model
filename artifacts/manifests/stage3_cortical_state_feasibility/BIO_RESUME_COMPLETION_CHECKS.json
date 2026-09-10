@@ -1,0 +1,88 @@
+{
+  "task": "STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02",
+  "status": "PASS",
+  "scientificAudit": {
+    "status": "PASS",
+    "checks": 23002,
+    "maxAbsoluteError": 4.831690603168681e-13,
+    "nativeTransitions": 800000,
+    "networkCount": 10,
+    "policyCount": 4,
+    "newSimulations": 0,
+    "settlingPassFail": "Retired, not tested",
+    "primaryPhenotype": true,
+    "mapPrimary": true,
+    "movementConsequence": true
+  },
+  "publicationAudit": {
+    "checks": 204,
+    "maxAbsoluteError": 1.4210854715202004e-14
+  },
+  "codeAnalyzer": {
+    "status": "PASS",
+    "matlabFiles": 21
+  },
+  "smoke": {
+    "status": "PASS",
+    "shortSegmentError": 2.22e-16,
+    "QResidual": 7.345e-14
+  },
+  "figReopened": 4,
+  "pngVisuallyInspected": 4,
+  "notionPages": {
+    "spec": {
+      "id": "3d426c94be30813b81b9c6e55861a5b4",
+      "nativeImages": 0,
+      "historicalPresent": true,
+      "children": [],
+      "currentChars": 7782
+    },
+    "summary": {
+      "id": "3d426c94be308104862cce331a0661e2",
+      "nativeImages": 0,
+      "historicalPresent": true,
+      "children": [],
+      "currentChars": 3447
+    },
+    "results": {
+      "id": "3d426c94be30817eab3ffe5f952f1f5c",
+      "nativeImages": 2,
+      "historicalPresent": true,
+      "children": [],
+      "currentChars": 9382
+    },
+    "diag": {
+      "id": "3d426c94be30818988a2f9a409023f0b",
+      "nativeImages": 2,
+      "historicalPresent": true,
+      "children": [],
+      "currentChars": 13237
+    },
+    "parent": {
+      "id": "3d426c94be3081e4b13bdf8a91d0baf6",
+      "nativeImages": 0,
+      "historicalPresent": true,
+      "children": [
+        {
+          "url": "https://app.notion.com/p/3d426c94be30813b81b9c6e55861a5b4",
+          "title": "Technical Specification"
+        },
+        {
+          "url": "https://app.notion.com/p/3d426c94be308104862cce331a0661e2",
+          "title": "Presentation-ready Summary"
+        },
+        {
+          "url": "https://app.notion.com/p/3d426c94be30817eab3ffe5f952f1f5c",
+          "title": "Results"
+        },
+        {
+          "url": "https://app.notion.com/p/3d426c94be30818988a2f9a409023f0b",
+          "title": "Diagnostics & Sensitivity"
+        }
+      ],
+      "currentChars": 1273
+    }
+  },
+  "publicationNote": "Four current native PNGs plus four preserved historical images; full captions and scientific text read back. Final Git receipt belongs in Notion after successful push.",
+  "scientificAcceptance": "Pending user review"
+}

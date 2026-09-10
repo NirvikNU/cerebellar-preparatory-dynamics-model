@@ -1,4 +1,6 @@
 function receipt = stage3_gain_time_figure(cfg)
+    assert(~isfile(fullfile(cfg.resultsRoot,'biological_revision','resume_02','independent_audit.json')), ...
+        'Stage3:Historical','Isotropic gain heatmaps are historical and cannot overwrite current biological-controller figures.');
     s=load(fullfile(cfg.resultsRoot,'gain_time','refined','gain_time.mat'),'result'); r=s.result;
     assert(strcmp(r.status,'PASS'));
     f=figure('Visible','off','Color','w','Position',[60 40 1500 1200]);

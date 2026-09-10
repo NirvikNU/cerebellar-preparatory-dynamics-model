@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 164,
+  "maxAbsoluteError": 5.6843418860808015E-14,
+  "scientificStatus": "SCIENTIFIC_STOP_PRIMARY_PHYSICAL_FAILURE",
+  "newMovementRollouts": 0,
+  "newNullDraws": 0,
+  "predecessorBlockSettle": 7.9839533827467E-15,
+  "completedNetworks": 1,
+  "notRun": "Remaining networks, partial removals, population/null, movement, map, figures: scientific stop"
+}

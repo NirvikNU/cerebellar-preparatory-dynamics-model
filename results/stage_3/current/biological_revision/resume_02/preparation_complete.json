@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "newPreparations": 38,
+  "reusedPreparations": 2,
+  "policies": [
+    "Intact",
+    "Remove feedback",
+    "Remove b",
+    "Block"
+  ],
+  "settlingCriterion": "Retired by explicit RESUME-02 authority; distances reported",
+  "elapsedSeconds": 119.0292546
+}

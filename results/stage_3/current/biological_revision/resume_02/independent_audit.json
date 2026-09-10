@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": 23002,
+  "maxAbsoluteError": 4.8316906031686813E-13,
+  "nativeTransitions": 800000,
+  "networkCount": 10,
+  "policyCount": 4,
+  "newSimulations": 0,
+  "settlingPassFail": "Retired, not tested",
+  "primaryPhenotype": true,
+  "mapPrimary": true,
+  "movementConsequence": true
+}

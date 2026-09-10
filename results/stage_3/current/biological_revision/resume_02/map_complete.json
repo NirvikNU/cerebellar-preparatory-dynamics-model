@@ -1,0 +1,10 @@
+{
+  "rows": 1080,
+  "tested": 696,
+  "physical": 696,
+  "feasible": 335,
+  "empirical": 413,
+  "primaryPass": true,
+  "retiredCriterion": "500-ms relative Block distance <=1e-4 only; distances remain saved",
+  "elapsedSeconds": 288.7422255
+}

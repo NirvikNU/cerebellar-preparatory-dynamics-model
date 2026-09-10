@@ -176,80 +176,100 @@ from state error when negative coordinates occur. Both are saved and named.
 Higher lambda restricts optimal-control usage normatively; it does not
 represent a literal cerebellar lesion/circuit or establish new predictions.
 
-## Stage 3 — cerebellar correction of cortical preparation
+## Stage 3 — cerebellar state setting and prospective-error correction
 
-The complete derivation, bounded grid, limits, seeds and sampling rules are
-predeclared in `artifacts/manifests/stage3_cortical_state_feasibility/`.
-This new inverse-design model preserves the frozen Stage-1 generator and all
-completed Stage-2 computations. It is not scientifically accepted until review.
+Current implementation: STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02. Scientific
+acceptance remains subject to user review. The current plan/report are
+`BIO_RESUME_PLAN.md` and `BIO_RESUME_REPORT.md` in the Stage-3 manifest folder.
+The previous isotropic controller and REVISION-01 stop are historical; their
+code/results and the frozen target geometry remain preserved.
 
-For `f(x)=-x+W*ReLU(x)+h`, keep the cortical policy
-`uC=-f(xB)-kappa*(x-xB)` identical within each intact/block pair. Add
-`uCB=b-nu*(x-x*)`, with `b=f(xB)-f(x*)+kappa*(x*-xB)` when intact.
-Block removes both sustained correction and state feedback, not feedback
-alone. Gains are fixed from the frozen norm: `kappa=max(0,norm(W,2)-1)+3`,
-`nu=3`. The full-state/full-actuation controller acts on subthreshold x too;
-it is not an anatomically constrained E/I or learned cerebellar circuit.
+For the unchanged intrinsic state dynamics `f(x)=-x+W*ReLU(x)+h`:
 
-Starting at the shared spontaneous state, prepare for 500 ms with native
-0.2-ms Euler integration, 1-ms saved sampling and 10-ms analysis sampling.
-GO removes all preparation inputs and releases the actual achieved state to
-the unchanged movement drive, readout and arm; premovement output is gated.
-No target-state reset or post-GO correction is introduced.
+`u0=-f(xB)-kappa0*(x-xB)`
 
-Freeze a new intact per-neuron SD and full covariance from GO -500:10:0 plus
-kinematic-MO -50:10:450 before constructing block states. No SD floor or
-Stage-2 scaling is imported. Settled target-centered normalized states have
-factorization `YI=U*sqrt(Lambda)*Z`; retain every measured positive-rank
-direction. `YB=(alpha*U*sqrt(Lambda)+beta*V)*Z` uses seeded orthogonal V,
-the same target coordinates, and the intact target-mean rate baseline.
-Negative proposed rates are infeasible, never clipped. Three directions and
-a fixed 6-by-6 grid are screened in each of ten networks. Activity, separate
-input components, state norms, total modulation and settling have finite
-predeclared modeling bounds; they are not physiological estimates.
+`b=f(xB)-f(x*)+kappa0*(x*-xB)`
 
-Primary geometry uses actual GO -100:10:0 trajectories. PR uses all covariance
-eigenvalues; directed intact-to-block alignment uses the common maximum
-minimum PC count strictly exceeding 95% variance and the intact top-K
-variance denominator. The 10,000-draw covariance-constrained null uses this
-Stage-3 intact full reference, with predeclared Monte Carlo margin. Settled
-theorem and measured finite-window results are kept distinct.
+`feedback=-L*(x-x*)`
 
-The full analytical/physical/finite-window intersection determines feasible
-solutions. A common primary and additional spanning samples are selected
-without movement outcomes, and their complete policies are saved before
-movement evaluation. Early hand RMS error uses each frozen comparator's
-MO+[0:200] ms, common GO times across conditions, in millimetres. Networks
-are independent n=10; multiple states/directions are nested. Geometry is
-constructed, movement consequences are measured independently, and neither
-implies a prediction deficit. Empty-region outcomes are retained unchanged.
+Intact input is u0+b+feedback. Full cerebellar block removes both b and feedback,
+leaving identical u0. Thus intact dynamics reduce to
+`tau*dx/dt=f(x)-f(x*)-(kappa0*I+L)*(x-x*)`; Block reduces to
+`tau*dx/dt=f(x)-f(xB)-kappa0*(x-xB)`. x* and xB are exact equilibria of
+their corresponding conditions. Removing only feedback leaves x* an equilibrium;
+removing b can change the equilibrium, not only convergence speed.
 
-### Fixed-gain/time mechanistic diagnostic
+For each network, compute the largest real eigenvalue of
+`M(e)=-I+W*diag(e>0)` across the eight primary xB and eight x*.
+The fixed residual gain is `kappa0=max(0,1+max_e max(real(eig(M(e)))))`,
+the minimum scalar shift giving the residual local margin -1/tau.
+This is not the old global-norm gain or a movement/prediction fit. Check the
+intact local Jacobian with L separately and native Euler stability. Local
+stability is not a global nonlinear contraction guarantee.
 
-The primary geometry and accepted nu=3 policy remain unchanged. The separate
-bounded descriptive diagnostic uses only nu=0:.5:6 at alpha=.1 and normalized
-beta=1, with fixed kappa, cortical policy, selected states and initial states.
-Compare uC+b-nu*(x-x*) against uC-nu*(x-x*) in all ten networks/eight targets.
-Reuse valid original trajectories; integrate each missing gain/policy once,
-without movement or reselection. Native .2 ms, saved 1 ms, population 10 ms.
-Display endpoints GO=-600:10:0, with cue=-500: instantaneous full-200D state error and trailing
-inclusive 100-ms PR/alignment. Both normalization and null bias remain the
-original intact full-reference metric. Reference covariance in the alignment
-numerator/top-K denominator is the intact trajectory's matching time window;
-common K is minimum strictly >95% for both compared conditions. Reuse the
-original seed and 10,000 covariance-biased random subspaces by network/K,
-not a terminal expected scalar. The mean-projector trace is algebraically
-the mean of those same draws and is independently audited against QR.
-The source baseline h=xsp-W*ReLU(xsp) makes the frozen spontaneous state an
-equilibrium. The controller-free -700:-500 segment is verified by native Euler
-integration to match the frozen preparatory initial state; cached preparation
-is reused unchanged. Before/at cue all targets are identical, so population
-covariance is zero and PR/alignment are undefined (masked), not zero-valued.
-The first valid population endpoint is -490 with the unchanged trailing window.
-Network medians (n=10), no new inference; six independently scaled linear heatmaps in
-Diagnostic Figure 2. All original four-policy GO cells must match preserved
-metrics before replacement. This is an effective-controller decomposition,
-not an anatomical assertion, tuning objective or new scientific acceptance.
-Colors are not quantitatively comparable across panels. Every prior -400:0
-value is independently rechecked and retained bit-for-bit in the expanded
-output; original numerical/audit provenance is not overwritten.
+L is the exact saved Stage-2 state-design CARE P divided by fixed lambda=.1,
+using identical 200-dimensional internal-state coordinates, frozen Q and
+normalized time t/tau. No new CARE solve, Q modification or strength sweep.
+The Stage-2 nonlinear rate-feedback implementation and this state-feedback
+law are explicitly different where ReLU coordinates are inactive. The frozen
+CARE objective is the prospective-error approximation for its all-active
+linear design plant; it is not claimed exactly optimal for every nonlinear
+active set or the newly residual-stabilized plant.
+
+The target construction is unchanged:
+`YI=U*sqrt(Lambda)*Z`,
+`YB=(alpha*U*sqrt(Lambda)+beta*V)*Z`.
+Preserve all retained directions, neuron SD, target-mean rate baseline, seeded
+V and target coordinates Z. Primary alpha=.1, betaNormalized=1, direction1
+in all ten networks; no reselection. The same6x6x3x10 map reuses stored
+definitions and unchanged analytical/nonnegativity/variance checks.
+Recompute only controller-dependent endpoint/input/dynamic/finite-population
+classifications. Actual trajectory covariance is not assigned from xB.
+
+RESUME-02 explicitly retires only the old terminal Block relative-distance
+cutoff1e-4 at500 ms; no new distance threshold replaces it. Keep exact stable
+equilibria, nonnegative constructed rates, finite native trajectories, frozen
+rate/state/variance limits and separately bounded controller components.
+Each component remains bounded by5*Iref, where Iref=max(1,new intact maximum
+total-input norm). Report all component maxima, including the map's
+conservative counterfactual component checks; cancellation does not exempt
+a component. These are modeling admissibility bounds, not empirical physiology.
+
+Native preparation Euler step0.2 ms, saved1 ms, delay500 ms from cue-500 to
+GO0. Frozen spontaneous baseline supplies validated support through cue.
+Save each target's distance to x*/xB, state-quadratic E_Q, cue-normalized E_Q,
+component norms, first50%/90% reduction crossings and50/100/200-ms values.
+Finite convergence/readiness is reported, not fitted or required to be exact.
+At GO remove preparation input and pass actual achieved state unchanged to
+the frozen drive/readout/arm. Premovement output remains gated; no GO reset.
+
+Population analysis retains frozen Stage-3 per-neuron SD and full-reference
+null covariance. Target-center each aligned time; flatten time/target rows
+with one neuron per column. Primary prep is GO -100:10:0. PR uses all covariance
+eigenvalues; common K is the larger minimum count strictly exceeding95% in
+both conditions. Intact covariance projects onto policy top-K PCs and is
+normalized by intact top-K variance. The matched10000-draw null uses the
+same frozen covariance-biased Gaussian/orth algorithm, seed2026090900+network;
+mean projectors are reused by K and applied to each actual new intact window
+covariance. Do not reuse historical terminal expected values.
+
+Early movement consequence is RMS Euclidean hand discrepancy in mm against
+the frozen comparator, at common comparator MO+[0:200] ms, then target mean.
+Network n=10, median plus10000-whole-network-bootstrap SE with the original
+saved index matrix/seed2026091000. Exact paired sign flips and the two-test
+geometry BH family are unchanged; movement is a separate test. Geometry
+constraints and movement consequences remain conceptually distinct.
+
+Current Diagnostic2 compares Intact, remove feedback, remove b, Block over
+GO -600:0 ms. Five panels show distance x*, distance xB, normalized E_Q,
+trailing100-ms PR and expected-minus-observed alignment. Population endpoints
+every10 ms use the matched new intact window; cells through cue are undefined
+because target covariance is zero. Network median with descriptive bootstrap
+SE; no inferential timing/gain search. The historical nu heatmaps, sampled
+movements and gain/nonorthogonality sensitivity numbers are not current
+biological-controller results.
+
+This is an effective full-state/full-actuation computational hypothesis,
+not an anatomical localization of the two cerebellar-dependent terms or
+a dedicated biological cortical pathway for kappa0. No prediction, noise,
+learning, adaptation or further model extension is included.
