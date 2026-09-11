@@ -98,6 +98,19 @@ are immutable. Only the old 500-ms Block settling cutoff1e-4 was explicitly
 retired; incomplete convergence is an outcome, not permission to relax other
 bounds or tune. Current saved outputs are biological_revision/resume_02;
 run_stage_3 validate/figures route there after independent validation.
+STAGE3-PREDICTION-VALIDATION-01 separately authorizes fixed-controller
+stochastic prediction validation. Read PREDICTION_PLAN.md and
+PREDICTION_REPAIR_PLAN.md as well as the current Notion binding resolutions.
+The only repair to the original prediction replay helper is nargin<9 to
+nargin<8. Original stop reports/evidence must remain unchanged. Prediction
+outputs are separate under current/prediction_validation and ignored
+cache/prediction_validation; do not overwrite accepted biological outputs.
+Primary s=.10, non-selected .05/.20 sensitivities,30 trials per target,
+shared noise/seeds, timing, feature/CV definitions and nine-test inference
+family are immutable after outcomes. No learning/adaptation, RRR, target-jump
+test, controller retuning or further model is authorized. The current Notion
+handoff and PREDICTION_REPORT.md record actual completion, not this instruction.
+
 Old isotropic results, gain heatmaps and the prior stop remain historical.
 Never call historical renderers to overwrite current figures. Full details
 and actual completion/checkpoint status remain in Notion and the run report.
@@ -115,7 +128,9 @@ outcomes. Large reference/grid trajectories are local-only in
 are checkpoint content. Four new figure pairs live in `plots/stage_3/`.
 `run_stage_3` has explicit reference/sweep/consequences/figures/validate actions;
 completed numerical outputs are protected against accidental overwrite.
-Prediction, noise, learning, adaptation and another model remain deferred.
+That historical construction gate did not authorize prediction/noise. Only
+the separately stated current prediction task does so; learning, adaptation
+and another model remain deferred.
 Completion and a Git checkpoint do not constitute scientific acceptance.
 
 Read [Agent Instructions — Current Task](https://www.notion.so/3c826c94be30817d8f51d9f6c8c2bc19)

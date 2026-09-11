@@ -1,0 +1,41 @@
+{
+  "stage3_prediction_analysis_test": [],
+  "stage3_prediction_analyze": [],
+  "stage3_prediction_audit": [],
+  "stage3_prediction_case": [],
+  "stage3_prediction_features": [],
+  "stage3_prediction_figure_audit": [
+    {
+      "id": "ISCL",
+      "message": "To improve performance, use 'isscalar' instead of length comparison.",
+      "fix": 1,
+      "line": 20,
+      "column": [
+        97,
+        110
+      ]
+    },
+    {
+      "id": "ISCL",
+      "message": "To improve performance, use 'isscalar' instead of length comparison.",
+      "fix": 1,
+      "line": 40,
+      "column": [
+        95,
+        108
+      ]
+    }
+  ],
+  "stage3_prediction_folds": [],
+  "stage3_prediction_noise": [],
+  "stage3_prediction_ols": [],
+  "stage3_prediction_paths": [],
+  "stage3_prediction_pipeline_test": [],
+  "stage3_prediction_preflight": [],
+  "stage3_prediction_preflight_repair": [],
+  "stage3_prediction_production": [],
+  "stage3_prediction_replay": [],
+  "stage3_prediction_report": [],
+  "stage3_prediction_ridge": [],
+  "stage3_prediction_figures": []
+}

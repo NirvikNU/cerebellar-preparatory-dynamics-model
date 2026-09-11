@@ -1,0 +1,79 @@
+{
+  "task": "STAGE3-PREDICTION-VALIDATION-01",
+  "status": "STOP",
+  "stage": "coupled step and safety",
+  "predictionOutcomesGenerated": false,
+  "productionStarted": false,
+  "leak": {
+    "sampleSD": 0.10028689768957419,
+    "expectedSD": 0.10003335000926468,
+    "lag10msCorrelation": 0.93609933017448876,
+    "expectedCorrelation": 0.9354653708736862,
+    "diffusionVariance": 2.6666666666666673E-5
+  },
+  "modelMetadata": {
+    "n": 200,
+    "tau": 0.15,
+    "dt": 0.0002,
+    "nSamples": 599,
+    "nInternalSteps": 2994,
+    "rateLimit": 7.8028729645717618,
+    "stateLimit": 43.764328197204449
+  },
+  "commonRandomNumbers": true,
+  "deterministic": [
+    [
+      1.5543122344752192E-15,
+      1.3322676295501878E-15,
+      5.3290705182007514E-15,
+      3.3133218391157016E-15,
+      1.3843093338294921E-15
+    ],
+    [
+      1.5543122344752192E-15,
+      1.1102230246251565E-15,
+      6.2172489379008766E-15,
+      2.8588242884097781E-15,
+      1.762479051592436E-15
+    ],
+    [
+      1.5543122344752192E-15,
+      1.1102230246251565E-15,
+      5.10702591327572E-15,
+      2.4667767828390197E-15,
+      1.5334955527634975E-15
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "stepChecks": [],
+  "currentCase": {
+    "network": 1,
+    "targets": [
+      1,
+      5
+    ],
+    "trial": 1,
+    "s": 0.05,
+    "policy": 1
+  },
+  "errorIdentifier": "MATLAB:assertion:failed",
+  "errorMessage": "Assertion failed.",
+  "stack": [
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\analysis\\stage_3\\stage3_prediction_replay.m",
+      "name": "stage3_prediction_replay",
+      "line": 7
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\analysis\\stage_3\\stage3_prediction_preflight.m",
+      "name": "stage3_prediction_preflight",
+      "line": 74
+    }
+  ]
+}

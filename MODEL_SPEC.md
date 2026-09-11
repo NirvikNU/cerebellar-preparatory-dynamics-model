@@ -271,5 +271,66 @@ biological-controller results.
 
 This is an effective full-state/full-actuation computational hypothesis,
 not an anatomical localization of the two cerebellar-dependent terms or
-a dedicated biological cortical pathway for kappa0. No prediction, noise,
-learning, adaptation or further model extension is included.
+a dedicated biological cortical pathway for kappa0. That deterministic
+evaluation contains no prediction/noise. The separately authorized experiment
+below preserves all its parameters and results; learning/adaptation and
+further model extensions remain excluded.
+
+## Fixed-controller stochastic prediction-validation experiment
+
+STAGE3-PREDICTION-VALIDATION-01 uses the unchanged four biological-controller
+policies, all ten networks and eight fixed targets. Thirty independent trial
+identities per target use the same standardized Gaussian draws across policies
+and noise levels. Cue state is xsp+s*eta0. Continuous physical-time SDE:
+
+`dx=F(x)/tau*dt+s*sqrt(2/tau)*dW`, with tau=.15 s.
+
+Euler-Maruyama uses native dt=.0002 s and saves every .001 s. Primary s=.10
+source-state units; .05/.20 are predeclared non-selected sensitivities. At GO,
+remove preparation input without resetting the state and continue the same
+noise stream through the frozen movement generator. No added readout/arm noise.
+This is a reference perturbation scale, not a fit to empirical physiology.
+
+Per-trial kinematic MO is the first speed reaching20% of its own peak; peak
+time and physical x/y hand position come from that trial. ReLU rates are
+smoothed with Gaussian SD30 ms, support+/-150 ms and renormalized protected
+boundaries (GO, MO, or peak-50 ms). Apply the frozen neuron-specific Intact
+reference SD, no empirical1-Hz floor, and aligned-time target-invariant
+removal. Average GO -100:10:0, MO0:10:100, and prepeak -150:10:-50 ms.
+
+Full-balanced-ensemble PCA is separate for predictor and response, each
+retaining minimum >=75% variance. Primary neural prediction is outer3-fold
+ridge with training-only inner3-fold selection, objective mean-SSE plus
+lambda*||B||F^2, unpenalized intercept, fixed logspace(-8,4,25), no additional
+standardization. Pool held-out predictions and compute1-SSE/SST around the
+pooled actual mean; retain negative R2. Matched-PC controls use the smaller
+paired-condition count separately per epoch.
+
+Hand prediction uses full-ensemble target-mean PCA >=95%, then sequential
+instructed x and null-projected y axes; pooled3-fold OLS and within-target
+LOO OLS use this fixed plane. Peak-speed prediction uses full-neuron nested
+ridge. A single full-condition refit axis is held fixed for secondary
+within-target LOO and orientation. Captured variance uses outer-training
+axes on held-out trials. Repeat behavior procedures in the prepeak epoch.
+These full-ensemble feature definitions follow the binding manuscript scope,
+not strictly inductive fold-wise feature learning.
+
+Chance uses100 fixed neural response-correspondence permutations; expected
+speed-axis squared-cosine alignment uses100 within-target speed-shuffle
+refits. Networks n=10 are the independent units; reuse10,000 whole-network
+bootstrap indices for median +/- SE. Nine primary s=.10 lesion-minus-Intact
+contrasts (three lesions x neural/hand/speed R2) share one exact paired
+sign-flip/BH family. All other controls are supporting, not rescue criteria.
+No prediction outcome may tune model, noise, timing, seed, grid or inference.
+
+Locked PREDICTION_PLAN.md, repair addendum, separate prediction outputs and
+independent audit/report provide the execution provenance. Original
+controller/geometry results and four existing figure pairs remain unchanged.
+
+The completed fixed prediction experiment gives mixed support. At primary
+s=.10, full Block reduces neural and hand-position R2 but increases the weak
+peak-speed R2 relative to Intact; all three Block contrasts have q=.005859375.
+The pre-peak hand deficit persists, and within-target preparatory hand R2 has
+negative network medians under every policy. A general preparation-specific
+prediction phenotype is therefore not established. All outcomes/sensitivities
+are retained unchanged in PREDICTION_REPORT.md; scientific review is pending.

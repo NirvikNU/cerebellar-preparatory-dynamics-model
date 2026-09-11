@@ -118,7 +118,9 @@ null bias, GO -100:10:0, and the common minimum >95%-variance PC rule. Movement
 uses actual achieved GO states without resetting them, the unchanged movement
 drive/readout/arm, and the frozen comparator's MO+[0:200]-ms early-error window.
 Networks are the independent unit; bootstrap/error bars and exact tests retain
-their existing definitions. No prediction, noise, learning or adaptation.
+their existing definitions. That deterministic evaluation did not include
+prediction/noise; the separately authorized prediction experiment below does
+not alter its results. Learning/adaptation remain outside scope.
 
 The four canonical figure pairs remain under `plots/stage_3/{png,fig}/`:
 Results1 preparation/movement; Results2 population geometry; Diagnostic1
@@ -140,6 +142,46 @@ Individual `stage3_bio_*` phase functions preserve reproduction provenance and
 refuse overwriting completed outputs; they are not authorization to rerun
 completed simulations. All native preparation/movement/map caches remain
 ignored under `results/stage_3/current/cache/biological_revision/`.
+
+### Fixed-controller prediction validation
+
+STAGE3-PREDICTION-VALIDATION-01 adds stochastic single-trial validation, not
+a new controller. The fixed ten networks, primary geometry, gains and four
+policies are unchanged. Use `PREDICTION_PLAN.md` and `PREDICTION_REPAIR_PLAN.md`
+in the Stage-3 manifest folder for the locked analysis and the sole authorized
+optional-step wrapper repair. The two earlier stop reports and failed raw
+preflight evidence remain unchanged provenance.
+
+Thirty trials per target/policy/network use common standardized initial and
+continuous state noise. Primary s=.10; complete .05/.20 sensitivities are not
+selected from outcomes. Native .2-ms EM, saved1-ms activity and analysis10-ms
+sampling preserve the frozen movement dynamics/readout/arm. No empirical
+noise fit, recalibration, controller retuning or additional movement noise.
+
+Neural predictions use separate full-ensemble >=75%-variance PC spaces and
+nested three-fold ridge. Behavioral tests use the manuscript task plane and
+full-neuron speed regression, with within-target and pre-peak controls.
+Full-ensemble feature definitions are explicitly authorized manuscript
+replication, not strict fold-wise feature learning. The ridge objective/grid,
+seeds, epochs, n=10 network-bootstrap uncertainty and nine-test BH family are
+locked before outcomes.
+
+New compact outputs are `results/stage_3/current/prediction_validation/`;
+all raw trials and detailed fitting evidence stay ignored under
+`results/stage_3/current/cache/prediction_validation/`. Separate phase functions
+are `analysis/stage_3/stage3_prediction_*.m`; new plotting code is
+`figures/stage_3/stage3_prediction_figures.m`. Their production/result writers
+refuse overwriting completed evidence. They do not authorize a rerun or a
+parameter change. The existing `run_stage_3` actions still cover only the
+unchanged biological-controller geometry figures/validation.
+
+New figure names are `result_3_prediction_validation`,
+`diagnostic_3_prediction_noise`, and `diagnostic_4_prediction_specificity`,
+each a matching FIG/PNG pair under the existing Stage-3 plot directories.
+The previous four pairs are protected unchanged. Completion, independent
+audit, scientific interpretation and publication/checkpoint receipts belong
+in `PREDICTION_REPORT.md` and the current Notion handoff after validation;
+scientific acceptance remains a user-review decision.
 
 ### Historical predecessor and preservation
 

@@ -1,0 +1,11 @@
+{
+  "neuronSmoothingError": 1.0658141036401503E-14,
+  "prepBoundaryError": 0,
+  "ridgePredictionError": 5.3290705182007514E-15,
+  "innerLossError": 1.1368683772161603E-13,
+  "status": "PASS",
+  "ratesNotStates": true,
+  "neuronIdentity": true,
+  "boundaryProtected": true,
+  "nestedTrainingOnly": true
+}

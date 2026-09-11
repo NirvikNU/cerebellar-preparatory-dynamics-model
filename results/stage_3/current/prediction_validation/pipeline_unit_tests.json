@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "syntheticOnly": true,
+  "noAcceptedDataUsed": true,
+  "featureCount": 200,
+  "trialCount": 240,
+  "permutations": 100,
+  "metricCount": 11
+}

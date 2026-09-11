@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "cases": 120,
+  "checks": 5820,
+  "maxIncrementError": 2.2204460492503131E-16,
+  "maxArmError": 2.2204460492503131E-16,
+  "maxFeatureError": 2.6645352591003757E-14,
+  "maxRidgeResidual": 9.8834405729654388E-15,
+  "maxR2Error": 1.794120407794253E-13,
+  "maxBootstrapError": 2.0816681711721685E-16,
+  "maxInnerLossRelativeError": 5.6769470122599649E-8
+}
