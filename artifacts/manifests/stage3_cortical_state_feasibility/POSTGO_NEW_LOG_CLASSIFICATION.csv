@@ -1,0 +1,2 @@
+"path","bytes","sha256","tracked","action","reason"
+"artifacts/manifests/stage3_cortical_state_feasibility/postgo_production.log","3532","E5F2FE8247C4D05BD5D1C1D8267E3589F0C619CF5D5D1245331CFD0EF8D227AA","False","REMOVE","Closed current replay transcript; complete per-case identity and timing receipt retained in production_complete.json"

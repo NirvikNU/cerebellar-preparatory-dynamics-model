@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "readOnlySavedOutputCheck": true,
+  "currentFigurePairs": 8,
+  "figuresReopened": 8,
+  "replayCases": 40,
+  "analysisCases": 40,
+  "codeAnalyzerFiles": 79,
+  "scientificAcceptance": "Pending user review"
+}

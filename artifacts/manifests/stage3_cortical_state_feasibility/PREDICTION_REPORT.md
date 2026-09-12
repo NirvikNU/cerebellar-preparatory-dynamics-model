@@ -2,7 +2,7 @@
 
 Starting checkpoint: c40e0eb74679a0122cb1e54c784c2e56946a5e14. STAGE3-PREDICTION-VALIDATION-01, binding repair 2026-09-11.
 
-The original locked plan and binding analysis choices were unchanged. The only repair to the existing stochastic wrapper was nargin<9 to nargin<8. Failed-attempt evidence is preserved separately.
+The original locked plan and binding analysis choices were unchanged. The only repair to the existing stochastic wrapper was nargin<9 to nargin<8. Required passed preflight/raw dependencies remain preserved. Resolved stop prose and interim static receipts were later consolidated and retired under STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01; see POSTGO_REPORT.md and its explicit inventory. All baseline prediction numbers below remain unchanged.
 
 Ten networks x eight targets x 30 trials x four policies x three fixed noise scales = 28,800 task trials. Primary s=.10; .05 and .20 are non-selected sensitivities. Native .2-ms integration, saved1-ms activity, analysis10-ms samples. No controller, geometry, movement, noise or inference parameter was tuned.
 
@@ -211,10 +211,12 @@ files have no Code Analyzer messages in code_analyzer_final.json.
 The preservation receipt verifies all866 protected pre-existing assets and
 11 prior prediction-evidence files unchanged, and confirms that reversing the
 single authorized guard edit reproduces the original wrapper hash. The old
-preflight.json/mat, stop reports, raw failed evidence and intermediate static
-check reports are historical provenance, not the active preflight status.
+preflight.json/mat and raw evidence remain dependencies of the passed repair;
+resolved stop reports and intermediate static receipts were subsequently
+retired under the causal diagnostic, with their substance consolidated.
 Current success is recorded in preflight_repair.json, production_complete.json,
-independent_audit.json and figure_audit.json. No failed evidence was deleted.
+independent_audit.json and figure_audit.json. The original prediction task
+deleted no evidence; the later cleanup is documented separately.
 
 The existing Stage3 Results and Diagnostics pages now contain the three new
 native PNGs, captions and full primary/sensitivity/control tables. Readback

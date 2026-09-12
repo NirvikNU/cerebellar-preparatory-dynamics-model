@@ -11,8 +11,10 @@ Scientific acceptance remains a user-review decision.
 RESUME-02 explicitly retires only the old requirement that Block reach xB
 within relative distance1e-4 at500 ms. A minimal local leak-timescale
 stabilizer is not a near-instantaneous full-state settling controller.
-No new terminal-distance threshold replaces that rule. The earlier stop
-report, original native cache and all recorded values remain unchanged.
+No new terminal-distance threshold replaces that rule. The original native
+cache and all recorded scientific values remain unchanged. The resolved stop
+report was consolidated into POSTGO_REPORT.md during the authorized causal
+diagnostic cleanup; its original is recoverable at checkpoint 3268329.
 
 All ten network-specific kappa0 values, frozen Q, exact saved Stage-2 P/L at
 lambda=.1, alpha=.1, normalized beta=1, direction1/grid5, constructed states,
@@ -117,7 +119,8 @@ results/stage_3/current/cache/biological_revision/resume_02/.
 The original network1 pair remains in the parent cache's primary_01.mat.
 BIO_RESUME_PLAN.md records the locked continuation plan. BIO_RESUME_BEFORE.csv
 and BIO_RESUME_PRESERVATION.json record the preservation audit. The original
-BIO_PLAN/BIO_STOP_REPORT and all old scientific evidence are retained.
+BIO_PLAN and all meaningful scientific evidence are retained; the resolved
+BIO_STOP_REPORT is now consolidated in POSTGO_REPORT and checkpoint 3268329.
 
 Current figure pairs, each FIG+PNG in plots/stage_3/{fig,png}:
 
@@ -210,7 +213,11 @@ Intact prospective-error reduction is much faster than full-state convergence wi
   were read back. A multipart MIME mismatch was corrected with fresh uploads
   using image/png; no failed upload was treated as published.
 
-## Focused cleanup inventory
+## Historical completion inventory (biological checkpoint c40e0eb)
+
+The inventory below records that completed task, not today's file-presence
+claim. POSTGO_REPORT.md and POSTGO_CLEANUP_INVENTORY.csv now define the
+current conservative cleanup. Biological numerical results above are unchanged.
 
 | Material | Action and reason |
 | --- | --- |

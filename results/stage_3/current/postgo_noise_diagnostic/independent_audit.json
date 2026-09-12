@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "cases": 40,
+  "fits": 2880,
+  "maxIncrementError": 0,
+  "maxArmError": 1.1102230246251565E-16,
+  "maxFeatureError": 1.7763568394002505E-14,
+  "maxPredictionError": 6.0507154842071031E-15,
+  "maxR2Error": 3.3839597790574771E-13,
+  "maxRidgeResidual": 1.032431091107671E-15,
+  "maxInnerLossRelativeError": 4.9962398689328266E-8,
+  "maxVarianceError": 4.3368086899420177E-19,
+  "maxBootstrapError": 6.106226635438361E-16
+}

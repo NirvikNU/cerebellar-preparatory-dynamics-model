@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "role": "parent",
+      "id": "3d426c94be3081e4b13bdf8a91d0baf6"
+    },
+    {
+      "role": "spec",
+      "id": "3d426c94be30813b81b9c6e55861a5b4"
+    },
+    {
+      "role": "summary",
+      "id": "3d426c94be308104862cce331a0661e2"
+    },
+    {
+      "role": "results",
+      "id": "3d426c94be30817eab3ffe5f952f1f5c"
+    },
+    {
+      "role": "diag",
+      "id": "3d426c94be30818988a2f9a409023f0b"
+    },
+    {
+      "role": "log",
+      "id": "3d326c94be3081e897a2e5e0c855c4c0"
+    },
+    {
+      "role": "handoff",
+      "id": "3c826c94be308156a677c50c2106fb37"
+    },
+    {
+      "role": "start",
+      "id": "3d226c94be308194adadf691ed5822a2"
+    },
+    {
+      "role": "task",
+      "id": "3c826c94be30817d8f51d9f6c8c2bc19"
+    }
+  ],
+  "nativeResultImages": 3,
+  "nativeDiagnosticImages": 5,
+  "oldNativeImagesRetained": true,
+  "nativeStage3Children": 4,
+  "numericalTableReadback": {
+    "main": true,
+    "variance": true,
+    "ratios": true,
+    "prepeak": true,
+    "rms": true
+  },
+  "supersededActiveStopClaims": false,
+  "publication": "Native PNG attached; all nine pages read back. Git completion receipt follows externally after verified push."
+}

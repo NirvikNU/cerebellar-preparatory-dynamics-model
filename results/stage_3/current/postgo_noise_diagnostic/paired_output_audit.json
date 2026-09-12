@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "comparisons": 80,
+  "maxRMSError": 1.3877787807814457E-17,
+  "maxBootstrapError": 0
+}

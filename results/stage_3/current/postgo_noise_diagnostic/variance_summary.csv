@@ -1,0 +1,33 @@
+metric,policy,condition,median,bootstrapSE
+Peak-speed variance (m/s)^2,Intact,Full,0.00145781878531975,5.51001411860051e-05
+Peak-speed variance (m/s)^2,Intact,Prep-only,0.0001002900997779,5.82822164373504e-06
+Peak-speed variance (m/s)^2,Intact,Post-only,0.00131426826161619,5.24229163917381e-05
+Peak-speed variance (m/s)^2,Intact,Deterministic,0,0
+Peak-speed variance (m/s)^2,Remove feedback,Full,0.00298766636641608,0.000225993719044545
+Peak-speed variance (m/s)^2,Remove feedback,Prep-only,0.00173342128089865,0.00013187517914834
+Peak-speed variance (m/s)^2,Remove feedback,Post-only,0.0012988415090916,5.36391603294036e-05
+Peak-speed variance (m/s)^2,Remove feedback,Deterministic,0,0
+Peak-speed variance (m/s)^2,Remove b,Full,0.0012929441315344,6.26238120663213e-05
+Peak-speed variance (m/s)^2,Remove b,Prep-only,9.32442737774551e-05,5.02181025509273e-06
+Peak-speed variance (m/s)^2,Remove b,Post-only,0.00117475037142305,5.74883873019662e-05
+Peak-speed variance (m/s)^2,Remove b,Deterministic,0,0
+Peak-speed variance (m/s)^2,Block,Full,0.00708316586120796,0.000455378505910184
+Peak-speed variance (m/s)^2,Block,Prep-only,0.00187445087915577,0.0001202580551985
+Peak-speed variance (m/s)^2,Block,Post-only,0.00593386299886676,0.000347337575426564
+Peak-speed variance (m/s)^2,Block,Deterministic,0,0
+Hand covariance trace m^2,Intact,Full,9.01727404837988e-05,4.48954999940222e-05
+Hand covariance trace m^2,Intact,Prep-only,3.05717075040184e-06,1.0866709856854e-07
+Hand covariance trace m^2,Intact,Post-only,8.25524382385556e-05,4.79032542797775e-05
+Hand covariance trace m^2,Intact,Deterministic,0,0
+Hand covariance trace m^2,Remove feedback,Full,0.00016657882403031,3.88464318021787e-05
+Hand covariance trace m^2,Remove feedback,Prep-only,5.02854562620672e-05,4.03785192033295e-06
+Hand covariance trace m^2,Remove feedback,Post-only,8.34364443616097e-05,4.67919124713559e-05
+Hand covariance trace m^2,Remove feedback,Deterministic,0,0
+Hand covariance trace m^2,Remove b,Full,9.58638325053111e-05,4.64364838268244e-05
+Hand covariance trace m^2,Remove b,Prep-only,2.94335748517442e-06,1.07776861961123e-07
+Hand covariance trace m^2,Remove b,Post-only,0.00010489328945106,4.93154556850758e-05
+Hand covariance trace m^2,Remove b,Deterministic,0,0
+Hand covariance trace m^2,Block,Full,0.0015559821406128,0.000138517683858115
+Hand covariance trace m^2,Block,Prep-only,0.000454036036726195,2.7414209590173e-05
+Hand covariance trace m^2,Block,Post-only,0.00105316568243443,8.02782210601527e-05
+Hand covariance trace m^2,Block,Deterministic,0,0

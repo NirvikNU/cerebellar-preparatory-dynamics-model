@@ -1,0 +1,9 @@
+metric,policy,median,bootstrapSE
+Full minus Prep-only peak-speed RMS (m/s),Intact,0.0361967133705472,0.000838041411604862
+Full minus Prep-only peak-speed RMS (m/s),Remove feedback,0.0367144784922746,0.00149998993563918
+Full minus Prep-only peak-speed RMS (m/s),Remove b,0.0342804339973552,0.000966500450390252
+Full minus Prep-only peak-speed RMS (m/s),Block,0.104769019571294,0.00531464152874003
+Full minus Prep-only hand-position RMS (m),Intact,0.00924907782844015,0.00228253285351134
+Full minus Prep-only hand-position RMS (m),Remove feedback,0.0107330332257081,0.00150366933790907
+Full minus Prep-only hand-position RMS (m),Remove b,0.00944999151794284,0.00223734135047838
+Full minus Prep-only hand-position RMS (m),Block,0.0346003868467377,0.00113848255773406

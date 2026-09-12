@@ -1,0 +1,65 @@
+metric,policy,condition,median,bootstrapSE
+Prep pooled hand R2,Intact,Full,0.951288757003881,0.0206637066404151
+Prep pooled hand R2,Intact,Prep-only,0.994363882705048,0.00102310560525038
+Prep pooled hand R2,Remove feedback,Full,0.91766558070601,0.0144943818498585
+Prep pooled hand R2,Remove feedback,Prep-only,0.974046807715785,0.0019453038577752
+Prep pooled hand R2,Remove b,Full,0.948913857363167,0.0196410568808582
+Prep pooled hand R2,Remove b,Prep-only,0.989315489566684,0.00218455993722184
+Prep pooled hand R2,Block,Full,0.0722281761012532,0.0203122828763399
+Prep pooled hand R2,Block,Prep-only,0.143784139790703,0.0319384064849042
+Prep pooled speed R2,Intact,Full,-0.0175436087215703,0.00823149011612472
+Prep pooled speed R2,Intact,Prep-only,0.00182271280296264,0.0245949722865137
+Prep pooled speed R2,Remove feedback,Full,-0.0087355209189901,0.00663457818525901
+Prep pooled speed R2,Remove feedback,Prep-only,-0.0147591501086073,0.00430893068377106
+Prep pooled speed R2,Remove b,Full,-0.0113680760676044,0.0128236041554753
+Prep pooled speed R2,Remove b,Prep-only,0.400427872354789,0.0859986322393705
+Prep pooled speed R2,Block,Full,0.0669889477900016,0.0212003868311071
+Prep pooled speed R2,Block,Prep-only,0.421312652415102,0.0825419274930947
+Prep within-target hand R2,Intact,Full,-0.12258906448117,0.00740591121676329
+Prep within-target hand R2,Intact,Prep-only,-0.158248617613865,0.00772966037673257
+Prep within-target hand R2,Remove feedback,Full,-0.0721984575425894,0.0194547413083251
+Prep within-target hand R2,Remove feedback,Prep-only,0.0302629252188135,0.0417178937408054
+Prep within-target hand R2,Remove b,Full,-0.178388086481612,0.0138893152309789
+Prep within-target hand R2,Remove b,Prep-only,-0.177944560653802,0.0108542728487109
+Prep within-target hand R2,Block,Full,-0.173904918355626,0.00978432799035026
+Prep within-target hand R2,Block,Prep-only,-0.144202710743042,0.00746990283457242
+Prep within-target speed R2,Intact,Full,0.0511509718488059,0.0152927034214956
+Prep within-target speed R2,Intact,Prep-only,0.0339997549840013,0.0332487965267217
+Prep within-target speed R2,Remove feedback,Full,0.0340419833303921,0.029871786186725
+Prep within-target speed R2,Remove feedback,Prep-only,0.0517773303096373,0.0226439335188913
+Prep within-target speed R2,Remove b,Full,-0.0688246312560296,0.0196057116365553
+Prep within-target speed R2,Remove b,Prep-only,0.0166820126621674,0.0268115840905845
+Prep within-target speed R2,Block,Full,0.0620965518269925,0.031678817741381
+Prep within-target speed R2,Block,Prep-only,0.121427090806565,0.0143215417503063
+Prepeak pooled hand R2,Intact,Full,0.944178919798258,0.0288501974564889
+Prepeak pooled hand R2,Intact,Prep-only,0.984219814588652,0.00351450477538314
+Prepeak pooled hand R2,Remove feedback,Full,0.92327776332007,0.0268177809791214
+Prepeak pooled hand R2,Remove feedback,Prep-only,0.975889393814715,0.00384179724918146
+Prepeak pooled hand R2,Remove b,Full,0.940966010539724,0.0256618740685157
+Prepeak pooled hand R2,Remove b,Prep-only,0.983205453407635,0.00670892303741773
+Prepeak pooled hand R2,Block,Full,0.0635067478128674,0.0325496225879252
+Prepeak pooled hand R2,Block,Prep-only,0.115252104266409,0.0307309710478836
+Prepeak pooled speed R2,Intact,Full,0.0533538916398422,0.024761263039283
+Prepeak pooled speed R2,Intact,Prep-only,0.00107841035733414,0.0243257936697532
+Prepeak pooled speed R2,Remove feedback,Full,0.0229370309976821,0.0151871040302435
+Prepeak pooled speed R2,Remove feedback,Prep-only,-0.00852079546297391,0.0115369560838941
+Prepeak pooled speed R2,Remove b,Full,0.169933825127391,0.0214993441652899
+Prepeak pooled speed R2,Remove b,Prep-only,0.398618914526352,0.0848659997437681
+Prepeak pooled speed R2,Block,Full,0.0348461257080995,0.027427530475891
+Prepeak pooled speed R2,Block,Prep-only,0.395992681812588,0.0590723016291214
+Prepeak within-target hand R2,Intact,Full,0.251116235421695,0.0561284733535669
+Prepeak within-target hand R2,Intact,Prep-only,-0.0374715354372867,0.0217957174995585
+Prepeak within-target hand R2,Remove feedback,Full,0.24300132414117,0.0428359595661435
+Prepeak within-target hand R2,Remove feedback,Prep-only,0.42734279814739,0.0351973142895265
+Prepeak within-target hand R2,Remove b,Full,0.0538170243187881,0.0551756206615441
+Prepeak within-target hand R2,Remove b,Prep-only,-0.11295219142656,0.0151572048060082
+Prepeak within-target hand R2,Block,Full,-0.075233609185139,0.02700185936458
+Prepeak within-target hand R2,Block,Prep-only,0.0663074869485842,0.0333549609241556
+Prepeak within-target speed R2,Intact,Full,0.277254719979888,0.0474366943466045
+Prepeak within-target speed R2,Intact,Prep-only,0.011922929255894,0.0195364232640285
+Prepeak within-target speed R2,Remove feedback,Full,0.160470394160303,0.0321889840741728
+Prepeak within-target speed R2,Remove feedback,Prep-only,0.126466294971362,0.0357026994127812
+Prepeak within-target speed R2,Remove b,Full,0.338458568075315,0.0471715217787556
+Prepeak within-target speed R2,Remove b,Prep-only,0.00307311285483119,0.0145442200118493
+Prepeak within-target speed R2,Block,Full,0.0908641440352145,0.0437598346307354
+Prepeak within-target speed R2,Block,Prep-only,0.0759232114792935,0.0401421622756029

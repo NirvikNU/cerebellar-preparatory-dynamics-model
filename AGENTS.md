@@ -101,8 +101,8 @@ run_stage_3 validate/figures route there after independent validation.
 STAGE3-PREDICTION-VALIDATION-01 separately authorizes fixed-controller
 stochastic prediction validation. Read PREDICTION_PLAN.md and
 PREDICTION_REPAIR_PLAN.md as well as the current Notion binding resolutions.
-The only repair to the original prediction replay helper is nargin<9 to
-nargin<8. Original stop reports/evidence must remain unchanged. Prediction
+The only repair to the original prediction replay helper was nargin<9 to
+nargin<8. Passed preflight/raw dependencies remain protected. Prediction
 outputs are separate under current/prediction_validation and ignored
 cache/prediction_validation; do not overwrite accepted biological outputs.
 Primary s=.10, non-selected .05/.20 sensitivities,30 trials per target,
@@ -111,7 +111,20 @@ family are immutable after outcomes. No learning/adaptation, RRR, target-jump
 test, controller retuning or further model is authorized. The current Notion
 handoff and PREDICTION_REPORT.md record actual completion, not this instruction.
 
-Old isotropic results, gain heatmaps and the prior stop remain historical.
+STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01 adds the completed matched post-GO
+counterfactual at s=.10 only. Read POSTGO_REPORT.md in the Stage-3 manifest
+folder for locked replay identities, unchanged manuscript analyses, full
+mixed/negative outcomes, independent validation and cleanup classifications.
+Compact results are `results/stage_3/current/postgo_noise_diagnostic/`; raw
+replays/fits are `results/stage_3/current/cache/postgo_noise_diagnostic/`.
+The Full baseline and seven existing figure pairs are immutable. One added
+diagnostic_5_postgo_noise_causal FIG/PNG is the current causal diagnostic.
+Completed writers refuse overwrites. Do not rerun or extend this task after
+its checkpoint; stop for scientific review. Superseded stops/interim static
+receipts and closed logs were consolidated into POSTGO_REPORT and retired;
+scientifically meaningful historical dependencies remain explicitly retained.
+
+Old isotropic results and gain heatmaps remain historical.
 Never call historical renderers to overwrite current figures. Full details
 and actual completion/checkpoint status remain in Notion and the run report.
 
@@ -126,8 +139,9 @@ geometry-only selection rules are predeclared and must not be relaxed from
 outcomes. Large reference/grid trajectories are local-only in
 `results/stage_3/current/cache/`; compact map, registry, statistics and audits
 are checkpoint content. Four new figure pairs live in `plots/stage_3/`.
-`run_stage_3` has explicit reference/sweep/consequences/figures/validate actions;
-completed numerical outputs are protected against accidental overwrite.
+`run_stage_3` now exposes only current figures/validate actions and explicitly
+requires current audited evidence. Historical construction functions remain
+reproduction provenance, never an implicit fallback or execution authority.
 That historical construction gate did not authorize prediction/noise. Only
 the separately stated current prediction task does so; learning, adaptation
 and another model remain deferred.

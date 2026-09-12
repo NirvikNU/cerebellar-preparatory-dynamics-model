@@ -181,8 +181,9 @@ represent a literal cerebellar lesion/circuit or establish new predictions.
 Current implementation: STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02. Scientific
 acceptance remains subject to user review. The current plan/report are
 `BIO_RESUME_PLAN.md` and `BIO_RESUME_REPORT.md` in the Stage-3 manifest folder.
-The previous isotropic controller and REVISION-01 stop are historical; their
-code/results and the frozen target geometry remain preserved.
+The previous isotropic controller is historical; its meaningful reproduction
+code/results and frozen target geometry remain preserved. Resolved stop
+details are consolidated in POSTGO_REPORT.md, not active execution authority.
 
 For the unchanged intrinsic state dynamics `f(x)=-x+W*ReLU(x)+h`:
 
@@ -275,6 +276,35 @@ a dedicated biological cortical pathway for kappa0. That deterministic
 evaluation contains no prediction/noise. The separately authorized experiment
 below preserves all its parameters and results; learning/adaptation and
 further model extensions remain excluded.
+
+
+## Matched post-GO-noise causal diagnostic
+
+STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01 preserves the full-noise baseline and
+all frozen biological/controller/geometry and Stage-1/2 results. At s=.10,
+Full and Prep-only share identical achieved noisy GO states and preparatory
+features; only future noise is removed. Post-only uses deterministic policy
+GO states and exact matched original future increments. Deterministic replays
+match frozen movement functions and available saved movements exactly.
+
+Under the unchanged manuscript/full-ensemble feature and regression rules,
+Intact Prep-only speed R2 remains near zero (.001822713 +/- .02459497),
+within-target hand R2 remains negative (-.1582486), and pre-peak pooled speed
+R2 remains near zero (.001078410). Intact Prep-only/Full variance ratios are
+.06928652 for speed and .03803775 for hand position; Post-only/Full ratios
+are .9399881 and .9302745. Future noise contributes much variability but its
+removal does not restore the missing Intact behavioral relationship. Some
+other policies improve, so this is a mixed, policy-dependent result, not a
+complete masking explanation or an additive variance decomposition.
+
+One additional matching FIG/PNG pair is diagnostic_5_postgo_noise_causal in
+`plots/stage_3/{fig,png}/`. Full results, uncertainty, paired changes, validation
+and conservative cleanup inventory are in POSTGO_REPORT.md in the Stage-3
+manifest folder. Compact evidence: `results/stage_3/current/postgo_noise_diagnostic/`;
+raw paired replay/fitting evidence: `results/stage_3/current/cache/postgo_noise_diagnostic/`.
+Separate stage3_postgo phase functions refuse completed-output overwrites;
+stage3_postgo_check is read-only. No parameter or analysis choice was tuned.
+Computational completion is not scientific acceptance; stop for review.
 
 ## Fixed-controller stochastic prediction-validation experiment
 

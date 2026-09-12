@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "matlabFilesScanned": 142,
+  "stage3FunctionReferences": 268,
+  "activeDocumentationPaths": 55,
+  "currentFigurePairs": 8,
+  "scope": "Repository-wide project MATLAB function names and literal active root-document paths. Historical manifest path/hash records refer to their original checkpoints, not current executable dependencies."
+}

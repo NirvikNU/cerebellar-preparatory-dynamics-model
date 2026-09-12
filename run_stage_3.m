@@ -9,20 +9,10 @@ function output = run_stage_3(action)
         fullfile(root,'analysis','stage_2'),fullfile(root,'figures'));
     cfg=stage_3_config(root);
     current=fullfile(cfg.resultsRoot,'biological_revision','resume_02','independent_audit.json');
-    if isfile(current)
-        switch action
-            case 'figures', output=stage3_bio_figures;
-            case 'validate', output=stage3_bio_checkpoint_check;
-            otherwise, error('Stage3:Historical','Historical isotropic execution is retired; current science requires explicit authorization.');
-        end
-        return;
-    end
+    assert(isfile(current),'Stage3:MissingCurrent','Current biological audit is required; historical results are not a fallback.');
     switch action
-        case 'reference', output=stage3_reference(cfg);
-        case 'sweep', output=stage3_sweep(cfg);
-        case 'consequences', output=stage3_consequences(cfg);
-        case 'figures', output=stage3_figures(cfg);
-        case 'validate', output=stage3_validate(cfg);
-        otherwise, error('Stage3:Action','Unknown explicit action.');
+        case 'figures', output=stage3_bio_figures;
+        case 'validate', output=stage3_bio_checkpoint_check;
+        otherwise, error('Stage3:Historical','Historical isotropic execution is retired; current science requires explicit authorization.');
     end
 end

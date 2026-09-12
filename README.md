@@ -1,5 +1,34 @@
 # Frozen movement foundation and preparatory controllers
 
+## Matched post-GO-noise causal diagnostic
+
+STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01 preserves the full-noise baseline and
+all frozen biological/controller/geometry and Stage-1/2 results. At s=.10,
+Full and Prep-only share identical achieved noisy GO states and preparatory
+features; only future noise is removed. Post-only uses deterministic policy
+GO states and exact matched original future increments. Deterministic replays
+match frozen movement functions and available saved movements exactly.
+
+Under the unchanged manuscript/full-ensemble feature and regression rules,
+Intact Prep-only speed R2 remains near zero (.001822713 +/- .02459497),
+within-target hand R2 remains negative (-.1582486), and pre-peak pooled speed
+R2 remains near zero (.001078410). Intact Prep-only/Full variance ratios are
+.06928652 for speed and .03803775 for hand position; Post-only/Full ratios
+are .9399881 and .9302745. Future noise contributes much variability but its
+removal does not restore the missing Intact behavioral relationship. Some
+other policies improve, so this is a mixed, policy-dependent result, not a
+complete masking explanation or an additive variance decomposition.
+
+One additional matching FIG/PNG pair is diagnostic_5_postgo_noise_causal in
+`plots/stage_3/{fig,png}/`. Full results, uncertainty, paired changes, validation
+and conservative cleanup inventory are in POSTGO_REPORT.md in the Stage-3
+manifest folder. Compact evidence: `results/stage_3/current/postgo_noise_diagnostic/`;
+raw paired replay/fitting evidence: `results/stage_3/current/cache/postgo_noise_diagnostic/`.
+Separate stage3_postgo phase functions refuse completed-output overwrites;
+stage3_postgo_check is read-only. No parameter or analysis choice was tuned.
+Computational completion is not scientific acceptance; stop for review.
+
+
 Active local repository: `E:\PROJECTS\Nirvik_Sinha_Data\cerebellar-preparatory-dynamics-model`.
 The manually relocated sibling `cerebellar-preparatory-dynamics-model_archive`
 is preservation-only, not an active dependency. Historical receipts retain
@@ -109,8 +138,9 @@ policy. No controller, geometry or movement parameter is tuned from outcomes.
 RESUME-02 explicitly retires only the predecessor's 500-ms relative Block
 settling cutoff of1e-4. All other retained bounds remain enforced. Achieved
 distance to xB/x*, prospective error and functional readiness are outcomes,
-not new arbitrary terminal-distance gates. The REVISION-01 stop and its native
-network1 cache remain unchanged historical evidence.
+not new arbitrary terminal-distance gates. The original native network1 cache
+remains an unchanged current loader dependency; resolved stop details are
+consolidated in POSTGO_REPORT.md.
 
 Preparation uses native0.2 ms/saved1 ms and the unchanged500-ms cue-to-GO delay.
 Population windows use10-ms sampling, frozen Stage-3 neuron SD/full-reference
@@ -135,9 +165,9 @@ run_stage_3('validate') % bounded current saved-output/figure check, no simulati
 run_stage_3('figures')  % current audited outputs only; regenerates four pairs
 ```
 
-These public actions route to the biological-controller results once their
-independent audit exists. Historical reference/sweep/consequence actions are
-then refused. The historical gain renderer cannot overwrite current figures.
+These public actions require current audited biological-controller results.
+Historical reference/sweep/consequence actions are refused, including when
+current evidence is missing. There is no historical-result fallback.
 Individual `stage3_bio_*` phase functions preserve reproduction provenance and
 refuse overwriting completed outputs; they are not authorization to rerun
 completed simulations. All native preparation/movement/map caches remain
@@ -149,8 +179,8 @@ STAGE3-PREDICTION-VALIDATION-01 adds stochastic single-trial validation, not
 a new controller. The fixed ten networks, primary geometry, gains and four
 policies are unchanged. Use `PREDICTION_PLAN.md` and `PREDICTION_REPAIR_PLAN.md`
 in the Stage-3 manifest folder for the locked analysis and the sole authorized
-optional-step wrapper repair. The two earlier stop reports and failed raw
-preflight evidence remain unchanged provenance.
+optional-step wrapper repair. Resolved stop prose is consolidated into the
+current POSTGO_REPORT.md; required passed preflight/raw evidence is retained.
 
 Thirty trials per target/policy/network use common standardized initial and
 continuous state noise. Primary s=.10; complete .05/.20 sensitivities are not

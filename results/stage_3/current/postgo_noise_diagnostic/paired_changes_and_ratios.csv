@@ -1,0 +1,57 @@
+metric,policy,contrast,median,bootstrapSE
+Prep pooled hand R2,Intact,Prep-only minus Full,0.0416635664523227,0.0198509076237768
+Prep pooled speed R2,Intact,Prep-only minus Full,0.0339518565825933,0.0248806337765959
+Prep within-target hand R2,Intact,Prep-only minus Full,-0.0414589175229493,0.00823626697099417
+Prep within-target speed R2,Intact,Prep-only minus Full,0.0211350225159741,0.0326204207529417
+Prepeak pooled hand R2,Intact,Prep-only minus Full,0.0379215496625735,0.0314811224825142
+Prepeak pooled speed R2,Intact,Prep-only minus Full,-0.0420488508245105,0.0395022416636114
+Prepeak within-target hand R2,Intact,Prep-only minus Full,-0.24615421980749,0.0509354465473318
+Prepeak within-target speed R2,Intact,Prep-only minus Full,-0.278133488759244,0.0427181309270614
+Peak-speed variance,Intact,Prep-only / Full,0.069286519775604,0.0047377792967007
+Peak-speed variance,Intact,Post-only / Full,0.939988091004874,0.0169354169671906
+Peak-speed variance,Intact,Full minus Prep-only (SI variance units),0.00134163608007566,5.05786154050095e-05
+Hand-position variance,Intact,Prep-only / Full,0.0380377481194521,0.0184353309945096
+Hand-position variance,Intact,Post-only / Full,0.930274470007998,0.0205767762844778
+Hand-position variance,Intact,Full minus Prep-only (SI variance units),8.72637906226435e-05,4.48561535803015e-05
+Prep pooled hand R2,Remove feedback,Prep-only minus Full,0.0557820851307885,0.0147206952471644
+Prep pooled speed R2,Remove feedback,Prep-only minus Full,0.00169834153409321,0.00650062733491942
+Prep within-target hand R2,Remove feedback,Prep-only minus Full,0.0926969642442564,0.0168279064082721
+Prep within-target speed R2,Remove feedback,Prep-only minus Full,0.00957523472801852,0.01745326513175
+Prepeak pooled hand R2,Remove feedback,Prep-only minus Full,0.0618733683577264,0.0249744816075953
+Prepeak pooled speed R2,Remove feedback,Prep-only minus Full,-0.0064677048091667,0.0148076696455869
+Prepeak within-target hand R2,Remove feedback,Prep-only minus Full,0.225255809143193,0.0448579599772882
+Prepeak within-target speed R2,Remove feedback,Prep-only minus Full,-0.0262745759967283,0.039545422806865
+Peak-speed variance,Remove feedback,Prep-only / Full,0.564492694292441,0.0283648045431931
+Peak-speed variance,Remove feedback,Post-only / Full,0.466497363405562,0.0192007567483727
+Peak-speed variance,Remove feedback,Full minus Prep-only (SI variance units),0.00119565254694847,0.000123083555718387
+Hand-position variance,Remove feedback,Prep-only / Full,0.285280187934647,0.0465339140280888
+Hand-position variance,Remove feedback,Post-only / Full,0.472137822172093,0.105057229794011
+Hand-position variance,Remove feedback,Full minus Prep-only (SI variance units),0.000117762732572409,3.71957146381287e-05
+Prep pooled hand R2,Remove b,Prep-only minus Full,0.0419164395177633,0.0197677371530425
+Prep pooled speed R2,Remove b,Prep-only minus Full,0.425424547051277,0.0743933788439576
+Prep within-target hand R2,Remove b,Prep-only minus Full,0.00451506828939002,0.0148494123632369
+Prep within-target speed R2,Remove b,Prep-only minus Full,0.104540014947689,0.0460342910478076
+Prepeak pooled hand R2,Remove b,Prep-only minus Full,0.0433431753820631,0.0296416283611201
+Prepeak pooled speed R2,Remove b,Prep-only minus Full,0.245902651174105,0.08534865927526
+Prepeak within-target hand R2,Remove b,Prep-only minus Full,-0.15513184875732,0.0636530446713674
+Prepeak within-target speed R2,Remove b,Prep-only minus Full,-0.352567791292141,0.0255829406504818
+Peak-speed variance,Remove b,Prep-only / Full,0.0711146142795082,0.00534399388729914
+Peak-speed variance,Remove b,Post-only / Full,0.938382572371215,0.0175701762249911
+Peak-speed variance,Remove b,Full minus Prep-only (SI variance units),0.00118371716481077,6.07475229286612e-05
+Hand-position variance,Remove b,Prep-only / Full,0.0364808840935479,0.0137407614697476
+Hand-position variance,Remove b,Post-only / Full,0.94967686586207,0.0633279202306537
+Hand-position variance,Remove b,Full minus Prep-only (SI variance units),9.26159190235898e-05,4.64135449278857e-05
+Prep pooled hand R2,Block,Prep-only minus Full,0.0647935962568634,0.0145155426767234
+Prep pooled speed R2,Block,Prep-only minus Full,0.31853700423487,0.0637397291237517
+Prep within-target hand R2,Block,Prep-only minus Full,0.0289135116832904,0.0109882388200569
+Prep within-target speed R2,Block,Prep-only minus Full,0.047944187822163,0.0203466686524585
+Prepeak pooled hand R2,Block,Prep-only minus Full,0.0343408983414469,0.0237224710350662
+Prepeak pooled speed R2,Block,Prep-only minus Full,0.375285457882466,0.0489086254480284
+Prepeak within-target hand R2,Block,Prep-only minus Full,0.14364038921861,0.0421127012838558
+Prepeak within-target speed R2,Block,Prep-only minus Full,-0.0727000692567739,0.0317869783558833
+Peak-speed variance,Block,Prep-only / Full,0.256588436139168,0.0217933639366172
+Peak-speed variance,Block,Post-only / Full,0.831373740133222,0.0211601693404071
+Peak-speed variance,Block,Full minus Prep-only (SI variance units),0.00523154568146115,0.000430098380439789
+Hand-position variance,Block,Prep-only / Full,0.306409901992576,0.0153850682762581
+Hand-position variance,Block,Post-only / Full,0.676101606676099,0.0218932812916325
+Hand-position variance,Block,Full minus Prep-only (SI variance units),0.00104775458056507,0.000117105605186923
