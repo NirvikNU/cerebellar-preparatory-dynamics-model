@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "figures": ["diagnostic_9_movement_landscape", "diagnostic_10_launch_sensitivity"],
+  "finalPNGsVisuallyInspected": 2,
+  "finalFIGsReopenedAndChecked": 2,
+  "displayCorrections": ["equal plane-axis units", "common darker flow-arrow scale", "snapshot legend outside trajectory panels", "common amplitude limits and exact fraction ticks", "paired-sign legend columns"],
+  "numericalArraysChangedForDisplay": false,
+  "existingFigureFilesChanged": 0,
+  "validationReceipt": "FIGURES_FINAL.json"
+}

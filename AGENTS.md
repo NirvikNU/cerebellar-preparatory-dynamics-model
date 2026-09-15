@@ -91,6 +91,20 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is analysis-only on the frozen
+movement generators. Read PLAN.md and the actual receipts/report under
+`artifacts/manifests/stage1_movement_landscape/`. The fixed alpha grid,
+root-search tolerances, network-1/T3 plane, Q direction classes, perturbation
+fractions/seeds and network-bootstrap rules must not be tuned from outcomes.
+New diagnostic helpers are `analysis/published_generator/landscape_*.m` and
+`figures/published_generator/landscape_figures.m`. The two additional pairs
+live in `plots/stage_1/diagnostics/movement_landscape/{fig,png}/`; do not add
+them to the original eight-pair canonical directory or modify its validator.
+Numerical outputs remain ignored in the Stage-1 current/cache hierarchy.
+Existing Stage-1/2/3 science and figures remain immutable. Stop for review
+after the authorized diagnostic checkpoint; no pending Stage-3 reanalysis
+or later model is authorized by this diagnostic.
+
 STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02 is the current controller revision.
 Read BIO_RESUME_PLAN.md and BIO_RESUME_REPORT.md in the Stage-3 manifest
 folder before work. The saved REVISION-01 kappa0/P/Q/L and primary geometry

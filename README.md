@@ -1,5 +1,42 @@
 # Frozen movement foundation and preparatory controllers
 
+## Stage-1 movement landscape and launch sensitivity
+
+STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is an additive diagnostic of the
+accepted, frozen movement generator, not a new model or acceptance criterion.
+Its locked plan, preservation manifest and actual validation/outcome receipts
+are in `artifacts/manifests/stage1_movement_landscape/`.
+
+The full 200-dimensional frozen-drive field is searched at alpha=0:0.1:5
+using fixed multistart/forward-backward continuation. Local stability is
+computed from the ReLU active-set Jacobian in physical time. This identifies
+roots found by that search; it does not establish uniqueness or completeness.
+The fixed network-1/T3 flow snapshots are projections, not autonomous 2-D
+systems. Calibrated x* states are launch states; the time-varying movement
+drive makes the actual movement a non-autonomous transient.
+
+Equal-norm launch perturbations use the frozen Q's top/bottom five directions
+and ten seeded isotropic directions, both signs, and the fixed fractions
+0/.01/.025/.05/.10/.20 of each network's median launch-state separation.
+Directions and targets are aggregated within networks before reporting
+network median +/- whole-network bootstrap SE. No parameter is recalibrated.
+The fixed search found one stable root at every grid point, without proving
+uniqueness; no accepted trajectory entered the predeclared proximity range.
+All 16,000 prescribed perturbation movements and the independent numerical
+audit passed. At 1% displacement, potent/random/null early hand-error
+medians are approximately 0.569/0.104/near-zero mm, with both signs retained.
+The new `landscape_*` analysis helpers are separate from bounded public
+Stage-1 validation entry points; completed writers refuse overwrites.
+
+Compact evidence is local-only in
+`results/stage_1/current/movement_landscape_diagnostic/`; raw evidence is in
+`results/stage_1/cache/movement_landscape_diagnostic/`. The two additional
+Diagnostic 9/10 FIG+PNG pairs belong to
+`plots/stage_1/diagnostics/movement_landscape/{fig,png}/`, preserving the
+original eight-pair canonical gallery and two active-set pairs. See the run
+report for actual completion and interpretation. Completion does not
+authorize any subsequent Stage-3 analysis or new model.
+
 ## Matched post-GO-noise causal diagnostic
 
 STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01 preserves the full-noise baseline and

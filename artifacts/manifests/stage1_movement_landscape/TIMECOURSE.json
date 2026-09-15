@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cachedMovements": 16000,
+  "savedTimes": 599,
+  "networkCount": 10,
+  "independentBootstrapChecks": 180,
+  "maximumBootstrapError": 3.6082248300317588E-16,
+  "dimensionOrder": "network x saved-time x direction-class x sign x amplitude",
+  "newModelReplays": 0
+}

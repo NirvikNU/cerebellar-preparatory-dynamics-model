@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "key": "parent",
+      "id": "3c426c94be308184a8e9d89034b8a477",
+      "images": 0,
+      "oldImagesPreserved": true,
+      "children": 4,
+      "truncated": false,
+      "unknownBlockCount": 0,
+      "revision": "2026-09-15T11:19:30.690Z"
+    },
+    {
+      "key": "spec",
+      "id": "3c426c94be3081648e5fd9111425c083",
+      "images": 0,
+      "oldImagesPreserved": true,
+      "children": 0,
+      "truncated": false,
+      "unknownBlockCount": 0,
+      "revision": "2026-09-15T11:19:32.473Z"
+    },
+    {
+      "key": "summary",
+      "id": "3c426c94be30818ea257d3d7bf74e5f7",
+      "images": 0,
+      "oldImagesPreserved": true,
+      "children": 0,
+      "truncated": false,
+      "unknownBlockCount": 0,
+      "revision": "2026-09-15T11:19:31.518Z"
+    },
+    {
+      "key": "results",
+      "id": "3c426c94be3081de86ecf970620f4f0e",
+      "images": 8,
+      "oldImagesPreserved": true,
+      "children": 0,
+      "truncated": false,
+      "unknownBlockCount": 0,
+      "revision": "2026-09-15T11:19:33.614Z"
+    },
+    {
+      "key": "diag",
+      "id": "3cf26c94be30819a8b34c69b4693180c",
+      "images": 4,
+      "oldImagesPreserved": true,
+      "children": 0,
+      "truncated": false,
+      "unknownBlockCount": 0,
+      "revision": "2026-09-15T11:30:00.424Z"
+    }
+  ],
+  "nativeNewPNGs": 2,
+  "allOldStage1ImagesPreserved": true
+}

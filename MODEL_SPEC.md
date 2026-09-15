@@ -35,6 +35,27 @@ in the absence of movement input. To release target q, initialize at that
 member's own calibrated `x*_{q,j}`. Target identity resides in the initial
 state, not a target-specific movement drive.
 
+## Additive frozen movement-landscape diagnostic
+
+For a frozen scalar alpha, instantaneous equilibria satisfy
+`-x + W max(0,x) + h + alpha*ones(200,1) = 0`. Their local physical-time
+Jacobian is `(-I + W diag(x>0))/tau`. The fixed multistart/continuation
+search, numerical tolerances and explicit ReLU-kink flags are specified in
+`artifacts/manifests/stage1_movement_landscape/PLAN.md`; found equilibria
+are not an exhaustive enumeration. Distances along actual trajectories
+use roots corrected at the exact instantaneous input, with missing stable
+roots reported as gaps. No discontinuous branch interpolation is assumed.
+
+Diagnostic launch perturbations leave W, h, x_sp, all calibrated x*, Q,
+movement drive, readout and arm unchanged. Native 0.2-ms neural differences
+are compared to the same-target unperturbed trajectory. Early hand RMS uses
+the comparator's kinematic movement onset plus 0:200 ms; this is distinct
+from the retained 100-ms early cortical/torque mapping diagnostic. Final
+hand error uses the original arm horizon, not an extended settling period.
+Both perturbation signs remain visible and networks, not trials/directions,
+are the independent units. These descriptive results cannot establish that
+x* is an attractor without the relevant full-space fixed-point evidence.
+
 ## Output, arm and targets
 
 The fixed rank-2 excitatory readout `Ce_j` is 2x160.

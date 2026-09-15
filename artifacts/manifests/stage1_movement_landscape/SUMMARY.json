@@ -1,0 +1,1651 @@
+{
+  "rootSummary": [
+    {
+      "network": 1,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 7.37188088351104E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 2,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 4.9737991503207013E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 3,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 20,
+      "maxConvergedResidual": 6.1284310959308641E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 4,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 4.8960835385969403E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 5,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 4.6185277824406512E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 6,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 16,
+      "maxConvergedResidual": 4.6185277824406512E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 7,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 6.6613381477509392E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 8,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 3.9968028886505635E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 9,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 5.81756864903582E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    },
+    {
+      "network": 10,
+      "minRoots": 1,
+      "maxRoots": 1,
+      "minStable": 1,
+      "maxStable": 1,
+      "maxUnstable": 0,
+      "attempts": 8309,
+      "failedAttempts": 0,
+      "maxConvergedResidual": 5.6843418860808015E-14,
+      "unmatchedForwardLinks": 0,
+      "nonreciprocalLinks": 0,
+      "activeSetLinkGaps": 0
+    }
+  ],
+  "targetLandscape": [
+    {
+      "network": 1,
+      "target": 1,
+      "minimumDistance": 2.0801725815748111,
+      "minimumNormalizedDistance": 0.48058374064539877,
+      "finalDistance": 2.4178467685753366,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.13310710666131
+    },
+    {
+      "network": 1,
+      "target": 2,
+      "minimumDistance": 3.2499622667216643,
+      "minimumNormalizedDistance": 0.7508410777701261,
+      "finalDistance": 3.4514905388864605,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.931753849722046
+    },
+    {
+      "network": 1,
+      "target": 3,
+      "minimumDistance": 2.4498596469650908,
+      "minimumNormalizedDistance": 0.565992804454411,
+      "finalDistance": 2.4498596469650908,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 24.167709408658055
+    },
+    {
+      "network": 1,
+      "target": 4,
+      "minimumDistance": 1.9384955115405975,
+      "minimumNormalizedDistance": 0.44785198709580815,
+      "finalDistance": 1.9384955115405975,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 17.169872222415229
+    },
+    {
+      "network": 1,
+      "target": 5,
+      "minimumDistance": 2.478103065392526,
+      "minimumNormalizedDistance": 0.57251790136064662,
+      "finalDistance": 2.478103065392526,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.962894500201131
+    },
+    {
+      "network": 1,
+      "target": 6,
+      "minimumDistance": 2.65866750455142,
+      "minimumNormalizedDistance": 0.6142338312633594,
+      "finalDistance": 2.65866750455142,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 27.178932427836322
+    },
+    {
+      "network": 1,
+      "target": 7,
+      "minimumDistance": 2.8956326923575753,
+      "minimumNormalizedDistance": 0.66898006595913961,
+      "finalDistance": 2.8956326923575753,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 31.903699908667239
+    },
+    {
+      "network": 1,
+      "target": 8,
+      "minimumDistance": 2.12070106784463,
+      "minimumNormalizedDistance": 0.48994706545160294,
+      "finalDistance": 2.12070106784463,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.453339952679009
+    },
+    {
+      "network": 2,
+      "target": 1,
+      "minimumDistance": 2.52557087393748,
+      "minimumNormalizedDistance": 0.61199132096632014,
+      "finalDistance": 2.6602928766292888,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 21.525785211318908
+    },
+    {
+      "network": 2,
+      "target": 2,
+      "minimumDistance": 2.8300021471971988,
+      "minimumNormalizedDistance": 0.68576050281280287,
+      "finalDistance": 2.8300021471971988,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 25.779829578180951
+    },
+    {
+      "network": 2,
+      "target": 3,
+      "minimumDistance": 2.2723911889819641,
+      "minimumNormalizedDistance": 0.55064132226436391,
+      "finalDistance": 2.2723911889819641,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.123509579921659
+    },
+    {
+      "network": 2,
+      "target": 4,
+      "minimumDistance": 2.060849308636421,
+      "minimumNormalizedDistance": 0.499380913725311,
+      "finalDistance": 2.060849308636421,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.670434002450641
+    },
+    {
+      "network": 2,
+      "target": 5,
+      "minimumDistance": 2.1236701863295817,
+      "minimumNormalizedDistance": 0.51460354410976827,
+      "finalDistance": 2.1236701863295817,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.336941851172632
+    },
+    {
+      "network": 2,
+      "target": 6,
+      "minimumDistance": 2.2381798598428997,
+      "minimumNormalizedDistance": 0.54235130089617012,
+      "finalDistance": 2.2381798598428997,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.741817802832177
+    },
+    {
+      "network": 2,
+      "target": 7,
+      "minimumDistance": 2.8185592147261738,
+      "minimumNormalizedDistance": 0.68298767413040951,
+      "finalDistance": 2.8185592147261738,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 25.126238210821004
+    },
+    {
+      "network": 2,
+      "target": 8,
+      "minimumDistance": 1.6885723962519812,
+      "minimumNormalizedDistance": 0.40917151127832335,
+      "finalDistance": 1.6885723962519812,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.029823541887282
+    },
+    {
+      "network": 3,
+      "target": 1,
+      "minimumDistance": 2.4670300414177979,
+      "minimumNormalizedDistance": 0.58861002804645068,
+      "finalDistance": 2.4670300414177979,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.431743100374344
+    },
+    {
+      "network": 3,
+      "target": 2,
+      "minimumDistance": 2.6414796926531618,
+      "minimumNormalizedDistance": 0.63023206441505908,
+      "finalDistance": 2.6414796926531618,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 31.534356158333608
+    },
+    {
+      "network": 3,
+      "target": 3,
+      "minimumDistance": 2.6131661881286177,
+      "minimumNormalizedDistance": 0.62347673010112925,
+      "finalDistance": 2.6131661881286177,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.205885650731517
+    },
+    {
+      "network": 3,
+      "target": 4,
+      "minimumDistance": 2.3570629432775965,
+      "minimumNormalizedDistance": 0.56237291879613449,
+      "finalDistance": 2.3570629432775965,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.067697025909379
+    },
+    {
+      "network": 3,
+      "target": 5,
+      "minimumDistance": 2.5566882040336347,
+      "minimumNormalizedDistance": 0.61000161741743864,
+      "finalDistance": 2.6343983595372356,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.991567496209672
+    },
+    {
+      "network": 3,
+      "target": 6,
+      "minimumDistance": 2.5179587087912902,
+      "minimumNormalizedDistance": 0.600761126260825,
+      "finalDistance": 2.5179587087912902,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.074509471159946
+    },
+    {
+      "network": 3,
+      "target": 7,
+      "minimumDistance": 2.4033145493242749,
+      "minimumNormalizedDistance": 0.57340811442621409,
+      "finalDistance": 2.4033145493242749,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.350313952524516
+    },
+    {
+      "network": 3,
+      "target": 8,
+      "minimumDistance": 2.3646100099236662,
+      "minimumNormalizedDistance": 0.56417357749733887,
+      "finalDistance": 2.3646100099236662,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.77629764249285
+    },
+    {
+      "network": 4,
+      "target": 1,
+      "minimumDistance": 2.9825742622773106,
+      "minimumNormalizedDistance": 0.70711944497572143,
+      "finalDistance": 3.1490313088049495,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.964815618094455
+    },
+    {
+      "network": 4,
+      "target": 2,
+      "minimumDistance": 3.1213284074344774,
+      "minimumNormalizedDistance": 0.74001577729929668,
+      "finalDistance": 3.41922515866957,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 32.33688441114267
+    },
+    {
+      "network": 4,
+      "target": 3,
+      "minimumDistance": 2.3468891675989649,
+      "minimumNormalizedDistance": 0.55640893392039037,
+      "finalDistance": 2.3468891675989649,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 24.916536769292406
+    },
+    {
+      "network": 4,
+      "target": 4,
+      "minimumDistance": 2.3709814897208914,
+      "minimumNormalizedDistance": 0.56212082839440258,
+      "finalDistance": 2.3709814897208914,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.810904714271825
+    },
+    {
+      "network": 4,
+      "target": 5,
+      "minimumDistance": 2.8915341086309163,
+      "minimumNormalizedDistance": 0.68553531755560859,
+      "finalDistance": 3.1261687119654487,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.452813676846947
+    },
+    {
+      "network": 4,
+      "target": 6,
+      "minimumDistance": 2.8475561799310229,
+      "minimumNormalizedDistance": 0.67510887187518942,
+      "finalDistance": 3.1847225927823857,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 29.580541683023849
+    },
+    {
+      "network": 4,
+      "target": 7,
+      "minimumDistance": 2.4745284038466564,
+      "minimumNormalizedDistance": 0.58667010362004379,
+      "finalDistance": 2.4745284038466564,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 24.742181932564669
+    },
+    {
+      "network": 4,
+      "target": 8,
+      "minimumDistance": 2.2128745687499376,
+      "minimumNormalizedDistance": 0.52463627030047033,
+      "finalDistance": 2.2128745687499376,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 27.752854173290618
+    },
+    {
+      "network": 5,
+      "target": 1,
+      "minimumDistance": 1.9587641378318821,
+      "minimumNormalizedDistance": 0.49586266675114593,
+      "finalDistance": 1.9587641378318821,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 18.08721611450137
+    },
+    {
+      "network": 5,
+      "target": 2,
+      "minimumDistance": 2.2069018260532873,
+      "minimumNormalizedDistance": 0.55867891574533235,
+      "finalDistance": 2.2069018260532873,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.983225936223636
+    },
+    {
+      "network": 5,
+      "target": 3,
+      "minimumDistance": 2.1586650454628749,
+      "minimumNormalizedDistance": 0.54646773717764263,
+      "finalDistance": 2.1586650454628749,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.846372642789589
+    },
+    {
+      "network": 5,
+      "target": 4,
+      "minimumDistance": 1.6633439316903609,
+      "minimumNormalizedDistance": 0.42107681152732479,
+      "finalDistance": 1.6633439316903609,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 18.809532759144215
+    },
+    {
+      "network": 5,
+      "target": 5,
+      "minimumDistance": 1.5578776765863411,
+      "minimumNormalizedDistance": 0.39437794692281852,
+      "finalDistance": 1.5578776765863411,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 16.932274290489129
+    },
+    {
+      "network": 5,
+      "target": 6,
+      "minimumDistance": 2.23861896106073,
+      "minimumNormalizedDistance": 0.56670813317010349,
+      "finalDistance": 2.23861896106073,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.598030103461966
+    },
+    {
+      "network": 5,
+      "target": 7,
+      "minimumDistance": 2.1886224247775425,
+      "minimumNormalizedDistance": 0.55405147107849362,
+      "finalDistance": 2.1886224247775425,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 21.288290897975465
+    },
+    {
+      "network": 5,
+      "target": 8,
+      "minimumDistance": 1.6959593977190992,
+      "minimumNormalizedDistance": 0.4293334421496533,
+      "finalDistance": 1.6959593977190992,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.200404666017402
+    },
+    {
+      "network": 6,
+      "target": 1,
+      "minimumDistance": 2.07591599541657,
+      "minimumNormalizedDistance": 0.51663523863099392,
+      "finalDistance": 2.07591599541657,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 17.141515860826079
+    },
+    {
+      "network": 6,
+      "target": 2,
+      "minimumDistance": 2.2265544251480156,
+      "minimumNormalizedDistance": 0.55412477157121609,
+      "finalDistance": 2.2265544251480156,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.910567340010598
+    },
+    {
+      "network": 6,
+      "target": 3,
+      "minimumDistance": 2.2419292924270264,
+      "minimumNormalizedDistance": 0.55795112978761285,
+      "finalDistance": 2.2419292924270264,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.525915575711608
+    },
+    {
+      "network": 6,
+      "target": 4,
+      "minimumDistance": 1.7508436293836103,
+      "minimumNormalizedDistance": 0.43573416182028274,
+      "finalDistance": 1.7508436293836103,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.05735717961576
+    },
+    {
+      "network": 6,
+      "target": 5,
+      "minimumDistance": 1.56178505975597,
+      "minimumNormalizedDistance": 0.38868297118903072,
+      "finalDistance": 1.56178505975597,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 16.753828136051197
+    },
+    {
+      "network": 6,
+      "target": 6,
+      "minimumDistance": 2.05379639608292,
+      "minimumNormalizedDistance": 0.511130312369337,
+      "finalDistance": 2.05379639608292,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.151728911417017
+    },
+    {
+      "network": 6,
+      "target": 7,
+      "minimumDistance": 2.1905129322293928,
+      "minimumNormalizedDistance": 0.5451550900736305,
+      "finalDistance": 2.1905129322293928,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.637247151129149
+    },
+    {
+      "network": 6,
+      "target": 8,
+      "minimumDistance": 1.728118593626254,
+      "minimumNormalizedDistance": 0.43007856000531447,
+      "finalDistance": 1.728118593626254,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 18.310245325739267
+    },
+    {
+      "network": 7,
+      "target": 1,
+      "minimumDistance": 2.2409824678154582,
+      "minimumNormalizedDistance": 0.55690327231306946,
+      "finalDistance": 2.2409824678154582,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.664602972596271
+    },
+    {
+      "network": 7,
+      "target": 2,
+      "minimumDistance": 2.9849466240291758,
+      "minimumNormalizedDistance": 0.74178471562169657,
+      "finalDistance": 3.041186533862295,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 32.699145028407436
+    },
+    {
+      "network": 7,
+      "target": 3,
+      "minimumDistance": 2.7072929741692788,
+      "minimumNormalizedDistance": 0.67278541357567223,
+      "finalDistance": 2.7072929741692788,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.452817206106715
+    },
+    {
+      "network": 7,
+      "target": 4,
+      "minimumDistance": 1.7698713630897327,
+      "minimumNormalizedDistance": 0.43982814137706655,
+      "finalDistance": 1.7698713630897327,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.5560352588469
+    },
+    {
+      "network": 7,
+      "target": 5,
+      "minimumDistance": 1.8942866776676821,
+      "minimumNormalizedDistance": 0.47074640906073217,
+      "finalDistance": 1.8942866776676821,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 18.030814721358666
+    },
+    {
+      "network": 7,
+      "target": 6,
+      "minimumDistance": 2.619347107365769,
+      "minimumNormalizedDistance": 0.65093011496772379,
+      "finalDistance": 2.619347107365769,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 27.690553981244769
+    },
+    {
+      "network": 7,
+      "target": 7,
+      "minimumDistance": 2.8410290307895578,
+      "minimumNormalizedDistance": 0.70601996521885468,
+      "finalDistance": 2.8410290307895578,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.218795444934351
+    },
+    {
+      "network": 7,
+      "target": 8,
+      "minimumDistance": 2.0508747704396844,
+      "minimumNormalizedDistance": 0.50965988675295115,
+      "finalDistance": 2.0508747704396844,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.15557559135576
+    },
+    {
+      "network": 8,
+      "target": 1,
+      "minimumDistance": 2.1694394629506495,
+      "minimumNormalizedDistance": 0.50951231890117366,
+      "finalDistance": 2.1694394629506495,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.705471349766221
+    },
+    {
+      "network": 8,
+      "target": 2,
+      "minimumDistance": 2.8662105160273184,
+      "minimumNormalizedDistance": 0.67315525112360741,
+      "finalDistance": 2.9482395233659728,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.227994053397332
+    },
+    {
+      "network": 8,
+      "target": 3,
+      "minimumDistance": 2.4630670742849832,
+      "minimumNormalizedDistance": 0.57847339741907289,
+      "finalDistance": 2.4630670742849832,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.315492525584645
+    },
+    {
+      "network": 8,
+      "target": 4,
+      "minimumDistance": 1.7995241579436989,
+      "minimumNormalizedDistance": 0.4226343911830247,
+      "finalDistance": 1.7995241579436989,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.33023668856416
+    },
+    {
+      "network": 8,
+      "target": 5,
+      "minimumDistance": 2.0636703184329148,
+      "minimumNormalizedDistance": 0.484671486505635,
+      "finalDistance": 2.0636703184329148,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.022600345495629
+    },
+    {
+      "network": 8,
+      "target": 6,
+      "minimumDistance": 2.6079545877902164,
+      "minimumNormalizedDistance": 0.6125015296839259,
+      "finalDistance": 2.6079545877902164,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 28.022678763950839
+    },
+    {
+      "network": 8,
+      "target": 7,
+      "minimumDistance": 2.5429376687397749,
+      "minimumNormalizedDistance": 0.59723172300854421,
+      "finalDistance": 2.5429376687397749,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 29.089412905354084
+    },
+    {
+      "network": 8,
+      "target": 8,
+      "minimumDistance": 2.0310136940688395,
+      "minimumNormalizedDistance": 0.47700178532642168,
+      "finalDistance": 2.0310136940688395,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.221535873175473
+    },
+    {
+      "network": 9,
+      "target": 1,
+      "minimumDistance": 2.4919463083482185,
+      "minimumNormalizedDistance": 0.60763644163144748,
+      "finalDistance": 2.7500652745404226,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 24.658913005662271
+    },
+    {
+      "network": 9,
+      "target": 2,
+      "minimumDistance": 2.5774440521402311,
+      "minimumNormalizedDistance": 0.62848422018560568,
+      "finalDistance": 2.5774440521402311,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 30.993986271770158
+    },
+    {
+      "network": 9,
+      "target": 3,
+      "minimumDistance": 2.7900624544012156,
+      "minimumNormalizedDistance": 0.68032911304803045,
+      "finalDistance": 2.7900624544012156,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 32.791300010412918
+    },
+    {
+      "network": 9,
+      "target": 4,
+      "minimumDistance": 2.4085816938885261,
+      "minimumNormalizedDistance": 0.58730880555094056,
+      "finalDistance": 2.4085816938885261,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.896161515248043
+    },
+    {
+      "network": 9,
+      "target": 5,
+      "minimumDistance": 2.1510751163845527,
+      "minimumNormalizedDistance": 0.52451837546542124,
+      "finalDistance": 2.1510751163845527,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.282301505609418
+    },
+    {
+      "network": 9,
+      "target": 6,
+      "minimumDistance": 2.2217832186661695,
+      "minimumNormalizedDistance": 0.541759846327365,
+      "finalDistance": 2.2217832186661695,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 25.388032530266322
+    },
+    {
+      "network": 9,
+      "target": 7,
+      "minimumDistance": 2.5277355975407527,
+      "minimumNormalizedDistance": 0.616363305553281,
+      "finalDistance": 2.5277355975407527,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 25.719428845770725
+    },
+    {
+      "network": 9,
+      "target": 8,
+      "minimumDistance": 2.3762320396632761,
+      "minimumNormalizedDistance": 0.57942066256985525,
+      "finalDistance": 2.3762320396632761,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 21.213478756942276
+    },
+    {
+      "network": 10,
+      "target": 1,
+      "minimumDistance": 1.8754581664562173,
+      "minimumNormalizedDistance": 0.45881012376297281,
+      "finalDistance": 1.8754581664562173,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 17.835318474612407
+    },
+    {
+      "network": 10,
+      "target": 2,
+      "minimumDistance": 2.5291455509040079,
+      "minimumNormalizedDistance": 0.61872752161541189,
+      "finalDistance": 2.5291455509040079,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 24.504692698392493
+    },
+    {
+      "network": 10,
+      "target": 3,
+      "minimumDistance": 2.0597450330946976,
+      "minimumNormalizedDistance": 0.50389387001899233,
+      "finalDistance": 2.0597450330946976,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.888856802464115
+    },
+    {
+      "network": 10,
+      "target": 4,
+      "minimumDistance": 1.884678673358998,
+      "minimumNormalizedDistance": 0.46106581892529991,
+      "finalDistance": 1.884678673358998,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 19.012324279708452
+    },
+    {
+      "network": 10,
+      "target": 5,
+      "minimumDistance": 1.7437171785341796,
+      "minimumNormalizedDistance": 0.42658114630335886,
+      "finalDistance": 1.7437171785341796,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 17.691425937071532
+    },
+    {
+      "network": 10,
+      "target": 6,
+      "minimumDistance": 2.2941290479442151,
+      "minimumNormalizedDistance": 0.56123333020240351,
+      "finalDistance": 2.2941290479442151,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 22.942318880086471
+    },
+    {
+      "network": 10,
+      "target": 7,
+      "minimumDistance": 2.4016928548586773,
+      "minimumNormalizedDistance": 0.58754762739416277,
+      "finalDistance": 2.4016928548586773,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 23.049319455697169
+    },
+    {
+      "network": 10,
+      "target": 8,
+      "minimumDistance": 1.9760412922635808,
+      "minimumNormalizedDistance": 0.48341667443178532,
+      "finalDistance": 1.9760412922635808,
+      "everWithinOnePercent": false,
+      "stableRootCoverage": 1,
+      "minimumFieldSpeed": 20.519142397578587
+    }
+  ],
+  "fraction": [
+    0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "metricNames": [
+    "Native maximum neural amplification",
+    "Early hand RMS (mm)",
+    "Final position deviation (mm)",
+    "Signed peak-speed change (m/s)",
+    "Intended-target endpoint error (mm)",
+    "Endpoint-error change (mm)",
+    "Torque RMS (source units)"
+  ],
+  "median": [
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1.9368611461410041,
+          0.569407239468861,
+          3.8734894215903597,
+          0.00028806899067536991,
+          4.2415843601473835,
+          2.5099487736712773,
+          0.008435469180520459
+        ],
+        [
+          1.9368611461410143,
+          1.4234985603756858,
+          9.6826028752789917,
+          0.00094554898276039633,
+          9.76564498596668,
+          8.0975546751565979,
+          0.021088337847300426
+        ],
+        [
+          1.9368611461410343,
+          2.8469478044321672,
+          19.360289728573385,
+          0.0026360991549622828,
+          19.36869074932617,
+          17.700600438516087,
+          0.042175624306661934
+        ],
+        [
+          1.9368611461410257,
+          5.6938192335507072,
+          38.690986685034446,
+          0.0086237677281666928,
+          38.683707863416288,
+          37.015617552606216,
+          0.084347344433484239
+        ],
+        [
+          1.9368218273630826,
+          11.387724296153742,
+          77.166420316333557,
+          0.034229014851365612,
+          77.136534088544622,
+          75.323896878971283,
+          0.1686741733943134
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1.9368611461410334,
+          0.569420232433158,
+          3.8739351854596338,
+          -0.00016914309208009574,
+          4.2040892075642,
+          2.3435382247154077,
+          0.008435655752476668
+        ],
+        [
+          1.9368611461410372,
+          1.4235792035387838,
+          9.6854097000039765,
+          -0.00022803244697036881,
+          9.8435635142401221,
+          7.9819686878217633,
+          0.021089515044987236
+        ],
+        [
+          1.9368549217003581,
+          2.8472731712541943,
+          19.371814326305078,
+          0.00017608319785003605,
+          19.471384815738965,
+          17.711550061304543,
+          0.042180513110985543
+        ],
+        [
+          1.9368280692238937,
+          5.6951983192320457,
+          38.740113981572691,
+          0.00328080163133157,
+          38.82212490288736,
+          37.154034592077281,
+          0.084368078964182386
+        ],
+        [
+          1.9366625395746331,
+          11.393230192503928,
+          77.4333298533102,
+          0.019209840585010074,
+          77.52011196991333,
+          75.852021659103258,
+          0.16867884008552053
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1,
+          8.8033358459408873E-9,
+          7.5313954380732214E-5,
+          -2.0609208783994862E-14,
+          1.6105810987808211,
+          -3.8633809693044974E-12,
+          1.6661138468372815E-6
+        ],
+        [
+          1,
+          2.2003581899658573E-8,
+          0.00018917084252401288,
+          -5.1656595667637362E-14,
+          1.6105288805744178,
+          -9.9299108974500172E-12,
+          4.2165505281624216E-6
+        ],
+        [
+          1,
+          4.3985452411594887E-8,
+          0.00045505040822725119,
+          -1.0309045284095926E-13,
+          1.6103814882088789,
+          -9.0608988004671834E-12,
+          8.56796938017793E-6
+        ],
+        [
+          1,
+          0.00021808601865803552,
+          0.0026669037201086203,
+          -2.063356430159757E-13,
+          1.6103342632712203,
+          -1.7998073192394826E-11,
+          2.0464632967562966E-5
+        ],
+        [
+          1,
+          0.0019642839352956,
+          0.011263240257746828,
+          -6.2327435319600719E-7,
+          1.6116602937153832,
+          2.4918441130492887E-11,
+          6.4317984389253272E-5
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1,
+          8.8070180405843576E-9,
+          7.4833149262158331E-5,
+          -1.523781101298028E-14,
+          1.6105943495056945,
+          1.5411527306066763E-12,
+          1.6219296109508111E-6
+        ],
+        [
+          1,
+          2.3761327312999987E-8,
+          0.00018607717554798195,
+          -3.8521963396931378E-14,
+          1.6105339543033348,
+          4.4426593480417775E-12,
+          4.0698322409950338E-6
+        ],
+        [
+          1,
+          5.7714415243917953E-8,
+          0.00036743199292311719,
+          -7.7104989060217147E-14,
+          1.6102779373786498,
+          8.89430673209346E-12,
+          8.2295242697331311E-6
+        ],
+        [
+          1,
+          0.00024104813885426015,
+          0.001602084379886412,
+          -2.556267697517711E-13,
+          1.6095522978948851,
+          3.8544564946469545E-11,
+          2.0664254046655468E-5
+        ],
+        [
+          1,
+          0.0016845319501671832,
+          0.0071522754046466769,
+          -5.1114182331168936E-13,
+          1.6079500737260564,
+          1.358695057504522E-13,
+          5.8916548035886518E-5
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1.0145230107092214,
+          0.10425551501855559,
+          0.75443232917437308,
+          -3.2774234119610154E-5,
+          1.7702901826401942,
+          0.15316829142097996,
+          0.001426883188832097
+        ],
+        [
+          1.0145230107092269,
+          0.26064709228675104,
+          1.8852944959724112,
+          -7.5877477104645253E-5,
+          2.4246348597762566,
+          0.82871178076843122,
+          0.0035672141839324513
+        ],
+        [
+          1.0145230107092291,
+          0.52131893084923508,
+          3.7679981108469596,
+          -0.00013118630804910406,
+          4.0611106468242362,
+          2.4280815904832957,
+          0.0071344174400691258
+        ],
+        [
+          1.0145230107092291,
+          1.0427273315289849,
+          7.5252655187380562,
+          -0.00017798608738786584,
+          7.7132103825970644,
+          6.054329762915998,
+          0.01426869038243107
+        ],
+        [
+          1.0145230107092296,
+          2.0858223471408346,
+          15.007420378794304,
+          0.00011397693356538505,
+          15.139143177775166,
+          13.666743332761932,
+          0.02853681469062673
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          1.610595982778068,
+          0,
+          0
+        ],
+        [
+          1.0145230107092358,
+          0.10425110268742069,
+          0.75485209909159234,
+          3.6664150982811824E-5,
+          1.7825723202376564,
+          0.166311177785485,
+          0.0014268794583594995
+        ],
+        [
+          1.0145230107092331,
+          0.26061941147031342,
+          1.8879289955563214,
+          9.8218359872607341E-5,
+          2.41636261112193,
+          0.84668506549527467,
+          0.0035671954035754743
+        ],
+        [
+          1.0145230107092313,
+          0.52121103393444024,
+          3.778480353705187,
+          0.00021701141409322946,
+          3.9695626841392153,
+          2.4301958127090337,
+          0.0071344152248685455
+        ],
+        [
+          1.0145230107092298,
+          1.0423109543886109,
+          7.5671371299879464,
+          0.00051885501699027,
+          7.5991574185665769,
+          6.15858602456869,
+          0.014268957304639323
+        ],
+        [
+          1.0145210105782991,
+          2.0841763605205221,
+          15.174639998555456,
+          0.0013812225591066864,
+          15.151499289416989,
+          13.814878111602583,
+          0.028538696228003819
+        ]
+      ]
+    ]
+  ],
+  "se": [
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.0867626118258706,
+          0,
+          0
+        ],
+        [
+          0.064613258368401,
+          0.019285895574364248,
+          0.20348188765641889,
+          0.00012807037848584611,
+          0.17853976644356867,
+          0.14847530963002334,
+          0.00023696712011368913
+        ],
+        [
+          0.064619057941082955,
+          0.0482722532685654,
+          0.50467008255836421,
+          0.00032558200145187512,
+          0.4608369126956694,
+          0.41840783106307622,
+          0.00059259627594745285
+        ],
+        [
+          0.064640932144659047,
+          0.096833215425533678,
+          0.9969392135428593,
+          0.00066956046896434526,
+          0.94520776683533636,
+          0.90192170628371515,
+          0.0011858073186544068
+        ],
+        [
+          0.0646750690310645,
+          0.19411459531323969,
+          1.9538330834597863,
+          0.0012395942655292981,
+          1.9037967494049592,
+          1.860612876453366,
+          0.0023747737617370573
+        ],
+        [
+          0.064701425214808747,
+          0.38942000521699482,
+          3.8449158637046215,
+          0.0038841595366326787,
+          3.8029601183929076,
+          3.7720324340837306,
+          0.004755268677218912
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.0867626118258706,
+          0,
+          0
+        ],
+        [
+          0.064605977457369568,
+          0.019260319404347259,
+          0.20575467418486021,
+          0.00012782283522520157,
+          0.25821410243021992,
+          0.26110628245943734,
+          0.00023684962632259204
+        ],
+        [
+          0.064600782424183267,
+          0.048102973169900927,
+          0.51870346443992765,
+          0.00032581269333179273,
+          0.58630107354277339,
+          0.56116255890954936,
+          0.00059192061912948467
+        ],
+        [
+          0.064597908980615626,
+          0.096022418448423477,
+          1.0472833466267022,
+          0.00069936079842470428,
+          1.12252527861496,
+          1.0844606255636904,
+          0.0011833363750427873
+        ],
+        [
+          0.064586528618218342,
+          0.19141750767741306,
+          2.1401262026620089,
+          0.0017223042870673944,
+          2.2165321855410376,
+          2.1760569436516652,
+          0.002363451697089014
+        ],
+        [
+          0.064086210013631614,
+          0.38078796323993042,
+          4.4960398667165453,
+          0.0054496034044548029,
+          4.576725811329311,
+          4.5321401995635471,
+          0.004728787682067046
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.0867626118258706,
+          0,
+          0
+        ],
+        [
+          0,
+          6.2075325683908463E-5,
+          0.00032475383713140808,
+          1.5345252436654647E-8,
+          0.086847848321459573,
+          1.7514563410787339E-5,
+          1.8580895904960538E-6
+        ],
+        [
+          0,
+          0.00015707286154191565,
+          0.00081256216723181235,
+          4.7798643055866249E-8,
+          0.086971540831155311,
+          4.8759086139950538E-5,
+          4.6400081037632113E-6
+        ],
+        [
+          0,
+          0.00033353528941965511,
+          0.0016228798200863747,
+          1.6806031560565181E-7,
+          0.087165112344645024,
+          0.00012862132423987425,
+          9.3480152702378136E-6
+        ],
+        [
+          0,
+          0.00072533303772371477,
+          0.0030872857938202239,
+          8.73326505026974E-7,
+          0.087519320756855881,
+          0.00040592596111629464,
+          1.9789873121751795E-5
+        ],
+        [
+          0,
+          0.0017843906840950721,
+          0.0067735056060357962,
+          4.5049957924898028E-6,
+          0.088338538711343978,
+          0.0014983148486124788,
+          4.6287679944485711E-5
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.0867626118258706,
+          0,
+          0
+        ],
+        [
+          0,
+          6.1047634960745224E-5,
+          0.00032405298484610833,
+          1.6724378955562196E-8,
+          0.086674901392890163,
+          1.6826915040204284E-5,
+          1.8629914766871218E-6
+        ],
+        [
+          0,
+          0.00015786862652052234,
+          0.00081546179508297891,
+          7.1085395360226828E-8,
+          0.086536539952861258,
+          4.5461158017325377E-5,
+          4.6481291975093907E-6
+        ],
+        [
+          0,
+          0.00033347216784453294,
+          0.0016561393688382291,
+          2.7259159787482167E-7,
+          0.086288332729344108,
+          0.00011540220309457358,
+          9.2353387158070287E-6
+        ],
+        [
+          0,
+          0.00070590712510940686,
+          0.0033415489121822448,
+          9.9361970895181328E-7,
+          0.085763777155313692,
+          0.00025951162770705824,
+          1.8110407983394302E-5
+        ],
+        [
+          0,
+          0.0016361542920160423,
+          0.0070641587389630176,
+          4.0493101585917306E-6,
+          0.084550125093123873,
+          0.00081599682151279219,
+          3.5225031035345615E-5
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.086762611825870486,
+          0,
+          0
+        ],
+        [
+          0.0063504765886073988,
+          0.0099947647077984671,
+          0.0594153088684907,
+          2.2074889470891447E-5,
+          0.085228691797087142,
+          0.056727713709348968,
+          5.2715776409422694E-5
+        ],
+        [
+          0.0063500782019576731,
+          0.024986452842547024,
+          0.14869330901203817,
+          5.4996743251421475E-5,
+          0.13890367565836725,
+          0.1795104683976583,
+          0.00013178056018682256
+        ],
+        [
+          0.0063494330959844095,
+          0.049970836679620288,
+          0.29790139988259523,
+          0.00010792786726471005,
+          0.26511280627593192,
+          0.31744585818158877,
+          0.000263541822447883
+        ],
+        [
+          0.0063485467389538764,
+          0.099990518529087039,
+          0.59785488454941749,
+          0.00020967159955660443,
+          0.58528565880062755,
+          0.5659789888010337,
+          0.00052698236794797445
+        ],
+        [
+          0.0063470815402151695,
+          0.20018800337726939,
+          1.2031908278762737,
+          0.00039764391956914461,
+          1.2363814357057168,
+          1.1223769471472371,
+          0.0010538929301800604
+        ]
+      ],
+      [
+        [
+          null,
+          0,
+          0,
+          0,
+          0.086762611825870486,
+          0,
+          0
+        ],
+        [
+          0.0063511386550212361,
+          0.0099949954094784889,
+          0.059332222233199415,
+          2.211375963437493E-5,
+          0.091323609663854666,
+          0.031900244648732312,
+          5.2717258547973941E-5
+        ],
+        [
+          0.0063515877027357113,
+          0.024987936886339938,
+          0.14817454322266793,
+          5.5647726097597146E-5,
+          0.19974653244772206,
+          0.11622513711974432,
+          0.00013179274426014734
+        ],
+        [
+          0.006352310371903821,
+          0.049977434107894216,
+          0.29581929244743072,
+          0.00011303514043869716,
+          0.30579930059118371,
+          0.20111134857085836,
+          0.00026358739337393496
+        ],
+        [
+          0.0063536103824599318,
+          0.099967803552382842,
+          0.589502401576359,
+          0.00023330599874773328,
+          0.56231571545147341,
+          0.45442412005219235,
+          0.00052719676999601732
+        ],
+        [
+          0.0063559882920795454,
+          0.19999316966157302,
+          1.1704229441722052,
+          0.00049537379167413447,
+          1.1321707865363142,
+          1.0055881924401193,
+          0.0010542945392184996
+        ]
+      ]
+    ]
+  ]
+}

@@ -30,6 +30,11 @@ codegen/
 !/plots/stage_1/diagnostics/active_set_gate2/png/*.png
 !/plots/stage_1/diagnostics/active_set_gate2/fig/
 !/plots/stage_1/diagnostics/active_set_gate2/fig/*.fig
+!/plots/stage_1/diagnostics/movement_landscape/
+!/plots/stage_1/diagnostics/movement_landscape/png/
+!/plots/stage_1/diagnostics/movement_landscape/png/*.png
+!/plots/stage_1/diagnostics/movement_landscape/fig/
+!/plots/stage_1/diagnostics/movement_landscape/fig/*.fig
 
 # Logs, coverage, and temporary outputs
 *.log
