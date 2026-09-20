@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "inventoriedFiles": 105,
+  "removed": [
+    "results/paper_ready/geometry_progress.csv"
+  ],
+  "reason": "Only byte-identical progress CSV removed; final table retained",
+  "rawEvidence": "Retained in ignored results/paper_ready/cache",
+  "existingScientificFilesDeleted": 0
+}

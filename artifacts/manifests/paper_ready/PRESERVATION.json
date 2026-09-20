@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "unchangedFiles": 1516,
+  "authorizedDocumentChanges": [
+    {
+      "reason": "Authorized paper-only navigation / raw-cache ignore; review exact Git diff",
+      "after": "01A4348A733520720E306623D8CF980AB306FF97C3442E4450A0B681F6449AFE",
+      "path": ".gitignore",
+      "before": "B00002140968170E9FAA88E721F5CA60C58E6D6A6716F01C4F6305FB36543D22"
+    },
+    {
+      "reason": "Authorized paper-only navigation / raw-cache ignore; review exact Git diff",
+      "after": "F7AFC38410B77A1BE7B4C469F56761A3B5E1DB39BE12227564C9E555F6FAE12F",
+      "path": "AGENTS.md",
+      "before": "941F627508FBBCC7B1F2615BC59E3B92A47FE6045720078953D24BB196921728"
+    }
+  ],
+  "checkedUTC": "2026-09-20T10:12:27.0456981Z"
+}

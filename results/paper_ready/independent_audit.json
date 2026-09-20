@@ -1,0 +1,12 @@
+{
+  "checks": 42130,
+  "maxPR": 9.7699626167013776E-15,
+  "maxAlignment": 4.7739590058881731E-15,
+  "maxCapture": 8.8817841970012523E-16,
+  "maxAdaptive": 1.8873791418627661E-15,
+  "maxTransition": 4.4408920985006262E-16,
+  "maxArm": 2.2204460492503131E-16,
+  "maxSE": 1.099120794378905E-14,
+  "status": "PASS",
+  "predictionRun": false
+}

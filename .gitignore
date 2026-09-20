@@ -17,6 +17,9 @@ codegen/
 # Stage-3 reference/preparation trajectories remain local.
 /results/stage_3/current/cache/
 
+# Paper-specific raw trials are local; compact evidence and figure masters stay tracked.
+/results/paper_ready/cache/
+
 # Accepted per-stage PNG/FIG pairs are canonical project assets.
 /plots/stage_1/**
 !/plots/stage_1/

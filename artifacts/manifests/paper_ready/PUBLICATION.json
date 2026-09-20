@@ -1,0 +1,339 @@
+{
+  "task": "PAPER-MODELLING-PREPREDICTION-01",
+  "status": "PASS",
+  "scientificReview": "pending",
+  "predictionRun": false,
+  "panelE": false,
+  "pageId": "3e026c94be30810c8b2ce843260cd7db",
+  "nativeImages": [
+    {
+      "name": "main_modelling",
+      "fileUploadId": "3e126c94-be30-81ba-8744-00b284c9bfb6",
+      "bytes": 346285
+    },
+    {
+      "name": "support_calibration",
+      "fileUploadId": "3e126c94-be30-8197-b7cb-00b281ffeb26",
+      "bytes": 605068
+    },
+    {
+      "name": "support_noise_controls",
+      "fileUploadId": "3e126c94-be30-819a-a169-00b26f83959f",
+      "bytes": 321359
+    },
+    {
+      "name": "support_movement_qc",
+      "fileUploadId": "3e126c94-be30-810d-9922-00b2cfc459ad",
+      "bytes": 1625244
+    }
+  ],
+  "readback": {
+    "nativeImages": 4,
+    "fullLegends": true,
+    "methodsLinks": true,
+    "allThreeChildPagesPreserved": true,
+    "negativeSensitivityExplicit": true
+  },
+  "visualInspection": {
+    "allFourFinalPNGs": true,
+    "editableFIGReopen": true,
+    "taggedSourceSeriesChecks": 63,
+    "bothErrorbarDirections": true,
+    "scientificArraysChanged": false,
+    "notes": "Cache-only fixes to hold-state, Greek text, clipping, axis labels, target/home display, and explicit PC-sensitivity and movement-QC panels."
+  },
+  "planSHA256": "6BCDC71D309E6C1362134C5A219EA5346CC1B243E52AC01E13B079D55085396D",
+  "sourceHashes": [
+    {
+      "path": "analysis/paper_ready/paper_audit.m",
+      "bytes": 5671,
+      "sha256": "1C09BBCC6CEA17A94A898057A03912CAC55A5B3E97D4A74693421977867B75A5"
+    },
+    {
+      "path": "analysis/paper_ready/paper_control_audit.m",
+      "bytes": 4458,
+      "sha256": "C52D65F533E83C63CE5A9CEF792BF0C9ECF1CE38FD25AB1F8EA0BD96BD9FB5EC"
+    },
+    {
+      "path": "analysis/paper_ready/paper_controls.m",
+      "bytes": 6426,
+      "sha256": "3E3CCB39965FA26F1344DCD578FFB9BC9BE752769E4E6AD259D15889131643CF"
+    },
+    {
+      "path": "analysis/paper_ready/paper_empirical_audit.m",
+      "bytes": 1924,
+      "sha256": "D5103EAFBC4C77310193AFE275C0773F41EB10C0593019FC4734E00C01C63A69"
+    },
+    {
+      "path": "analysis/paper_ready/paper_empirical_extract.m",
+      "bytes": 1759,
+      "sha256": "5C4B0D536AB8AC3E7DFF3C043C431CBFB861F0F02AFC59B921D1F075A4F3FA64"
+    },
+    {
+      "path": "analysis/paper_ready/paper_geometry.m",
+      "bytes": 740,
+      "sha256": "3E3E4739AA86CD26780E552F3F90D0C81373A06E7614793F530CA3859510D20C"
+    },
+    {
+      "path": "analysis/paper_ready/paper_grid.m",
+      "bytes": 7653,
+      "sha256": "15C3D1A50AC52BCAD77BB72B534C2095EBBFBA58FD3F85B61E5E4478C50F66BF"
+    },
+    {
+      "path": "analysis/paper_ready/paper_intact_components.m",
+      "bytes": 1304,
+      "sha256": "33F15324A5A0EE1620F5A020E7AD3EFB79DFB4D1063F75F2704BB2093F034F4B"
+    },
+    {
+      "path": "analysis/paper_ready/paper_json.m",
+      "bytes": 172,
+      "sha256": "59F5CB45FCB0CD0B39C40A466E3DD2B761E8570BB19D6FDB481E09BCF8671470"
+    },
+    {
+      "path": "analysis/paper_ready/paper_move.m",
+      "bytes": 2654,
+      "sha256": "889CEC80677BB73316F0FEC79C56ABDF4EC267EAFDF524DB9952C660C21D7955"
+    },
+    {
+      "path": "analysis/paper_ready/paper_noise.m",
+      "bytes": 528,
+      "sha256": "A660744C46C6BD0435FE8AA4AA01EFB1A44955753D459B5C8A1BB3F65B86C5A0"
+    },
+    {
+      "path": "analysis/paper_ready/paper_preflight.m",
+      "bytes": 3217,
+      "sha256": "0819114D1C7E9D0AD265EBB4FDF9AA2E8A8CDF870114EC3C841BDBA8B1DE3F10"
+    },
+    {
+      "path": "analysis/paper_ready/paper_prepare.m",
+      "bytes": 3693,
+      "sha256": "2E727CE5EBCDF7E386C2FB0BCDD3EA2ACF0239F3FC7565BE9365BD3263495630"
+    },
+    {
+      "path": "analysis/paper_ready/paper_report.m",
+      "bytes": 4811,
+      "sha256": "54E9B96DE418FB9A80D1E029E50BFE6649679AEDE6D280834D6AECF2ADB9856D"
+    },
+    {
+      "path": "analysis/paper_ready/paper_run.m",
+      "bytes": 1202,
+      "sha256": "8A0126215F0C13E30747CF08868D736D2A0BE1C3C9CB5A3F3325D2A265BFF7E0"
+    },
+    {
+      "path": "analysis/paper_ready/paper_source_data.m",
+      "bytes": 1841,
+      "sha256": "AAD2CDE688061BBAB2864C01BD2C66A2564798B29B6061D3C1974F166DC31448"
+    },
+    {
+      "path": "analysis/paper_ready/paper_timing.m",
+      "bytes": 4935,
+      "sha256": "BBE692307AD83EAC4001E8AA1AE3699236E08735C665F0D5B55D4E63197234D0"
+    },
+    {
+      "path": "figures/paper_ready/paper_figures.m",
+      "bytes": 17267,
+      "sha256": "2DD42312F047C791248230149B65830FD6FAE794A0F1D3F39D956D7FD2D13F29"
+    },
+    {
+      "path": "docs/paper_ready/EMPIRICAL_SOURCE.md",
+      "bytes": 2156,
+      "sha256": "CFDD6B9A605A1A6D9372B0D105797EA8BB8F5202E5339CE2FA00F4EC0539A874"
+    },
+    {
+      "path": "docs/paper_ready/FIGURE_LEGENDS.md",
+      "bytes": 11160,
+      "sha256": "43536A5425B78DF6CFC671B2587E4CC1B3EB2A4DB76DC084D4838BB946F20808"
+    },
+    {
+      "path": "docs/paper_ready/IMPLEMENTATION_NOTES.md",
+      "bytes": 6063,
+      "sha256": "B5ECA88988246F0B9CF42188D334FF196882D577D818A70618DA975BF4FAAEF3"
+    },
+    {
+      "path": "docs/paper_ready/PANEL_SOURCES.md",
+      "bytes": 3293,
+      "sha256": "22CC239EEBDC4E50E06EE37AD319D46F0B8D8E5D04331C108923A728A9EBBB1B"
+    },
+    {
+      "path": "docs/paper_ready/PLAN.md",
+      "bytes": 9403,
+      "sha256": "6BCDC71D309E6C1362134C5A219EA5346CC1B243E52AC01E13B079D55085396D"
+    },
+    {
+      "path": "docs/paper_ready/REPORT.md",
+      "bytes": 16225,
+      "sha256": "ACC0B755FA5479279973C6C5F8775D0F1A3F25851E08E83E005994F93985E163"
+    },
+    {
+      "path": "plots/paper_ready/fig/main_modelling.fig",
+      "bytes": 56692,
+      "sha256": "5DBB58B9F1B7D16C3525F8B35AD2E7C81B94966AE0C7DF4EE23D52E2A4306C9E"
+    },
+    {
+      "path": "plots/paper_ready/fig/support_calibration.fig",
+      "bytes": 126487,
+      "sha256": "F5FE0CB843BD4C263E5F5CBCAA49F91C01E6F291BD09CE90896D784B857EE7D1"
+    },
+    {
+      "path": "plots/paper_ready/fig/support_movement_qc.fig",
+      "bytes": 18295082,
+      "sha256": "ECB137489A87F70188A84F4CB0C29007E884788AFED6CE2111FB7F906BE78D1B"
+    },
+    {
+      "path": "plots/paper_ready/fig/support_noise_controls.fig",
+      "bytes": 67618,
+      "sha256": "C03F9036F9DFD3C55216734667E9747741E7C0987481E967EEC93F88B2839654"
+    },
+    {
+      "path": "plots/paper_ready/png/main_modelling.png",
+      "bytes": 346285,
+      "sha256": "733CC0905AF3AB9AFD1CF5D423EC9484200A23AC21EBACB641CBB4DBFB3D3F88"
+    },
+    {
+      "path": "plots/paper_ready/png/support_calibration.png",
+      "bytes": 605068,
+      "sha256": "6751268E66FDBD9DACF123BB955F6C2015339B44E0F9B51011DFAAAFEC7C2852"
+    },
+    {
+      "path": "plots/paper_ready/png/support_movement_qc.png",
+      "bytes": 1625244,
+      "sha256": "8B756B3A4F62BBD4BBD97D0B146F2A8A28FE40A26CF92AC14C727C8E89E0C39C"
+    },
+    {
+      "path": "plots/paper_ready/png/support_noise_controls.png",
+      "bytes": 321359,
+      "sha256": "FC4C9088EB0B30B38DD934640CB864154930A5A412DE3A735FE2FB735CFA504C"
+    },
+    {
+      "path": "results/paper_ready/control_audit.json",
+      "bytes": 226,
+      "sha256": "BD2978B11BB2C947F16E4D84209DDA121F4721C2B6909894AC440F49AAC12EAD"
+    },
+    {
+      "path": "results/paper_ready/controls.json",
+      "bytes": 486384,
+      "sha256": "B78A090182828F393DF40E59D2A21BAE15F2EC7FB573E8313D796F9141D80661"
+    },
+    {
+      "path": "results/paper_ready/controls.mat",
+      "bytes": 390922,
+      "sha256": "196778EDED65E792C5F1A52151A56F90616868017C81527FC9E103070A7267E7"
+    },
+    {
+      "path": "results/paper_ready/geometry_map.csv",
+      "bytes": 107759,
+      "sha256": "7A9A112E36C3AD757ABE10649D278DD4390A3DCB5CFC9CABE66A44170F05F405"
+    },
+    {
+      "path": "results/paper_ready/geometry.json",
+      "bytes": 4273,
+      "sha256": "328CBA18E3B9F52E77C841B0BF63FC06FF9A5C02688298A062F3E9862A55951A"
+    },
+    {
+      "path": "results/paper_ready/geometry.mat",
+      "bytes": 4630046,
+      "sha256": "68E63DB46253352F7B4BD008A76650FA44265778372C416FD9C24A17CDE8D498"
+    },
+    {
+      "path": "results/paper_ready/independent_audit.json",
+      "bytes": 339,
+      "sha256": "D4544A0FFD2C7C9F612815B6E2C29B4B0D9039AE6759D38264C6BF464149C2F9"
+    },
+    {
+      "path": "results/paper_ready/movement_target_qc.csv",
+      "bytes": 18097,
+      "sha256": "45079082CE37B1DF224F234F604690B6A82CE6D9E150ABB5999F47FDE19493CA"
+    },
+    {
+      "path": "results/paper_ready/movement_trial_qc.csv",
+      "bytes": 409960,
+      "sha256": "F4AEFD572E8C355F161761918D231363CD5E51C1E8CE147EE9ED29936C3BA519"
+    },
+    {
+      "path": "results/paper_ready/noise_controls.csv",
+      "bytes": 17318,
+      "sha256": "3798E8DE5C3208A64EF94188A4C594333C331DEC891C3C4A47C1D9D4DAF84E72"
+    },
+    {
+      "path": "results/paper_ready/policy_source.csv",
+      "bytes": 10426,
+      "sha256": "08756C1538FF6DE34333637E7FA3C8661A6E133DD36BE0EBD09947E4E2031CAC"
+    },
+    {
+      "path": "results/paper_ready/preflight.json",
+      "bytes": 6324,
+      "sha256": "216800019FD94007B5BE1566B618A590DB223DB835CDBEEA5549DDB7C6739246"
+    },
+    {
+      "path": "results/paper_ready/preflight.mat",
+      "bytes": 1799,
+      "sha256": "8AD963405E682B0D67B7848A82E8FC975D9E31CAD1321197D58D3F73E37927F0"
+    },
+    {
+      "path": "results/paper_ready/REPORT.json",
+      "bytes": 20419,
+      "sha256": "D70012ED539BD23D9B26E283FB0048567AEB0382B43AD061E886C7C13B95F788"
+    },
+    {
+      "path": "results/paper_ready/SOURCE_DATA.json",
+      "bytes": 171,
+      "sha256": "A6CCADA54B366F60DB7661489B3C62A1676CE5C246DC1AE7A9ABF2557B06E292"
+    },
+    {
+      "path": "results/paper_ready/stage2_panels_ab.csv",
+      "bytes": 4662,
+      "sha256": "D2716833C486B1FD3D73CA3C386CFD0DF8143C48243DBB21334685E77A8D68BB"
+    },
+    {
+      "path": "results/paper_ready/stage2_panels_ab.mat",
+      "bytes": 844733,
+      "sha256": "8F127405CDDB8E2E8865637A6128D8E658F621C645D2B1FBAFD5B6381131A20F"
+    },
+    {
+      "path": "results/paper_ready/empirical/dimensionality_alignment_epochs_raw_data.fig",
+      "bytes": 48341,
+      "sha256": "B2B1381FCFEFABBA5065E8D7617DB0D5A9E5EF08C6A120E539AE980C635A824F"
+    },
+    {
+      "path": "results/paper_ready/empirical/empirical_source_review.png",
+      "bytes": 145609,
+      "sha256": "C8AF9A82576292B96240E0614CDFA46A010E87E043124A700993C5453F7C2E36"
+    },
+    {
+      "path": "results/paper_ready/empirical/graphics_inventory.json",
+      "bytes": 273419,
+      "sha256": "8A2156EAC498DC495EAB25C78F1509ED0003F5A5EFC1F8F76494E9611D6E1610"
+    },
+    {
+      "path": "results/paper_ready/empirical/graphics_inventory.mat",
+      "bytes": 17861,
+      "sha256": "C89D43C0DB9A04160C0F007CB54F92009B61598B62727E8B97534E39B94CD584"
+    },
+    {
+      "path": "results/paper_ready/empirical/targets.json",
+      "bytes": 1638,
+      "sha256": "7D1A9D542FD035FEC1C77D1AD6C07C74481A5FE8DC514633AFB3BC2C55400B52"
+    },
+    {
+      "path": "results/paper_ready/empirical/targets.mat",
+      "bytes": 900,
+      "sha256": "D33F9587B1178339575368BC5CA5F8D119B6C8515DEBF96BBCFD3F4F8119CC6D"
+    },
+    {
+      "path": "results/paper_ready/timing/bounds.csv",
+      "bytes": 10548,
+      "sha256": "9419124C0C3231E191ABAA663F6A5818F4D9CCC6597079246FFAF3FDE65598F3"
+    },
+    {
+      "path": "results/paper_ready/timing/timing.json",
+      "bytes": 23082,
+      "sha256": "1DC243E44C013D96FBB739476813D1CB51A8DD976302DB69B902AD7AF5B91F96"
+    },
+    {
+      "path": "results/paper_ready/timing/timing.mat",
+      "bytes": 4890282,
+      "sha256": "19C5DDF97ADD412B283953CEB236E9BADB272143CB80A9387B8B2A0A493BDDAF"
+    }
+  ],
+  "release": "Final commit SHA is recorded in Notion only after verified push."
+}

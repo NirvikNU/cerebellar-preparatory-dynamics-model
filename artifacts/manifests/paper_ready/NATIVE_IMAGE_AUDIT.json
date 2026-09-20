@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "images": [
+    {
+      "name": "main_modelling.png",
+      "bytes": 346285,
+      "sha256": "733CC0905AF3AB9AFD1CF5D423EC9484200A23AC21EBACB641CBB4DBFB3D3F88",
+      "nativeImageHashMatch": true
+    },
+    {
+      "name": "support_calibration.png",
+      "bytes": 605068,
+      "sha256": "6751268E66FDBD9DACF123BB955F6C2015339B44E0F9B51011DFAAAFEC7C2852",
+      "nativeImageHashMatch": true
+    },
+    {
+      "name": "support_noise_controls.png",
+      "bytes": 321359,
+      "sha256": "FC4C9088EB0B30B38DD934640CB864154930A5A412DE3A735FE2FB735CFA504C",
+      "nativeImageHashMatch": true
+    },
+    {
+      "name": "support_movement_qc.png",
+      "bytes": 1625244,
+      "sha256": "8B756B3A4F62BBD4BBD97D0B146F2A8A28FE40A26CF92AC14C727C8E89E0C39C",
+      "nativeImageHashMatch": true
+    }
+  ],
+  "readbackPage": "3e026c94be30810c8b2ce843260cd7db"
+}

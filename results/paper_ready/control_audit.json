@@ -1,0 +1,9 @@
+{
+  "metricError": 7.9936057773011271E-15,
+  "residualError": 5.3290705182007514E-15,
+  "movementTransitionError": 0,
+  "endpointError": 1.0408340855860843E-17,
+  "checks": 1240,
+  "predictionRun": false,
+  "status": "PASS"
+}

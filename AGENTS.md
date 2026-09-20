@@ -91,6 +91,18 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+PAPER-MODELLING-PREPREDICTION-01 is a separate paper-specific calibration,
+not a replacement of accepted Stage-1/2/3 science. Read the locked
+`docs/paper_ready/PLAN.md` and actual receipts in
+`artifacts/manifests/paper_ready/` before resuming. The ordered timing,
+geometry, separate-noise and movement-QC gates must pass without retuning.
+Code is under `analysis/paper_ready/` and `figures/paper_ready/`; source
+summaries are `results/paper_ready/`, with raw trials in its ignored cache.
+FIG/PNG pairs are under `plots/paper_ready/{fig,png}/`. Writers refuse
+overwrites. Preserve completed partial evidence. A launch is not completion:
+check the actual receipts and current Notion handoff. The new prediction
+analysis and panel e are explicitly excluded until scientific review.
+
 STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is analysis-only on the frozen
 movement generators. Read PLAN.md and the actual receipts/report under
 `artifacts/manifests/stage1_movement_landscape/`. The fixed alpha grid,
