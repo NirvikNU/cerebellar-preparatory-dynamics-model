@@ -91,6 +91,19 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+PAPER-MODELLING-ALIGNMENT95-01 supersedes only the paper-specific K=15
+calibration as the primary analysis. Read the locked corrective plan in
+`docs/paper_ready/alignment95/PLAN.md` and its actual validation receipts.
+For each Control reference use the minimum K reaching cumulative variance
+>=95%, with that same K for the comparison basis, Control denominator and
+covariance-shaped null. Never substitute fixed K15 or max(Control K, Block K).
+The lambda10, kappa0, V1, grid, noise, normalization and feasibility rules
+remain frozen. Current corrective source/outputs use the `alignment95/`
+subdirectories and `*_alignment95` figure names; old paper outputs remain
+unchanged historical provenance at aebd5fdfd300c19eca85548315357f11ecfd44ac.
+Do not infer completion from this navigation entry: use the actual report
+and Notion handoff. Stop for scientific review; no panel e or new prediction.
+
 PAPER-MODELLING-PREPREDICTION-01 is a separate paper-specific calibration,
 not a replacement of accepted Stage-1/2/3 science. Read the locked
 `docs/paper_ready/PLAN.md` and actual receipts in

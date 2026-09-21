@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "sourceChecks": 11,
+  "titleVerified": true,
+  "change": "Escaped literal percent; original canvas restored for export; numerical arrays unchanged",
+  "operationalNotes": "Reopen verifier reads TiledChartLayout.Title, which is not returned as an ordinary descendant String object. Initial title-only verifier and scalar-string diagnostic were repaired without numerical replay."
+}

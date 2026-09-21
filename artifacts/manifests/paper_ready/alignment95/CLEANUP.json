@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "files": 77,
+  "bytes": 2654033696.0,
+  "deletedFiles": 0,
+  "reason": "All new files are required source, evidence, figures, documentation or audit receipts. No redundant scratch artifact identified. All old K15 outputs remain historical provenance, not deletion candidates.",
+  "oldInventory": "INPUTS_BEFORE.csv",
+  "protectedVerification": "PRESERVATION.json"
+}

@@ -1,0 +1,56 @@
+{
+  "task": "PAPER-MODELLING-ALIGNMENT95-01",
+  "status": "PASS",
+  "startingSHA": "aebd5fdfd300c19eca85548315357f11ecfd44ac",
+  "pages": [
+    "3e026c94be30811dbb4fe27a353fdcd9",
+    "3e026c94be3081c4bb32d693f6d527bc",
+    "3e026c94be30810c8b2ce843260cd7db",
+    "3e026c94be3081b7a1c1dbc406c19e78"
+  ],
+  "readbackVerified": true,
+  "images": [
+    {
+      "name": "main_modelling_alignment95.png",
+      "bytes": 341140,
+      "sha256": "3F1F5FF7AD47CF7FBD0EA4091B14181288BFB501B31EEC3A362D73B732E67F55",
+      "match": true
+    },
+    {
+      "name": "support_calibration_alignment95.png",
+      "bytes": 588954,
+      "sha256": "961064EFAE1D59C6B2DADFFE5F19E5704B6B53232C52607F727EBC81C1DDAB74",
+      "match": true
+    },
+    {
+      "name": "support_noise_controls_alignment95.png",
+      "bytes": 335712,
+      "sha256": "08DB8C44980500A6B3C36E8B4EB7F72C3500EC85392ABE1F697B4038EE49F832",
+      "match": true
+    },
+    {
+      "name": "support_movement_qc_alignment95.png",
+      "bytes": 1680766,
+      "sha256": "25B42D85976AB8EE7DF89DD4F57FAC123371A816B37CE11FB0240708C4F2685B",
+      "match": true
+    }
+  ],
+  "figureReopenChecks": [
+    11,
+    26,
+    10,
+    16
+  ],
+  "visuallyInspectedAllFourPNGs": true,
+  "titleRepair": "TITLE_REPAIR.json",
+  "historicalImagesPreserved": 4,
+  "numericalAudits": {
+    "grid": 2137,
+    "savedOutput": 49360,
+    "control": 9520
+  },
+  "protectedFilesUnchanged": 1762,
+  "panelE": false,
+  "predictionRun": false,
+  "gitRelease": "Verified identity recorded in Notion after push; not preclaimed here"
+}

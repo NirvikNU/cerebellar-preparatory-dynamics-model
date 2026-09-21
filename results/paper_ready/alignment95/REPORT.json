@@ -1,0 +1,951 @@
+{
+  "status": "INDEPENDENTLY_VALIDATED_SCIENTIFIC_REVIEW_PENDING",
+  "lambda": 10,
+  "alpha": 0.5,
+  "betaNormalized": 1,
+  "gridIndex": 23,
+  "loss": 0.11976857853810878,
+  "commonFeasible": 20,
+  "target": {
+    "names": [
+      "Control",
+      "Block",
+      "Observed",
+      "Expected"
+    ],
+    "allEpochValues": [
+      [
+        10.526284810023817,
+        5.3860834614584618,
+        4.8399030379100836,
+        4.7295795595452681
+      ],
+      [
+        10.215955701550808,
+        8.0314168558827177,
+        6.6366698737949417,
+        5.47579827617599
+      ],
+      [
+        5.3537972793481075,
+        32.493121686164521,
+        48.2815542652116,
+        30.37501701993218
+      ],
+      [
+        2.5874645470169613,
+        49.295305371483224,
+        58.5992946549041,
+        28.9056668530364
+      ]
+    ],
+    "allEpochErrors": [
+      [
+        0.1668440019353466,
+        0.10849353351504434,
+        0.084786096112077311,
+        0.45814660732677914
+      ],
+      [
+        0.19483434720198231,
+        0.1492166304511115,
+        0.12654232948589353,
+        0.52964779823181107
+      ],
+      [
+        1.5314263585396837,
+        1.1226239345301614,
+        1.0479906768421341,
+        3.2669539286583511
+      ],
+      [
+        0.30814706792356561,
+        3.2987728284040356,
+        3.4554460818962531,
+        3.8294264837347485
+      ]
+    ],
+    "prep": [
+      5.3860834614584618,
+      8.0314168558827177,
+      32.493121686164521,
+      49.295305371483224
+    ],
+    "error": [
+      0.10849353351504434,
+      0.1492166304511115,
+      1.1226239345301614,
+      3.2987728284040356
+    ],
+    "deltaPR": 2.6453333944242559,
+    "alignmentDeficitPP": 16.802183685318703,
+    "alignmentDeficit": 0.16802183685318703,
+    "errorDefinition": "SD across1000 trial-balanced pooled-neuron resamples; Main_text_v8 Supplementary Fig3",
+    "pairedEffectError": "Not identifiable from marginal FIG; not used as loss weights",
+    "checks": 16,
+    "status": "PASS"
+  },
+  "timing": [
+    10,
+    13,
+    20,
+    28,
+    38.25,
+    57.5,
+    74.25,
+    116
+  ],
+  "audit": {
+    "checks": 49360,
+    "maxTransition": 4.4408920985006262E-16,
+    "maxArm": 2.2204460492503131E-16,
+    "maxSE": 1.9095836023552692E-14,
+    "gridAudit": {
+      "checks": 2137,
+      "maxMetricError": 8.8817841970012523E-15,
+      "maxDenominatorError": 8.5265128291212022E-14,
+      "maxNullError": 4.4408920985006262E-16,
+      "predictionRun": false,
+      "status": "PASS"
+    },
+    "status": "PASS",
+    "predictionRun": false
+  },
+  "predictionRun": false,
+  "selected": {
+    "median": [
+      3.463190903401042,
+      6.7540797549565967,
+      0.3199518228410469,
+      0.52340263789999053,
+      3.2908888515555548,
+      0.20925236083846388
+    ],
+    "se": [
+      0.12857273020809093,
+      0.018891808347632488,
+      0.0075727709296117213,
+      0.0071783832066505673,
+      0.11222905741036687,
+      0.012465318329893438
+    ]
+  },
+  "selectedBootstrapMaxError": 0,
+  "attainablePRDelta": [
+    0.11767696633713887,
+    3.591827723649482
+  ],
+  "attainableDeficit": [
+    -0.45800364889773426,
+    0.511634361519322
+  ],
+  "capture15": [
+    [
+      0.99915277661927726,
+      0.99923580812379365
+    ],
+    [
+      0.999299524666255,
+      0.999373290359696
+    ]
+  ],
+  "adaptive": {
+    "median": [
+      0.31414857852321837,
+      0.58262623522248158,
+      0.26702757425946583
+    ],
+    "se": [
+      0.0064991218214038374,
+      0.0054759503499510441,
+      0.0067936387079323831
+    ]
+  },
+  "selectedFields": [
+    "PR_Intact",
+    "PR_Block",
+    "Observed",
+    "Expected",
+    "deltaPR",
+    "deficit"
+  ],
+  "selectedControlK": [
+    6,
+    6,
+    5,
+    5,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5
+  ],
+  "oldSelectedIndex": 21,
+  "gridAudit": {
+    "checks": 2137,
+    "maxMetricError": 8.8817841970012523E-15,
+    "maxDenominatorError": 8.5265128291212022E-14,
+    "maxNullError": 4.4408920985006262E-16,
+    "predictionRun": false,
+    "status": "PASS"
+  },
+  "captureControl": [
+    [
+      0.930901554890907,
+      0.97105187775366708,
+      0.87660183066875574
+    ],
+    [
+      0.94456843669651636,
+      0.978731639131508,
+      0.88278825566402086
+    ],
+    [
+      0.910388884184795,
+      0.95221874557871811,
+      0.76036650909931858
+    ],
+    [
+      0.90705882747217248,
+      0.95112424256118611,
+      0.76585857537451585
+    ],
+    [
+      0.948166343671039,
+      0.977532300851065,
+      0.88105429496080112
+    ],
+    [
+      0.92568145990192952,
+      0.96707359090872025,
+      0.88006099894397893
+    ],
+    [
+      0.94785668119903277,
+      0.97779009760175217,
+      0.8809274940955566
+    ],
+    [
+      0.94159301399489337,
+      0.9708739432550394,
+      0.87950400977530108
+    ],
+    [
+      0.93382137273191224,
+      0.96673611752302779,
+      0.87874228787531006
+    ],
+    [
+      0.92198168842007389,
+      0.95728658587597126,
+      0.76571513727791363
+    ]
+  ],
+  "replayedPrepCases": 100,
+  "replayedMovementCases": 30,
+  "k15Sensitivity": {
+    "median": [
+      0.35210829227972512,
+      0.87032436961947446,
+      0.51690389119380353
+    ],
+    "se": [
+      0.0050550669286463174,
+      0.0038644111505986658,
+      0.0058820301675289342
+    ]
+  },
+  "selectedEffect": [
+    3.2908888515555548,
+    0.20925236083846388
+  ],
+  "relativeEffectError": [
+    0.24403557543709947,
+    0.24538788979734211
+  ],
+  "controlAudit": {
+    "metricError": 1.3322676295501878E-14,
+    "residualError": 5.10702591327572E-15,
+    "movementTransitionError": 0,
+    "endpointError": 6.9388939039072284E-18,
+    "checks": 9520,
+    "predictionRun": false,
+    "status": "PASS"
+  },
+  "noiseSummary": {
+    "median": [
+      3.463461041730254,
+      3.4123329116985222,
+      3.4632970060568065,
+      3.4280140678850444,
+      3.463190903401042,
+      3.463190903401042,
+      3.4631399814969304,
+      3.5929167381142708,
+      3.4637206182098677,
+      4.0534267354085376,
+      0.99997268365255521,
+      0.99459324825978457,
+      0.99999313528890088,
+      0.99863652323409036,
+      1.0000000000000004,
+      1.0000000000000004,
+      0.99997212678911662,
+      0.99476128702088817,
+      0.99974617961847689,
+      0.956539063767806,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      -0.47656713047554938,
+      -0.470609660582602,
+      -0.4765897939748191,
+      -0.475096477640105,
+      -0.47659736210000997,
+      -0.47659736210000997,
+      -0.4765669454621751,
+      -0.4707353682476339,
+      -0.47631968125162477,
+      -0.43246184687773781,
+      0.12482168226326829,
+      0.00048195692959786686,
+      0.12492896072167939,
+      0.031701240177624206,
+      0.12529376583748955,
+      0.12529376583748955,
+      0.12679616993567483,
+      0.49901818578174328,
+      0.13285933800365532,
+      1.9218876796226914,
+      0.0093310255622068312,
+      3.4130096798637336E-5,
+      0.009342188235997884,
+      0.0023702675133736566,
+      0.009370194592720895,
+      0.009370194592720895,
+      0.009476335918674611,
+      0.037291319618684746,
+      0.0098925173924646476,
+      0.14389680599864474
+    ],
+    "se": [
+      0.12859603715049855,
+      0.12487846217098555,
+      0.12858613057425353,
+      0.12685682201527979,
+      0.12857273020809148,
+      0.12857273020809148,
+      0.12852859512367526,
+      0.13193814632444198,
+      0.12840538666069096,
+      0.13955583123002696,
+      3.0322597933691619E-6,
+      0.00046386967330549968,
+      7.6079405282660739E-7,
+      0.0001121191910929147,
+      4.2087319109051929E-16,
+      4.2087319109051929E-16,
+      3.0308197505291484E-6,
+      0.00039420743679138332,
+      2.8037814128989348E-5,
+      0.0024420175402157284,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071800777389439746,
+      0.0073950169385346015,
+      0.0071788003352887594,
+      0.00721699299781978,
+      0.0071783832066505777,
+      0.0071783832066505777,
+      0.0071799491492325253,
+      0.007233401735650063,
+      0.0071921713571291342,
+      0.00771672124340746,
+      0.0024791208237811614,
+      4.5940149381121795E-5,
+      0.0024853897009244649,
+      0.00066497048178418012,
+      0.0025180565060701739,
+      0.0025180565060701739,
+      0.0026652703758084941,
+      0.010048334110796456,
+      0.00332251225765074,
+      0.036074653090022869,
+      0.00016125407034760667,
+      2.8539271754029076E-6,
+      0.00016192243354927347,
+      4.3179526331537904E-5,
+      0.00016412110021767732,
+      0.00016412110021767732,
+      0.00017306679024802212,
+      0.00065565551273243181,
+      0.00020914923842132069,
+      0.0024403434150019223
+    ]
+  },
+  "policySummary": {
+    "median": [
+      3.463190903401042,
+      3.4860540235466133,
+      5.9033851080343922,
+      6.7540797549565967,
+      1.0000000000000004,
+      0.99688829493549225,
+      0.32034039487631755,
+      0.3199518228410469,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      0.52340263789999053,
+      -0.47659736210000997,
+      -0.47348565703550177,
+      0.21047230987334306,
+      0.20925236083846388,
+      0.12529376583748955,
+      0.13688554391794489,
+      0.12532917122296622,
+      0.13688725815234631,
+      19.753314565421711,
+      29.273236311227222,
+      19.540082778773094,
+      28.633553873495867,
+      55.75,
+      55,
+      42.5,
+      55,
+      200.75,
+      200,
+      190.75,
+      211.5,
+      0.41657936400408191,
+      0.41708219661394019,
+      0.2904080324367454,
+      0.21975178488822117,
+      7.3572789592689407,
+      4.8879593281180327,
+      4.9975604587224725,
+      2.9931401240362936
+    ],
+    "se": [
+      0.12857273020809148,
+      0.12471964446872875,
+      0.0446944147422706,
+      0.018891808347632662,
+      4.2087319109051929E-16,
+      0.00040711215079160148,
+      0.0078747774389961965,
+      0.007572770929611697,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505716,
+      0.0071783832066505777,
+      0.0073085121744071741,
+      0.014793144592711369,
+      0.012465318329893353,
+      0.0025180565060701739,
+      0.0029897361839965734,
+      0.0025058828208570048,
+      0.0029570971843437526,
+      0.52040476012709624,
+      0.90473067922337369,
+      0.49195492802895452,
+      0.87572774611282511,
+      0.3738180225609789,
+      0.25419642322849095,
+      0.88263574853189319,
+      1.397890431960237,
+      0.3716408966604815,
+      0.24822396945883493,
+      2.0719688228784512,
+      2.9617004011718655,
+      0.00073689305876362685,
+      0.00067310051096394676,
+      0.0060399339943532655,
+      0.0091548717866536487,
+      0.2150653868628794,
+      0.12400175085751168,
+      0.22202337218054685,
+      0.17624191189684396
+    ]
+  },
+  "policyNames": [
+    "Intact",
+    "Remove feedback",
+    "Remove b",
+    "Block"
+  ],
+  "noiseLevels": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "noiseBoundFailures": 0,
+  "primaryPolicyBoundFailures": 0,
+  "qc": [
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7821878012606556,
+      "movementStateMax": 22.150965259311139
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.6549940664118221,
+      "movementStateMax": 22.684581826448
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 3.11994604695465,
+      "movementStateMax": 22.638996873801215
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.9273400330201831,
+      "movementStateMax": 22.880622216712624
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8005224725268958,
+      "movementStateMax": 22.949315892912956
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.6746571073056651,
+      "movementStateMax": 22.08491417451652
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8076807053487998,
+      "movementStateMax": 22.840611279153936
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7450177849220103,
+      "movementStateMax": 22.852141360050567
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 3.295902685013901,
+      "movementStateMax": 23.309147833197557
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.701178794402407,
+      "movementStateMax": 22.236168182390966
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8533033319200474,
+      "movementStateMax": 22.263444651157496
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 1,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.6677102503908805,
+      "movementStateMax": 22.820441958636078
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 3.1612919985337631,
+      "movementStateMax": 22.740064488426871
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.9891720052849196,
+      "movementStateMax": 22.92609934512636
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 1,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8091974819803562,
+      "movementStateMax": 23.120432406148428
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.6706119362704897,
+      "movementStateMax": 22.09559762376136
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 3,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.814473212763327,
+      "movementStateMax": 22.811416471883298
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8047952498427904,
+      "movementStateMax": 22.850057891888781
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 0,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 3.3790029298393076,
+      "movementStateMax": 23.34605556788701
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 4,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7387807692657806,
+      "movementStateMax": 22.248232915147973
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 18,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7224770863942838,
+      "movementStateMax": 22.324136238021058
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 39,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.9304333480934637,
+      "movementStateMax": 22.866891534243983
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 18,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7282082907158371,
+      "movementStateMax": 22.646662055723041
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 50,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8097755750455731,
+      "movementStateMax": 22.134598171386269
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 4,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.788237846363594,
+      "movementStateMax": 22.443840695984687
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 8,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7643049138919937,
+      "movementStateMax": 22.131535854541685
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 3,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8166195458509447,
+      "movementStateMax": 22.272085083938304
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 16,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.8231339592223286,
+      "movementStateMax": 22.640511165289535
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 10,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 3.0092132201491979,
+      "movementStateMax": 22.898466231329852
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 0,
+      "missingWindow": 0,
+      "multiPeak": 34,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.6400411072524541,
+      "movementStateMax": 22.285044611496968
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 10,
+      "missingWindow": 0,
+      "multiPeak": 51,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.638873056183594,
+      "movementStateMax": 22.290229958078591
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 6,
+      "missingWindow": 0,
+      "multiPeak": 81,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7220828830128774,
+      "movementStateMax": 22.454274665588986
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 32,
+      "missingWindow": 0,
+      "multiPeak": 78,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7226386806650238,
+      "movementStateMax": 22.644593904468454
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 1,
+      "missingWindow": 0,
+      "multiPeak": 92,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7725887031944128,
+      "movementStateMax": 22.179908179106242
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 29,
+      "missingWindow": 0,
+      "multiPeak": 51,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7220127890236392,
+      "movementStateMax": 22.29883381396008
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 28,
+      "missingWindow": 0,
+      "multiPeak": 25,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.56997524619463,
+      "movementStateMax": 21.977806877454928
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 4,
+      "missingWindow": 0,
+      "multiPeak": 29,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7492751496444852,
+      "movementStateMax": 22.431104397032517
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 2,
+      "missingWindow": 0,
+      "multiPeak": 122,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7500281287113877,
+      "movementStateMax": 22.434714330129072
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 1,
+      "missingWindow": 0,
+      "multiPeak": 86,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.7121746403074845,
+      "movementStateMax": 22.574095374252778
+    },
+    {
+      "nearZero": 0,
+      "boundaryPeak": 12,
+      "missingWindow": 0,
+      "multiPeak": 84,
+      "finite": true,
+      "prepBounds": true,
+      "movementRateMax": 2.603999439080575,
+      "movementStateMax": 22.449370047124908
+    }
+  ],
+  "nullMCSE": [
+    [
+      0.0008095717504400361,
+      0.00028748138191883263
+    ],
+    [
+      0.00076864675676375312,
+      0.00026381964109545156
+    ],
+    [
+      0.000928056766202358,
+      0.0002629579815686139
+    ],
+    [
+      0.00096122882786161623,
+      0.00026020009571852635
+    ],
+    [
+      0.00072817916285104756,
+      0.00027392847050435759
+    ],
+    [
+      0.00076370270261336387,
+      0.00026002875909241153
+    ],
+    [
+      0.00080424348252134228,
+      0.00027567109008164588
+    ],
+    [
+      0.00082450010874877456,
+      0.00026817995211397122
+    ],
+    [
+      0.00087070538144079642,
+      0.00025909221879346825
+    ],
+    [
+      0.0009195571613356743,
+      0.00023757570749233876
+    ]
+  ],
+  "nullMCSEColumns": [
+    "Control95",
+    "K15_sensitivity"
+  ]
+}

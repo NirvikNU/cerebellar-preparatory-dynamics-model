@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "unchangedFiles": 1762,
+  "authorizedChanges": [
+    {
+      "reason": "Current corrective-task navigation",
+      "before": "F7AFC38410B77A1BE7B4C469F56761A3B5E1DB39BE12227564C9E555F6FAE12F",
+      "path": "AGENTS.md",
+      "after": "E1963FE9EF8FE9D54FF1E19F2E2DA9A853567DCE28A4DF739CB0A1754E3233C8"
+    }
+  ],
+  "checkedUTC": "2026-09-21T03:11:47.4891451Z"
+}

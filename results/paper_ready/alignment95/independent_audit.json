@@ -1,0 +1,16 @@
+{
+  "checks": 49360,
+  "maxTransition": 4.4408920985006262E-16,
+  "maxArm": 2.2204460492503131E-16,
+  "maxSE": 1.9095836023552692E-14,
+  "gridAudit": {
+    "checks": 2137,
+    "maxMetricError": 8.8817841970012523E-15,
+    "maxDenominatorError": 8.5265128291212022E-14,
+    "maxNullError": 4.4408920985006262E-16,
+    "predictionRun": false,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "predictionRun": false
+}
