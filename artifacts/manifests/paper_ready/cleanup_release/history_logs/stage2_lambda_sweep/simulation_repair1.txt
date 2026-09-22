@@ -1,0 +1,10 @@
+Completed network 01: all eight lambda conditions and fixed perturbation protocol.
+Completed network 02: all eight lambda conditions and fixed perturbation protocol.
+Completed network 03: all eight lambda conditions and fixed perturbation protocol.
+Completed network 04: all eight lambda conditions and fixed perturbation protocol.
+Completed network 05: all eight lambda conditions and fixed perturbation protocol.
+Completed network 06: all eight lambda conditions and fixed perturbation protocol.
+Completed network 07: all eight lambda conditions and fixed perturbation protocol.
+Completed network 08: all eight lambda conditions and fixed perturbation protocol.
+Completed network 09: all eight lambda conditions and fixed perturbation protocol.
+Completed network 10: all eight lambda conditions and fixed perturbation protocol.

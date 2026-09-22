@@ -1,0 +1,53 @@
+Kao validation network 01 complete
+Kao validation network 02 complete
+Kao validation network 03 complete
+Kao validation network 04 complete
+Kao validation network 05 complete
+Kao validation network 06 complete
+Kao validation network 07 complete
+Kao validation network 08 complete
+Kao validation network 09 complete
+Kao validation network 10 complete
+           observed: [1×1 struct]
+           expected: [1×1 struct]
+         difference: [1×1 struct]
+               test: [1×1 struct]
+                  k: [10×1 double]
+       prepCaptured: [10×1 double]
+               mcSE: [10×1 double]
+     halfDifference: [10×1 double]
+               plan: 'KAO_VALIDATION_PLAN.md'
+       networkCount: 10
+      nullDrawCount: 10000
+    modelMOOffsetMs: 100
+
+    network    K    prepCaptured    previousPrepCaptured    moveCaptured    observed    expected    observedMinusExpected    nullMonteCarloSE    nullHalfDifference
+    _______    _    ____________    ____________________    ____________    ________    ________    _____________________    ________________    __________________
+
+       1       4      0.83024             0.77219             0.81681       0.17201     0.48053           -0.30851               0.0010861            0.0010087    
+       2       4      0.83704             0.77722              0.8247       0.24508     0.49257           -0.24749              0.00098137           5.5823e-07    
+       3       4      0.83827             0.78517             0.82945        0.2122     0.49091           -0.27871               0.0010589            0.0019071    
+       4       3      0.81267             0.72165             0.72246       0.24547     0.44875           -0.20328               0.0012134            0.0022223    
+       5       4      0.85763             0.75956              0.7911       0.15233     0.46648           -0.31414              0.00097472            0.0027727    
+       6       4       0.8417             0.78934             0.82344       0.22824     0.49974            -0.2715               0.0010522            0.0021111    
+       7       4      0.85687             0.78125             0.81963       0.13334     0.46652           -0.33319               0.0010367            0.0040984    
+       8       3      0.80112             0.72552             0.72562       0.16719     0.41449            -0.2473               0.0011785            0.0042539    
+       9       4      0.83387             0.78459              0.8409       0.17296     0.49151           -0.31856               0.0011276            0.0020794    
+      10       3      0.82266             0.70352             0.69811       0.10434     0.41648           -0.31214               0.0011298            0.0054567    
+
+              maxScaleError: 0
+             maxCenterError: 1.1102e-16
+         maxProjectionError: 3.6082e-16
+          maxKVarianceError: 6.6613e-16
+    maxIndependentNullError: 7.7716e-16
+        maxBootstrapSEError: 0
+       protectedStage1Files: 132
+         priorManifestFiles: 29
+         cacheHashesMatched: 10
+             neuronSentinel: 1
+            windowsVerified: 80
+                     status: 'PASS'
+          codeAnalyzerFiles: 3
+                figReopened: 1
+                pngReopened: 1
+

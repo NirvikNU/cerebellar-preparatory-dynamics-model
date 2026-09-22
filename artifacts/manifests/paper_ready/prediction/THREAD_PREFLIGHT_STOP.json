@@ -1,0 +1,4 @@
+{
+  "status": "STOP",
+  "message": "Error using load\nLoading V7.3 MAT-files on threads is not supported."
+}

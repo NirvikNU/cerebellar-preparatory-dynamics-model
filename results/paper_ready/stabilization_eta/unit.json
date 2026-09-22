@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "heldoutBasisChange": 0,
+  "heldoutReferenceMeanChange": 0,
+  "neuronColumnIdentity": true,
+  "everyTrialHeldOutOnce": true
+}

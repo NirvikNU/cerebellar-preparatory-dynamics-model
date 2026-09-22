@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "workers": 20,
+  "poolType": "parallel.ThreadPool",
+  "r2Error": [
+    0,
+    0
+  ],
+  "matFileIO": "Client only; v7.3 load unsupported inside thread workers",
+  "productionResultsWritten": false
+}

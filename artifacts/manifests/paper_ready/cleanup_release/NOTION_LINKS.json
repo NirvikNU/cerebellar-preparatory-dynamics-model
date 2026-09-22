@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "links": [
+    {
+      "id": "3e026c94be30811dbb4fe27a353fdcd9",
+      "title": "📄 Paper-ready Modelling — Figures & Text",
+      "available": true
+    },
+    {
+      "id": "3e026c94be3081c4bb32d693f6d527bc",
+      "title": "🧠 01 — Scientific Rationale, Caveats & Writing Notes",
+      "available": true
+    },
+    {
+      "id": "3e026c94be30810c8b2ce843260cd7db",
+      "title": "🖼️ 02 — Main & Extended Data Figures — Plots & Legends",
+      "available": true
+    },
+    {
+      "id": "3e026c94be3081b7a1c1dbc406c19e78",
+      "title": "✅ 03 — Analysis Decisions, Source Data & Validation",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081228b90c49a81c0c600",
+      "title": "🗄️ 99 — Archive — Historical Modelling Checkpoints & Figures",
+      "available": true
+    },
+    {
+      "id": "3e326c94be308152a2a1ef0c186654f2",
+      "title": "🧠 Historical snapshot — 01 — Scientific Rationale, Caveats & Writing Notes — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081cead8ae5956f749ede",
+      "title": "🖼️ Historical snapshot — 02 — Main & Extended Data Figures — Plots & Legends — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081aabb02cf68e02fabb8",
+      "title": "✅ Historical snapshot — 03 — Analysis Decisions, Source Data & Validation — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3d326c94be3081e897a2e5e0c855c4c0",
+      "title": "📝 Agent Log — Run Outputs",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081edbd57da0d76592df4",
+      "title": "🧭 Historical snapshot — Agent Instructions — Current Task — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081e8a49ae1ce903ba252",
+      "title": "🤝 Historical snapshot — Agent Handoff — Current Project State — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081688746cd508943fa70",
+      "title": "🧭 Historical snapshot — START HERE — Modelling Chat Continuation Handoff — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    },
+    {
+      "id": "3e326c94be3081d2b928fcccd1b8c9e0",
+      "title": "Historical snapshot — Paper-ready parent — 23 Sep 2026, pre-release 70fff703",
+      "available": true
+    }
+  ],
+  "archiveOriginalImages": 14,
+  "archiveOriginalImagePathsMatch": true,
+  "currentNativeHashMatches": 10
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "priorFiles": 2296,
+  "retained": 2293,
+  "relocated": 26,
+  "zeroByteFilesDeleted": 3,
+  "scientificChanges": 0,
+  "rawPreservation": "Full hash before cleanup, final size/write-time check; no scientific writer called",
+  "remainingIgnoredFiles": 1321,
+  "ignoredScope": "Required Stage-1 local assets, Stage-2/3/paper raw caches and pinned source/reference cache only",
+  "newDurableFiles": 181,
+  "newDurableBytes": 57839199.0,
+  "maxFileBytes": 44854137.0,
+  "duplicateGroups": 0,
+  "reviewUTC": "2026-09-22T22:37:29.0233446Z"
+}

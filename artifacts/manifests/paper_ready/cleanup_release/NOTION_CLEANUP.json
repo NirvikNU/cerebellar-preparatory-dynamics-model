@@ -1,0 +1,39 @@
+{
+  "task": "PAPER-MODELLING-CLEANUP-RELEASE-01",
+  "date": "2026-09-23",
+  "archive": "3e326c94be3081228b90c49a81c0c600",
+  "snapshots": [
+    "3e326c94be308152a2a1ef0c186654f2",
+    "3e326c94be3081cead8ae5956f749ede",
+    "3e326c94be3081aabb02cf68e02fabb8",
+    "3e326c94be3081edbd57da0d76592df4",
+    "3e326c94be3081e8a49ae1ce903ba252",
+    "3e326c94be3081688746cd508943fa70",
+    "3e326c94be3081d2b928fcccd1b8c9e0"
+  ],
+  "snapshotContentMatch": true,
+  "historicalGalleryImages": 14,
+  "currentImages": 10,
+  "currentImageNames": [
+    "stabilization_eta_six_panel.png",
+    "stabilization_eta_movement_qc.png",
+    "stabilization_eta_kinematics.png",
+    "panel_e_pca_ridge.png",
+    "panel_e_controls.png",
+    "extended_data_rrr.png",
+    "main_modelling_alignment95.png",
+    "support_calibration_alignment95.png",
+    "support_noise_controls_alignment95.png",
+    "support_movement_qc_alignment95.png"
+  ],
+  "allTenNativeHashesMatchLocal": true,
+  "activePages": [
+    "3e026c94be30811dbb4fe27a353fdcd9",
+    "3e026c94be3081c4bb32d693f6d527bc",
+    "3e026c94be30810c8b2ce843260cd7db",
+    "3e026c94be3081b7a1c1dbc406c19e78"
+  ],
+  "agentLogUnmodifiedDuringCleanup": true,
+  "scientificInterpretationPending": true,
+  "etaSelected": false
+}

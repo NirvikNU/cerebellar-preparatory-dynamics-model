@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "task": "PAPER-MODELLING-PANEL-E-PREDICTION-01",
+  "pages": [
+    {
+      "name": "rationale",
+      "id": "3e026c94be3081c4bb32d693f6d527bc",
+      "updated": "2026-09-21T15:43:23.873Z",
+      "header": "## Completed panel e and RRR — mixed outcome; stop for scientific review",
+      "status": "PASS"
+    },
+    {
+      "name": "start",
+      "id": "3d226c94be308194adadf691ed5822a2",
+      "updated": "2026-09-21T15:43:00.483Z",
+      "header": "## Prior calibration checkpoint — historical receipt, not current pending work",
+      "status": "PASS"
+    },
+    {
+      "name": "handoff",
+      "id": "3c826c94be308156a677c50c2106fb37",
+      "updated": "2026-09-21T15:42:58.184Z",
+      "header": "## PAPER-MODELLING-PANEL-E-PREDICTION-01 — completed; stop for scientific review",
+      "status": "PASS"
+    },
+    {
+      "name": "figures",
+      "id": "3e026c94be30810c8b2ce843260cd7db",
+      "updated": "2026-09-21T15:37:22.570Z",
+      "header": "## Current panel e and RRR Extended Data — validated; stop for scientific review",
+      "status": "PASS",
+      "images": 11
+    },
+    {
+      "name": "log",
+      "id": "3d326c94be3081e897a2e5e0c855c4c0",
+      "updated": "2026-09-21T15:42:58.686Z",
+      "header": "## PAPER-MODELLING-PANEL-E-PREDICTION-01 — completed; stop for scientific review",
+      "status": "PASS"
+    },
+    {
+      "name": "task",
+      "id": "3c826c94be30817d8f51d9f6c8c2bc19",
+      "updated": "2026-09-21T15:42:59.377Z",
+      "header": "## Executed contract — PAPER-MODELLING-PANEL-E-PREDICTION-01 (provenance only; do not rerun)",
+      "status": "PASS"
+    },
+    {
+      "name": "decisions",
+      "id": "3e026c94be3081b7a1c1dbc406c19e78",
+      "updated": "2026-09-21T15:41:29.992Z",
+      "header": "## Current completed prediction analyses — scientific review pending",
+      "status": "PASS",
+      "exactTableCells": 604
+    },
+    {
+      "name": "parent",
+      "id": "3e026c94be30811dbb4fe27a353fdcd9",
+      "updated": "2026-09-21T15:41:26.907Z",
+      "header": "## Current result — panel e and RRR complete; stop for scientific review",
+      "status": "PASS",
+      "children": 3
+    }
+  ],
+  "nativeImageReceipts": [
+    "NATIVE_PRIMARY.json",
+    "NATIVE_RRR.json"
+  ],
+  "nativeImagesVerified": 3,
+  "previousGalleryImagesPreserved": 8,
+  "parentChildPagesPreserved": 3,
+  "exactReportTableCellsVerified": 604,
+  "scientificReviewPending": true,
+  "stageCommitPushPerformed": false
+}

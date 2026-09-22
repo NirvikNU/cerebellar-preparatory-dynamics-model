@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "sourceFiles": 31,
+  "messages": [],
+  "figures": [
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\fig\\extended_data_rrr.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\png\\extended_data_rrr.png",
+      "axes": 3,
+      "width": 2998,
+      "height": 1229,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\fig\\panel_e_controls.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\png\\panel_e_controls.png",
+      "axes": 6,
+      "width": 2443,
+      "height": 1616,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\fig\\panel_e_pca_ridge.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\png\\panel_e_pca_ridge.png",
+      "axes": 1,
+      "width": 1355,
+      "height": 1034,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_kinematics.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_kinematics.png",
+      "axes": 20,
+      "width": 3510,
+      "height": 2286,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_movement_qc.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_movement_qc.png",
+      "axes": 9,
+      "width": 2831,
+      "height": 2280,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_six_panel.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_six_panel.png",
+      "axes": 7,
+      "width": 3070,
+      "height": 1854,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\fig\\main_modelling_alignment95.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\png\\main_modelling_alignment95.png",
+      "axes": 6,
+      "width": 2857,
+      "height": 1773,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\fig\\support_calibration_alignment95.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\png\\support_calibration_alignment95.png",
+      "axes": 12,
+      "width": 2958,
+      "height": 2702,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\fig\\support_movement_qc_alignment95.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\png\\support_movement_qc_alignment95.png",
+      "axes": 15,
+      "width": 3096,
+      "height": 3068,
+      "reopened": true,
+      "saved": false
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\fig\\support_noise_controls_alignment95.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\png\\support_noise_controls_alignment95.png",
+      "axes": 8,
+      "width": 3118,
+      "height": 1641,
+      "reopened": true,
+      "saved": false
+    }
+  ],
+  "scientificFunctionsCalled": false
+}

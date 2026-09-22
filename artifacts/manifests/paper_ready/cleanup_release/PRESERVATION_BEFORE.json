@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "task": "PAPER-MODELLING-CLEANUP-RELEASE-01",
+  "priorProtectedManifestRows": 2295,
+  "allFiles": 2296,
+  "allBytes": 169191379199.0,
+  "taskFiles": 454,
+  "taskBytes": 56143597861.0,
+  "categories": [
+    {
+      "bytes": 111806.0,
+      "files": 31,
+      "category": "1"
+    },
+    {
+      "bytes": 6652270.0,
+      "files": 27,
+      "category": "2"
+    },
+    {
+      "bytes": 103053.0,
+      "files": 17,
+      "category": "3"
+    },
+    {
+      "bytes": 48600354.0,
+      "files": 12,
+      "category": "4"
+    },
+    {
+      "bytes": 739755.0,
+      "files": 47,
+      "category": "5"
+    },
+    {
+      "bytes": 56087390623.0,
+      "files": 320,
+      "category": "6"
+    }
+  ],
+  "checkedUTC": "2026-09-22T22:32:35.2812928Z",
+  "noScientificComputation": true
+}

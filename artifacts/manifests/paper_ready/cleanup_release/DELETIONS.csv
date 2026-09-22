@@ -1,0 +1,4 @@
+"path","bytes","sha256","category","reason","retainedSource"
+"artifacts/manifests/paper_ready/numerical_preflight.log","0","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855","7","Closed zero-byte stdout file contains no evidence","Historical completed numerical/figure/static audit receipts; no file content existed"
+"artifacts/manifests/paper_ready/render_final.log","0","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855","7","Closed zero-byte stdout file contains no evidence","Historical completed numerical/figure/static audit receipts; no file content existed"
+"artifacts/manifests/paper_ready/render_review.log","0","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855","7","Closed zero-byte stdout file contains no evidence","Historical completed numerical/figure/static audit receipts; no file content existed"

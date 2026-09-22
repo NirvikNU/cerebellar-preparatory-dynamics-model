@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "figures": [
+    {
+      "name": "stabilization_eta_six_panel",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_six_panel.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_six_panel.png",
+      "reopenedSourceChecks": 154
+    },
+    {
+      "name": "stabilization_eta_movement_qc",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_movement_qc.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_movement_qc.png",
+      "reopenedSourceChecks": 204
+    },
+    {
+      "name": "stabilization_eta_kinematics",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\fig\\stabilization_eta_kinematics.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\stabilization_eta\\png\\stabilization_eta_kinematics.png",
+      "reopenedSourceChecks": 160
+    }
+  ]
+}

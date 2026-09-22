@@ -1,5 +1,20 @@
 # Frozen movement foundation and preparatory controllers
 
+## Current paper-modelling review
+
+Corrected alignment95, completed panel-e prediction/RRR, and the separate
+stabilization-eta diagnostic are available through
+[Current review](docs/paper_ready/CURRENT_REVIEW.md). Stabilization is numerically
+validated; scientific interpretation and eta choice remain pending user review.
+No further analysis is authorized. The cleanup/release does not change any
+accepted model, numerical result or figure. Historical receipts below retain
+their original scope; they are not authority to rerun completed tasks.
+
+The [cleanup inventory](artifacts/manifests/paper_ready/cleanup_release/PLAN.md)
+documents preserved raw caches, historical-note/log relocations and empty-log
+deletions. Final release SHA and synchronization are recorded in Notion after
+the normal push and guarded main fast-forward.
+
 ## Stage-1 movement landscape and launch sensitivity
 
 STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is an additive diagnostic of the

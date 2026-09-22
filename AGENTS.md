@@ -91,6 +91,20 @@ permission, concurrency or Git problems.
 
 ## Current management
 
+PAPER-MODELLING-CLEANUP-RELEASE-01 packages the completed prediction/RRR and
+stabilization-eta diagnostics without new science. Read
+`docs/paper_ready/CURRENT_REVIEW.md` and the actual release receipts under
+`artifacts/manifests/paper_ready/cleanup_release/`. Stabilization is numerically
+validated; scientific interpretation and eta choice remain pending user review.
+No further analysis, RRR, simulation, fitting, tuning or eta selection is
+authorized. Completed writers must not be rerun to inspect outputs. Required
+raw caches remain ignored/local. The containing release SHA and verified Git
+state are recorded in the current Notion status pages after synchronization.
+Historical phase/stop notes and hash manifests are provenance, not instructions
+to repeat work; the cleanup relocation ledger maps retained historical paths.
+
+### Completed paper calibration provenance
+
 PAPER-MODELLING-ALIGNMENT95-01 supersedes only the paper-specific K=15
 calibration as the primary analysis. Read the locked corrective plan in
 `docs/paper_ready/alignment95/PLAN.md` and its actual validation receipts.
@@ -102,7 +116,8 @@ remain frozen. Current corrective source/outputs use the `alignment95/`
 subdirectories and `*_alignment95` figure names; old paper outputs remain
 unchanged historical provenance at aebd5fdfd300c19eca85548315357f11ecfd44ac.
 Do not infer completion from this navigation entry: use the actual report
-and Notion handoff. Stop for scientific review; no panel e or new prediction.
+and Notion handoff. Its original no-prediction stop was superseded only by
+the separately completed prediction/RRR task; no further prediction is authorized.
 
 PAPER-MODELLING-PREPREDICTION-01 is a separate paper-specific calibration,
 not a replacement of accepted Stage-1/2/3 science. Read the locked
@@ -114,7 +129,8 @@ summaries are `results/paper_ready/`, with raw trials in its ignored cache.
 FIG/PNG pairs are under `plots/paper_ready/{fig,png}/`. Writers refuse
 overwrites. Preserve completed partial evidence. A launch is not completion:
 check the actual receipts and current Notion handoff. The new prediction
-analysis and panel e are explicitly excluded until scientific review.
+analysis and panel e were excluded by that historical calibration contract;
+the separately completed prediction/RRR bundle is now preserved for review.
 
 STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is analysis-only on the frozen
 movement generators. Read PLAN.md and the actual receipts/report under

@@ -1,0 +1,38 @@
+{
+  "task": "PAPER-MODELLING-STABILIZATION-ETA-01",
+  "executionStatus": "STOPPED_BEFORE_MODEL_EXECUTION_PANEL_D_SOURCE_MISSING",
+  "preservationStatus": "PASS",
+  "checkedAt": "2026-09-22T09:01:43.2720722Z",
+  "head": "70fff703f8fd3074bef62ca9954a03bef50e4d99",
+  "branch": "v3-romano-hennequin",
+  "comparisonInventory": "artifacts/manifests/paper_ready/prediction/INVENTORY.csv",
+  "inventoriedFiles": 203,
+  "inventoriedBytes": 20435636045,
+  "mismatches": [],
+  "additionalReceipts": [
+    {
+      "path": "artifacts/manifests/paper_ready/prediction/INVENTORY.csv",
+      "bytes": 43015,
+      "sha256": "8B298DFD9B5EB55F89380B832F5425E2D13A19B84B52419FE05BBBA5B50FFC8D"
+    },
+    {
+      "path": "artifacts/manifests/paper_ready/prediction/INVENTORY.json",
+      "bytes": 283,
+      "sha256": "B315FB783EDA786EFF3AAF789678618DC63329942B54567F4C3AB55D6F78ADBB"
+    },
+    {
+      "path": "artifacts/manifests/paper_ready/prediction/FINAL_GIT.json",
+      "bytes": 6021,
+      "sha256": "2AEB38A0FF721D7FBA876F496BB900F802EB7C22B9432B0329B1633A5CC0E351"
+    }
+  ],
+  "matlabRun": false,
+  "etaSweepRun": false,
+  "predictionFitsRun": false,
+  "rrrRun": false,
+  "existingFilesModified": false,
+  "staged": false,
+  "committed": false,
+  "pushed": false,
+  "scopeNote": "Hash comparison covers all 203 prior prediction inventory entries; three self-receipts separately recorded. No full rehash of every earlier Stage-1/2/3 asset was performed during this read-only scientific preflight."
+}

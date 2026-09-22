@@ -1,0 +1,43 @@
+Geometry network01: 24 screened-in, 24 feasible 397.8s
+Geometry network02: 25 screened-in, 25 feasible 767.9s
+Geometry network03: 21 screened-in, 21 feasible 1100.4s
+Geometry network04: 21 screened-in, 21 feasible 1433.9s
+Geometry network05: 25 screened-in, 25 feasible 1807.3s
+Geometry network06: 21 screened-in, 21 feasible 2140.9s
+Geometry network07: 25 screened-in, 25 feasible 2510.3s
+Geometry network08: 25 screened-in, 25 feasible 2878.6s
+Geometry network09: 25 screened-in, 25 feasible 3247.2s
+Geometry network10: 25 screened-in, 25 feasible 3621.5s
+              loss: [36×1 double]
+    commonFeasible: [36×1 logical]
+           deltaPR: [36×1 double]
+           deficit: [36×1 double]
+     selectedIndex: 21
+            status: 'GEOMETRY_PASS'
+            lambda: 10
+            target: [1×1 struct]
+
+Controls/movement network01 complete 138.2s
+Controls/movement network02 complete 279.1s
+Controls/movement network03 complete 416.6s
+Controls/movement network04 complete 554.4s
+Controls/movement network05 complete 692.4s
+Controls/movement network06 complete 829.8s
+Controls/movement network07 complete 969.0s
+Controls/movement network08 complete 1108.9s
+Controls/movement network09 complete 1249.6s
+Controls/movement network10 complete 1389.1s
+           checks: 42130
+            maxPR: 9.7700e-15
+     maxAlignment: 4.7740e-15
+       maxCapture: 8.8818e-16
+      maxAdaptive: 1.8874e-15
+    maxTransition: 4.4409e-16
+           maxArm: 2.2204e-16
+            maxSE: 1.0991e-14
+           status: 'PASS'
+    predictionRun: 0
+
+[Warning: Escaped character '\l' is not valid. See 'doc sprintf' for supported special characters.] 
+[> In paper_figures (line 36)
+In paper_run (line 16)] 

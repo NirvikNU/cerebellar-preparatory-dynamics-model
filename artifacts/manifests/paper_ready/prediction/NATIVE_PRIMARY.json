@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "visuallyInspected": [
+    "panel_e_pca_ridge",
+    "panel_e_controls"
+  ],
+  "figReopenChecks": [
+    5,
+    24
+  ],
+  "images": [
+    {
+      "name": "panel_e_pca_ridge",
+      "sha256": "432CD254C6DD84CD986618135735E736207C9E2C3FDB756B46FB3E64CC7A6CC4",
+      "bytes": 104904,
+      "status": "PASS"
+    },
+    {
+      "name": "panel_e_controls",
+      "sha256": "97453A92E6B32BBE27741790B2A2FF66FE0C1022CB48C8DD38DC7E4FCEF04202",
+      "bytes": 180893,
+      "status": "PASS"
+    }
+  ]
+}

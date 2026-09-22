@@ -1,0 +1,8 @@
+                metricError: 7.9936e-15
+              residualError: 5.3291e-15
+    movementTransitionError: 0
+              endpointError: 1.0408e-17
+                     checks: 1240
+              predictionRun: 0
+                     status: 'PASS'
+

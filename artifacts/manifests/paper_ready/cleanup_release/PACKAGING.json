@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "relocated": 26,
+  "deletedEmptyLogs": 3,
+  "allRelocatedHashesMatch": true,
+  "scientificFilesDeleted": 0
+}

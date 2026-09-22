@@ -1,0 +1,5 @@
+R2 cache preflight: PASS
+MO range: 47 to 65 ms; max requested GO time: 515 ms
+Reference SD range: 0.17448332975921999 to 0.63671775487194227; rejected counts:
+     0     0     0     0     0     0     0     0     0     0
+

@@ -1,0 +1,33 @@
+{
+  "files": [
+    "eta_baseline.m",
+    "eta_equations.m",
+    "eta_paths.m"
+  ],
+  "messages": [
+    [
+      {
+        "id": "PFBNS",
+        "message": "The entire array or structure 'etaValues' is a broadcast variable. This might result in unnecessary communication overhead.",
+        "fix": 0,
+        "line": 19,
+        "column": [
+          51,
+          59
+        ]
+      },
+      {
+        "id": "PFBNS",
+        "message": "The entire array or structure 'policyFlags' is a broadcast variable. This might result in unnecessary communication overhead.",
+        "fix": 0,
+        "line": 21,
+        "column": [
+          43,
+          53
+        ]
+      }
+    ],
+    [],
+    []
+  ]
+}

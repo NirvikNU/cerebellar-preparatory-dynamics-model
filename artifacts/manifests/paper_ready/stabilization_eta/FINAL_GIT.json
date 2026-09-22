@@ -1,0 +1,29 @@
+{
+  "head": "70fff703f8fd3074bef62ca9954a03bef50e4d99",
+  "branch": "v3-romano-hennequin",
+  "trackedDiffEmpty": true,
+  "indexDiffEmpty": true,
+  "status": [
+    "?? analysis/paper_ready/prediction/",
+    "?? analysis/paper_ready/stabilization_eta/",
+    "?? artifacts/manifests/paper_ready/prediction/",
+    "?? artifacts/manifests/paper_ready/stabilization_eta/",
+    "?? docs/paper_ready/prediction/",
+    "?? docs/paper_ready/stabilization_eta/",
+    "?? figures/paper_ready/prediction/",
+    "?? figures/paper_ready/stabilization_eta/",
+    "?? plots/paper_ready/prediction/",
+    "?? plots/paper_ready/stabilization_eta/",
+    "?? results/paper_ready/prediction/",
+    "?? results/paper_ready/stabilization_eta/"
+  ],
+  "rawCacheTracked": false,
+  "staged": false,
+  "committed": false,
+  "pushed": false,
+  "preservationEvidenceReused": "RESUME_INVENTORY.json / RESUME_INPUTS.csv; no old-artifact writer called",
+  "scientificParametersRetuned": false,
+  "rrrRun": false,
+  "etaSelected": false,
+  "checkedUTC": "2026-09-22T13:04:36.5605251Z"
+}

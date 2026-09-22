@@ -1,0 +1,15 @@
+{
+  "newCases": 80,
+  "reusedCases": 0,
+  "status": "PASS",
+  "eta": [
+    1,
+    0.75,
+    0.5,
+    0.25,
+    0
+  ],
+  "newBaselineRuns": 0,
+  "elapsedSeconds": 2150.7931033,
+  "trialsPerCase": 240
+}

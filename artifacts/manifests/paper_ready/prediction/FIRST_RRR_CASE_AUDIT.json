@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "network": 1,
+  "policy": 1,
+  "repeat": 1,
+  "lossError": 1.0186340659856796E-10,
+  "predictionError": 4.0856207306205761E-14,
+  "r2Error": 7.7715611723760958E-16,
+  "penaltyMismatches": 0
+}

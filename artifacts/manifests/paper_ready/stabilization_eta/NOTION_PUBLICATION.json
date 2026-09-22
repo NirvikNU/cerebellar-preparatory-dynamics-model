@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "date": "2026-09-22",
+  "galleryPage": "3e026c94be30810c8b2ce843260cd7db",
+  "resultsPage": "3e026c94be3081b7a1c1dbc406c19e78",
+  "interpretationPage": "3e026c94be3081c4bb32d693f6d527bc",
+  "nativeImages": [
+    {
+      "name": "stabilization_eta_six_panel",
+      "bytes": 498436,
+      "sha256": "4BAA74AFA6DC876E729C00F217133BC87C6B6408292B3CE7D3B2839E5DBF9F2F",
+      "nativeMatchesLocal": true
+    },
+    {
+      "name": "stabilization_eta_movement_qc",
+      "bytes": 459997,
+      "sha256": "4E726B3A3FE658819DDFD32D4B126E2AB2052E91CD1E3DCFB4E6614B397C6C09",
+      "nativeMatchesLocal": true
+    },
+    {
+      "name": "stabilization_eta_kinematics",
+      "bytes": 1953343,
+      "sha256": "929CAF35734184163DCFF6FED04B046E2190F36D53C7AFB7B0E263D7A3AC895A",
+      "nativeMatchesLocal": true
+    }
+  ],
+  "totalGalleryImages": 14,
+  "previousImagesRetained": 11,
+  "allPreviousImagePathsRetained": true,
+  "allPNGVisuallyInspected": true,
+  "allFIGReopened": true,
+  "graphicsSourceChecks": 518,
+  "scientificAudit": "PASS",
+  "etaSelected": false,
+  "rrrRun": false
+}

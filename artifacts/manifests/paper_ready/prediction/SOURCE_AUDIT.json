@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "task": "PAPER-MODELLING-PANEL-E-PREDICTION-01",
+  "startingSHA": "70fff703f8fd3074bef62ca9954a03bef50e4d99",
+  "taskNotionPage": "3c826c94be30817d8f51d9f6c8c2bc19",
+  "taskRevision": "2026-09-21T10:50:39.871Z",
+  "manuscript": {
+    "id": "1ZMY8I_aalyKtAfdE4Sz_uoO4zE8v3W_E0d-_s0T09gI",
+    "title": "Main_text_v8",
+    "modified": "2026-09-13T18:12:41.246Z",
+    "nativeRevision": "ANLCKQl8MGWFWm19rcCXp1gL7CdgYp_7ZLt3KUSqOcAwzJFKHtehs4thThZzLRNyumF-_O6aDS2E3idku0fyMpVwcCcqqTGl8_fmKNzWujM",
+    "readMethods": true,
+    "equationCheckedInNativeDocxXML": true,
+    "rrrObjective": "min rank(B)<=m [norm(Y-XB,F)^2 + lambda*norm(B,F)^2]",
+    "rawDocxBytes": 6083028,
+    "rawDocxPreservedLocally": false
+  },
+  "existingValidatedHelpers": [
+    "stage3_prediction_folds.m",
+    "stage3_prediction_ridge.m",
+    "stage3_prediction_features.m (synthetic comparison only)",
+    "stage2_bootstrap.m",
+    "stage2_signflip.m",
+    "stage2_bh.m"
+  ],
+  "scientificParametersChanged": false,
+  "extraBalancingResamples": false,
+  "rrrRanks": [
+    1,
+    200
+  ],
+  "rrrRepeats": 10,
+  "globalShuffles": 100,
+  "workerCapacity": 20,
+  "workerProfileChanged": false
+}

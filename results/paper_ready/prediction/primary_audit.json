@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pcaError": 1.9895196601282805E-13,
+  "predictionError": 1.2123635428906709E-13,
+  "lossError": 1.4551915228366852E-11,
+  "r2Error": 1.7763568394002505E-15,
+  "featureError": 2.3092638912203256E-14,
+  "checks": 40
+}

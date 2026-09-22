@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "cases": 100,
+  "stateError": 1.3322676295501878E-15,
+  "convergenceError": 1.7141843500212417E-13,
+  "geometryError": 8.8817841970012523E-15,
+  "featureError": 2.6645352591003757E-14,
+  "predictionError": 1.4699352846037073E-13,
+  "lossError": 1.4551915228366852E-11,
+  "r2Error": 4.4408920985006262E-16,
+  "transitionError": 4.4408920985006262E-16,
+  "torqueError": 0,
+  "movementError": 1.7763568394002505E-15,
+  "bootstrapError": 0,
+  "undefined": 0,
+  "reusedBaselineAudit": "baseline.json",
+  "newTrajectoryReplays": 0,
+  "etaOnePredictionAuditReused": "results/paper_ready/prediction/primary_audit.json"
+}

@@ -1,0 +1,7 @@
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Saved eta 0.75: all ten networks and both policies; 539.8s.
+Saved eta 0.50: all ten networks and both policies; 1082.9s.
+Saved eta 0.25: all ten networks and both policies; 1619.0s.
+Saved eta 0.00: all ten networks and both policies; 2150.8s.
+Parallel pool using the 'Threads' profile is shutting down.

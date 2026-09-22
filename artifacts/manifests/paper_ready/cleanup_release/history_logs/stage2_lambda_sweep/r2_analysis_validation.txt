@@ -1,0 +1,35 @@
+R2 network 01 analysis validated.
+R2 network 02 analysis validated.
+R2 network 03 analysis validated.
+R2 network 04 analysis validated.
+R2 network 05 analysis validated.
+R2 network 06 analysis validated.
+R2 network 07 analysis validated.
+R2 network 08 analysis validated.
+R2 network 09 analysis validated.
+R2 network 10 analysis validated.
+                            status: 'PASS'
+             maxIndependentPRError: 8.8818e-15
+       maxIndependentVarianceError: 8.8818e-16
+      maxIndependentAlignmentError: 2.1094e-15
+    maxIndependentBootstrapSEError: 0
+                     sentinelExact: 1
+                         minimumSD: 0.1745
+                         maximumSD: 0.6367
+                  prepCommonKRange: [5 7]
+              prepMoveCommonKRange: [11 13]
+     minimumCommonCapturedVariance: 0.9501
+
+                                    status: 'PASS'
+             protectedStage1FilesUnchanged: 132
+    controllerAndResultsFigures12Unchanged: 1
+                       revisedFIGsReopened: 3
+                       revisedPNGsReopened: 3
+                     independentExactTests: 17
+                 maxPairedBootstrapSEError: 0
+                     independentBHFamilies: 2
+                syntheticIsotropicNullMean: 0.2530
+                         codeAnalyzerFiles: 7
+                        codeAnalyzerIssues: [0×0 struct]
+                             analysisAudit: [1×1 struct]
+

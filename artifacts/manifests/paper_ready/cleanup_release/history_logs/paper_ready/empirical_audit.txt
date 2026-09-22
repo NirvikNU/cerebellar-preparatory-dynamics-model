@@ -1,0 +1,13 @@
+                 names: {'Control'  'Block'  'Observed'  'Expected'}
+        allEpochValues: [4×4 double]
+        allEpochErrors: [4×4 double]
+                  prep: [4×1 double]
+                 error: [4×1 double]
+               deltaPR: 2.6453
+    alignmentDeficitPP: 16.8022
+      alignmentDeficit: 0.1680
+       errorDefinition: 'SD across1000 trial-balanced pooled-neuron resamples; Main_text_v8 Supplementary Fig3'
+     pairedEffectError: 'Not identifiable from marginal FIG; not used as loss weights'
+                checks: 16
+                status: 'PASS'
+

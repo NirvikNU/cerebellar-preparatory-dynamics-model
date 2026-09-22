@@ -1,0 +1,15 @@
+Timing network01 complete 10.7s
+Timing network02 complete 19.9s
+Timing network03 complete 29.1s
+Timing network04 complete 38.2s
+Timing network05 complete 47.3s
+Timing network06 complete 56.4s
+Timing network07 complete 65.6s
+Timing network08 complete 74.8s
+Timing network09 complete 84.0s
+Timing network10 complete 93.2s
+   10.0000   13.0000   20.0000   28.0000   38.2500   57.5000   74.2500  116.0000
+
+TIMING_PASS
+    10
+

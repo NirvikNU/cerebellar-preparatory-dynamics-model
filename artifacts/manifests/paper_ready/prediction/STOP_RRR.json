@@ -1,0 +1,16 @@
+{
+  "status": "STOP",
+  "message": "Parallel pool failed to start with the following error. For more detailed information, validate the profile 'Processes' in the Cluster Profile Manager.",
+  "stack": [
+    {
+      "file": "C:\\Program Files\\MATLAB\\R2025b\\toolbox\\parallel\\cluster\\cluster\\parpool.m",
+      "name": "parpool",
+      "line": 132
+    },
+    {
+      "file": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\analysis\\paper_ready\\prediction\\pe_rrr.m",
+      "name": "pe_rrr",
+      "line": 8
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+                                 status: 'PASS'
+                  maxIndependentPRError: 6.2172e-15
+    maxIndependentCapturedVarianceError: 7.7716e-16
+           maxIndependentAlignmentError: 7.7716e-16
+         maxIndependentBootstrapSEError: 0
+                  minimumPrep15Variance: 0.9996
+                  minimumMove15Variance: 0.9981
+                 allEffortStepsDecrease: 1
+                  effortIncreasingSteps: 0
+                    maximumCAREResidual: 3.3393e-14
+                 maximumFixedPointError: 2.1316e-14
+                  maximumClosedLoopPole: -0.1873
+                    allSelfAlignmentOne: 1
+               floorClampedNeuronCounts: [10×1 double]
+                   initialNormQuantiles: [1.1333 1.2781 1.4109 1.5498 1.6918]
+          activeChangeFractionQuantiles: [0 0 0 0.0050 0.0100]
+
+[Warning: Negative data ignored] 
+[> In matlab.graphics.internal.xyzline (line 84)
+In xline (line 35)
+In create_stage2_figures>marks (line 123)
+In create_stage2_figures (line 44)
+In run_stage_2 (line 15)] 
+[Warning: Negative data ignored] 
+[> In matlab.graphics.internal.xyzline (line 84)
+In xline (line 35)
+In create_stage2_figures>marks (line 123)
+In create_stage2_figures (line 51)
+In run_stage_2 (line 15)] 
+[Warning: Negative data ignored] 
+[Warning: Negative data ignored] 
+[Warning: Negative data ignored] 
+[> In matlab.graphics.internal.figfile.FigFile/read (line 75)
+In matlab.graphics.internal.figfile/FigFile
+In loadFigure (line 28)
+In openfig>localOpenFigure (line 75)
+In openfig (line 40)
+In create_stage2_figures (line 102)
+In run_stage_2 (line 15)] 
+[Warning: Negative data ignored] 
+[> In matlab.graphics.internal.figfile.FigFile/read (line 75)
+In matlab.graphics.internal.figfile/FigFile
+In loadFigure (line 28)
+In openfig>localOpenFigure (line 75)
+In openfig (line 40)
+In create_stage2_figures (line 102)
+In run_stage_2 (line 15)] 
+                     status: 'PASS'
+    protectedFilesUnchanged: 132
+          codeAnalyzerFiles: 16
+         codeAnalyzerIssues: [0×0 struct]
+                figurePairs: 5
+               pngsReopened: 5
+        exactSignflipSanity: 1
+                   bhSanity: 1
+           cacheFilesHashed: 10
+              matlabVersion: '25.2.0.3042426 (R2025b) Update 1'
+

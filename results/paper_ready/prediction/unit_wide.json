@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "seed": 3.23000002E+8,
+  "full200DirectQRSSEError": 2.5011104298755527E-11,
+  "singleNestedFitSeconds": 1.4484605,
+  "fullSweepFits": 40400,
+  "realPredictionRun": false
+}

@@ -1,0 +1,24 @@
+PASS
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Saved analysis network 1, all eta and policies: 75.2s.
+Saved analysis network 2, all eta and policies: 143.1s.
+Saved analysis network 3, all eta and policies: 210.7s.
+Saved analysis network 4, all eta and policies: 277.5s.
+Saved analysis network 5, all eta and policies: 345.3s.
+Saved analysis network 6, all eta and policies: 412.4s.
+Saved analysis network 7, all eta and policies: 479.2s.
+Saved analysis network 8, all eta and policies: 547.2s.
+Saved analysis network 9, all eta and policies: 615.1s.
+Saved analysis network 10, all eta and policies: 684.6s.
+Parallel pool using the 'Threads' profile is shutting down.
+Independent saved-output audit complete: network 1.
+Independent saved-output audit complete: network 2.
+Independent saved-output audit complete: network 3.
+Independent saved-output audit complete: network 4.
+Independent saved-output audit complete: network 5.
+Independent saved-output audit complete: network 6.
+Independent saved-output audit complete: network 7.
+Independent saved-output audit complete: network 8.
+Independent saved-output audit complete: network 9.
+Independent saved-output audit complete: network 10.

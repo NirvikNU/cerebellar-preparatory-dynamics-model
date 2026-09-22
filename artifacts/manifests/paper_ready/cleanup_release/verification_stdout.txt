@@ -1,0 +1,1 @@
+PASS: 31 scientific source files, verifier, and 10 FIG/PNG pairs; no scientific computation.

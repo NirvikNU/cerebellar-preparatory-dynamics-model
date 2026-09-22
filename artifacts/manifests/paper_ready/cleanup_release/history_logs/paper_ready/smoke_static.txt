@@ -1,0 +1,9 @@
+Stage 1 smoke-only validation
+Project: E:\PROJECTS\Nirvik_Sinha_Data\cerebellar-preparatory-dynamics-model
+PASS: upstream 40077d2da16e68ab2ab2cff59ec692b97315980b; short-segment max abs 2.220e-16; Q residual 7.345e-14.
+Reference source: verified project-local native-reference cache.
+No calibration, training, complete ensemble replay, or figure regeneration was run.
+{Error using assert
+E:\PROJECTS\Nirvik_Sinha_Data\cerebellar-preparatory-dynamics-model\analysis\paper_ready\paper_control_audit.m{"id":"AGROW","message":"Variable appears to change size on every
+loop iteration. Consider preallocating for speed.","fix":0,"line":31,"column":[13,18]}
+} 

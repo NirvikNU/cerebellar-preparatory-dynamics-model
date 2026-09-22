@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cases": "Network1 Intact, identity and first frozen shuffle, all10 repeats/all200 ranks",
+  "serialR2Errors": [
+    0,
+    0
+  ],
+  "unchangedCorrespondence": true,
+  "productionResultsWritten": false
+}

@@ -1,0 +1,9 @@
+{Unable to perform assignment because the size of the left side is 1100-by-200-by-8 and the size of the right side is 1099-by-200-by-8.
+
+Error in run_stage2_sweep (line 37)
+            net.rates(:,:,:,l) = cat(1,prep.rates(1:500,:,:),move.rates);
+            ^^^^^^^^^^^^^^^^^^
+Error in run_stage_2 (line 11)
+        run_stage2_sweep(cfg);
+        ^^^^^^^^^^^^^^^^^^^^^
+} 

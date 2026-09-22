@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Stabilization-eta roots only; prior passed preservation audit was not repeated",
+  "files": 245,
+  "bytes": 35707873372.0,
+  "excludedSelfReceipts": [
+    "OUTPUT_INVENTORY.csv",
+    "OUTPUT_INVENTORY.json",
+    "FINAL_GIT.json"
+  ],
+  "completedUTC": "2026-09-22T13:04:35.9204935Z"
+}

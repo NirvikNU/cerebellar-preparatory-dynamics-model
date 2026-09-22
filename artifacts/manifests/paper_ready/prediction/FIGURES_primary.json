@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "figures": [
+    {
+      "name": "panel_e_pca_ridge",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\fig\\panel_e_pca_ridge.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\png\\panel_e_pca_ridge.png",
+      "reopenedSourceChecks": 5
+    },
+    {
+      "name": "panel_e_controls",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\fig\\panel_e_controls.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\prediction\\png\\panel_e_controls.png",
+      "reopenedSourceChecks": 24
+    }
+  ]
+}
