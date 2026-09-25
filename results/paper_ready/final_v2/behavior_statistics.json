@@ -1,0 +1,82 @@
+{
+  "dispersion": {
+    "n": 6,
+    "networkMask": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difference": [
+      0.040606918390643419,
+      0.021108030044546366,
+      0.01819739405087497,
+      0.021367848965799588,
+      0.026072050117686017,
+      0.020423939859308328
+    ],
+    "alpha": 0.05,
+    "tail": "two-sided",
+    "unit": "network",
+    "adP": 0.021789232569363721,
+    "adReject": true,
+    "p": 0.03125,
+    "statistics": {
+      "signedrank": 0
+    },
+    "test": "two-sided Wilcoxon signed-rank",
+    "corrected": false,
+    "family": "one predeclared paired comparison for this separate behavioral metric"
+  },
+  "peakSpeed": {
+    "n": 10,
+    "networkMask": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difference": [
+      -0.13916100566834927,
+      -0.10239279800011097,
+      -0.0975974413612084,
+      -0.12375966347792949,
+      -0.14923585612916268,
+      -0.092381139992373629,
+      -0.10746781283493423,
+      -0.14223242446959822,
+      -0.13461436935396287,
+      -0.12041947269049341
+    ],
+    "alpha": 0.05,
+    "tail": "two-sided",
+    "unit": "network",
+    "adP": 0.63262125699845573,
+    "adReject": false,
+    "p": 1.464190648721461E-8,
+    "confidenceInterval": [
+      -0.13536628752843913,
+      -0.10648610926718549
+    ],
+    "statistics": {
+      "tstat": -18.9440704555882,
+      "df": 9,
+      "sd": 0.0201858526982879
+    },
+    "test": "two-sided paired t",
+    "corrected": false,
+    "family": "one predeclared paired comparison for this separate behavioral metric"
+  }
+}

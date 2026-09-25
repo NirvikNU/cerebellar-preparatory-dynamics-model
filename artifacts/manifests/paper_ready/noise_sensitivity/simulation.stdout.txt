@@ -1,0 +1,30 @@
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Saved eta0 noise0.05/0.1:20 cases, 579.7s.
+Saved eta0 noise0.2/0.1:20 cases, 1163.7s.
+Saved eta0 noise0.1/0.05:20 cases, 1727.8s.
+Saved eta0 noise0.1/0.2:20 cases, 2288.8s.
+Saved eta1 noise0.05/0.1:20 cases, 2868.9s.
+Saved eta1 noise0.2/0.1:20 cases, 3450.5s.
+Saved eta1 noise0.1/0.05:20 cases, 4031.4s.
+Saved eta1 noise0.1/0.2:20 cases, 4615.6s.
+Parallel pool using the 'Threads' profile is shutting down.

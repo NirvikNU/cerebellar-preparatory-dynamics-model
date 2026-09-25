@@ -1,0 +1,11 @@
+{
+  "cases": 120,
+  "tableError": 0,
+  "statisticsError": 0,
+  "trajectoryChecks": 480,
+  "targetMeanChecks": 16,
+  "readinessChecks": 640,
+  "status": "PASS",
+  "fullPrecisionRoundTrip": true,
+  "displayTruncationOnly": true
+}

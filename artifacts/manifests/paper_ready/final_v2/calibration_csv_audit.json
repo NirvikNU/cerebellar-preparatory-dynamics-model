@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "implementation": "Independent PowerShell sorted order statistics; geometry-only CSV inputs",
+  "networkRows": 360,
+  "sharedGridPoints": 36,
+  "networksPerPoint": 10,
+  "uniqueWinner": {
+    "gridIndex": 24,
+    "alpha": 0.5,
+    "betaNormalized": 1.25,
+    "deltaPR": 3.23576041861985,
+    "deficitPP": 16.40928520813805,
+    "loss": 0.05036311982860675
+  },
+  "runnerUpLoss": 0.06464547574645646,
+  "maximumReceiptDifference": 1.4210854715202004E-14,
+  "minimumControl95Verified": true,
+  "betaAtFixedUpperBoundary": true,
+  "gridExpanded": false,
+  "input": "results/paper_ready/final_v2/geometry_network.csv",
+  "sourceSha256": "55604C36A1BE434EC6FF6933ACDD5DC18F838804F445DA59942BEACD31423D45",
+  "utc": "2026-09-25T14:20:10.7399715Z"
+}

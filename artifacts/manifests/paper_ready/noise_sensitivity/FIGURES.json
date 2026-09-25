@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "figures": [
+    {
+      "name": "noise_sensitivity_absolute",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\fig\\noise_sensitivity_absolute.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\png\\noise_sensitivity_absolute.png",
+      "sourceObjectChecks": 176,
+      "reopened": true
+    },
+    {
+      "name": "noise_sensitivity_paired",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\fig\\noise_sensitivity_paired.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\png\\noise_sensitivity_paired.png",
+      "sourceObjectChecks": 88,
+      "reopened": true
+    }
+  ]
+}

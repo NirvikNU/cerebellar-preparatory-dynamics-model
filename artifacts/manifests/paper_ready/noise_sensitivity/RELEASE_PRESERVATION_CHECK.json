@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "sourceRelease": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "beforeHashCompletedUTC": "2026-09-23T16:57:22.4368007Z",
+  "protectedFiles": 2327,
+  "protectedBytes": 169192893554,
+  "releasePreservationRowsCompared": 2293,
+  "releaseHashMismatches": [],
+  "comparison": "Every row of cleanup_release/PRESERVATION_FINAL.csv matches the new PROTECTED_BEFORE.csv by current path and SHA256. Additional release files are covered by the new hash inventory and clean tracked preflight."
+}

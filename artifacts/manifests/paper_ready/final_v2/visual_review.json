@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "pairs": 6,
+  "allPngsVisuallyInspected": true,
+  "allFigsReopened": true,
+  "finalSourceObjectChecks": 562,
+  "revisedPairsReinspected": ["MainFig_Modelling_v2", "ED1_Noise_Intact_v2", "ED3_Readiness_v2"],
+  "legendRepairs": 5,
+  "canvasRepair": "Explicit original canvas dimensions restored after openfig screen-size clamping; source objects unchanged",
+  "panelE": "Authorized six-network subset, correct median/SE and exact signed-rank p; missing original networks remain undefined",
+  "unmatchedControl": "Separate all-ten-network source report, not substituted into Main E",
+  "priorPairsPreserved": 12,
+  "priorPairsSourceChecks": 1468
+}

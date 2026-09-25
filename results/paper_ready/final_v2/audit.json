@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "cases": 120,
+  "reusedCases": 50,
+  "drawError": 0,
+  "transitionError": 0,
+  "convergenceError": 3.2684965844964609E-13,
+  "geometryError": 3.2684965844964609E-13,
+  "featureError": 3.0198066269804258E-14,
+  "pcaError": 2.6556534749033744E-13,
+  "predictionError": 1.6520118606422329E-13,
+  "lossError": 2.9103830456733704E-11,
+  "r2Error": 1.1102230246251565E-15,
+  "movementError": 3.5527136788005009E-15,
+  "bootstrapError": 1.5543122344752192E-14,
+  "shuffleError": 1.5543122344752192E-15,
+  "observedRefits": 70,
+  "shuffleRefits": 7,
+  "matchedRefits": 100,
+  "shuffleScope": "All saved controls checked; independent shuffle1 refit for network1 in every genuinely new case; validated prior fits reused unchanged"
+}

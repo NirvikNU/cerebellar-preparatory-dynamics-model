@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cases": 200,
+  "trials": 48000,
+  "pairedRows": 100,
+  "fullPrecisionRoundTrip": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "date": "2026-09-23",
+  "root": "E:/PROJECTS/Nirvik_Sinha_Data/cerebellar-preparatory-dynamics-model",
+  "branch": "v3-romano-hennequin",
+  "upstream": "origin/v3-romano-hennequin",
+  "remote": "https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model.git",
+  "head": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "localMain": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "trackingMain": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "trackingV3": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "directRemoteMain": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "directRemoteV3": "93e9d517d47b48579ef9d5bda6adacc44bf039d7",
+  "initialTrackedAndIndexClean": true,
+  "initialUntrackedCount": 0,
+  "gitLockCount": 0,
+  "fetchSucceeded": true,
+  "noStagingCommitPushAuthorized": true
+}

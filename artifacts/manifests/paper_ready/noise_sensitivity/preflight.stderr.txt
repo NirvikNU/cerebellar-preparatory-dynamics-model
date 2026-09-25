@@ -1,0 +1,8 @@
+{Error using assert
+Assertion failed.
+
+Error in ns_static (line 6)
+        file=fullfile(files(j).folder,files(j).name); source=fileread(file); assert(~contains(source,'%%'));
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

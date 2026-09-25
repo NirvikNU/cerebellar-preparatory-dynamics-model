@@ -1,0 +1,36 @@
+{
+  "status": "PENDING_VISUAL_REVIEW",
+  "pairs": [
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\main\\fig\\MainFig_Modelling_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\main\\png\\MainFig_Modelling_v2.png",
+      "objectChecks": 516
+    },
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED1_noise_intact\\fig\\ED1_Noise_Intact_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED1_noise_intact\\png\\ED1_Noise_Intact_v2.png",
+      "objectChecks": 4
+    },
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED2_components\\fig\\ED2_Components_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED2_components\\png\\ED2_Components_v2.png",
+      "objectChecks": 16
+    },
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED3_readiness\\fig\\ED3_Readiness_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED3_readiness\\png\\ED3_Readiness_v2.png",
+      "objectChecks": 4
+    },
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED4_movement_qc\\fig\\ED4_Movement_QC_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED4_movement_qc\\png\\ED4_Movement_QC_v2.png",
+      "objectChecks": 12
+    },
+    {
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED5_calibration_controls\\fig\\ED5_Calibration_Controls_v2.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v2\\ED5_calibration_controls\\png\\ED5_Calibration_Controls_v2.png",
+      "objectChecks": 10
+    }
+  ],
+  "objectChecks": 562
+}

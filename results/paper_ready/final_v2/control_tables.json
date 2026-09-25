@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "shuffleRows": 12000,
+  "untruncatedMovementRows": 288000,
+  "legacyRows": 80,
+  "empiricalRows": 4,
+  "fullPrecisionRoundTrip": true
+}

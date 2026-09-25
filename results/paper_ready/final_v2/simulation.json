@@ -1,0 +1,35 @@
+{
+  "newCases": 70,
+  "reusedCases": 50,
+  "resumedCases": 0,
+  "totalCases": 120,
+  "eta": 0,
+  "status": "PASS",
+  "elapsedSeconds": 1832.814815,
+  "selection": {
+    "status": "FROZEN",
+    "task": "PAPER-MODELLING-FINAL-FIGURES-V2-01",
+    "eta": 0,
+    "lambda": 10,
+    "direction": 1,
+    "sInit": 0.1,
+    "sTemporal": 0.1,
+    "networks": 10,
+    "candidates": 36,
+    "gridIndex": 24,
+    "alpha": 0.5,
+    "betaNormalized": 1.25,
+    "deltaPR": 3.2357604186198508,
+    "deficitPP": 16.409285208138037,
+    "loss": 0.050363119828606938,
+    "targets": [
+      2.6453333944,
+      16.802184
+    ],
+    "networkSpecificFit": false,
+    "qcSelection": false,
+    "downstreamEvaluated": false,
+    "utc": "2026-09-25T14:02:38Z",
+    "elapsedSeconds": 1593.2387236
+  }
+}

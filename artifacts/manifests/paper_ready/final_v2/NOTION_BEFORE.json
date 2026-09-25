@@ -1,0 +1,129 @@
+[
+  {
+    "name": "parent",
+    "title": "📄 Paper-ready Modelling — Figures & Text",
+    "url": "https://app.notion.com/p/3e026c94be30811dbb4fe27a353fdcd9?pvs=204",
+    "lastEdited": "2026-09-23T19:21:47.501Z",
+    "nativeImages": [],
+    "children": [
+      {
+        "url": "https://app.notion.com/p/3e026c94be3081c4bb32d693f6d527bc",
+        "title": "01 — Scientific Rationale, Caveats & Writing Notes"
+      },
+      {
+        "url": "https://app.notion.com/p/3e026c94be30810c8b2ce843260cd7db",
+        "title": "02 — Main & Extended Data Figures — Plots & Legends"
+      },
+      {
+        "url": "https://app.notion.com/p/3e026c94be3081b7a1c1dbc406c19e78",
+        "title": "03 — Analysis Decisions, Source Data & Validation"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081228b90c49a81c0c600",
+        "title": "99 — Archive — Historical Modelling Checkpoints & Figures"
+      },
+      {
+        "url": "https://app.notion.com/p/3e626c94be3081db8f7de5e867480800",
+        "title": "04 — Final Paper Figures v2 — Parsimonious η=0 Model"
+      }
+    ]
+  },
+  {
+    "name": "p01",
+    "title": "🧠 01 — Scientific Rationale, Caveats & Writing Notes",
+    "url": "https://app.notion.com/p/3e026c94be3081c4bb32d693f6d527bc?pvs=204",
+    "lastEdited": "2026-09-23T19:17:26.958Z",
+    "nativeImages": [],
+    "children": []
+  },
+  {
+    "name": "p02",
+    "title": "🖼️ 02 — Main & Extended Data Figures — Plots & Legends",
+    "url": "https://app.notion.com/p/3e026c94be30810c8b2ce843260cd7db?pvs=204",
+    "lastEdited": "2026-09-23T19:12:11.354Z",
+    "nativeImages": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/95c0f1a8-0d53-4578-8b94-6daff54da953/stabilization_eta_six_panel.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/3231196c-7acd-4063-b906-c674c74443db/stabilization_eta_movement_qc.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/97790bb1-006d-45be-afba-19ab039a5ee4/stabilization_eta_kinematics.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/42c274bf-1b0f-4d88-84f2-577c9d880289/panel_e_pca_ridge.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/91d17694-636b-4861-89c5-4a7bf37b44fa/panel_e_controls.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/ddfbfe42-5da4-4a48-86b1-e94414cd2b41/extended_data_rrr.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/b2234d44-1ad6-4297-8e27-f4f9300eaa6f/main_modelling_alignment95.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/0a9ad445-995d-4a96-b694-2ea4fcd01bfa/support_calibration_alignment95.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/183cc49d-4afd-4112-a04e-0465a91d8b56/support_noise_controls_alignment95.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/f9c0ad31-c6b4-4248-85e6-714e063a89b7/support_movement_qc_alignment95.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/43a74fb0-d468-451c-afbd-a44f4020399b/noise_sensitivity_absolute.png",
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/89e18f4e-e2f1-4c39-9014-698079daafea/noise_sensitivity_paired.png"
+    ],
+    "children": []
+  },
+  {
+    "name": "p03",
+    "title": "✅ 03 — Analysis Decisions, Source Data & Validation",
+    "url": "https://app.notion.com/p/3e026c94be3081b7a1c1dbc406c19e78?pvs=204",
+    "lastEdited": "2026-09-23T19:17:24.308Z",
+    "nativeImages": [],
+    "children": []
+  },
+  {
+    "name": "archive",
+    "title": "🗄️ 99 — Archive — Historical Modelling Checkpoints & Figures",
+    "url": "https://app.notion.com/p/3e326c94be3081228b90c49a81c0c600?pvs=204",
+    "lastEdited": "2026-09-22T22:44:15.629Z",
+    "nativeImages": [],
+    "children": [
+      {
+        "url": "https://app.notion.com/p/3e326c94be308152a2a1ef0c186654f2",
+        "title": "Historical snapshot — 01 — Scientific Rationale, Caveats & Writing Notes — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081cead8ae5956f749ede",
+        "title": "Historical snapshot — 02 — Main & Extended Data Figures — Plots & Legends — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081aabb02cf68e02fabb8",
+        "title": "Historical snapshot — 03 — Analysis Decisions, Source Data & Validation — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081edbd57da0d76592df4",
+        "title": "Historical snapshot — Agent Instructions — Current Task — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081e8a49ae1ce903ba252",
+        "title": "Historical snapshot — Agent Handoff — Current Project State — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081688746cd508943fa70",
+        "title": "Historical snapshot — START HERE — Modelling Chat Continuation Handoff — 23 Sep 2026, pre-release 70fff703"
+      },
+      {
+        "url": "https://app.notion.com/p/3e326c94be3081d2b928fcccd1b8c9e0",
+        "title": "Historical snapshot — Paper-ready parent — 23 Sep 2026, pre-release 70fff703"
+      }
+    ]
+  },
+  {
+    "name": "handoff",
+    "title": "🤝 Agent Handoff — Current Project State",
+    "url": "https://app.notion.com/p/3c826c94be308156a677c50c2106fb37?pvs=204",
+    "lastEdited": "2026-09-25T12:35:35.081Z",
+    "nativeImages": [],
+    "children": []
+  },
+  {
+    "name": "start",
+    "title": "🧭 START HERE — Modelling Chat Continuation Handoff",
+    "url": "https://app.notion.com/p/3d226c94be308194adadf691ed5822a2?pvs=204",
+    "lastEdited": "2026-09-25T12:35:33.198Z",
+    "nativeImages": [],
+    "children": []
+  },
+  {
+    "name": "log",
+    "title": "📝 Agent Log — Run Outputs",
+    "url": "https://app.notion.com/p/3d326c94be3081e897a2e5e0c855c4c0?pvs=204",
+    "lastEdited": "2026-09-23T19:21:48.483Z",
+    "nativeImages": [],
+    "children": []
+  }
+]

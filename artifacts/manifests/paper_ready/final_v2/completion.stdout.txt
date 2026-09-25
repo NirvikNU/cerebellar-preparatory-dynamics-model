@@ -1,0 +1,31 @@
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Final-v2 raw noise pair1 saved, 273.3s
+Final-v2 raw noise pair2 saved, 1049.5s
+Final-v2 raw noise pair3 saved, 1311.5s
+Final-v2 raw noise pair4 saved, 1572.4s
+Final-v2 raw noise pair5 saved, 1832.8s
+Parallel pool using the 'Threads' profile is shutting down.
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Final-v2 corrected assays network1, 74.9s
+Final-v2 corrected assays network2, 148.5s
+Final-v2 corrected assays network3, 221.1s
+Final-v2 corrected assays network4, 294.1s
+Final-v2 corrected assays network5, 368.8s
+Final-v2 corrected assays network6, 443.2s
+Final-v2 corrected assays network7, 517.7s
+Final-v2 corrected assays network8, 591.3s
+Final-v2 corrected assays network9, 665.0s
+Final-v2 corrected assays network10, 739.5s
+Parallel pool using the 'Threads' profile is shutting down.
+Final-v2 independent audit network1 complete
+Final-v2 independent audit network2 complete
+Final-v2 independent audit network3 complete
+Final-v2 independent audit network4 complete
+Final-v2 independent audit network5 complete
+Final-v2 independent audit network6 complete
+Final-v2 independent audit network7 complete
+Final-v2 independent audit network8 complete
+Final-v2 independent audit network9 complete
+Final-v2 independent audit network10 complete

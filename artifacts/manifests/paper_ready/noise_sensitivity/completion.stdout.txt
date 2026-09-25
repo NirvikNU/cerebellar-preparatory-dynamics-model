@@ -1,0 +1,42 @@
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+    {00 struct}
+
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+Saved primary/convergence/controls/QC network1, 137.1s.
+Saved primary/convergence/controls/QC network2, 266.3s.
+Saved primary/convergence/controls/QC network3, 396.0s.
+Saved primary/convergence/controls/QC network4, 525.0s.
+Saved primary/convergence/controls/QC network5, 654.9s.
+Saved primary/convergence/controls/QC network6, 782.4s.
+Saved primary/convergence/controls/QC network7, 910.5s.
+Saved primary/convergence/controls/QC network8, 1040.5s.
+Saved primary/convergence/controls/QC network9, 1168.4s.
+Saved primary/convergence/controls/QC network10, 1296.7s.
+Parallel pool using the 'Threads' profile is shutting down.
+Independent saved-output checks complete network1.
+Independent saved-output checks complete network2.
+Independent saved-output checks complete network3.
+Independent saved-output checks complete network4.
+Independent saved-output checks complete network5.
+Independent saved-output checks complete network6.
+Independent saved-output checks complete network7.
+Independent saved-output checks complete network8.
+Independent saved-output checks complete network9.
+Independent saved-output checks complete network10.

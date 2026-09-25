@@ -1,4 +1,17 @@
-# Current paper-modelling review set
+# Current paper-modelling review set — final v2
+
+Current paper-facing outputs: [final-v2 report](final_v2/REPORT.md),
+[figure legends](final_v2/FIGURE_LEGENDS.md),
+[code index](PAPER_CODE_INDEX.md) and [release receipt](final_v2/RELEASE.md).
+Eta=0, lambda=10, shared alpha=.5 / beta_norm=1.25, primary noise .10/.10.
+Panel E uses the authorized six-network speed-matched subset; all-ten-network
+unmatched dispersion is a separate robustness control. All other panels use
+ten networks. No geometry, noise or downstream outcome was retuned on resumption.
+
+The prior review narrative below is preserved historical provenance. Its
+earlier parameter-review and “current” wording does not supersede final v2.
+
+## Historical review set from the preceding release
 
 Stabilization-eta is complete and numerically validated. Scientific
 interpretation and any eta choice remain pending user review. No further

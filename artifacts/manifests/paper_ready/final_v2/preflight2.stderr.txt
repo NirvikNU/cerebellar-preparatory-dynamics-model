@@ -1,0 +1,8 @@
+{Error using assert
+Review Code Analyzer messages before production.
+
+Error in v2_preflight (line 12)
+    assert(all(cellfun(@isempty,receipt.static)),'Review Code Analyzer messages before production.');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

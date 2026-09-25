@@ -1,0 +1,12 @@
+{
+  "basisLeakage": 0,
+  "meanLeakage": 0,
+  "neuronIdentity": true,
+  "ridge": {
+    "predictionError": 1.9569849213363355E-16,
+    "lossError": 4.5474735088646412E-13,
+    "r2Error": 8.8817841970012523E-16,
+    "refits": 1
+  },
+  "status": "PASS"
+}

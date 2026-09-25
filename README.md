@@ -1,4 +1,37 @@
-# Frozen movement foundation and preparatory controllers
+# Parsimonious paper modelling — final v2
+
+The paper-facing effective model uses **eta=0**, lambda=10, one shared
+alpha=0.5 / beta_norm=1.25 pair across ten frozen networks and primary
+initial/temporal noise 0.10/0.10. There is no generic residual kappa feedback.
+Only the paired preparatory PR and alignment effects selected geometry;
+movement, convergence and prediction are out-of-objective results.
+
+Start with the [paper code index](docs/paper_ready/PAPER_CODE_INDEX.md),
+[numerical report](docs/paper_ready/final_v2/REPORT.md),
+[full figure legends](docs/paper_ready/final_v2/FIGURE_LEGENDS.md) and
+[release/validation receipt](docs/paper_ready/final_v2/RELEASE.md).
+The six native FIG/PNG pairs are under `plots/paper_ready/final_v2/`.
+Full-precision compact source tables are in `results/paper_ready/final_v2/`.
+
+Panel E is conditional: **Speed-matched hand-position dispersion; 6/10 networks
+met the prespecified matching criterion.** The unmatched all-ten-network
+[robustness control](docs/paper_ready/final_v2/DISPERSION_CONTROL.md) is separate.
+All other model panels use ten networks. Negative convergence, imperfect
+calibration and movement QC flags are retained. This release is a reproducible
+review checkpoint, not independent empirical validation or scientific acceptance.
+
+Large frozen network/controller assets, raw trajectories and fitting caches
+are intentionally local/ignored. A fresh Git clone can inspect compact results
+and figures but cannot perform a full scientific rerun without these assets;
+see the code index. No further model fitting or figure family is authorized.
+
+## Preserved development provenance
+
+The following dated development narrative is historical, not the current
+paper-model definition or executable authorization. Existing Stage-1/2/3,
+alignment95, prediction/RRR, eta and noise-sensitivity artifacts are unchanged.
+
+### Frozen movement foundation and preparatory controllers
 
 ## Current paper-modelling review
 

@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "gallery": "https://app.notion.com/p/3e026c94be30810c8b2ce843260cd7db",
+  "priorImagesPreserved": 10,
+  "newImages": 2,
+  "localNewHashes": [
+    {
+      "Path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\png\\noise_sensitivity_absolute.png",
+      "Hash": "BBF248F54B1513A4D73DB3D2F029715880B4F3B86D689F2D372DB7EDD030870A"
+    },
+    {
+      "Path": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\noise_sensitivity\\png\\noise_sensitivity_paired.png",
+      "Hash": "82A381514C5F5ED83C79ADD64AF7D2210EBE88461C1BD7D4961FC94F71281D18"
+    }
+  ],
+  "images": [
+    {
+      "name": "stabilization_eta_six_panel.png",
+      "sha256": "4BAA74AFA6DC876E729C00F217133BC87C6B6408292B3CE7D3B2839E5DBF9F2F",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/95c0f1a8-0d53-4578-8b94-6daff54da953/stabilization_eta_six_panel.png"
+    },
+    {
+      "name": "stabilization_eta_movement_qc.png",
+      "sha256": "4E726B3A3FE658819DDFD32D4B126E2AB2052E91CD1E3DCFB4E6614B397C6C09",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/3231196c-7acd-4063-b906-c674c74443db/stabilization_eta_movement_qc.png"
+    },
+    {
+      "name": "stabilization_eta_kinematics.png",
+      "sha256": "929CAF35734184163DCFF6FED04B046E2190F36D53C7AFB7B0E263D7A3AC895A",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/97790bb1-006d-45be-afba-19ab039a5ee4/stabilization_eta_kinematics.png"
+    },
+    {
+      "name": "panel_e_pca_ridge.png",
+      "sha256": "432CD254C6DD84CD986618135735E736207C9E2C3FDB756B46FB3E64CC7A6CC4",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/42c274bf-1b0f-4d88-84f2-577c9d880289/panel_e_pca_ridge.png"
+    },
+    {
+      "name": "panel_e_controls.png",
+      "sha256": "97453A92E6B32BBE27741790B2A2FF66FE0C1022CB48C8DD38DC7E4FCEF04202",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/91d17694-636b-4861-89c5-4a7bf37b44fa/panel_e_controls.png"
+    },
+    {
+      "name": "extended_data_rrr.png",
+      "sha256": "16F0CD2BDD5CA76807B003C4883F244BA9E95D2BEC07C3BD029FD3B71BFACFE7",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/ddfbfe42-5da4-4a48-86b1-e94414cd2b41/extended_data_rrr.png"
+    },
+    {
+      "name": "main_modelling_alignment95.png",
+      "sha256": "3F1F5FF7AD47CF7FBD0EA4091B14181288BFB501B31EEC3A362D73B732E67F55",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/b2234d44-1ad6-4297-8e27-f4f9300eaa6f/main_modelling_alignment95.png"
+    },
+    {
+      "name": "support_calibration_alignment95.png",
+      "sha256": "961064EFAE1D59C6B2DADFFE5F19E5704B6B53232C52607F727EBC81C1DDAB74",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/0a9ad445-995d-4a96-b694-2ea4fcd01bfa/support_calibration_alignment95.png"
+    },
+    {
+      "name": "support_noise_controls_alignment95.png",
+      "sha256": "08DB8C44980500A6B3C36E8B4EB7F72C3500EC85392ABE1F697B4038EE49F832",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/183cc49d-4afd-4112-a04e-0465a91d8b56/support_noise_controls_alignment95.png"
+    },
+    {
+      "name": "support_movement_qc_alignment95.png",
+      "sha256": "25B42D85976AB8EE7DF89DD4F57FAC123371A816B37CE11FB0240708C4F2685B",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/f9c0ad31-c6b4-4248-85e6-714e063a89b7/support_movement_qc_alignment95.png"
+    },
+    {
+      "name": "noise_sensitivity_absolute.png",
+      "sha256": "BBF248F54B1513A4D73DB3D2F029715880B4F3B86D689F2D372DB7EDD030870A",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/43a74fb0-d468-451c-afbd-a44f4020399b/noise_sensitivity_absolute.png"
+    },
+    {
+      "name": "noise_sensitivity_paired.png",
+      "sha256": "82A381514C5F5ED83C79ADD64AF7D2210EBE88461C1BD7D4961FC94F71281D18",
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/f9326c94-be30-81f8-aee2-000380dda06e/89e18f4e-e2f1-4c39-9014-698079daafea/noise_sensitivity_paired.png"
+    }
+  ],
+  "visualInspection": "Both PNGs inspected; four panels, condition/eta legends, all levels, negative ranges, baseline/zero lines readable. No renderer correction required.",
+  "figReopenSourceObjectChecks": 264
+}

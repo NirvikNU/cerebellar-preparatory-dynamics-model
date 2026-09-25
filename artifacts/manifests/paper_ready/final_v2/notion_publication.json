@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "nativeImages": 6,
+  "page": "https://www.notion.so/3e626c94be3081db8f7de5e867480800",
+  "figures": [
+    {
+      "file": "plots/paper_ready/final_v2/main/png/MainFig_Modelling_v2.png",
+      "sha256": "1CD060E9F13BA586879F774A5AE67C93DC0C53DDCE218D9B239AEC883A7D4402",
+      "bytes": 1132354
+    },
+    {
+      "file": "plots/paper_ready/final_v2/ED1_noise_intact/png/ED1_Noise_Intact_v2.png",
+      "sha256": "C0F11F46592B4CF73430A6AE92B9F2BD3A6D7F5ACAD1CECAB3611AA74AC09976",
+      "bytes": 231189
+    },
+    {
+      "file": "plots/paper_ready/final_v2/ED2_components/png/ED2_Components_v2.png",
+      "sha256": "2DE175094E9607B88FB4046E78AFB94E1A236F7588DA7563CD61645EA5349BDC",
+      "bytes": 265934
+    },
+    {
+      "file": "plots/paper_ready/final_v2/ED3_readiness/png/ED3_Readiness_v2.png",
+      "sha256": "2B19D2657A90B6DF3040194794B3C5DD043271230F12CADD90D76E88C1A8D337",
+      "bytes": 239596
+    },
+    {
+      "file": "plots/paper_ready/final_v2/ED4_movement_qc/png/ED4_Movement_QC_v2.png",
+      "sha256": "96767AD24FCD829CC7511A7F8362394E685B5EA336D1FFA26DCE8AA0652D36A6",
+      "bytes": 446129
+    },
+    {
+      "file": "plots/paper_ready/final_v2/ED5_calibration_controls/png/ED5_Calibration_Controls_v2.png",
+      "sha256": "2106606E86117903A85885011FDA82D4337FD23AA326340469DDB09797F308E3",
+      "bytes": 343984
+    }
+  ]
+}

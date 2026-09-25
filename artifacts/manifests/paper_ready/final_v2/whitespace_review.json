@@ -1,0 +1,18 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_RAW_PROVENANCE_EXCEPTIONS",
+  "reason": "Preserve byte-exact console diagnostics and original instruction snapshot. Only console carriage-return/backspace/trailing-space artifacts and terminal blank lines were flagged; no executable code or scientific source-table warning.",
+  "paths": [
+    "artifacts/manifests/paper_ready/final_v2/grid.stderr.txt",
+    "artifacts/manifests/paper_ready/final_v2/preflight.stderr.txt",
+    "artifacts/manifests/paper_ready/final_v2/preflight2.stderr.txt",
+    "artifacts/manifests/paper_ready/noise_sensitivity/completion.stdout.txt",
+    "artifacts/manifests/paper_ready/noise_sensitivity/preflight.stderr.txt",
+    "artifacts/manifests/paper_ready/noise_sensitivity/preflight2.stdout.txt",
+    "artifacts/manifests/paper_ready/noise_sensitivity/simulation.stdout.txt",
+    "docs/paper_ready/final_v2/NOTION_CONTRACT.md"
+  ],
+  "rawFilesModified": false,
+  "gitConfigurationChanged": false,
+  "allOtherStagedPathsMustPass": true,
+  "lineEndingNotices": "Existing Git LF-to-CRLF checkout notices are informational; configuration not changed."
+}

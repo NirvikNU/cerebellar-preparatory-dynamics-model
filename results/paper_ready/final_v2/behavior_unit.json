@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "exactGreedyPairs": 240,
+  "coordinateMedianMeanDistanceError": 3.5527136788005009E-15,
+  "insufficientCoverageRetainedUndefined": true,
+  "syntheticOnly": true
+}

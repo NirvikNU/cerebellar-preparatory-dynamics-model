@@ -1,0 +1,9 @@
+{
+  "independentError": 3.3750779948604759E-14,
+  "heldoutBasisLeakage": 0,
+  "postcueBaselineLeakage": 0,
+  "postcueReferenceLeakage": 0,
+  "zeroDenominatorNotRescued": true,
+  "status": "PASS",
+  "syntheticOnly": true
+}

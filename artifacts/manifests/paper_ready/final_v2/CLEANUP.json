@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "task": "PAPER-MODELLING-FINAL-FIGURES-V2-01",
+  "inventoryFiles": 3266,
+  "ignoredFiles": 2291,
+  "durableFiles": 975,
+  "deletedEmptyNewLogs": 20,
+  "deletedBytes": 0,
+  "originalFilesDeleted": 0,
+  "scientificAssetsDeleted": 0,
+  "hashScope": "Original hashes reverified by preservation_after; new files hashed in this inventory",
+  "selfExclusions": "Inventory and cleanup receipt are emitted after enumeration; Git metadata excluded",
+  "utc": "2026-09-25T16:02:15.8931634Z"
+}

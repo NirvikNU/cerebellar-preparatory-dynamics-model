@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "networkRows": 200,
+  "targetRows": 1600,
+  "trialRows": 48000,
+  "shuffleRows": 20000,
+  "pairedRows": 100,
+  "conditionEncoding": "1=Intact,2=Block; ensemble0=paired/alignment"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reason": "Inventory snapshot plus reviewed release-only metadata additions/changes; no scientific artifact changed after inventory",
+  "rows": [
+    {
+      "path": "artifacts/manifests/paper_ready/final_v2/CLEANUP.json",
+      "bytes": 520,
+      "sha256": "94779F65087349E85E75685E6FE2E82F82CD82FFDC71DC267CDDC764880F169B",
+      "previousSha256": null,
+      "classification": "Post-inventory release metadata only; retain",
+      "action": "include in reviewed normal commit"
+    },
+    {
+      "path": "artifacts/manifests/paper_ready/final_v2/INVENTORY.csv",
+      "bytes": 902540,
+      "sha256": "5442984C77CB6CA8BFB5DCBD533C4F68FD5D2B603776F6DF452E694423FF365C",
+      "previousSha256": null,
+      "classification": "Post-inventory release metadata only; retain",
+      "action": "include in reviewed normal commit"
+    },
+    {
+      "path": "artifacts/manifests/paper_ready/final_v2/stage_release.ps1",
+      "bytes": 3164,
+      "sha256": "0B19120DC5224958755DA44E3C37BE702414A81BF3577D701E779C066E4D6334",
+      "previousSha256": "0D9450C4B314AE6FBC931FD654ABA4FD72474B9BAE9F72ED4EED15C128624D2E",
+      "classification": "Post-inventory release metadata only; retain",
+      "action": "include in reviewed normal commit"
+    },
+    {
+      "path": "artifacts/manifests/paper_ready/final_v2/whitespace_review.json",
+      "bytes": 1117,
+      "sha256": "DA991AFC01DE3AF10D8EC5FD4F85AF58E0CC94F6A28033DB9464330C45605546",
+      "previousSha256": null,
+      "classification": "Post-inventory release metadata only; retain",
+      "action": "include in reviewed normal commit"
+    }
+  ],
+  "selfExclusion": "This addendum is generated last; its identity is covered by the reviewed Git tree",
+  "stagedFileHashComparisons": 208,
+  "otherStagedWorkingFilesMatchInventory": true
+}

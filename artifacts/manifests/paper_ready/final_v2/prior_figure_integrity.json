@@ -1,0 +1,128 @@
+{
+  "figures": [
+    {
+      "fig": "plots/paper_ready/fig/main_modelling_alignment95.fig",
+      "png": "plots/paper_ready/png/main_modelling_alignment95.png",
+      "pngSize": [
+        1773,
+        2857,
+        3
+      ],
+      "sourceObjectChecks": 18
+    },
+    {
+      "fig": "plots/paper_ready/fig/support_calibration_alignment95.fig",
+      "png": "plots/paper_ready/png/support_calibration_alignment95.png",
+      "pngSize": [
+        2702,
+        2958,
+        3
+      ],
+      "sourceObjectChecks": 50
+    },
+    {
+      "fig": "plots/paper_ready/fig/support_noise_controls_alignment95.fig",
+      "png": "plots/paper_ready/png/support_noise_controls_alignment95.png",
+      "pngSize": [
+        1641,
+        3118,
+        3
+      ],
+      "sourceObjectChecks": 20
+    },
+    {
+      "fig": "plots/paper_ready/fig/support_movement_qc_alignment95.fig",
+      "png": "plots/paper_ready/png/support_movement_qc_alignment95.png",
+      "pngSize": [
+        3068,
+        3096,
+        3
+      ],
+      "sourceObjectChecks": 24
+    },
+    {
+      "fig": "plots/paper_ready/prediction/fig/panel_e_pca_ridge.fig",
+      "png": "plots/paper_ready/prediction/png/panel_e_pca_ridge.png",
+      "pngSize": [
+        1034,
+        1355,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/prediction/fig/panel_e_controls.fig",
+      "png": "plots/paper_ready/prediction/png/panel_e_controls.png",
+      "pngSize": [
+        1616,
+        2443,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/prediction/fig/extended_data_rrr.fig",
+      "png": "plots/paper_ready/prediction/png/extended_data_rrr.png",
+      "pngSize": [
+        1229,
+        2998,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/stabilization_eta/fig/stabilization_eta_six_panel.fig",
+      "png": "plots/paper_ready/stabilization_eta/png/stabilization_eta_six_panel.png",
+      "pngSize": [
+        1854,
+        3070,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/stabilization_eta/fig/stabilization_eta_movement_qc.fig",
+      "png": "plots/paper_ready/stabilization_eta/png/stabilization_eta_movement_qc.png",
+      "pngSize": [
+        2280,
+        2831,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/stabilization_eta/fig/stabilization_eta_kinematics.fig",
+      "png": "plots/paper_ready/stabilization_eta/png/stabilization_eta_kinematics.png",
+      "pngSize": [
+        2286,
+        3510,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/noise_sensitivity/fig/noise_sensitivity_absolute.fig",
+      "png": "plots/paper_ready/noise_sensitivity/png/noise_sensitivity_absolute.png",
+      "pngSize": [
+        1750,
+        2795,
+        3
+      ],
+      "sourceObjectChecks": 0
+    },
+    {
+      "fig": "plots/paper_ready/noise_sensitivity/fig/noise_sensitivity_paired.fig",
+      "png": "plots/paper_ready/noise_sensitivity/png/noise_sensitivity_paired.png",
+      "pngSize": [
+        1750,
+        2805,
+        3
+      ],
+      "sourceObjectChecks": 0
+    }
+  ],
+  "totalChecks": 112,
+  "status": "PASS",
+  "regenerated": false,
+  "scientificSourceAudits": "Prior validated audits reused subject to protected-file SHA256 equality"
+}

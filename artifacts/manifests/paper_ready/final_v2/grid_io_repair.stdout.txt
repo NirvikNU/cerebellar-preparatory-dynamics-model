@@ -1,0 +1,25 @@
+Starting parallel pool (parpool) using the 'Threads' profile ...
+Connected to parallel pool with 10 workers.
+                 status: 'FROZEN'
+                   task: 'PAPER-MODELLING-FINAL-FIGURES-V2-01'
+                    eta: 0
+                 lambda: 10
+              direction: 1
+                  sInit: 0.1000
+              sTemporal: 0.1000
+               networks: 10
+             candidates: 36
+              gridIndex: 24
+                  alpha: 0.5000
+         betaNormalized: 1.2500
+                deltaPR: 3.2358
+              deficitPP: 16.4093
+                   loss: 0.0504
+                targets: [2.6453 16.8022]
+     networkSpecificFit: 0
+            qcSelection: 0
+    downstreamEvaluated: 0
+                    utc: '2026-09-25T14:02:38Z'
+         elapsedSeconds: 1.5932e+03
+
+Parallel pool using the 'Threads' profile is shutting down.

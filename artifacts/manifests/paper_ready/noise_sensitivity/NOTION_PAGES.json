@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "oldFigureCaptionsPreserved": true,
+  "previousLogChronologyPreserved": true,
+  "archiveParentAndSevenChildReferencesUnchanged": true,
+  "parentFourNativeChildren": true,
+  "nativeGalleryImages": 12,
+  "oneNoiseSensitivitySection": true,
+  "methodsProspectivePlanReplaced": true,
+  "statusPagesStopped": true,
+  "pagesFetched": [
+    "parent",
+    "synthesis",
+    "gallery",
+    "methods",
+    "task",
+    "handoff",
+    "start",
+    "log",
+    "archive"
+  ],
+  "pages": {
+    "parent": "3e026c94be30811dbb4fe27a353fdcd9",
+    "synthesis": "3e026c94be3081c4bb32d693f6d527bc",
+    "gallery": "3e026c94be30810c8b2ce843260cd7db",
+    "methods": "3e026c94be3081b7a1c1dbc406c19e78",
+    "task": "3c826c94be30817d8f51d9f6c8c2bc19",
+    "handoff": "3c826c94be308156a677c50c2106fb37",
+    "start": "3d226c94be308194adadf691ed5822a2",
+    "log": "3d326c94be3081e897a2e5e0c855c4c0",
+    "archive": "3e326c94be3081228b90c49a81c0c600"
+  }
+}
