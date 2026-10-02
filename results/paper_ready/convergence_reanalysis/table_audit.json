@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "networkRows": 120,
+  "trialRows": 28800,
+  "qcRows": 50,
+  "bootstrapError": 4.9439619065339E-17,
+  "newPredictionFits": 0
+}

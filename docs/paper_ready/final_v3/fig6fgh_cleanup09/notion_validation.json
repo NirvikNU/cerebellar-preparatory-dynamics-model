@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "page": "3e826c94be308179870cda177f0b75af",
+  "checks": {
+    "prefixUnchanged": true,
+    "suffixUnchanged": true,
+    "gAggregateExact": true,
+    "hAggregateExact": true,
+    "nativeNewImages": true,
+    "historicalLabels": true,
+    "tables": {
+      "Fig6f_selected_trials.csv": true,
+      "selected_network_target_ranking.csv": true,
+      "Fig6gh_selected_trials.csv": true,
+      "network_ranking.csv": true,
+      "Fig6h_all30_inset.csv": true
+    }
+  },
+  "comparison": "Only expiring signed URL query strings and whitespace normalized. All pre-f/post-h scientific content and g/h aggregate blocks unchanged.",
+  "publicationNote": "Current native images and full display tables inserted in existing panel sections. Superseded images and original captions remain explicitly historical: exact dynamic-image URL replacement was rejected. No inferential table was rewritten."
+}

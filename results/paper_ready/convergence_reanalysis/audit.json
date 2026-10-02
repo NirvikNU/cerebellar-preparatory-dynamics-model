@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "cases": 120,
+  "spontaneousEpochs": 50,
+  "drawError": 0,
+  "transitionError": 0,
+  "cueResetError": 0,
+  "convergenceError": 3.1441516057384433E-13,
+  "qcError": 1.3322676295501878E-15,
+  "spontaneousInputMax": 0,
+  "boundedSpontaneous": 50,
+  "boundedPreparation": 120,
+  "scope": "All120 covariance/distance audits; three native transitions per epoch/case, not a second full replay"
+}

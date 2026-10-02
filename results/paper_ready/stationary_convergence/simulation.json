@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "cases": 120,
+  "spontaneousIdentities": 30,
+  "intrinsicChunks": 330,
+  "trials": 28800,
+  "networks": [
+    {
+      "network": 1,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 2,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 3,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 4,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 5,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 6,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 7,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 8,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 9,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    },
+    {
+      "network": 10,
+      "cases": 12,
+      "spontaneousIdentities": 3,
+      "intrinsicChunks": 33,
+      "status": "PASS"
+    }
+  ],
+  "elapsedSeconds": 901.932363
+}

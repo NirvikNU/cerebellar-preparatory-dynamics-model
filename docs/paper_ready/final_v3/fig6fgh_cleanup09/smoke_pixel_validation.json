@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "method": "System.Drawing decode to 32-bit ARGB; SHA256 of decoded pixel buffers",
+  "allThreeImagesPixelExact": true,
+  "Fig6f": {"width":2138,"height":1105,"pixelSHA256":"E4601DE6F3AB434B177BA0FEBDB5DDD11DBF9C8055384B1E184F24A282248E86"},
+  "Fig6g": {"width":1687,"height":1038,"pixelSHA256":"F489BF002952A0DB3271CEDDF86095A1E8F2722ABF02BA02E024B7166C8DABD0"},
+  "Fig6h": {"width":1681,"height":1134,"pixelSHA256":"7EB89E98DC6EFE6D87B5A3FBE369CC65845ADE6C95E49FA5E9F86C786C1B8768"},
+  "note": "Full PNG-file SHA differed between independent exports; decoded dimensions and every pixel are identical. No scientific/display source differs. The full-byte gate stopped before commit and was resolved with decoded-content comparison."
+}
