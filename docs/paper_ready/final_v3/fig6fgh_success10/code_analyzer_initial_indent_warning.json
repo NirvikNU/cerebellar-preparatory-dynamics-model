@@ -1,0 +1,18 @@
+{
+  "files": 8,
+  "messages": [
+    {
+      "file": "sp10_audit.m",
+      "issues": {
+        "id": "ALIGN",
+        "message": "This keyword might not be aligned with its matching END on line 92.",
+        "fix": 0,
+        "line": 90,
+        "column": [
+          5,
+          6
+        ]
+      }
+    }
+  ]
+}

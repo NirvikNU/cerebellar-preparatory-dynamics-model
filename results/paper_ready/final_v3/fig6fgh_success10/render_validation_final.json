@@ -1,0 +1,32 @@
+{
+  "figures": [
+    {
+      "name": "Fig6f",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\fig\\Fig6f.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\png\\Fig6f.png"
+    },
+    {
+      "name": "Fig6g",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\fig\\Fig6g.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\png\\Fig6g.png"
+    },
+    {
+      "name": "Fig6h",
+      "fig": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\fig\\Fig6h.fig",
+      "png": "E:\\PROJECTS\\Nirvik_Sinha_Data\\cerebellar-preparatory-dynamics-model\\plots\\paper_ready\\final_v3\\fig6fgh_success10\\png\\Fig6h.png"
+    }
+  ],
+  "network": 8,
+  "target": 6,
+  "audit": {
+    "displayObjects": 142,
+    "reopenedCurrentFigures": 12,
+    "intactOnlyNetworkSelection": true,
+    "truncatedAll30Summary": true,
+    "insetAll30": true,
+    "sameTenTrialsGH": true,
+    "canonicalPalette": true,
+    "conditionColors": true,
+    "unchangedStatistics": "Protected file hashes independently checked; no inferential calculation invoked."
+  }
+}

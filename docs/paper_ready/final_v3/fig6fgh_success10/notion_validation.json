@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "pageId": "3e826c94be308179870cda177f0b75af",
+  "checks": {
+    "unrelatedBefore": true,
+    "unrelatedAfter": true,
+    "historicalf": true,
+    "sourceTablesf": true,
+    "historicalg": true,
+    "aggregateg": true,
+    "sourceTablesg": true,
+    "historicalh": true,
+    "aggregateh": true,
+    "sourceTablesh": true
+  },
+  "nativePngHashes": [
+    {
+      "panel": "f",
+      "bytes": 193192,
+      "sha256": "F6DE905DB3535F14775363472F9E5059A9EEB38D251CB3BD2DC2528E82CBFD70",
+      "status": "PASS"
+    },
+    {
+      "panel": "g",
+      "bytes": 209619,
+      "sha256": "106DE5295CFC484BD6E400992AD907E1D6AC3E9ED849893D0341975594235C8B",
+      "status": "PASS"
+    },
+    {
+      "panel": "h",
+      "bytes": 169968,
+      "sha256": "79D904F4865B1B735C47921B8157D42BB1947B1D1F0216E5926DD965D774DB32",
+      "status": "PASS"
+    }
+  ],
+  "method": "Exact prior section/table comparison after normalizing only expiring signed image query strings and whitespace; new table cell strings match full-precision saved CSVs. Native image bytes SHA256 match local PNGs."
+}
