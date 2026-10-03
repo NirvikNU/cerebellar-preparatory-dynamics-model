@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "finalPNGVisuallyInspected": true,
+  "noOverlapOrClipping": true,
+  "nativeFIGReopened": true,
+  "graphicsObjects": 80,
+  "sourceValuesUnchangedDuringSpacingRepair": true,
+  "finalFIGsha256": "8C092956648728B7A07750996FF9B5B025BF00596DC777D039249C64948D8A9F",
+  "finalPNGsha256": "EF6CD6E90B652EB4B89B16CB15C2F6B942BBD499BED1F354EE5FD9D5CA883D0C",
+  "provisionalPairPreservedIgnored": true,
+  "codeAnalyzerFiles": 3,
+  "codeAnalyzerFindings": 0
+}

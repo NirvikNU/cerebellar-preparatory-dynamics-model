@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "page": "https://www.notion.so/3ee26c94be308125a5b0d6dcd9fe1321",
+  "nativeImages": 6,
+  "randomOptions": [
+    {
+      "heading": "## Option 1 — seed 18001",
+      "unchanged": true
+    },
+    {
+      "heading": "## Option 2 — seed 18002",
+      "unchanged": true
+    },
+    {
+      "heading": "## Option 3 — seed 18003",
+      "unchanged": true
+    },
+    {
+      "heading": "## Option 4 — seed 18004",
+      "unchanged": true
+    },
+    {
+      "heading": "## Option 5 — seed 18005",
+      "unchanged": true
+    }
+  ],
+  "manuscriptSections": [
+    {
+      "heading": "## Current frozen-model and statistical conventions",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6a — prospective feedback alone",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6b — prospective feedback alone",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6c — final effective model schematic",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6d — experiment versus model: calibration disclosure",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6e — experiment versus model: calibration disclosure",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6g — spatially stratified successful hand-speed profiles",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6h — spatially stratified peak-position dispersion",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6i — noise-dependent prediction",
+      "unchanged": true
+    },
+    {
+      "heading": "## Fig. 6j — noise-dependent prediction",
+      "unchanged": true
+    },
+    {
+      "heading": "## Extended Data Fig. 7a — shared calibration grid",
+      "unchanged": true
+    },
+    {
+      "heading": "## Extended Data Fig. 7b — component-removal prediction",
+      "unchanged": true
+    },
+    {
+      "heading": "## Final copy/paste manuscript placeholder table",
+      "unchanged": true
+    },
+    {
+      "heading": "## Current sources and validation",
+      "unchanged": true
+    },
+    {
+      "heading": "## Archive / superseded checkpoints",
+      "unchanged": true
+    }
+  ],
+  "contrastDisclosurePresent": true,
+  "nativeUpload": {
+    "sha256": "EF6CD6E90B652EB4B89B16CB15C2F6B942BBD499BED1F354EE5FD9D5CA883D0C",
+    "bytes": 179882,
+    "matches": true
+  },
+  "finalWinnerSelected": false
+}

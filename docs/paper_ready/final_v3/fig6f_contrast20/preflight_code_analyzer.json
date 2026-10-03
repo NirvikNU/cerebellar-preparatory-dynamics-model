@@ -1,0 +1,18 @@
+{
+  "files": 3,
+  "issues": [
+    {
+      "file": "fc20_audit.m",
+      "issues": {
+        "id": "ALIGN",
+        "message": "This keyword might not be aligned with its matching END on line 27.",
+        "fix": 0,
+        "line": 25,
+        "column": [
+          25,
+          26
+        ]
+      }
+    }
+  ]
+}

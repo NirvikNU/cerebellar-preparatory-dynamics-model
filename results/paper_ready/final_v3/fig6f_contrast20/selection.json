@@ -1,0 +1,137 @@
+{
+  "network": 8,
+  "selection": "Intact four minimum-pathRMS; Block four maximum-pathRMS; ascending attempt-ID tie break",
+  "objective": "Maximize per-target Block-minus-Intact difference of four-trial mean ideal-segment pathRMS",
+  "random": false,
+  "typicalityClaim": false,
+  "successCounts": [
+    [
+      30,
+      30
+    ],
+    [
+      30,
+      30
+    ],
+    [
+      30,
+      30
+    ],
+    [
+      30,
+      4
+    ],
+    [
+      30,
+      29
+    ],
+    [
+      30,
+      30
+    ],
+    [
+      30,
+      30
+    ],
+    [
+      30,
+      30
+    ]
+  ],
+  "phaseSamples": 101,
+  "thickSummary": "Arithmetic mean of same four displayed successes",
+  "axisLimitsCM": [
+    [
+      -12.65,
+      -12.65
+    ],
+    [
+      12.65,
+      12.65
+    ]
+  ],
+  "IntactIDs": [
+    [
+      34,
+      3,
+      8,
+      36,
+      5,
+      3,
+      25,
+      31
+    ],
+    [
+      15,
+      21,
+      34,
+      14,
+      13,
+      5,
+      21,
+      32
+    ],
+    [
+      29,
+      17,
+      25,
+      5,
+      4,
+      33,
+      5,
+      36
+    ],
+    [
+      32,
+      35,
+      49,
+      7,
+      25,
+      38,
+      20,
+      40
+    ]
+  ],
+  "BlockIDs": [
+    [
+      185,
+      38,
+      6,
+      518,
+      2002,
+      29,
+      2765,
+      103
+    ],
+    [
+      49,
+      136,
+      367,
+      4931,
+      1929,
+      56,
+      515,
+      126
+    ],
+    [
+      84,
+      187,
+      265,
+      2867,
+      1127,
+      58,
+      343,
+      233
+    ],
+    [
+      160,
+      151,
+      290,
+      1860,
+      1258,
+      101,
+      2597,
+      140
+    ]
+  ]
+}
