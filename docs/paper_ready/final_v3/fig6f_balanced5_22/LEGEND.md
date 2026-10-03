@@ -1,0 +1,7 @@
+# Five random balanced-success/failure Fig6f review candidates
+
+Frozen network 8 and existing visualization attempts only. Each seed (18001-18005, mt19937ar) makes one uniform draw without replacement of three successes and three failures per target and condition, in the predeclared order. No trial/seed screening, pathRMS selection, rejection, rerolls or model simulation. Across-version overlap is allowed. This deliberately balanced 3+3 sample does not estimate the actual success probability and is not a manuscript inferential dataset.
+
+The eight target colors, all-solid thin trajectories, side-by-side Intact/Block panels, 1.5-cm target zones, font/line widths, shared spatial limits and equal aspect follow the original five random Fig6f options. Successful native paths terminate at first target-zone entry; failed paths extend through the existing last saved sample at GO+599 ms, with no invented entry or extra simulation.
+
+Thick trajectories are the equally weighted arithmetic means of those same six displayed trials on a 101-point 0-1 phase grid. Each success is normalized from movement onset to target entry; each failure from movement onset to GO+599 ms. Thus the thick curve is a mixed-endpoint six-trial phase mean, not a median, a successful-trial mean, a mean in real time, or a claim of successful target acquisition. All manuscript-facing behavioral/inferential values remain unchanged. All five candidates are shown in seed order without a preferred winner; any later visual choice should be disclosed as such.

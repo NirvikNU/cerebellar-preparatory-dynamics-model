@@ -1,6 +1,8 @@
-# Current manuscript panel navigation — 3 October 2026
+# Current manuscript panel navigation — 4 October 2026
 
 Fig6f review alternatives (no winner selected): [five fixed random seeds and validation](fig6f_random5_18/REPORT.md), [Notion comparison page](https://www.notion.so/3ee26c94be308125a5b0d6dcd9fe1321). All five FIG/PNG pairs are preserved under plots/paper_ready/final_v3/fig6f_random5_18. This review bundle does not replace the current Fig6f row below.
+
+Balanced Fig6f review alternatives: [five fixed-seed 3-success + 3-failure examples](fig6f_balanced5_22/REPORT.md), preserving the five original success-only options. Same-six 101-point phase means; failures end at the existing 599-ms saved horizon. Deliberately balanced display, not actual success-rate sampling; no manuscript figure/statistic is replaced.
 
 Additional Fig6f review example: [explicitly contrast-selected illustration](fig6f_contrast20/REPORT.md), considering all saved successes and displaying the four lowest-RMS Intact paths versus four highest-RMS Block paths per target. This intentionally extreme selection is neither random nor typical; no manuscript panel or quantitative statistic is replaced.
 

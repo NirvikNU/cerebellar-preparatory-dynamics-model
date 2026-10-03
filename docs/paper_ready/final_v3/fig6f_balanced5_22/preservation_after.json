@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "unchangedMetadata": 9420,
+  "unchangedSHA256": 7720,
+  "allowedExistingChanges": [
+    "docs/paper_ready/final_v3/CURRENT_PANEL_INDEX.md"
+  ],
+  "unrelatedUntracked": 895,
+  "deletedDependencies": 0,
+  "utc": "2026-10-03T23:07:31.1992174Z"
+}
