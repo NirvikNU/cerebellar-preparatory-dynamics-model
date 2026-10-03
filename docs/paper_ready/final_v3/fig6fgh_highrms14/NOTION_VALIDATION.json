@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "pageId": "3e826c94be308179870cda177f0b75af",
+  "currentPanels": 12,
+  "images": 12,
+  "callouts": 1,
+  "protectedChecks": {
+    "## Current frozen-model and statistical conventions": true,
+    "## Fig. 6a — prospective feedback alone": true,
+    "## Fig. 6b — prospective feedback alone": true,
+    "## Fig. 6c — final effective model schematic": true,
+    "## Fig. 6d — experiment versus model: calibration disclosure": true,
+    "## Fig. 6e — experiment versus model: calibration disclosure": true,
+    "## Fig. 6i — noise-dependent prediction": true,
+    "## Fig. 6j — noise-dependent prediction": true,
+    "## Extended Data Fig. 7a — shared calibration grid": true,
+    "## Extended Data Fig. 7b — component-removal prediction": true,
+    "## Final copy/paste manuscript placeholder table": true,
+    "aggregateg": true,
+    "aggregateh": true
+  },
+  "nativeAttachments": [
+    {
+      "name": "Fig6a",
+      "sha256": "6B8DD41CC9AE7BB2116BBDA7F7E35ECF2203C17C4C377719554FBD06D3FB526E",
+      "bytes": 84669,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6b",
+      "sha256": "7F4011903019CA6B793FF95A2AB6B433C66FFFA95BCA2D3EF56908EA036088B6",
+      "bytes": 106555,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6c",
+      "sha256": "8CA5EBD2209F9A05394F95C2186FBE43F800072CF1927A3E82D7F79315662E0D",
+      "bytes": 141234,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6d",
+      "sha256": "EBA534B7A9DDA288648E718F8EC704241768D142F65963613A5E473550A74D14",
+      "bytes": 81698,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6e",
+      "sha256": "191870FA72046CDC043C39555A5D0F0EC9020F7C0DCD3C5A3656ED4390DC3890",
+      "bytes": 80991,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6f",
+      "sha256": "3F46500355B04ED249BEC80AE45AE4765E9FFB5FD1119579CE2B744424DB8324",
+      "bytes": 207899,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6g",
+      "sha256": "AF689A22AEE335F4538608B560E3A9C09776878D0A804E445F022066C509D495",
+      "bytes": 187134,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6h",
+      "sha256": "E74DF64BA04FF6B4611A154E7CE47DD214D230067A5E8A7C6AACC8DF42D67ACC",
+      "bytes": 124157,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6i",
+      "sha256": "3123813E9462FE8DEECD8BE86180B209D3DF7451FC117478345F083246588B4F",
+      "bytes": 112613,
+      "status": "PASS"
+    },
+    {
+      "name": "Fig6j",
+      "sha256": "0CD123497F3B48909E27FC1B82C380AD7DBF8E5EAE7A143960052D021BBC6A3D",
+      "bytes": 109476,
+      "status": "PASS"
+    },
+    {
+      "name": "ED7a",
+      "sha256": "16D0921066C7F683CC7CDF9885B35E9299882EEC2A9A94D6E3E8FAD04115BC13",
+      "bytes": 78018,
+      "status": "PASS"
+    },
+    {
+      "name": "ED7b",
+      "sha256": "DCED07BDEDC857964653D2B8EE48DA7B665B9769003A21518900D3E936D61A8C",
+      "bytes": 139292,
+      "status": "PASS"
+    },
+    {
+      "name": "SourceZIP",
+      "sha256": "303A3772A966E91B6FB5162B22BF3A3B53BD9377EE6F8D1A91A222174236A44D",
+      "bytes": 313063,
+      "status": "PASS"
+    }
+  ],
+  "empiricalTemplate": "Main_text_v10, object kix.vd14fmq26ggx; visually inspected before plotting; one overlaid spatial field, filled circles, angled filled histogram, target key and scale bar.",
+  "newFigureReopen": "final_figure_validation.json: 12 current FIGs reopened, 149 display objects audited; final h has open saved paths only.",
+  "scientificBoundary": "No simulations, fits, inference, manuscript values or unrelated panel changes. Prior page conventions, nine unrelated sections, g/h statistical blocks and placeholder preserved.",
+  "finalCheckpoint": "Final SHA and verified direct remote are recorded after push in Notion status pages and final response."
+}
