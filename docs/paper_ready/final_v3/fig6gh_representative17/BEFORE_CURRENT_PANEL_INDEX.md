@@ -1,6 +1,6 @@
 # Current manuscript panel navigation — 3 October 2026
 
-Current Fig6g/h: [fig6gh_representative17/REPORT.md](fig6gh_representative17/REPORT.md), [captions](fig6gh_representative17/LEGENDS.md), [dependencies](fig6gh_representative17/DEPENDENCIES.md). Both use user-approved network8,target6 and the same ten spatially stratified random successes per condition, fixed before speed inspection. g uses the selected-ten full-support Gaussian50 median and nActive>=5 cutoff; h inset remains all30. f remains task14. No simulation or manuscript aggregate/inferential change. Normal main checkpoint is authorized after validation; final SHA is recorded in Notion and the Git synchronization receipt. Prior task15/16 files remain local provenance, not current panels.
+Current h-only review: [fig6h_diffuse16/REPORT.md](fig6h_diffuse16/REPORT.md), [caption](fig6h_diffuse16/LEGENDS.md). h uses network8,target6 after full30 cloud inspection to avoid a separated-cluster example; ten highest-pathRMS successful paths/circles and an all30-success inset. g remains the [task15 review](fig6gh_tweak15/REPORT.md), network8,target1, unchanged selected-ten median with full-support Gaussian50 and nActive>=5 cutoff. f remains task14. No simulation or manuscript aggregate/inferential change. Tasks15/16 remain uncommitted for scientific review; HEAD remains04cd2b2a0be5b9b8fa2d57791d46e9f951e6b4f0.
 
 | Panels | Current FIG/PNG directory under plots/paper_ready/final_v3 | Statistical source under results/paper_ready/final_v3 |
 |---|---|---|
@@ -8,7 +8,8 @@ Current Fig6g/h: [fig6gh_representative17/REPORT.md](fig6gh_representative17/REP
 | Fig6c | fig/ and png/ | schematic; no inference |
 | Fig6d,e | fig/ and png/ | fig6degh_pvalues_correction/ |
 | Fig6f | fig6fgh_highrms14/fig/ and png/ | fig6fgh_highrms14/ display only |
-| Fig6g,h | fig6gh_representative17/fig/ and png/ | fig6gh_representative17/ display only; aggregate statistics remain fig6degh_pvalues_correction/ |
+| Fig6h | fig6h_diffuse16/fig/ and png/ | fig6h_diffuse16/ display only; h statistics remain fig6degh_pvalues_correction/ |
+| Fig6g | fig6gh_tweak15/fig/ and png/ | fig6gh_tweak15/ display only; g statistics remain fig6degh_pvalues_correction/ |
 | Fig6i,j | fig6ij_fourlevel/fig/ and png/ | fig6ij_fourlevel/; four levels .05,.10,.15,.20, Friedman df=3, raw p only |
 | ED7a,b | fig/ and png/ | ED7a frozen calibration; ED7b fig6ij_ed7b_stats_correction/ |
 

@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "page": "3e826c94be308179870cda177f0b75af",
+  "checks": [
+    {
+      "heading": "## Current frozen-model and statistical conventions",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6a — prospective feedback alone",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6b — prospective feedback alone",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6c — final effective model schematic",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6d — experiment versus model: calibration disclosure",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6e — experiment versus model: calibration disclosure",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6f — illustrative high-pathRMS successful reaches",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6i — noise-dependent prediction",
+      "identical": true
+    },
+    {
+      "heading": "## Fig. 6j — noise-dependent prediction",
+      "identical": true
+    },
+    {
+      "heading": "## Extended Data Fig. 7a — shared calibration grid",
+      "identical": true
+    },
+    {
+      "heading": "## Extended Data Fig. 7b — component-removal prediction",
+      "identical": true
+    },
+    {
+      "heading": "## Final copy/paste manuscript placeholder table",
+      "identical": true
+    },
+    {
+      "heading": "Fig6g aggregate statistics",
+      "identical": true
+    },
+    {
+      "heading": "Fig6h aggregate statistics",
+      "identical": true
+    }
+  ],
+  "panels": 12,
+  "callouts": 1,
+  "truncated": false,
+  "nativeAttachments": [
+    {
+      "file": "plots/paper_ready/final_v3/fig6gh_representative17/png/Fig6g.png",
+      "bytes": 214480,
+      "sha256": "CD2F12865A660C1C3DA12F19D231193FC616DAA15FB744C0D73113F576C44AB5",
+      "verified": true
+    },
+    {
+      "file": "plots/paper_ready/final_v3/fig6gh_representative17/png/Fig6h.png",
+      "bytes": 167901,
+      "sha256": "1811187236BA80E0AF6FD61E9F361B38B98344AEED57A572DD8DAF69B153750F",
+      "verified": true
+    },
+    {
+      "file": "docs/paper_ready/final_v3/fig6gh_representative17/Current_manuscript_source_tables_REVIEW.zip",
+      "bytes": 473300,
+      "sha256": "5387B4282A39F867644334246B54A1FB4A270E50F98037ED7FD08D4378F48CB2",
+      "verified": true
+    }
+  ]
+}
