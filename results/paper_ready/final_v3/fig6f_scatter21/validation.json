@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "successes": 453,
+  "selected": 64,
+  "candidatesChecked": 407422,
+  "maxScoreError": 2.7755575615628914E-17,
+  "maxPhaseError": 2.7755575615628914E-17,
+  "reopened": 0,
+  "graphicsObjects": 0,
+  "all16GlobalOptimaVerified": true,
+  "figure": {
+    "status": "PASS",
+    "successes": 0,
+    "selected": 0,
+    "candidatesChecked": 0,
+    "maxScoreError": 0,
+    "maxPhaseError": 0,
+    "reopened": 1,
+    "graphicsObjects": 96,
+    "peakMarkers": 64
+  },
+  "noSimulation": true,
+  "noManuscriptInference": true
+}

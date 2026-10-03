@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "assets": [
+    {
+      "name": "Fig6f_scatter_matched.fig",
+      "bytes": 556492,
+      "sha256": "30DC82A1450C2D256E6BD881CC3A32E173C8930AC563987031B144A52E1A02ED"
+    },
+    {
+      "name": "Fig6f_scatter_matched.png",
+      "bytes": 205153,
+      "sha256": "37E64A8360473E58E011F0FDC3A7EB807BBF85E296C3BC9AE9BA8ED7D2C1AC4E"
+    }
+  ],
+  "inspection": "PNG visually inspected: no clipped labels or overlapping panels; filled peak-position circles, thin native paths and same-four phase means visible; equal common axes and target zones.",
+  "nativeFigureReopened": true,
+  "graphicsObjects": 96,
+  "peakMarkers": 64,
+  "codeAnalyzerFiles": 3,
+  "codeAnalyzerFindings": 0,
+  "scientificResultsUnchanged": true
+}
