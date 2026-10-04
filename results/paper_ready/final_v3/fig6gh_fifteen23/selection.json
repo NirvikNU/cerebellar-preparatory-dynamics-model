@@ -1,0 +1,104 @@
+{
+  "network": 8,
+  "target": 6,
+  "sameTrialsGH": true,
+  "sampling": "Retain original ten, uniformly choose five strata and one of two remaining members; continued original streams, no screening",
+  "seeds": [
+    170801,
+    170802
+  ],
+  "IntactIDs": [
+    10,
+    3,
+    41,
+    33,
+    38,
+    20,
+    7,
+    15,
+    19,
+    9,
+    31,
+    42,
+    14,
+    28,
+    29
+  ],
+  "BlockIDs": [
+    67,
+    102,
+    28,
+    78,
+    22,
+    88,
+    96,
+    49,
+    9,
+    29,
+    2,
+    56,
+    47,
+    58,
+    61
+  ],
+  "medianCount": 15,
+  "minimumActive": 8,
+  "insetCount": 30,
+  "originalTenPreserved": true,
+  "addedStrata": [
+    [
+      7,
+      2,
+      8,
+      4,
+      10
+    ],
+    [
+      4,
+      10,
+      2,
+      9,
+      5
+    ]
+  ],
+  "addedDraws": [
+    [
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  ],
+  "cutoffsMs": [
+    270,
+    321
+  ],
+  "supportEndsMs": [
+    305,
+    523
+  ],
+  "selectedMedianPeakMps": [
+    0.44133451143661528,
+    0.37298897642851331
+  ],
+  "all30MedianPeakMps": [
+    0.4390734989272691,
+    0.33478077839326814
+  ],
+  "selectedRMSspreadCM": [
+    0.4647314083063932,
+    1.1626202824915532
+  ],
+  "all30RMSspreadCM": [
+    0.53204028153100691,
+    1.178426498045259
+  ]
+}

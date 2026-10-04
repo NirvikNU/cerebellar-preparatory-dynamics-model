@@ -8,7 +8,7 @@ Additional Fig6f review example: [explicitly contrast-selected illustration](fig
 
 Additional Fig6f review example: [peak-position scatter-matched four-trial illustration](fig6f_scatter21/REPORT.md). Exhaustively matches each target/condition's full successful-trial median position and scatter matrix using the same fixed objective, without maximizing a condition difference. Prior review figures and current manuscript panels/statistics remain unchanged.
 
-Current Fig6g/h: [fig6gh_representative17/REPORT.md](fig6gh_representative17/REPORT.md), [captions](fig6gh_representative17/LEGENDS.md), [dependencies](fig6gh_representative17/DEPENDENCIES.md). Both use user-approved network8,target6 and the same ten spatially stratified random successes per condition, fixed before speed inspection. g uses the selected-ten full-support Gaussian50 median and nActive>=5 cutoff; h inset remains all30. f remains task14. No simulation or manuscript aggregate/inferential change. Normal main checkpoint is authorized after validation; final SHA is recorded in Notion and the Git synchronization receipt. Prior task15/16 files remain local provenance, not current panels.
+Current Fig6g/h: [fifteen-trial report](fig6gh_fifteen23/REPORT.md), [captions](fig6gh_fifteen23/LEGENDS.md), [dependencies and cleanup](fig6gh_fifteen23/DEPENDENCIES.md). Same approved network8,target6 and identical fifteen successes in g/h: all original ten retained, plus five fixed-stream spatial-stratified additions. g uses the selected-fifteen full-support Gaussian50 median and nActive>=8 half-support cutoff; h inset remains all30. f and all review variants unchanged. No simulation or aggregate/inferential change. [Original ten-trial provenance](fig6gh_representative17/REPORT.md) remains preserved; current checkpoint is recorded in Notion and Git receipts.
 
 | Panels | Current FIG/PNG directory under plots/paper_ready/final_v3 | Statistical source under results/paper_ready/final_v3 |
 |---|---|---|
@@ -16,7 +16,7 @@ Current Fig6g/h: [fig6gh_representative17/REPORT.md](fig6gh_representative17/REP
 | Fig6c | fig/ and png/ | schematic; no inference |
 | Fig6d,e | fig/ and png/ | fig6degh_pvalues_correction/ |
 | Fig6f | fig6fgh_highrms14/fig/ and png/ | fig6fgh_highrms14/ display only |
-| Fig6g,h | fig6gh_representative17/fig/ and png/ | fig6gh_representative17/ display only; aggregate statistics remain fig6degh_pvalues_correction/ |
+| Fig6g,h | fig6gh_fifteen23/fig/ and png/ | fig6gh_fifteen23/ display only; aggregate statistics remain fig6degh_pvalues_correction/ |
 | Fig6i,j | fig6ij_fourlevel/fig/ and png/ | fig6ij_fourlevel/; four levels .05,.10,.15,.20, Friedman df=3, raw p only |
 | ED7a,b | fig/ and png/ | ED7a frozen calibration; ED7b fig6ij_ed7b_stats_correction/ |
 
