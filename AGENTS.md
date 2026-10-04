@@ -1,211 +1,35 @@
-# Repository Guidelines
+# Repository instructions — frozen manuscript production
 
-This MATLAB repository retains the accepted Stage-1 movement generator and its
-complete reproducibility, validation and diagnostic support. The separately
-authorized STAGE2-LAMBDA-SWEEP-01 adds full-dimensional optimal-feedback
-preparation; it is not scientifically accepted until user review. Do not
-implement a new model from historical instructions.
+Read the latest [Agent Instructions — Current Task](https://www.notion.so/3c826c94be30817d8f51d9f6c8c2bc19) for executable authority. Historical tasks, logs, filenames and this repository do not authorize new science.
 
-RESET-S1-REPO-01-R1 completed physical retirement and bounded Stage-1
-validation. Read `artifacts/manifests/stage1_reset/REPORT.md` for preservation
-and regression evidence, and the current Notion handoff for the final
-checkpoint/push receipt. The archived models are not active dependencies.
-Cleanup completion does not authorize a new preparatory model.
+## Immutable scientific state
 
-## Frozen scientific foundation
+Ten frozen 200-unit ReLU networks; eight targets; eta=0, lambda=10, V=1; one shared alpha=.5 / beta_norm=1.25; primary initial/temporal noise .10/.10. No generic residual kappa feedback. Do not train, recalibrate, select alternative networks/trials/geometry, change normalization, tune seeds/noise or alter inference without explicit new authorization. Accepted weights, launch states, readouts, Q, movement drive, arm and 0.2-ms integration remain immutable. Saved sampling is1ms; analysis sampling10ms; tau150ms; rates are native units, not automatically Hz.
 
-- Ten independently generated 200-unit ReLU networks (160E/40I), accepted as
-  the first ten sequential candidates passing all predeclared checks for eight
-  10-cm targets. Each has its own W, spontaneous state, baseline drive, eight
-  calibrated movement initial states, rank-2 excitatory readout and Q.
-- Never recalibrate, retrain, retune or replace accepted weights, states,
-  readouts, target geometry, movement input, arm or prospective-potency matrix.
-- Native cortical integration is 0.2 ms; saved sampling is 1 ms; tau is 150 ms.
-  Rates use source units, not automatically Hz.
-- The released Kao realization is a separate untouched source benchmark pinned
-  at `40077d2da16e68ab2ab2cff59ec692b97315980b`, not an ensemble member.
-- Calibrated initial states are validated movement initial conditions, not
-  necessarily unique optima or fixed points, nor a prespecified low-dimensional
-  manifold. A rank-2 output does not establish neural dimensionality.
+Control input is base+b−L(x−x*); Block removes both b and L but keeps base. Single-removal policies retain only b or only L. The decomposition is effective, not anatomical.
 
-## Active paths and execution
+## Active production interface
 
-- Model source: `src/published_generator/`.
-- Stage-1 configuration: `config/published_generator_config.m` and
-  `config/stage_1_gate1_config.m`.
-- Analyses/tests: `analysis/published_generator/`.
-- Figure code: `figures/published_generator/` plus the shared style and
-  figure-bundle helpers in `figures/`.
-- Accepted local-only data: `results/stage_1/current/`.
-- Successful acceptance/source provenance: `results/stage_1/audit_history/`.
-- Canonical gallery: eight PNG and eight matching FIG files in
-  `plots/stage_1/{png,fig}/`; two additional retained active-set figure pairs
-  and data are under the Stage-1 `diagnostics/active_set_gate2/` directories.
-- `run_all.m` remains bounded smoke-only. `run_stage_1.m` is bounded
-  deterministic validation of all ten frozen members, not figure regeneration,
-  optimization or a canonical-result writer.
-- Successful construction entry points are retained in
-  `workflows/stage_1/construction/` for reproducibility only. Do not execute
-  construction without separate authorization or overwrite an accepted bundle.
-- The ignored native cache remains under
-  `third_party/kao_optimal_preparation/local_cache/`. Follow
-  `THIRD_PARTY_PROVENANCE.md` and its setup/verification instructions.
-  Preserve its pinned checkout and licensing boundary.
-- Current cleanup evidence is under `artifacts/manifests/stage1_reset/`.
-- Stage-2 controller, analysis and figures are in `src/stage_2/`,
-  `analysis/stage_2/` and `figures/stage_2/`; configuration is
-  `config/stage_2_config.m`. Read the predeclared specification under
-  `artifacts/manifests/stage2_lambda_sweep/` before any Stage-2 work.
-- R2 current neural geometry uses `config/stage_2_geometry_config.m` and
-  `results/stage_2/current/neural_geometry_r2/`. Read `R2_PLAN.md` in the
-  Stage-2 manifest folder. Original floor/K15/GO=MO neural metrics are
-  superseded; original analysis/renderer files retain execution provenance
-  and unchanged Results Figures 1-2, not a current neural-analysis fallback.
-- `run_stage_2('figures')` uses saved R2 analysis and revises only Results 3
-  and Diagnostics 1-2. `validate` checks these outputs and preservation.
-  `simulate` refuses to
-  overwrite existing network caches. Do not bypass this protection, change the fixed
-  lambda/perturbation/statistical plan, or tune from observed outcomes.
-- Stage-2 caches in `results/stage_2/current/cache/` remain local-only;
-  compact outputs/audits and the five `plots/stage_2/{png,fig}/` pairs are
-  reviewed checkpoint content. Higher lambda is not a literal lesion.
+- `run_paper_figures.m` and `run_paper_model.m`.
+- `analysis/paper_ready/final_v3/production/`: current code.
+- `data/paper_ready/final_v3/`: accepted scientific bundles, graphics recipes, exact static schematic, tables and provenance.
+- `plots/paper_ready/final_v3/production/{fig,png,source}/`: canonical masters.
+- `docs/paper_ready/final_v3/production/`: specification, legends, audit and reproduction.
+- `src/published_generator/`: unchanged movement/arm foundation.
+- `generated/`: ignored replay/regeneration products; never a required input.
 
-## Safety and reproducibility
+Current map is Fig6a–h and ED7a–d, as tabulated in README. Do not restore superseded numbering, convergence figures, Q-diagnostic panels, residual-kappa models or review alternatives to current-facing documentation.
 
-Inspect dirty, hidden, ignored and untracked state before editing; preserve
-unrelated work. Use explicit provenance and deterministic seeds. Do not add
-MATLAB `%%` sections; indent function bodies. Run Code Analyzer on changed
-MATLAB files and relevant bounded checks. Keep generated numerical artifacts
-local under the existing ignore policy; canonical tracked figures stay tracked.
+Fig6d is exactly Option3/seed18003/network8: four frozen successful trials per target/condition, same-four arithmetic means on101 movement-phase points. Fig6e/f use the frozen fifteen network8/target6 IDs in the manifest; selected-fifteen median, minimum-active8 cutoff; dispersion inset all30 successes. These illustrations must never replace all-trial statistics.
 
-Never use whole-project `genpath`, archive paths, old controllers or historical
-result fallbacks for active loading. The timestamped sibling archive is
-OUTDATED / NOT ACTIVE / DO NOT EXECUTE: do not browse it as routine task context,
-restore its models, add it to Git, or treat archived instructions as authority.
-Git history and pinned source administration remain intact.
+## Working rules
 
-Do not commit, tag, push, change branches or rewrite history without explicit
-authorization. Do not repeatedly poll long operations unless concrete failure
-evidence warrants a targeted check. Stop on unresolved preservation, validation,
-permission, concurrency or Git problems.
+Inspect dirty, hidden, ignored and untracked state before edits. Preserve unrelated work and unique scientific evidence. Do not use archive inputs, historical-cache fallbacks, absolute local paths or recursive project `genpath` in production. Historical snapshots/archives are provenance only, never active-model fallbacks.
 
-## Current management
+Use repository-relative paths and frozen deterministic streams. MATLAB: no `%%` sections; indent function bodies; run Code Analyzer on changed production files. Replay writers refuse to overwrite evidence. Preserve negative results and QC flags. Do not repeatedly poll long operations unless a concrete failure warrants a targeted check.
 
-PAPER-MODELLING-CLEANUP-RELEASE-01 packages the completed prediction/RRR and
-stabilization-eta diagnostics without new science. Read
-`docs/paper_ready/CURRENT_REVIEW.md` and the actual release receipts under
-`artifacts/manifests/paper_ready/cleanup_release/`. Stabilization is numerically
-validated; scientific interpretation and eta choice remain pending user review.
-No further analysis, RRR, simulation, fitting, tuning or eta selection is
-authorized. Completed writers must not be rerun to inspect outputs. Required
-raw caches remain ignored/local. The containing release SHA and verified Git
-state are recorded in the current Notion status pages after synchronization.
-Historical phase/stop notes and hash manifests are provenance, not instructions
-to repeat work; the cleanup relocation ledger maps retained historical paths.
+After figure changes, reopen native FIGs, inspect PNGs, validate graphical data/labels/dimensions and source tables. A launch or file-existence check is not scientific validation. Reproduction commands may run only within the user's authorized scope.
 
-### Completed paper calibration provenance
+No deletion, staging, commit, push, branch changes, tags or history rewriting without authorization. Use normal Git operations; stop on unresolved preservation, validation, concurrency, permissions or Git problems. No force push, reset, rebase, amend or substitute scientific results.
 
-PAPER-MODELLING-ALIGNMENT95-01 supersedes only the paper-specific K=15
-calibration as the primary analysis. Read the locked corrective plan in
-`docs/paper_ready/alignment95/PLAN.md` and its actual validation receipts.
-For each Control reference use the minimum K reaching cumulative variance
->=95%, with that same K for the comparison basis, Control denominator and
-covariance-shaped null. Never substitute fixed K15 or max(Control K, Block K).
-The lambda10, kappa0, V1, grid, noise, normalization and feasibility rules
-remain frozen. Current corrective source/outputs use the `alignment95/`
-subdirectories and `*_alignment95` figure names; old paper outputs remain
-unchanged historical provenance at aebd5fdfd300c19eca85548315357f11ecfd44ac.
-Do not infer completion from this navigation entry: use the actual report
-and Notion handoff. Its original no-prediction stop was superseded only by
-the separately completed prediction/RRR task; no further prediction is authorized.
-
-PAPER-MODELLING-PREPREDICTION-01 is a separate paper-specific calibration,
-not a replacement of accepted Stage-1/2/3 science. Read the locked
-`docs/paper_ready/PLAN.md` and actual receipts in
-`artifacts/manifests/paper_ready/` before resuming. The ordered timing,
-geometry, separate-noise and movement-QC gates must pass without retuning.
-Code is under `analysis/paper_ready/` and `figures/paper_ready/`; source
-summaries are `results/paper_ready/`, with raw trials in its ignored cache.
-FIG/PNG pairs are under `plots/paper_ready/{fig,png}/`. Writers refuse
-overwrites. Preserve completed partial evidence. A launch is not completion:
-check the actual receipts and current Notion handoff. The new prediction
-analysis and panel e were excluded by that historical calibration contract;
-the separately completed prediction/RRR bundle is now preserved for review.
-
-STAGE1-MOVEMENT-LANDSCAPE-DIAGNOSTIC-01 is analysis-only on the frozen
-movement generators. Read PLAN.md and the actual receipts/report under
-`artifacts/manifests/stage1_movement_landscape/`. The fixed alpha grid,
-root-search tolerances, network-1/T3 plane, Q direction classes, perturbation
-fractions/seeds and network-bootstrap rules must not be tuned from outcomes.
-New diagnostic helpers are `analysis/published_generator/landscape_*.m` and
-`figures/published_generator/landscape_figures.m`. The two additional pairs
-live in `plots/stage_1/diagnostics/movement_landscape/{fig,png}/`; do not add
-them to the original eight-pair canonical directory or modify its validator.
-Numerical outputs remain ignored in the Stage-1 current/cache hierarchy.
-Existing Stage-1/2/3 science and figures remain immutable. Stop for review
-after the authorized diagnostic checkpoint; no pending Stage-3 reanalysis
-or later model is authorized by this diagnostic.
-
-STAGE3-BIOLOGICAL-CONTROLLER-RESUME-02 is the current controller revision.
-Read BIO_RESUME_PLAN.md and BIO_RESUME_REPORT.md in the Stage-3 manifest
-folder before work. The saved REVISION-01 kappa0/P/Q/L and primary geometry
-are immutable. Only the old 500-ms Block settling cutoff1e-4 was explicitly
-retired; incomplete convergence is an outcome, not permission to relax other
-bounds or tune. Current saved outputs are biological_revision/resume_02;
-run_stage_3 validate/figures route there after independent validation.
-STAGE3-PREDICTION-VALIDATION-01 separately authorizes fixed-controller
-stochastic prediction validation. Read PREDICTION_PLAN.md and
-PREDICTION_REPAIR_PLAN.md as well as the current Notion binding resolutions.
-The only repair to the original prediction replay helper was nargin<9 to
-nargin<8. Passed preflight/raw dependencies remain protected. Prediction
-outputs are separate under current/prediction_validation and ignored
-cache/prediction_validation; do not overwrite accepted biological outputs.
-Primary s=.10, non-selected .05/.20 sensitivities,30 trials per target,
-shared noise/seeds, timing, feature/CV definitions and nine-test inference
-family are immutable after outcomes. No learning/adaptation, RRR, target-jump
-test, controller retuning or further model is authorized. The current Notion
-handoff and PREDICTION_REPORT.md record actual completion, not this instruction.
-
-STAGE3-PREGO-NOISE-CAUSAL-DIAGNOSTIC-01 adds the completed matched post-GO
-counterfactual at s=.10 only. Read POSTGO_REPORT.md in the Stage-3 manifest
-folder for locked replay identities, unchanged manuscript analyses, full
-mixed/negative outcomes, independent validation and cleanup classifications.
-Compact results are `results/stage_3/current/postgo_noise_diagnostic/`; raw
-replays/fits are `results/stage_3/current/cache/postgo_noise_diagnostic/`.
-The Full baseline and seven existing figure pairs are immutable. One added
-diagnostic_5_postgo_noise_causal FIG/PNG is the current causal diagnostic.
-Completed writers refuse overwrites. Do not rerun or extend this task after
-its checkpoint; stop for scientific review. Superseded stops/interim static
-receipts and closed logs were consolidated into POSTGO_REPORT and retired;
-scientifically meaningful historical dependencies remain explicitly retained.
-
-Old isotropic results and gain heatmaps remain historical.
-Never call historical renderers to overwrite current figures. Full details
-and actual completion/checkpoint status remain in Notion and the run report.
-
-### Historical Stage-3 construction authority
-
-STAGE3-CORTICAL-STATE-FEASIBILITY-01 authorizes the separate Stage-3
-full-state sufficient-mechanism model. Stage 1 and completed Stage 2 remain
-protected. Read `artifacts/manifests/stage3_cortical_state_feasibility/PLAN.md`
-and `DERIVATION.md` before Stage-3 work. The 6-by-6 alpha/beta grid, three
-seeded direction realizations per network, admissibility limits and
-geometry-only selection rules are predeclared and must not be relaxed from
-outcomes. Large reference/grid trajectories are local-only in
-`results/stage_3/current/cache/`; compact map, registry, statistics and audits
-are checkpoint content. Four new figure pairs live in `plots/stage_3/`.
-`run_stage_3` now exposes only current figures/validate actions and explicitly
-requires current audited evidence. Historical construction functions remain
-reproduction provenance, never an implicit fallback or execution authority.
-That historical construction gate did not authorize prediction/noise. Only
-the separately stated current prediction task does so; learning, adaptation
-and another model remain deferred.
-Completion and a Git checkpoint do not constitute scientific acceptance.
-
-Read [Agent Instructions — Current Task](https://www.notion.so/3c826c94be30817d8f51d9f6c8c2bc19)
-for executable authority. Maintain
-[Agent Log — Run Outputs](https://www.notion.so/3d326c94be3081e897a2e5e0c855c4c0),
-[Agent Handoff](https://www.notion.so/3c826c94be308156a677c50c2106fb37) and
-[START HERE](https://www.notion.so/3d226c94be308194adadf691ed5822a2)
-with verified outcomes. Keep the current Notion hierarchy intact and do not
-reopen the excluded legacy subtree. A log entry does not grant another task.
+The production-final task authorizes conservative retirement, reproduction checks, documentation and a normal main checkpoint only. It ends at scientific review. Update Agent Log chronologically, Handoff and START HERE with verified outcomes, not intended outcomes. Keep foundation Stage1/2/3 scientific assets unchanged.

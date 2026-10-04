@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "phase": "post_cleanup_and_smoke",
-  "protectedFiles": 2154,
-  "protectedBytes": 11956889317,
-  "allSHA256Unchanged": true,
-  "unplannedChangesOrRemovals": 0,
-  "priorCheck": "The same full SHA256 manifest passed before deletion."
-}

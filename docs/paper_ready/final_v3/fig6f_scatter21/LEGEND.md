@@ -1,7 +1,0 @@
-# Fig6f additional peak-position scatter-matched illustration
-
-Frozen network8, saved successful visualization trials only. Within each of the eight targets and each condition independently, choose four successes whose hand positions at unsmoothed peak speed best match the full available success cloud under the fixed center/second-moment objective in PLAN.md. Availability is Intact30 per target and Block30,30,30,4,29,30,30,30. No new simulation, failed-trial substitution or condition-contrast objective.
-
-The full and subset clouds each use their own coordinatewise median m and median-centered scatter matrix S=(1/n)sum(x-m)(x-m)'. D=sqrt(trace(S)) is RMS Euclidean distance to that cloud's own median. Exhaustively minimize J=||m4-mN||^2/DN^2 + ||S4-SN||F^2/||SN||F^2, with fixed unit weights and lexicographic attempt-ID tie-breaks. This matches location, overall spread, orientation and anisotropy. It does not guarantee that four points reproduce all features of the full distribution, and it is a deliberate matched display, not random sampling or an inferential assay.
-
-Thin target-colored paths end at first entry into the existing1.5-cm target zone; filled circles show the four selected trials' peak-speed positions. Thick curves are arithmetic means of the same four trajectories after101-point onset-to-entry movement-phase normalization, not medians. The exact eight-target manuscript palette and common spatial limits/aspect are preserved. All existing random/contrast alternatives, manuscript figures and aggregate/inferential results remain unchanged.

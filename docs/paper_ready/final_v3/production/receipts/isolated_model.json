@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "mode": "check",
+  "cases": [
+    {
+      "network": 1,
+      "noise": [
+        0.1,
+        0.1
+      ],
+      "policy": 1,
+      "R2": 0.93144680768500865,
+      "expectedR2": 0.93144680768500865,
+      "error": 0
+    },
+    {
+      "network": 1,
+      "noise": [
+        0.1,
+        0.1
+      ],
+      "policy": 4,
+      "R2": 0.83373425005343882,
+      "expectedR2": 0.83373425005343882,
+      "error": 0
+    }
+  ],
+  "maxR2Error": 0
+}

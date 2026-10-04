@@ -40,6 +40,10 @@ codegen/
 !/plots/stage_1/diagnostics/movement_landscape/fig/*.fig
 
 # Logs, coverage, and temporary outputs
+/generated/
+# Production regeneration is local; canonical masters live under production/.
+/results/paper_ready/
+/plots/paper_ready/final_v3/review*/
 *.log
 *.tmp
 *.temp

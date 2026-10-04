@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "panels": [
+    {
+      "panel": "Fig6a",
+      "width": 1487,
+      "height": 960
+    },
+    {
+      "panel": "Fig6b",
+      "width": 1470,
+      "height": 960
+    },
+    {
+      "panel": "Fig6c",
+      "width": 1531,
+      "height": 1577
+    },
+    {
+      "panel": "Fig6d",
+      "width": 2166,
+      "height": 1029
+    },
+    {
+      "panel": "Fig6e",
+      "width": 1687,
+      "height": 935
+    },
+    {
+      "panel": "Fig6f",
+      "width": 1388,
+      "height": 849
+    },
+    {
+      "panel": "Fig6g",
+      "width": 1582,
+      "height": 1010
+    },
+    {
+      "panel": "Fig6h",
+      "width": 1551,
+      "height": 1010
+    },
+    {
+      "panel": "ED7a",
+      "width": 1491,
+      "height": 1084
+    },
+    {
+      "panel": "ED7b",
+      "width": 1498,
+      "height": 901
+    },
+    {
+      "panel": "ED7c",
+      "width": 1518,
+      "height": 901
+    },
+    {
+      "panel": "ED7d",
+      "width": 1826,
+      "height": 1000
+    }
+  ],
+  "matlab": "25.2.0.3042426 (R2025b) Update 1",
+  "sourceObjectsVerified": 279,
+  "sourceAudit": {
+    "status": "PASS",
+    "dTrials": 64,
+    "efTrialsPerCondition": 15,
+    "insetTrialsPerCondition": 30,
+    "phaseMeanMaxError": 0,
+    "rawMedianMaxError": 0,
+    "gaussianMaxError": 2.2204460492503131E-16,
+    "insetDistanceMaxError": 5.5511151231257827E-16,
+    "quantitativeValueMaxError": 0,
+    "experimentalSourceRows": 4,
+    "noNewStatistics": true,
+    "noSelection": true
+  },
+  "panelCount": 12,
+  "assemblyCount": 2
+}

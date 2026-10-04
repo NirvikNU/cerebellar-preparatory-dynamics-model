@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "frozenNetworkBundles": 10,
+  "scientificArraysExact": true,
+  "allCurrentManuscriptStatisticsExact": true,
+  "panelLabelChangesOnly": true,
+  "modelsChanged": false
+}

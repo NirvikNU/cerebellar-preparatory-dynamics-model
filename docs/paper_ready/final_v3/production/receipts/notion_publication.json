@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "page": "3e826c94-be30-8179-870c-da177f0b75af",
+  "twelveCurrentSections": true,
+  "numericTokensVerified": 250,
+  "numericMismatches": 0,
+  "reviewPageArchived": true,
+  "images": [
+    {
+      "panel": "Fig6a",
+      "notionUpload": "3ef26c94-be30-81bf-b51f-00b21c0f2628",
+      "sha256": "FA01E0641F1E91DFFE2D80AEA806636B130EC75E20295E4AE0504224D3212308"
+    },
+    {
+      "panel": "Fig6b",
+      "notionUpload": "3ef26c94-be30-818e-a257-00b2007f4520",
+      "sha256": "72B4162FC00AC4507574D42DB092BB78A5AE66FED063192B0B4670948A8DD845"
+    },
+    {
+      "panel": "Fig6c",
+      "notionUpload": "3ef26c94-be30-81ee-be3b-00b24a2eaf1e",
+      "sha256": "F41E858448BB728D5B6CEC1B35FFA355A0735A1C61C100996C9E19D46843E8E7"
+    },
+    {
+      "panel": "Fig6d",
+      "notionUpload": "3ef26c94-be30-81de-803c-00b2f26be7c8",
+      "sha256": "5CCFF8F7EC70CA8F938A6D5A09478525F1824027B8D2ACE4326FFCB38AEECD02"
+    },
+    {
+      "panel": "Fig6e",
+      "notionUpload": "3ef26c94-be30-811e-9cea-00b2f84bd715",
+      "sha256": "590C9C423436D4CBA3FFC5E4511F272EB34CABBEA00A40FCDB5E798D2EB32EAF"
+    },
+    {
+      "panel": "Fig6f",
+      "notionUpload": "3ef26c94-be30-8162-924b-00b205783768",
+      "sha256": "EB0C689AF1E4D67593A5430C193D56A1860C90ADF86B789AF7B9F4E6AACDB714"
+    },
+    {
+      "panel": "Fig6g",
+      "notionUpload": "3ef26c94-be30-8198-9a1b-00b29381d850",
+      "sha256": "3A6714C4CDE84C3A1651CCC50EC36D76522E3BEBA4241BAD46CBD5ECC7F6AF83"
+    },
+    {
+      "panel": "Fig6h",
+      "notionUpload": "3ef26c94-be30-81d8-af4d-00b29ee35596",
+      "sha256": "ADB824C5A318E1B32100B91448B354A362EECFA5CD777A1F620CEC147B7DA8D0"
+    },
+    {
+      "panel": "ED7a",
+      "notionUpload": "3ef26c94-be30-81c9-bba1-00b2883f1711",
+      "sha256": "8BEE9953D2D3ACC6C99F68DF478FC98A1459D4AACD5799C76B72046F944F490F"
+    },
+    {
+      "panel": "ED7b",
+      "notionUpload": "3ef26c94-be30-8140-a1b3-00b24f0f7b49",
+      "sha256": "6DC145A2CE645399B5AF7FD6881C0BE80B26CD4B0F33DE6807E04DDA4BACBF68"
+    },
+    {
+      "panel": "ED7c",
+      "notionUpload": "3ef26c94-be30-815b-886e-00b21b7db496",
+      "sha256": "44B7361BE9A27322C5DB17FCC4E717643BE3412AA755096D41A72C1FC826093A"
+    },
+    {
+      "panel": "ED7d",
+      "notionUpload": "3ef26c94-be30-81ea-a4d6-00b28a24e76c",
+      "sha256": "91FB8303E3FE82AE58E3E6E3FF3ECA7D4CDF3B1F86C2C99FD078FE5A69C893BB"
+    }
+  ]
+}

@@ -1,3 +1,0 @@
-Starting parallel pool (parpool) using the 'Threads' profile ...
-Connected to parallel pool with 10 workers.
-Parallel pool using the 'Threads' profile is shutting down.

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "verifiedUTC": "2026-10-04T21:56:09.6385336Z",
+  "retiredFiles": 8495,
+  "retiredBytes": 202230516133.0,
+  "preservedFiles": 895,
+  "preservedBytes": 2947080720.0,
+  "productionFilesHashVerified": 155,
+  "manualResolution": "User removed the two empty directories; absence independently verified on 2026-10-05. No original cleanup/deletion repeated.",
+  "resolvedDirectories": [
+    "results/stage_3/current/cache/evidence_recovery",
+    "results/stage_3/current/cache/gain_time/refined"
+  ],
+  "addendumStatus": "PASS",
+  "addendumFiles": 217,
+  "addendumBytes": 21368990,
+  "addendumHistoricalManifests": 199,
+  "addendumArchivedMigrationHelpers": 18,
+  "totalRetiredFiles": 8712,
+  "totalRetiredBytes": 202251885123,
+  "remainingScope": "Cleanup complete. Normal checkpoint and final remote fresh-clone validation follow; post-push outcomes are recorded separately."
+}

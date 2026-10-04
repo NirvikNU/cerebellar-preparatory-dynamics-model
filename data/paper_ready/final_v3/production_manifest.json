@@ -1,0 +1,325 @@
+{
+  "task": "PAPER-MODELLING-PRODUCTION-FINAL-24",
+  "scientificBaseCommit": "16aed212496647858770733919fb34c628dac85f",
+  "scientificParameters": {
+    "eta": 0,
+    "lambda": 10,
+    "V": 1,
+    "alpha": 0.5,
+    "beta_norm": 1.25,
+    "networks": 10,
+    "units": 200,
+    "targets": 8,
+    "primaryNoise": [
+      0.1,
+      0.1
+    ]
+  },
+  "commands": {
+    "figures": "run_paper_figures",
+    "boundedModel": "run_paper_model('check')",
+    "completeFrozenComponents": "run_paper_model('all')"
+  },
+  "runtimePolicy": "Repository-relative version-controlled inputs only; no old caches, external archive or metadata path is a runtime dependency.",
+  "panels": [
+    {
+      "panel": "Fig6a",
+      "title": "Weakening anticipatory control: PR",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6a.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6a.png",
+      "input": "data/paper_ready/final_v3/Fig6a_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6b",
+      "title": "Weakening anticipatory control: alignment",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6b.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6b.png",
+      "input": "data/paper_ready/final_v3/Fig6b_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6c",
+      "title": "Final functional-model schematic",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6c.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6c.png",
+      "input": "data/paper_ready/final_v3/Fig6c_schematic.png",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6d",
+      "title": "Frozen all-target random-success illustration",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6d.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6d.png",
+      "input": "data/paper_ready/final_v3/Fig6d_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6e",
+      "title": "Representative hand-speed profiles",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6e.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6e.png",
+      "input": "data/paper_ready/final_v3/Fig6e_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6f",
+      "title": "Representative peak-position dispersion",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6f.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6f.png",
+      "input": "data/paper_ready/final_v3/Fig6f_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6g",
+      "title": "Absolute Control prediction versus noise",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6g.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6g.png",
+      "input": "data/paper_ready/final_v3/Fig6g_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "Fig6h",
+      "title": "Relative Block prediction deficit versus noise",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6h.fig",
+      "png": "plots/paper_ready/final_v3/production/png/Fig6h.png",
+      "input": "data/paper_ready/final_v3/Fig6h_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "ED7a",
+      "title": "Shared geometry-calibration map",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7a.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED7a.png",
+      "input": "data/paper_ready/final_v3/ED7a_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "ED7b",
+      "title": "Experimental/model PR calibration",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7b.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED7b.png",
+      "input": "data/paper_ready/final_v3/ED7b_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "ED7c",
+      "title": "Experimental/model alignment calibration",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7c.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED7c.png",
+      "input": "data/paper_ready/final_v3/ED7c_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    },
+    {
+      "panel": "ED7d",
+      "title": "Component-removal prediction",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7d.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED7d.png",
+      "input": "data/paper_ready/final_v3/ED7d_graphics.mat",
+      "sourceTables": "data/paper_ready/final_v3/tables",
+      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
+    }
+  ],
+  "Fig6d": {
+    "network": 8,
+    "option": 3,
+    "seed": 18003,
+    "selectionFinal": true,
+    "rerolled": false,
+    "trials": [
+      {
+        "target": 1,
+        "Control": [
+          20,
+          7,
+          28,
+          32
+        ],
+        "Block": [
+          55,
+          185,
+          94,
+          49
+        ]
+      },
+      {
+        "target": 2,
+        "Control": [
+          27,
+          4,
+          41,
+          32
+        ],
+        "Block": [
+          187,
+          56,
+          136,
+          178
+        ]
+      },
+      {
+        "target": 3,
+        "Control": [
+          38,
+          8,
+          17,
+          16
+        ],
+        "Block": [
+          388,
+          110,
+          342,
+          379
+        ]
+      },
+      {
+        "target": 4,
+        "Control": [
+          15,
+          14,
+          7,
+          3
+        ],
+        "Block": [
+          2867,
+          518,
+          4931,
+          1860
+        ]
+      },
+      {
+        "target": 5,
+        "Control": [
+          6,
+          30,
+          29,
+          23
+        ],
+        "Block": [
+          2361,
+          2002,
+          681,
+          2360
+        ]
+      },
+      {
+        "target": 6,
+        "Control": [
+          41,
+          10,
+          23,
+          31
+        ],
+        "Block": [
+          26,
+          67,
+          61,
+          8
+        ]
+      },
+      {
+        "target": 7,
+        "Control": [
+          39,
+          20,
+          13,
+          8
+        ],
+        "Block": [
+          2237,
+          1043,
+          2136,
+          2765
+        ]
+      },
+      {
+        "target": 8,
+        "Control": [
+          8,
+          38,
+          25,
+          28
+        ],
+        "Block": [
+          95,
+          129,
+          272,
+          39
+        ]
+      }
+    ],
+    "thickCurve": "Arithmetic mean of same four, 101-point MO-to-entry phase"
+  },
+  "Fig6ef": {
+    "network": 8,
+    "target": 6,
+    "Control": [
+      10,
+      3,
+      41,
+      33,
+      38,
+      20,
+      7,
+      15,
+      19,
+      9,
+      31,
+      42,
+      14,
+      28,
+      29
+    ],
+    "Block": [
+      67,
+      102,
+      28,
+      78,
+      22,
+      88,
+      96,
+      49,
+      9,
+      29,
+      2,
+      56,
+      47,
+      58,
+      61
+    ],
+    "selectionSeeds": [
+      170801,
+      170802
+    ],
+    "medianTrials": 15,
+    "minimumActive": 8,
+    "insetTrialsPerCondition": 30
+  },
+  "statisticsChanged": false,
+  "illustrationsDefineStatistics": false,
+  "schematicEditableSourceAvailable": false,
+  "schematicSource": {
+    "document": "Main_text_v10",
+    "imageID": "kix.4bx8biipim5o",
+    "capturedImageSha256": "D934399ED6F1E34A9BF2AFE44FB2F6FD90563A7AB3FAF0C8F74D68DE17F4C79B",
+    "rows": [
+      1,
+      1000
+    ],
+    "columns": [
+      1110,
+      2048
+    ]
+  }
+}
