@@ -1,7 +1,12 @@
 function receipt=pf_figures(root,outputRoot)
     source=fullfile(root,'data/paper_ready/final_v3');
+    if isfolder(outputRoot)
+        previous=dir(outputRoot);
+        assert(all(ismember({previous.name},{'.','..'})), ...
+            'Production:ExistingOutput','Choose a new empty output directory; preserve previous evidence.');
+    end
     for sub={'fig','png','source'}, d=fullfile(outputRoot,sub{1}); if ~isfolder(d), mkdir(d); end, end
-    names=[arrayfun(@(c)['Fig6' c],'a':'h','UniformOutput',false) arrayfun(@(c)['ED7' c],'a':'d','UniformOutput',false)];
+    names=[arrayfun(@(c)['Fig6' c],'a':'h','UniformOutput',false) arrayfun(@(c)['ED7' c],'a':'c','UniformOutput',false)];
     receipt=struct('status','RUNNING','panels',{{}},'matlab',version,'sourceObjectsVerified',0);
     for k=1:numel(names)
         name=names{k};
@@ -40,7 +45,7 @@ function receipt=pf_figures(root,outputRoot)
     end
     assemble(outputRoot,'Figure_6',names(1:8),[.015 .665 .245 .32;.265 .665 .245 .32;.53 .36 .46 .63; ...
         .015 .36 .50 .30;.015 .015 .235 .315;.265 .015 .235 .315;.515 .015 .235 .315;.76 .015 .235 .315],[2200 1700]);
-    assemble(outputRoot,'Extended_Data_Figure_7',names(9:12),[.015 .52 .47 .46;.515 .52 .47 .46;.015 .02 .47 .46;.515 .02 .47 .46],[1800 1500]);
+    assemble(outputRoot,'Extended_Data_Figure_7',names(9:11),[.015 .52 .47 .46;.515 .52 .47 .46;.015 .02 .47 .46],[1800 1500]);
     sourceTables=dir(fullfile(source,'tables','*'));
     for k=1:numel(sourceTables)
         if ~sourceTables(k).isdir
@@ -49,9 +54,9 @@ function receipt=pf_figures(root,outputRoot)
         end
     end
     receipt.sourceAudit=pf_validate_sources(source);
-    receipt.status='PASS'; receipt.panelCount=12; receipt.assemblyCount=2;
+    receipt.status='PASS'; receipt.panelCount=11; receipt.assemblyCount=2;
     pf_json(fullfile(outputRoot,'validation.json'),receipt);
-    fprintf('PAPER FIGURES PASS: 12 panels, 2 assemblies, %d exact native data objects.\n',receipt.sourceObjectsVerified);
+    fprintf('PAPER FIGURES PASS: 11 panels, 2 assemblies, %d exact native data objects.\n',receipt.sourceObjectsVerified);
 end
 
 function assemble(folder,name,panels,positions,sz)

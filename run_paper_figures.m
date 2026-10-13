@@ -1,5 +1,5 @@
 function receipt=run_paper_figures(outputRoot)
-    % Regenerate the twelve frozen manuscript panels and both assemblies.
+    % Regenerate eleven publication panels (including static Fig6c) and two assemblies.
     root=fileparts(mfilename('fullpath'));
     if nargin<1, outputRoot=fullfile(root,'generated/paper_figures'); end
     old=path; cleaner=onCleanup(@()path(old));

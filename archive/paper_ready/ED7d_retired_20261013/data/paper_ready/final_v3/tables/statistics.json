@@ -1,0 +1,1227 @@
+{
+  "Fig6ab": [
+    {
+      "panel": "Fig6a",
+      "level": "0.2",
+      "sourceColumn": 2,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.1331558087717867,
+      "AD_statistic": 0.533858185230903,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -0.80315762393459933,
+      "df": 9,
+      "rawP": 0.44257712111518177,
+      "BHq": 0.44257712111518177,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "0.5",
+      "sourceColumn": 3,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": true,
+      "AD_p": 0.010089097102452991,
+      "AD_statistic": 0.93254643922806757,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided Wilcoxon signed-rank",
+      "testStatistic": 18,
+      "df": [],
+      "rawP": 0.375,
+      "BHq": 0.42857142857142855,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "1",
+      "sourceColumn": 4,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.064979384233335269,
+      "AD_statistic": 0.64518759621341637,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -1.5978242593584393,
+      "df": 9,
+      "rawP": 0.14454650900399971,
+      "BHq": 0.19272867867199961,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "2",
+      "sourceColumn": 5,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.35055554807107092,
+      "AD_statistic": 0.37821486841194307,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -1.9903716856698697,
+      "df": 9,
+      "rawP": 0.0777500200737472,
+      "BHq": 0.12440003211799552,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "5",
+      "sourceColumn": 6,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.55249875366392731,
+      "AD_statistic": 0.29868803986800785,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -2.6535995992100476,
+      "df": 9,
+      "rawP": 0.026320449844953422,
+      "BHq": 0.052640899689906845,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "10",
+      "sourceColumn": 7,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.31607457668744887,
+      "AD_statistic": 0.39553119853451335,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -3.1999247782450491,
+      "df": 9,
+      "rawP": 0.010832610140882866,
+      "BHq": 0.02888696037568764,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "100",
+      "sourceColumn": 8,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.30756050194493256,
+      "AD_statistic": 0.40006075061333313,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -3.6319151662841547,
+      "df": 9,
+      "rawP": 0.0054692859682338489,
+      "BHq": 0.021877143872935396,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6a",
+      "level": "FF-only",
+      "sourceColumn": 9,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.088188387608298474,
+      "AD_statistic": 0.59793208106616191,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -4.8257021300603613,
+      "df": 9,
+      "rawP": 0.00093949903536209823,
+      "BHq": 0.0075159922828967858,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "0.2",
+      "sourceColumn": 2,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.0646885788455859,
+      "AD_statistic": 0.645881123951952,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 7.4354093067883182,
+      "df": 9,
+      "rawP": 3.9525394647509142E-5,
+      "BHq": 5.6157277653286469E-5,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "0.5",
+      "sourceColumn": 3,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.050486586077910935,
+      "AD_statistic": 0.68424545110498869,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 6.4949876511459266,
+      "df": 9,
+      "rawP": 0.00011210251581308729,
+      "BHq": 0.00012811716092924261,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "1",
+      "sourceColumn": 4,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.060551077465921622,
+      "AD_statistic": 0.65610240252705054,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 5.9499006314429348,
+      "df": 9,
+      "rawP": 0.00021536680721101313,
+      "BHq": 0.00021536680721101313,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "2",
+      "sourceColumn": 5,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.13721966167562666,
+      "AD_statistic": 0.52915776390199731,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 7.3754310296236349,
+      "df": 9,
+      "rawP": 4.2117958239964851E-5,
+      "BHq": 5.6157277653286469E-5,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "5",
+      "sourceColumn": 6,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.721856672141953,
+      "AD_statistic": 0.24506753225150746,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 9.1144131457366253,
+      "df": 9,
+      "rawP": 7.6988800515892451E-6,
+      "BHq": 1.539776010317849E-5,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "10",
+      "sourceColumn": 7,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.66367120176970062,
+      "AD_statistic": 0.26290198039554191,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 10.804105224530877,
+      "df": 9,
+      "rawP": 1.8730218725016996E-6,
+      "BHq": 4.9947249933378655E-6,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "100",
+      "sourceColumn": 8,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.78740566414534385,
+      "AD_statistic": 0.22478123973568565,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 18.983687626592275,
+      "df": 9,
+      "rawP": 1.43751842176639E-8,
+      "BHq": 5.75007368706556E-8,
+      "BH_familySize": 8
+    },
+    {
+      "panel": "Fig6b",
+      "level": "FF-only",
+      "sourceColumn": 9,
+      "referenceLambda": 0.1,
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.57399641683549474,
+      "AD_statistic": 0.29153171771440611,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 27.168801444877825,
+      "df": 9,
+      "rawP": 6.007632067661032E-10,
+      "BHq": 4.8061056541288256E-9,
+      "BH_familySize": 8
+    }
+  ],
+  "Fig6abDescriptives": {
+    "mainA": {
+      "median": [
+        0,
+        -0.00075939792709989185,
+        -0.0030652578644057016,
+        -0.021262669436801884,
+        -0.0487964349723542,
+        -0.072099673859636226,
+        -0.084056233855158924,
+        -0.16139544139065132,
+        -0.21012358309761869
+      ],
+      "se": [
+        0,
+        0.0030970936136074,
+        0.0080968566292467653,
+        0.017396148862563257,
+        0.027330716250353111,
+        0.045648015037886791,
+        0.0566728477387926,
+        0.030395655429300547,
+        0.0824815030942386
+      ],
+      "n": 10
+    },
+    "mainB": {
+      "median": [
+        -52.645911587299167,
+        -52.44516943995724,
+        -51.394481441572594,
+        -49.195029140135311,
+        -46.568848750075162,
+        -41.70733613162129,
+        -37.180096699794134,
+        -23.246962577873589,
+        -14.072180833928755
+      ],
+      "se": [
+        0.95574600201741,
+        0.96003287046397645,
+        0.91881576025661482,
+        0.745811103674684,
+        0.52226541290208239,
+        1.2886707296916253,
+        1.3712705935980203,
+        2.1001428119971486,
+        1.7443059088064921
+      ],
+      "n": 10
+    }
+  },
+  "plannedPairedTests": [
+    {
+      "panel": "ED7b",
+      "comparison": "Block minus Intact PR",
+      "n": 10,
+      "networkIDs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "referenceValues": [
+        3.4532640112905146,
+        3.400723032724712,
+        3.6499845155618127,
+        2.7674836447298166,
+        4.2122218718244575,
+        3.6990588396880377,
+        3.4224445018362109,
+        3.5725697706038724,
+        3.1452967009699413,
+        3.4760687360246032
+      ],
+      "comparisonValues": [
+        6.7391023256525315,
+        6.6220227100820539,
+        6.9002056754441723,
+        6.5649831578140443,
+        6.91125069499801,
+        6.2677722796431921,
+        6.5248022825960872,
+        6.5427265402639385,
+        6.6582738759411839,
+        6.888434704960491
+      ],
+      "pairedDifferences": [
+        3.2858383143620169,
+        3.2212996773573419,
+        3.2502211598823596,
+        3.7974995130842277,
+        2.6990288231735526,
+        2.5687134399551543,
+        3.1023577807598763,
+        2.9701567696600661,
+        3.5129771749712426,
+        3.4123659689358878
+      ],
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.90678379198686387,
+      "AD_statistic": 0.18286964780299364,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "statisticName": "t (comparison minus reference)",
+      "testStatistic": 27.34130554364507,
+      "df": 9,
+      "rawP": 5.6785006637083963E-10,
+      "multiplicityCorrection": "none: separate planned comparison"
+    },
+    {
+      "panel": "ED7c",
+      "comparison": "Expected minus observed alignment (pp)",
+      "n": 10,
+      "networkIDs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "referenceValues": [
+        33.339455759592809,
+        33.1200686013825,
+        25.299518670503662,
+        31.163082007365052,
+        22.50118438440418,
+        31.6482656967427,
+        25.925968939098563,
+        27.509320431314944,
+        26.41651012522015,
+        28.13378191704836
+      ],
+      "comparisonValues": [
+        45.252547718849911,
+        45.664091959300464,
+        41.471401625918581,
+        45.38894591333645,
+        44.992853331341564,
+        47.049613543611081,
+        42.572656399959726,
+        45.039421375902712,
+        48.762374631171404,
+        47.354729679026029
+      ],
+      "pairedDifferences": [
+        11.913091959257102,
+        12.544023357917965,
+        16.171882955414919,
+        14.225863905971398,
+        22.491668946937384,
+        15.401347846868379,
+        16.646687460861163,
+        17.530100944587769,
+        22.345864505951255,
+        19.220947761977669
+      ],
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.73141328433755393,
+      "AD_statistic": 0.2421430900550412,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "statisticName": "t (comparison minus reference)",
+      "testStatistic": 14.560443948422693,
+      "df": 9,
+      "rawP": 1.4602014523393009E-7,
+      "multiplicityCorrection": "none: separate planned comparison"
+    },
+    {
+      "panel": "Fig6e",
+      "comparison": "Block minus Intact peak hand speed (m/s)",
+      "n": 10,
+      "networkIDs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "referenceValues": [
+        0.42329048130783631,
+        0.41979476613234956,
+        0.42215728654179485,
+        0.40723566550606155,
+        0.42156647748635162,
+        0.41912334794561934,
+        0.42058962466681826,
+        0.41994305319093717,
+        0.42434678864138869,
+        0.41737979473131043
+      ],
+      "comparisonValues": [
+        0.28412947563948704,
+        0.31740196813223859,
+        0.32455984518058645,
+        0.28347600202813206,
+        0.27233062135718894,
+        0.32674220795324571,
+        0.31312181183188403,
+        0.27771062872133895,
+        0.28973241928742582,
+        0.296960322040817
+      ],
+      "pairedDifferences": [
+        -0.13916100566834927,
+        -0.10239279800011097,
+        -0.0975974413612084,
+        -0.12375966347792949,
+        -0.14923585612916268,
+        -0.092381139992373629,
+        -0.10746781283493423,
+        -0.14223242446959822,
+        -0.13461436935396287,
+        -0.12041947269049341
+      ],
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.63262125699845573,
+      "AD_statistic": 0.27261640032784484,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "statisticName": "t (comparison minus reference)",
+      "testStatistic": -18.9440704555882,
+      "df": 9,
+      "rawP": 1.464190648721461E-8,
+      "multiplicityCorrection": "none: separate planned comparison"
+    },
+    {
+      "panel": "Fig6f",
+      "comparison": "Block minus Intact speed-matched dispersion (cm)",
+      "n": 6,
+      "networkIDs": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        10
+      ],
+      "referenceValues": [
+        0.60922475279291843,
+        0.61397347843696037,
+        0.55158671367972589,
+        0.50644073112079813,
+        0.51334244483310221,
+        0.55375649898351953
+      ],
+      "comparisonValues": [
+        4.66991659185726,
+        2.7247764828915972,
+        2.371326118767223,
+        2.6432256277007573,
+        3.1205474566017037,
+        2.5961504849143524
+      ],
+      "pairedDifferences": [
+        4.0606918390643418,
+        2.1108030044546369,
+        1.8197394050874971,
+        2.1367848965799592,
+        2.6072050117686016,
+        2.0423939859308327
+      ],
+      "AD_alpha": 0.05,
+      "AD_reject": true,
+      "AD_p": 0.021789232569363721,
+      "AD_statistic": 0.74421898504661943,
+      "AD_critical": 0.632975,
+      "selectedTest": "two-sided Wilcoxon signed-rank",
+      "statisticName": "W_plus (comparison minus reference)",
+      "testStatistic": 21,
+      "df": [],
+      "rawP": 0.03125,
+      "multiplicityCorrection": "none: separate planned comparison"
+    }
+  ],
+  "descriptives": {
+    "geometry": {
+      "median": [
+        3.2357604186198508,
+        16.409285208138041
+      ],
+      "se": [
+        0.12059110855364781,
+        1.3633781069230415
+      ],
+      "n": 10
+    },
+    "pr": {
+      "median": [
+        3.4646663736575589,
+        6.6401482930116185
+      ],
+      "se": [
+        0.081004622841790858,
+        0.088367783365904812
+      ],
+      "n": 10
+    },
+    "alignment": {
+      "median": [
+        27.82155117418165,
+        45.320746816093177
+      ],
+      "se": [
+        1.8200674187977026,
+        0.629511359410819
+      ],
+      "n": 10
+    },
+    "peakSpeed": {
+      "median": [
+        0.42026633892887771,
+        0.29334637066412139
+      ],
+      "se": [
+        0.00095732016011368989,
+        0.011120979564432407
+      ],
+      "n": 10
+    },
+    "peakPercent": {
+      "median": 29.620738559012963,
+      "se": 2.5030943906286582,
+      "n": 10
+    },
+    "dispersion": {
+      "median": [
+        0.55267160633162271,
+        2.6840010552961773
+      ],
+      "se": [
+        0.0273189850320376,
+        0.33160946624453685
+      ],
+      "n": 6
+    },
+    "dispersionPercent": {
+      "median": 395.37364598900677,
+      "se": 63.030615020997878,
+      "n": 6
+    }
+  },
+  "ED7d": [
+    {
+      "condition": "-L (b only)",
+      "reference": "Intact (b+L)",
+      "direction": "condition minus Intact",
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.74406165341849784,
+      "AD_statistic": 0.23825700882047762,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -5.4614390426854174,
+      "df": 9,
+      "rawP": 0.00039967833698102191,
+      "BHq": 0.00039967833698102191,
+      "pairedDifferences": [
+        -0.0037645725256698626,
+        -0.012946529308972443,
+        -0.024562946388328344,
+        -0.0074316061858307192,
+        -0.035435237300834643,
+        -0.025811327936253403,
+        -0.027776655756550195,
+        -0.014809408718740924,
+        -0.016706949721057684,
+        -0.008223562572562515
+      ],
+      "medianPairedDelta": -0.015758179219899304,
+      "bootstrapSEPairedDelta": 0.0049115859571122024,
+      "significant": true
+    },
+    {
+      "condition": "-b (L only)",
+      "reference": "Intact (b+L)",
+      "direction": "condition minus Intact",
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.32499875105580456,
+      "AD_statistic": 0.39089211152848158,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": 7.6443762373194923,
+      "df": 9,
+      "rawP": 3.1771222378114E-5,
+      "BHq": 4.7656833567171E-5,
+      "pairedDifferences": [
+        0.051452761366408417,
+        0.061982049061025113,
+        0.040830324902482618,
+        0.0041863150752762257,
+        0.030287878021614922,
+        0.039221279011039889,
+        0.037885512501928065,
+        0.056169753069469808,
+        0.064155806723740216,
+        0.038782355293082604
+      ],
+      "medianPairedDelta": 0.040025801956761253,
+      "bootstrapSEPairedDelta": 0.0059725859638296245,
+      "significant": true
+    },
+    {
+      "condition": "Block (-b,-L)",
+      "reference": "Intact (b+L)",
+      "direction": "condition minus Intact",
+      "n": 10,
+      "AD_alpha": 0.05,
+      "AD_reject": false,
+      "AD_p": 0.46227027370388662,
+      "AD_statistic": 0.330974077540759,
+      "AD_critical": 0.685747,
+      "selectedTest": "two-sided paired t-test",
+      "testStatistic": -12.873452330535788,
+      "df": 9,
+      "rawP": 4.2230383030285037E-7,
+      "BHq": 1.2669114909085511E-6,
+      "pairedDifferences": [
+        -0.093876533510460658,
+        -0.081118840849235929,
+        -0.14807338586011021,
+        -0.15017650226383505,
+        -0.10895521120682616,
+        -0.11669748825120119,
+        -0.078970723461048831,
+        -0.0762087588001582,
+        -0.12166659750981368,
+        -0.11497125343571324
+      ],
+      "medianPairedDelta": -0.1119632323212697,
+      "bootstrapSEPairedDelta": 0.012001078868776256,
+      "significant": true
+    }
+  ],
+  "ED7dAbsoluteR2": [
+    [
+      0.731329606518784,
+      0.72756503399311412,
+      0.7827823678851924,
+      0.63745307300832332
+    ],
+    [
+      0.70825674746539347,
+      0.695310218156421,
+      0.77023879652641858,
+      0.62713790661615754
+    ],
+    [
+      0.74004780251917524,
+      0.71548485613084689,
+      0.78087812742165785,
+      0.591974416659065
+    ],
+    [
+      0.75476068238542893,
+      0.74732907619959821,
+      0.75894699746070515,
+      0.60458418012159387
+    ],
+    [
+      0.736571154978573,
+      0.70113591767773831,
+      0.76685903300018787,
+      0.62761594377174679
+    ],
+    [
+      0.73578972971030876,
+      0.70997840177405536,
+      0.77501100872134865,
+      0.61909224145910757
+    ],
+    [
+      0.7282339243097713,
+      0.7004572685532211,
+      0.76611943681169936,
+      0.64926320084872247
+    ],
+    [
+      0.72378411767451889,
+      0.708974708955778,
+      0.7799538707439887,
+      0.64757535887436068
+    ],
+    [
+      0.75176502899013808,
+      0.7350580792690804,
+      0.8159208357138783,
+      0.63009843148032441
+    ],
+    [
+      0.70180525700008234,
+      0.69358169442751982,
+      0.74058761229316494,
+      0.5868340035643691
+    ]
+  ],
+  "ED7dAbsoluteSummary": {
+    "median": [
+      0.73355966811454643,
+      0.70947655536491672,
+      0.77262490262388361,
+      0.62737692519395216
+    ],
+    "se": [
+      0.0054865551791814689,
+      0.0072478995047690542,
+      0.005184560550353122,
+      0.0084965204803371351
+    ],
+    "n": 10
+  },
+  "Fig6ghBootstrap": {
+    "RI": [
+      {
+        "median": [
+          0.93159068732036543,
+          0.92424551001304156,
+          0.91885411830100394,
+          0.90829781002994281
+        ],
+        "se": [
+          0.004598712469882511,
+          0.0065456126935907214,
+          0.0057045215873480874,
+          0.0058576600763267754
+        ],
+        "n": 10
+      },
+      {
+        "median": [
+          0.98935506568325238,
+          0.92424551001304156,
+          0.81340879910837116,
+          0.73596133708081368
+        ],
+        "se": [
+          0.0020029888019608066,
+          0.0065456126935907214,
+          0.0036384595563064494,
+          0.0038888931375109384
+        ],
+        "n": 10
+      }
+    ],
+    "loss": [
+      {
+        "median": [
+          9.9172769087496775,
+          9.2715846871724388,
+          10.079421334179804,
+          9.96493087507309
+        ],
+        "se": [
+          1.5194394541529745,
+          1.7838513643810987,
+          1.9967495605547554,
+          1.6395535122622
+        ],
+        "n": 10
+      },
+      {
+        "median": [
+          6.46165663278711,
+          9.2715846871724388,
+          12.911967259266167,
+          14.124730605296985
+        ],
+        "se": [
+          2.1805158876975193,
+          1.7838513643810987,
+          1.5878014544585972,
+          1.4731548149556652
+        ],
+        "n": 10
+      }
+    ]
+  },
+  "Fig6gFriedman": [
+    {
+      "test": "Friedman repeated measures",
+      "n": 10,
+      "df": 3,
+      "levels": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "chiSquare": 26.519999999999996,
+      "rawP": 7.4219609234451472E-6,
+      "multiplicityCorrection": "none",
+      "postHocTests": false,
+      "pMethod": "MATLAB chi-square approximation; independently checked df3 erfc survival formula",
+      "ranks": [
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          1,
+          2
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          2,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "tieCorrection": 1,
+      "independentChiSquare": 26.519999999999982,
+      "independentP": 7.42196092344521E-6,
+      "chiError": 1.4210854715202004E-14,
+      "pError": 6.2680438096818225E-20
+    },
+    {
+      "test": "Friedman repeated measures",
+      "n": 10,
+      "df": 3,
+      "levels": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "chiSquare": 30,
+      "rawP": 1.3800570312932536E-6,
+      "multiplicityCorrection": "none",
+      "postHocTests": false,
+      "pMethod": "MATLAB chi-square approximation; independently checked df3 erfc survival formula",
+      "ranks": [
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "tieCorrection": 1,
+      "independentChiSquare": 30,
+      "independentP": 1.3800570312932547E-6,
+      "chiError": 0,
+      "pError": 1.0587911840678754E-21
+    }
+  ],
+  "Fig6hFriedman": [
+    {
+      "test": "Friedman repeated measures",
+      "n": 10,
+      "df": 3,
+      "levels": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "chiSquare": 3.24,
+      "rawP": 0.35608120810907057,
+      "multiplicityCorrection": "none",
+      "postHocTests": false,
+      "pMethod": "MATLAB chi-square approximation; independently checked df3 erfc survival formula",
+      "ranks": [
+        [
+          1,
+          2,
+          4,
+          3
+        ],
+        [
+          3,
+          2,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          1,
+          3
+        ],
+        [
+          4,
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          3,
+          1,
+          2,
+          4
+        ],
+        [
+          3,
+          2,
+          4,
+          1
+        ]
+      ],
+      "tieCorrection": 1,
+      "independentChiSquare": 3.2399999999999807,
+      "independentP": 0.35608120810907334,
+      "chiError": 1.9539925233402755E-14,
+      "pError": 2.7755575615628914E-15
+    },
+    {
+      "test": "Friedman repeated measures",
+      "n": 10,
+      "df": 3,
+      "levels": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "chiSquare": 21.359999999999996,
+      "rawP": 8.8621878277531137E-5,
+      "multiplicityCorrection": "none",
+      "postHocTests": false,
+      "pMethod": "MATLAB chi-square approximation; independently checked df3 erfc survival formula",
+      "ranks": [
+        [
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "tieCorrection": 1,
+      "independentChiSquare": 21.359999999999985,
+      "independentP": 8.86218782775316E-5,
+      "chiError": 1.0658141036401503E-14,
+      "pError": 4.6078592330633938E-19
+    }
+  ]
+}

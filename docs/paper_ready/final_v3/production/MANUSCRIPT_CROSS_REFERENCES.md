@@ -1,5 +1,7 @@
 # Main_text_v10 cross-reference audit — manuscript unchanged
 
+> HISTORICAL — production-final24 / Main_text_v10 at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4. Not current publication instructions. Main_text_v12 uses Fig6a–h and ED7a–c only. ED7d and the old counts/cross-reference recommendations below are archival. See [current publication cleanup](PUBLICATION_CLEANUP.md).
+
 Read-only source: live Main_text_v10, Google document `1jCZOSdMZTXcHXQ8Aeb61P748bABL-0fFSO0rmxPm2UA`, revision read 4 October 2026. Its current Figure 6 and Extended Data Figure 7 captions define the production order below. Character indices are from that read and may move after the author edits the document.
 
 ## Modelling Results

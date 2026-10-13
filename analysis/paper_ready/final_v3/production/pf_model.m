@@ -3,9 +3,8 @@ function receipt=pf_model(root,mode,outputRoot)
     source=fullfile(root,'data/paper_ready/final_v3');
     if ~isfolder(outputRoot), mkdir(outputRoot); end
     values=jsondecode(fileread(fullfile(source,'tables/Fig6gh_values.json')));
-    stats=jsondecode(fileread(fullfile(source,'tables/statistics.json')));
-    levels=[.05 .1 .15 .2]; pairs=[levels(:) .1*ones(4,1);.1*ones(3,1) levels([1 3 4]).';.2 .2];
-    networks=1:10; cases=1:8;
+    levels=[.05 .1 .15 .2]; pairs=[levels(:) .1*ones(4,1);.1*ones(3,1) levels([1 3 4]).'];
+    networks=1:10; cases=1:7;
     if strcmp(mode,'check'), networks=1; cases=2; end
     flags=[1 1;1 0;0 1;0 0]; receipt=struct('status','RUNNING','mode',mode,'cases',{{}},'maxR2Error',0);
     for n=networks
@@ -13,7 +12,7 @@ function receipt=pf_model(root,mode,outputRoot)
         assert(c.kappa0==0 && c.lambda==10 && d.alpha==.5 && d.betaNormalized==1.25 && m.dt==.0002);
         noise=pf_noise(n,repelem(1:8,30),repmat(1:30,1,8),2500);
         for v=cases
-            policies=[1 4]; if v==8, policies=1:4; end
+            policies=[1 4];
             for p=policies
                 file=fullfile(outputRoot,sprintf('network_%02d_pair%d_policy%d.mat',n,v,p));
                 assert(~isfile(file),'Production:NoOverwrite','Replay output exists; choose a new output folder.');
@@ -22,12 +21,10 @@ function receipt=pf_model(root,mode,outputRoot)
                 assert(analysis.predictionEvaluable); actual=analysis.prediction.fit.r2;
                 if v<=4
                     sweep=1; level=v;
-                elseif v<8
+                else
                     sweep=2; order=[1 3 4]; level=order(v-4);
                 end
-                if v==8
-                    expected=stats.ED7dAbsoluteR2(n,p);
-                elseif p==1
+                if p==1
                     expected=values.RI(n,level,sweep);
                 else
                     expected=values.RB(n,level,sweep);

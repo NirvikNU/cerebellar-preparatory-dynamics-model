@@ -1,6 +1,6 @@
 # Final manuscript panel definitions and unchanged statistics
 
-All panels use the final Fig6a–h / ED7a–d numbering. Numerical values below are copied from the frozen source records, not recomputed inference. Native FIG/PNG masters: `plots/paper_ready/final_v3/production/{fig,png}/`. Statistical full precision: `data/paper_ready/final_v3/tables/statistics.json`.
+All panels use the final Fig6a–h / ED7a–c numbering. Numerical values below are copied from the frozen source records, not recomputed inference. Native FIG/PNG masters: `plots/paper_ready/final_v3/production/{fig,png}/`. Statistical full precision: `data/paper_ready/final_v3/tables/statistics.json`.
 
 ## Fig6a — Weakening anticipatory control: PR
 
@@ -72,7 +72,7 @@ Canonical files: `Fig6b.fig`, `Fig6b.png`.
 
 ## Fig6c — Final functional-model schematic
 
-Exact current Main_text_v10 functional-model schematic, preserved as a static version-controlled asset. No editable source was available. Ten200-unit networks; eta0, lambda10, V1, global alpha.5/beta_norm1.25. Base preparation + target-dependent state setting b + anticipatory feedback L; full Block removes b and L. No generic residual kappa feedback. Effective decomposition only, not anatomically separate pathways.
+Hand-drawn functional-model schematic (static asset originally extracted from Main_text_v10), preserved as a static version-controlled asset. No editable source was available. Ten200-unit networks; eta0, lambda10, V1, global alpha.5/beta_norm1.25. Base preparation + target-dependent state setting b + anticipatory feedback L; full Block removes b and L. No generic residual kappa feedback. Effective decomposition only, not anatomically separate pathways.
 
 Static asset: `data/paper_ready/final_v3/Fig6c_schematic.png`; provenance: live manuscript image kix.4bx8biipim5o, exact pixels rows1:1000/columns1110:2048 of the captured2048×1567 image.
 
@@ -252,33 +252,3 @@ Sources: [ED7bc_network_values.csv](https://github.com/NirvikNU/cerebellar-prepa
 
 
 Canonical files: `ED7c.fig`, `ED7c.png`.
-
-## ED7d — Component-removal prediction
-
-Four-policy PCA75→ridge prediction at the fixed high-noise.20/.20 setting, ten matched networks, eight targets×30 trials/policy. Policies: Control(b+L), target-specific only(b;−L), anticipatory-control only(L;−b), Block(−b,−L), all with cortical base and eta0. Median±whole-network bootstrap SE; all trials/QC retained. Three paired contrasts against Control use AD-selected tests and BH across this three-test family.
-
-| Value | Median | Bootstrap SE | n |
-| --- | --- | --- | --- |
-| Control | 0.7335596681145464 | 0.005486555179181469 | 10 |
-| Target-specific only | 0.7094765553649167 | 0.007247899504769054 | 10 |
-| Anticipatory-control only | 0.7726249026238836 | 0.005184560550353122 | 10 |
-| Block | 0.6273769251939522 | 0.008496520480337135 | 10 |
-
-| Removal | Paired condition−Control ΔR² | Bootstrap SE |
-| --- | --- | --- |
-| -L (b only) | -0.015758179219899304 | 0.004911585957112202 |
-| -b (L only) | 0.04002580195676125 | 0.0059725859638296245 |
-| Block (-b,-L) | -0.1119632323212697 | 0.012001078868776256 |
-
-| Panel / contrast | AD reject; p; A² | Selected two-sided test | Statistic; df | Raw p | BH q | n |
-| --- | --- | --- | --- | --- | --- | --- |
-| -L (b only) | false; 0.7440616534184978; 0.23825700882047762 | two-sided paired t-test | -5.461439042685417; 9 | 0.0003996783369810219 | 0.0003996783369810219 | 10 |
-| -b (L only) | false; 0.32499875105580456; 0.3908921115284816 | two-sided paired t-test | 7.644376237319492; 9 | 0.000031771222378114 | 0.000047656833567171 | 10 |
-| Block (-b,-L) | false; 0.4622702737038866; 0.330974077540759 | two-sided paired t-test | -12.873452330535788; 9 | 4.2230383030285037e-7 | 0.0000012669114909085511 | 10 |
-
-Removing L alone significantly lowers prediction; removing b alone significantly raises it; full Block significantly lowers it. These fixed-condition results do not establish anatomical separability and were not used for tuning.
-
-Sources: [ED7d_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7d_network_values.csv); [ED7d_tests.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7d_tests.csv); [statistics.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/statistics.json).
-
-
-Canonical files: `ED7d.fig`, `ED7d.png`.

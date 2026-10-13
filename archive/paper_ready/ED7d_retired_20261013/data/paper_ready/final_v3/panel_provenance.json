@@ -1,0 +1,57 @@
+[
+  {
+    "panel": "Fig6a",
+    "sourcePath": "plots/paper_ready/final_v3/fig/Fig6a.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6b",
+    "sourcePath": "plots/paper_ready/final_v3/fig/Fig6b.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6d",
+    "sourcePath": "plots/paper_ready/final_v3/fig6f_random5_18/fig/Fig6f_option3_seed18003.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6e",
+    "sourcePath": "plots/paper_ready/final_v3/fig6gh_fifteen23/fig/Fig6g.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6f",
+    "sourcePath": "plots/paper_ready/final_v3/fig6gh_fifteen23/fig/Fig6h.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6g",
+    "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6i.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "Fig6h",
+    "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6j.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "ED7a",
+    "sourcePath": "plots/paper_ready/final_v3/fig/ED7a.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "ED7b",
+    "sourcePath": "plots/paper_ready/final_v3/fig/Fig6d.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "ED7c",
+    "sourcePath": "plots/paper_ready/final_v3/fig/Fig6e.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  },
+  {
+    "panel": "ED7d",
+    "sourcePath": "plots/paper_ready/final_v3/fig/ED7b.fig",
+    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+  }
+]

@@ -19,7 +19,7 @@ The shared geometry was calibrated only to empirical PR change and alignment def
 |---|---|
 | Fig6a | Preparatory PR change across anticipatory-control effort penalties |
 | Fig6b | Expected−observed alignment across the same sweep |
-| Fig6c | Exact manuscript functional-model schematic |
+| Fig6c | Hand-drawn static functional-model schematic |
 | Fig6d | All-target illustration: network8, Option3, seed18003 |
 | Fig6e | Fifteen-trial network8/target6 speed example |
 | Fig6f | Same fifteen peak-position trajectories; all30-success inset |
@@ -28,7 +28,6 @@ The shared geometry was calibrated only to empirical PR change and alignment def
 | ED7a | Fixed shared-geometry calibration-loss map |
 | ED7b | Experimental/model PR — calibration target |
 | ED7c | Experimental/model alignment — calibration target |
-| ED7d | Four-policy prediction at initial/temporal noise 0.20/0.20 |
 
 **Fig6d–f are success-conditioned illustrations only.** Their selected trials do not define manuscript statistical units. Peak-speed inference uses all trials and ten networks; the prespecified speed-matched dispersion assay uses six eligible networks 1,2,3,6,7,10. ED7b/c are calibration targets, not independent validation.
 
@@ -41,7 +40,7 @@ restoredefaultpath
 run_paper_figures
 ```
 
-This regenerates twelve separate native FIG/PNG panels, assembled `Figure_6` and `Extended_Data_Figure_7`, full-precision sources and validation receipts under `generated/paper_figures/`. It needs only version-controlled inputs. Canonical checked-in masters are in [plots/paper_ready/final_v3/production](plots/paper_ready/final_v3/production).
+This regenerates eleven separate FIG/PNG panels (ten model-derived native panels and the static hand-drawn Fig6c), assembled `Figure_6` and `Extended_Data_Figure_7`, full-precision sources and validation receipts under `generated/paper_figures/`. It needs only version-controlled inputs. Canonical checked-in masters are in [plots/paper_ready/final_v3/production](plots/paper_ready/final_v3/production).
 
 For numerical reproduction from accepted networks and deterministic streams:
 
@@ -58,11 +57,13 @@ The full interface also provides `lambda`, `geometry`, `stochastic` and `illustr
 - [Model specification](MODEL_SPEC.md)
 - [Panel definitions, statistics and exact illustrative IDs](docs/paper_ready/final_v3/production/LEGENDS.md)
 - [Code and source-data index](docs/paper_ready/PAPER_CODE_INDEX.md)
-- [Production audit and cleanup report](docs/paper_ready/final_v3/production/REPORT.md)
-- [Manuscript cross-reference audit — no manuscript edits](docs/paper_ready/final_v3/production/MANUSCRIPT_CROSS_REFERENCES.md)
+- [Publication cleanup and verification](docs/paper_ready/final_v3/production/PUBLICATION_CLEANUP.md)
+- [Historical ED7d archive — excluded from current publication](archive/paper_ready/ED7d_retired_20261013/README.md)
 - [Frozen inputs and source tables](data/paper_ready/final_v3)
 - [Historical pre-production checkpoint](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/tree/16aed212496647858770733919fb34c628dac85f)
 
 Stage1/2/3 foundation code and accepted assets remain preserved. Their historical diagnostics are not the manuscript-production interface. Large obsolete paper caches and review alternatives are retired after dependency validation; unique uncommitted historical evidence has a hash-verified external archive documented in the cleanup receipt. That archive is not a runtime dependency.
 
 Completion of production is not new scientific acceptance. Stop for scientific review; no further fitting or model extension is authorized.
+
+Current authority is Main_text_v12: Fig6a–h and ED7a–c only. ED7d was retired with exact source/data/code/interpretation preservation at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4; its archive is not a runtime dependency.

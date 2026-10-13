@@ -1,5 +1,7 @@
 # Production-final audit — PAPER-MODELLING-PRODUCTION-FINAL-24
 
+> HISTORICAL — production-final24 / Main_text_v10 at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4. Not current publication instructions. Main_text_v12 uses Fig6a–h and ED7a–c only. ED7d and the old counts/cross-reference recommendations below are archival. See [current publication cleanup](PUBLICATION_CLEANUP.md).
+
 **Production bundle and pre-checkpoint validation complete.** On5 October2026 the user-resolved empty-directory stop was verified and the remaining conservative cleanup passed. [PARTIAL_STOP.md](PARTIAL_STOP.md) preserves the historical stop without presenting it as current. This committed report records checks completed before checkpoint; the actual final SHA, remote-clone result and synchronization are recorded after execution in the Notion Agent Log and ignored generated receipts, without amending the tested commit.
 
 Scientific base: main16aed212496647858770733919fb34c628dac85f. Authority: complete live Agent Instructions and Main_text_v10 captions, read4 October2026. No manuscript edits, retuning, reselection or inferential replacement.

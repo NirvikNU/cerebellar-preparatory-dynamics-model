@@ -1,0 +1,13 @@
+PAPER FIGURES PASS: 11 panels, 2 assemblies, 261 exact native data objects.
+Frozen replay passed: network 1 pair 2 policy 1; R2 error 0
+Frozen replay passed: network 1 pair 2 policy 4; R2 error 0
+Frozen anticipatory-control sweep reproduced: network 1
+Frozen anticipatory-control sweep reproduced: network 2
+Frozen anticipatory-control sweep reproduced: network 3
+Frozen anticipatory-control sweep reproduced: network 4
+Frozen anticipatory-control sweep reproduced: network 5
+Frozen anticipatory-control sweep reproduced: network 6
+Frozen anticipatory-control sweep reproduced: network 7
+Frozen anticipatory-control sweep reproduced: network 8
+Frozen anticipatory-control sweep reproduced: network 9
+Frozen anticipatory-control sweep reproduced: network 10

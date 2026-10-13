@@ -48,10 +48,5 @@
     "panel": "ED7c",
     "sourcePath": "plots/paper_ready/final_v3/fig/Fig6e.fig",
     "baseCommit": "16aed212496647858770733919fb34c628dac85f"
-  },
-  {
-    "panel": "ED7d",
-    "sourcePath": "plots/paper_ready/final_v3/fig/ED7b.fig",
-    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
   }
 ]

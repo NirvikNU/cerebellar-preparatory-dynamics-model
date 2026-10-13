@@ -1,5 +1,7 @@
 # Production-final plan
 
+> HISTORICAL — production-final24 / Main_text_v10 at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4. Not current publication instructions. Main_text_v12 uses Fig6a–h and ED7a–c only. ED7d and the old counts/cross-reference recommendations below are archival. See [current publication cleanup](PUBLICATION_CLEANUP.md).
+
 Authority: complete live Agent Instructions — Current Task, PAPER-MODELLING-PRODUCTION-FINAL-24, read 4 October 2026. Starting main: 16aed212496647858770733919fb34c628dac85f. No scientific reselection, fitting, statistics changes or manuscript edits.
 
 1. Audit Git, hidden/ignored/untracked inventory and live Main_text_v10 captions/images. Freeze source identities: Fig6d is exactly Option3/seed18003; Fig6e/f retain the fifteen approved IDs and all30 inset.

@@ -1,5 +1,5 @@
 {
-  "task": "PAPER-MODELLING-PRODUCTION-FINAL-24",
+  "task": "Publication-ready cleanup — 13 October 2026",
   "scientificBaseCommit": "16aed212496647858770733919fb34c628dac85f",
   "scientificParameters": {
     "eta": 0,
@@ -118,15 +118,6 @@
       "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7c.fig",
       "png": "plots/paper_ready/final_v3/production/png/ED7c.png",
       "input": "data/paper_ready/final_v3/ED7c_graphics.mat",
-      "sourceTables": "data/paper_ready/final_v3/tables",
-      "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
-    },
-    {
-      "panel": "ED7d",
-      "title": "Component-removal prediction",
-      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7d.fig",
-      "png": "plots/paper_ready/final_v3/production/png/ED7d.png",
-      "input": "data/paper_ready/final_v3/ED7d_graphics.mat",
       "sourceTables": "data/paper_ready/final_v3/tables",
       "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
     }

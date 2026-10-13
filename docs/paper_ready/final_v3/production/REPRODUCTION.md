@@ -9,9 +9,11 @@ restoredefaultpath
 run_paper_figures
 ```
 
-Outputs go to `generated/paper_figures/{fig,png,source}`. The twelve panels are Fig6a–h and ED7a–d; the two assemblies are Figure_6 and Extended_Data_Figure_7. An optional output-directory argument changes only where the outputs are written. No original cache or absolute project path is consulted.
+Outputs go to `generated/paper_figures/{fig,png,source}`. The eleven panels are Fig6a–h and ED7a–c; the two assemblies are Figure_6 and Extended_Data_Figure_7. An optional output-directory argument changes only where the outputs are written. No original cache or absolute project path is consulted.
 
-The numerical graphics specifications in `data/paper_ready/final_v3/*_graphics.mat` are plain MATLAB structures containing arrays and display properties, not hidden figure handles or calls to historical renderers. `pf_draw` constructs native lines, error bars, scatter, bars, surfaces, patches, text, images and axes. Every data object is checked after reopening its saved FIG. Assembly FIGs embed the twelve panel images; the separate panel FIGs retain native data objects. Fig6c is intentionally the exact static manuscript schematic, with the source extraction recorded in the provenance receipt.
+Use a new empty output folder. The renderer refuses to merge with an older output set, preventing historical panels/tables from silently surviving in a current export. All existing evidence is preserved; for a repeat use `run_paper_figures(fullfile(pwd,'generated','another_check'))`.
+
+The numerical graphics specifications in `data/paper_ready/final_v3/*_graphics.mat` are plain MATLAB structures containing arrays and display properties, not hidden figure handles or calls to historical renderers. `pf_draw` constructs native lines, error bars, scatter, bars, surfaces, patches, text, images and axes. Every data object is checked after reopening its saved FIG. Assembly FIGs embed the current eleven panel images; the separate panel FIGs retain native data objects. Fig6c is intentionally the hand-drawn static manuscript schematic, not numerical model output, with the source extraction recorded in the provenance receipt.
 
 Full-precision CSV/JSON tables are under `data/paper_ready/final_v3/tables`. Regeneration exports byte-identical copies and independently verifies the selected trials, 101-point means, active-trial medians, Gaussian boundaries, inset distances/counts and prediction-loss arithmetic. It does not refit statistics.
 
@@ -22,7 +24,7 @@ restoredefaultpath
 run_paper_model('check')         % network1, primary Intact/Block, 480 trials
 run_paper_model('lambda')        % frozen anticipatory-control sweep + exact K=0
 run_paper_model('geometry')      % fixed grid evidence; never reselects index24
-run_paper_model('stochastic')    % four-level noise curves + high-noise four policies
+run_paper_model('stochastic')    % seven unique noise pairs, Control/Block, all ten networks (140 cases)
 run_paper_model('illustrations') % frozen displayed/inset IDs only; no success search
 % run_paper_model('all') executes the four complete reproduction components.
 ```
@@ -37,7 +39,9 @@ Paper rendering requires MATLAB graphics and the built-in `smoothdata` used by i
 
 No licensed third-party checkout, cloud attachment, drive letter, local ignored MAT file or original workspace is a production input. The accepted networks remain frozen; from-scratch retraining or recalibration is outside this interface and is not authorized by a reproduction command.
 
-## Validation status
+## Historical production-final24 validation
+
+The following tests describe checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4, not the current panel count. For the current acceptance gate see [PUBLICATION_CLEANUP.md](PUBLICATION_CLEANUP.md).
 
 See the actual receipts in this directory and `REPORT.md`. A documented command is not evidence of its execution. In particular, the final remote-clone result must be recorded only after it has actually run at the pushed commit.
 

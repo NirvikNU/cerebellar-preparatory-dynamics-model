@@ -3,3 +3,5 @@
 artifacts/manifests/paper_ready/cleanup_release/history_logs/** -text -whitespace
 docs/paper_ready/prediction/history/** -text -whitespace
 docs/paper_ready/stabilization_eta/history/** -text -whitespace
+# Preserve original archive bytes, including Windows line endings.
+archive/paper_ready/ED7d_retired_20261013/** -text whitespace=cr-at-eol

@@ -55,15 +55,10 @@
       "panel": "ED7c",
       "width": 1518,
       "height": 901
-    },
-    {
-      "panel": "ED7d",
-      "width": 1826,
-      "height": 1000
     }
   ],
   "matlab": "25.2.0.3042426 (R2025b) Update 1",
-  "sourceObjectsVerified": 279,
+  "sourceObjectsVerified": 261,
   "sourceAudit": {
     "status": "PASS",
     "dTrials": 64,
@@ -71,12 +66,15 @@
     "insetTrialsPerCondition": 30,
     "phaseMeanMaxError": 0,
     "rawMedianMaxError": 0,
-    "gaussianMaxError": 2.2204460492503131E-16,
-    "insetDistanceMaxError": 5.5511151231257827E-16,
+    "gaussianMaxError": 2.220446049250313e-16,
+    "insetDistanceMaxError": 5.551115123125783e-16,
     "quantitativeValueMaxError": 0,
+    "experimentalSourceRows": 4,
     "noNewStatistics": true,
     "noSelection": true
   },
-  "panelCount": 12,
-  "assemblyCount": 2
+  "panelCount": 11,
+  "assemblyCount": 2,
+  "validationScope": "Retained canonical panel masters unchanged; ED7 assembly excludes d. Actual regenerated image sizes are recorded separately in publication_receipts/native_master_checks.json.",
+  "rasterExportWarning": "Five regenerated panels have one-pixel automatic crop differences; exact native data/style/annotations preserved."
 }

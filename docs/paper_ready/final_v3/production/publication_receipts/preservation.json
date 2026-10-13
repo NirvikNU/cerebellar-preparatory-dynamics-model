@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "base": "04a65d78d4901a8350473aa3b93ba1673d87fdd4",
+  "archiveHashVerified": 16,
+  "protectedFilesExact": 106,
+  "removedStatisticsFields": [
+    "ED7d",
+    "ED7dAbsoluteR2",
+    "ED7dAbsoluteSummary"
+  ],
+  "retainedStatisticsExact": true,
+  "noScientificParameterChange": true
+}
