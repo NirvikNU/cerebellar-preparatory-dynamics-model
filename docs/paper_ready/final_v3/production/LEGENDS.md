@@ -184,7 +184,17 @@ Sources: [network values and SSE/SST](https://github.com/NirvikNU/cerebellar-pre
 
 Canonical files: `Fig6g.fig`, `Fig6g.png`.
 
-## Fig6h — Relative Block prediction deficit versus noise
+## Fig6h — Absolute Control and Block prediction versus temporal noise
+
+Control (blue) and full cerebellar Block (orange) cross-validated preparatory-to-early-movement R² versus the eight temporal-noise amplitudes, with initial-state noise fixed at 0.05. Each point is the original median across ten networks; error bars are the original SE from 10,000 whole-network bootstrap medians. The Control series and error bars are exactly the temporal-Control series in Fig6g. The table above retains every original Control/Block R² and SE, with full-precision values in the unchanged source CSV/JSON files. No simulation, prediction fit, bootstrap draw, numerical result or inferential test changed for this presentation revision.
+
+At temporal noise 0.05, Control R² is 0.99189635882084692 ± 0.0012543616092981459 and Block R² is 0.92471298480604514 ± 0.025581059888178336. At 0.40, Control is 0.5761916597000617 ± 0.0039740485227988936 and Block is 0.49716710160111244 ± 0.0065153056165257765. Both condition medians decline across these displayed temporal levels. At matched temporal-noise levels, Block further reduces predictive R². This gap does not establish a progressively growing noise-specific interaction or a causal explanation of saturation. No new test of absolute Block R² is presented.
+
+Manuscript-ready reporting: Initial-state noise caused only modest loss of intact predictability, whereas ongoing temporal noise caused a much larger decline. At matched temporal-noise levels, cerebellar Block further reduced predictive R². The network is the statistical unit (n=10); uncertainty is median ± network-bootstrap SE. The existing Control omnibus tests are reported above. These descriptive results do not establish monotonic noise-specific interaction or mediation by behavioral success.
+
+Canonical files: `Fig6h.fig`, `Fig6h.png`. All original statistical tables are unchanged.
+
+### Historical percentage-deficit presentation (release 6391528; not the current panel)
 
 Relative Block deficit is 100×(R²Control−R²Block)/R²Control, computed within each network before the median and bootstrap SE. It is not the percentage difference between pooled medians. All sixteen rows, including Block absolute R², appear in the table above. The two sweeps use the same 0.05/0.05 baseline.
 
@@ -201,7 +211,6 @@ Prior four-level/seven-pair results and masters remain in `data/paper_ready/fina
 
 Both Control median curves decrease across the eight displayed levels. Relative Block loss is nonmonotonic in each sweep: the initial-state curve has its lowest median at 0.15, and the temporal curve reaches its highest median at 0.25 before lower medians at later levels. These are descriptions of the complete displayed series, not post-hoc contrasts or directional trend tests.
 
-Canonical files: `Fig6h.fig`, `Fig6h.png`.
 
 ## ED7a — Shared geometry-calibration map
 

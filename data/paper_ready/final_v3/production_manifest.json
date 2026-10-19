@@ -87,7 +87,7 @@
     },
     {
       "panel": "Fig6h",
-      "title": "Relative Block prediction deficit versus noise",
+      "title": "Absolute Control and Block prediction versus temporal noise",
       "nativeFigure": "plots/paper_ready/final_v3/production/fig/Fig6h.fig",
       "png": "plots/paper_ready/final_v3/production/png/Fig6h.png",
       "input": "data/paper_ready/final_v3/Fig6h_graphics.mat",

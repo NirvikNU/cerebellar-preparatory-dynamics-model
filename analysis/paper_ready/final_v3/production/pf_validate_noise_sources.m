@@ -54,11 +54,19 @@ function audit=pf_validate_noise_sources(source)
     assert(isequal(summaries(1,2:end),summaries(9,2:end)));
     for name={'Fig6g','Fig6h'}
         z=load(fullfile(source,[name{1} '_graphics.mat']),'recipe');r=z.recipe.axes{1};sweep=0;
-        if strcmp(name{1},'Fig6g'),field='RI';else,field='loss';end
+        isControlSweeps=strcmp(name{1},'Fig6g');
         for j=1:numel(r.objects)
             o=r.objects{j};
             if strcmp(o.type,'errorbar')
-                sweep=sweep+1;summary=v.bootstrap.(field)(sweep);
+                sweep=sweep+1;
+                if isControlSweeps
+                    summary=v.bootstrap.RI(sweep);
+                else
+                    fields={'RI','RB'};labels={'Control','Block'};colors=[86 180 233;213 94 0]/255;
+                    summary=v.bootstrap.(fields{sweep})(2);
+                    assert(strcmp(o.properties.DisplayName,labels{sweep})&&strcmp(o.properties.LineStyle,'-'));
+                    assert(isequal(o.properties.Color,colors(sweep,:))&&isequal(o.properties.MarkerFaceColor,colors(sweep,:)));
+                end
                 assert(isequal(o.properties.XData,v.levels(:).')&&isequal(o.properties.YData,summary.median(:).'));
                 assert(isequal(o.properties.YNegativeDelta,summary.se(:).')&&isequal(o.properties.YPositiveDelta,summary.se(:).'));
                 assert(all(summary.median-summary.se>=r.properties.YLim(1))&&all(summary.median+summary.se<=r.properties.YLim(2)));
@@ -67,6 +75,15 @@ function audit=pf_validate_noise_sources(source)
             end
         end
         assert(sweep==2&&isequal(r.properties.XTick,spec.levels));
+        if ~isControlSweeps
+            assert(strcmp(r.xlabel,'Temporal noise amplitude (state units)')&&strcmp(r.ylabel,'Cross-validated R^2'));
+            assert(isequal(r.legend.labels,{'Control','Block'}));
+            g=load(fullfile(source,'Fig6g_graphics.mat'),'recipe');
+            temporal=g.recipe.axes{1}.objects{2}.properties;control=r.objects{1}.properties;
+            for field={'XData','YData','YNegativeDelta','YPositiveDelta'}
+                assert(isequal(temporal.(field{1}),control.(field{1})),'Production:NoiseControlAnchor','Fig6g/h temporal Control values differ.');
+            end
+        end
     end
 end
 function [chi,p]=friedmanAudit(x)

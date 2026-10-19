@@ -11,7 +11,7 @@ For `f(x)=-x+W*ReLU(x)+h`, define `u_base=-f(xB)` and `b=f(xB)-f(x*)`.
 | Anticipatory-control only | `u_base - L*(x-x*)` |
 | Block | `u_base` |
 
-The shared geometry was calibrated only to empirical PR change and alignment deficit, before downstream outcomes. Accepted networks, movement drive, readout, arm and noise streams are unchanged. The authorized 19 October Fig6g,h update expands both noise sweeps to eight levels (0.05–0.40), fixes the other source at 0.05 and reuses one exact 0.05/0.05 baseline. All other panel science and inference remain unchanged.
+The shared geometry was calibrated only to empirical PR change and alignment deficit, before downstream outcomes. Accepted networks, movement drive, readout, arm and noise streams are unchanged. The authorized 19 October Fig6g,h update expands both noise sweeps to eight levels (0.05–0.40), fixes the other source at 0.05 and reuses one exact 0.05/0.05 baseline. Fig6h displays the existing absolute Control and Block R² across temporal noise; Fig6g retains the Control initial/temporal comparison. All numerical results, other panel science and inference remain unchanged. See [presentation revision](docs/paper_ready/final_v3/production/PRESENTATION_UPDATE.md).
 
 ## Current manuscript panels
 
@@ -24,7 +24,7 @@ The shared geometry was calibrated only to empirical PR change and alignment def
 | Fig6e | Fifteen-trial network8/target6 speed example |
 | Fig6f | Same fifteen peak-position trajectories; all30-success inset |
 | Fig6g | Control preparatory→early-movement R² versus noise |
-| Fig6h | Relative Block R² deficit versus noise |
+| Fig6h | Absolute Control and Block R² versus temporal noise (initial noise fixed at 0.05) |
 | ED7a | Fixed shared-geometry calibration-loss map |
 | ED7b | Experimental/model PR — calibration target |
 | ED7c | Experimental/model alignment — calibration target |

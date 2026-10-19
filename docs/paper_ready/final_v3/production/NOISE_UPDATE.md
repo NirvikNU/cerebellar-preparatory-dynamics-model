@@ -1,5 +1,7 @@
 # Fig. 6g,h common-baseline noise update — 19 October 2026
 
+> Historical numerical-release report for commit 6391528be9f30f7c5ec88511606133a625bc0509. The scientific results remain current. The later [presentation revision](PRESENTATION_UPDATE.md) replaces the percentage-deficit Fig6h with absolute Control and Block R² versus temporal noise. Cleanup and release receipts below describe that earlier run, not the later cleanup.
+
 This authorized publication update changes Fig6g,h and the Figure6 assembly. Fig6a–f, including the hand-drawn Fig6c, and ED7a–c plus its assembly retain their original canonical files. The accepted networks, generators, illustrative trial IDs, primary 0.10/0.10 setting, model parameters and original prediction estimator are unchanged. Neither Google Doc was modified.
 
 ## Scientific scope and results
