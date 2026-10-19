@@ -51,16 +51,8 @@ function audit=pf_validate_sources(source)
         counts=histcounts(distances,[hist(:,1).' hist(end,2)]).'; assert(isequal(counts,hist(:,2+p)) && sum(counts)==30);
     end
     assert(audit.rawMedianMaxError<1e-14 && audit.gaussianMaxError<1e-12 && audit.insetDistanceMaxError<1e-12);
-    values=jsondecode(fileread(fullfile(folder,'Fig6gh_values.json')));
-    rows=readmatrix(fullfile(folder,'Fig6gh_network_values.csv'));
-    assert(isequal(values.levels(:),[.05;.1;.15;.2])); audit.quantitativeValueMaxError=0;
-    for j=1:size(rows,1)
-        n=rows(j,1); sweep=rows(j,2); level=find(values.levels==rows(j,3));
-        exact=[values.RI(n,level,sweep) values.RB(n,level,sweep) values.loss(n,level,sweep)];
-        audit.quantitativeValueMaxError=max(audit.quantitativeValueMaxError,max(abs(exact-rows(j,4:6))));
-    end
-    assert(audit.quantitativeValueMaxError<1e-14);
-    assert(max(abs(100*(values.RI-values.RB)./values.RI-values.loss),[],'all')<1e-12);
+    audit.noise=pf_validate_noise_sources(source);
+    audit.quantitativeValueMaxError=audit.noise.quantitativeValueMaxError;
     experimental=readtable(fullfile(folder,'ED7bc_experiment.csv'));
     for name={'ED7b','ED7c'}
         z=load(fullfile(source,[name{1} '_graphics.mat'])); c=0;

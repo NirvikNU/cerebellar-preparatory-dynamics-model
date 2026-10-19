@@ -11,7 +11,7 @@ For `f(x)=-x+W*ReLU(x)+h`, define `u_base=-f(xB)` and `b=f(xB)-f(x*)`.
 | Anticipatory-control only | `u_base - L*(x-x*)` |
 | Block | `u_base` |
 
-The shared geometry was calibrated only to empirical PR change and alignment deficit, before downstream outcomes. Accepted networks, movement drive, readout, arm, noise streams and statistical analyses are unchanged.
+The shared geometry was calibrated only to empirical PR change and alignment deficit, before downstream outcomes. Accepted networks, movement drive, readout, arm and noise streams are unchanged. The authorized 19 October Fig6g,h update expands both noise sweeps to eight levels (0.05–0.40), fixes the other source at 0.05 and reuses one exact 0.05/0.05 baseline. All other panel science and inference remain unchanged.
 
 ## Current manuscript panels
 
@@ -55,6 +55,7 @@ The full interface also provides `lambda`, `geometry`, `stochastic` and `illustr
 ## Navigation
 
 - [Model specification](MODEL_SPEC.md)
+- [Fig6g,h noise update and executed candidate validation](docs/paper_ready/final_v3/production/NOISE_UPDATE.md)
 - [Panel definitions, statistics and exact illustrative IDs](docs/paper_ready/final_v3/production/LEGENDS.md)
 - [Code and source-data index](docs/paper_ready/PAPER_CODE_INDEX.md)
 - [Publication cleanup and verification](docs/paper_ready/final_v3/production/PUBLICATION_CLEANUP.md)

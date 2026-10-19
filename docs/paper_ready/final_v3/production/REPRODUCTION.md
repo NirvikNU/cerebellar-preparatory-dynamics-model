@@ -24,7 +24,7 @@ restoredefaultpath
 run_paper_model('check')         % network1, primary Intact/Block, 480 trials
 run_paper_model('lambda')        % frozen anticipatory-control sweep + exact K=0
 run_paper_model('geometry')      % fixed grid evidence; never reselects index24
-run_paper_model('stochastic')    % seven unique noise pairs, Control/Block, all ten networks (140 cases)
+run_paper_model('stochastic')    % fifteen unique noise pairs, Control/Block, all ten networks (300 cases / 72,000 trials)
 run_paper_model('illustrations') % frozen displayed/inset IDs only; no success search
 % run_paper_model('all') executes the four complete reproduction components.
 ```
@@ -35,7 +35,7 @@ The ten accepted network/controller/geometry bundles are versioned. They preserv
 
 CARE-derived finite-lambda gains are verified against the accepted gains before replay uses those exact accepted gains. This prevents a different CARE roundoff representation from changing the fixed finite random-subspace sample. It is not a refit or tolerance change. The exact zero-gain endpoint is constructed literally.
 
-Paper rendering requires MATLAB graphics and the built-in `smoothdata` used by its independent audit. Full lambda reproduction additionally requires Control System Toolbox (`care`). Frozen inferential values are included; the figure command does not require recomputing statistical tests. Parallel Computing Toolbox is not required by these serial canonical entry points.
+Paper rendering requires MATLAB graphics and the built-in `smoothdata` used by its independent audit. Full lambda reproduction additionally requires Control System Toolbox (`care`). Committed inferential values are included; the source audit independently verifies the new noise ranks, chi-square probabilities and original saved bootstrap draws using base MATLAB arithmetic. It does not refit prediction models or create new bootstrap draws. Parallel Computing Toolbox is not required by these serial canonical entry points.
 
 No licensed third-party checkout, cloud attachment, drive letter, local ignored MAT file or original workspace is a production input. The accepted networks remain frozen; from-scratch retraining or recalibration is outside this interface and is not authorized by a reproduction command.
 

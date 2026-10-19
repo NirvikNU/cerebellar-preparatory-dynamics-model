@@ -1,0 +1,243 @@
+{
+  "status": "VALIDATED CANDIDATE",
+  "frozenParent": "480753f3be0134a843ffbc350d6baa162a85aa7e",
+  "levels": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "pairs": [
+    [
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05
+    ],
+    [
+      0.15,
+      0.05
+    ],
+    [
+      0.2,
+      0.05
+    ],
+    [
+      0.25,
+      0.05
+    ],
+    [
+      0.3,
+      0.05
+    ],
+    [
+      0.35,
+      0.05
+    ],
+    [
+      0.4,
+      0.05
+    ],
+    [
+      0.05,
+      0.1
+    ],
+    [
+      0.05,
+      0.15
+    ],
+    [
+      0.05,
+      0.2
+    ],
+    [
+      0.05,
+      0.25
+    ],
+    [
+      0.05,
+      0.3
+    ],
+    [
+      0.05,
+      0.35
+    ],
+    [
+      0.05,
+      0.4
+    ]
+  ],
+  "primaryNoise": [
+    0.1,
+    0.1
+  ],
+  "sharedNoise": [
+    0.05,
+    0.05
+  ],
+  "networks": 10,
+  "uniqueCases": 300,
+  "canonicalTrials": 72000,
+  "rawFiles": 300,
+  "rawBytes": 122393637813,
+  "rawManifestSHA256": "76D260AE9F56E0D969BEF98D3F466B444C38D20739B7EC2642108908CABBBC44",
+  "rawLocation": "local_explorations/noise_6gh_20261019/raw (ignored evidence; never a production input)",
+  "sourceHashes": [
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_values.json",
+      "sha256": "E10C436079E1A24EEF134BDD7289C1CD0944EDE2FF71064A606AD04346FD7245",
+      "bytes": 54683
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_network_values.csv",
+      "sha256": "9AA4336DCFB8B0256B7D878F71F11061DFFBFD72E417DC3C309420538FCA7CCC",
+      "bytes": 34885
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_summaries.csv",
+      "sha256": "261688A6DCBA16E8BD4DBDAB93860568A4DE31F7EB93D0353A1C8AD43E81C83C",
+      "bytes": 2431
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/statistics.json",
+      "sha256": "ABF782C6312E3FEEE34DBBC7B04E717E797A773CC070E9BA34DBC9F9B4360B3C",
+      "bytes": 28434
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_case_qc.csv",
+      "sha256": "C2EDA525861BA68814BD9438C311AB6DFAEF706C92891AD746CF65D2FF02C31D",
+      "bytes": 34446
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_tests.csv",
+      "sha256": "ECD564EC791A630E66A18BA345F15E4C54EC1B2489702FFA9913C3A863A96B15",
+      "bytes": 264
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6g_graphics.mat",
+      "sha256": "A357A18C44A4EC6B2E0CB26E3B81BA2013159CB12013B6C6DB31764279F892BB",
+      "bytes": 6509
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6h_graphics.mat",
+      "sha256": "4EFA41BE625513625AE1BB3D3C876574F5F38F3918D88298582C5AFFBC73B6ED",
+      "bytes": 6504
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/primary_reference.json",
+      "sha256": "D740A91C000F319F588124E6ACF451E627DBDF2A7DC4556843FB7DC6D93C9ACF",
+      "bytes": 786
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/bootstrap_indices.mat",
+      "sha256": "3F638F2652249389CF6D59931BAFABE07B780812D2CDCFC53357839E86F147AA",
+      "bytes": 51029
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_01.mat",
+      "sha256": "CFA99E43BD20D889DC36BCEAA6A1CA1B0D210C4A84A8A7D5C837CB0097733B54",
+      "bytes": 9688474
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_02.mat",
+      "sha256": "7DF5A82541C6D3EDC4C0AF9FE910FF5F99BA27D7077A5FA2FF7BA771362CB274",
+      "bytes": 9688565
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_03.mat",
+      "sha256": "3250A0C6C403B8ECC773887B00DCC7B971AA61C1942E4316A4FE660A22EA6881",
+      "bytes": 9688762
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_04.mat",
+      "sha256": "D8308FB610C9B092A349700849D12EA47A30FFFFBF1B51519ECCAD8E33045B79",
+      "bytes": 9689175
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_05.mat",
+      "sha256": "F2FD5D23E29EB3063A3B5D994286E913866AF3B03FF9A17BFEF4CBEBF7AB7966",
+      "bytes": 9687707
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_06.mat",
+      "sha256": "47E5401265C37028E29021DF8942132196070A70EBC4CAB4FC7322EC028B8B02",
+      "bytes": 9690263
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_07.mat",
+      "sha256": "A291712A939FF77FEA8C346D9E3CEDE180C6DB791ADDA23CCF1D3CE99E0DFA5F",
+      "bytes": 9688839
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_08.mat",
+      "sha256": "A09E7FB451176C497E8F579B59DE169D4D9AAC4CFA47F5FBB69DFAA6239E92F4",
+      "bytes": 9689215
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_09.mat",
+      "sha256": "ED28266D25846FB64C939D465F363FD35D21E4C87DFD96628F8EC0AC49790518",
+      "bytes": 9689492
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_10.mat",
+      "sha256": "78E624D0E8A0133FF35A9F14E0D29C264EF727452775AE554FACDB0CAAC94B97",
+      "bytes": 9688739
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6g.fig",
+      "sha256": "1742F0B49F442B8C2BB93AE605C52F69F4F15696EECAF9517888B5237320FFFD",
+      "bytes": 12191
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6h.fig",
+      "sha256": "79E9009F9046B96CECAA47A213321949CCBF5C2B1917A148028020B44217B7AA",
+      "bytes": 12040
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Figure_6.fig",
+      "sha256": "4C8AEC25D4CBEE1D76E15698AC88F8168DE1C37F7DEA859F0EC8D5449A8B4A5B",
+      "bytes": 3157211
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6g.png",
+      "sha256": "361236DE30A528087BA4F59626975577E4319445384AC2D160E9C9BB1397AE64",
+      "bytes": 82731
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6h.png",
+      "sha256": "82CF1B5ADA91D74B0474545D101A50021001079AD32547A46C3E044FCA3473AC",
+      "bytes": 77066
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Figure_6.png",
+      "sha256": "FE7FB72F2833F8A86EF92D7A29DC4BAA463BF4ADCD54375DA4428F04DC16D7E3",
+      "bytes": 681245
+    }
+  ],
+  "prepush": {
+    "panels": 11,
+    "assemblies": 2,
+    "sourceTables": 26,
+    "nativeObjects": 261,
+    "primaryTrials": 480,
+    "primaryFullEvidenceExact": true,
+    "protectedReferencePNGsExact": true,
+    "endpointNetwork": 1,
+    "endpointPairs": [
+      1,
+      8,
+      15
+    ],
+    "endpointTrials": 1440,
+    "endpointR2Error": 0,
+    "codeAnalyzer": "PASS"
+  },
+  "historicalSource": "noise_sensitivity_20261019/historical_480753/manifest.json",
+  "remoteAcceptance": "Recorded after pushing, at the exact release SHA in the existing Notion Agent Log; this pre-push manifest does not certify that later operation."
+}

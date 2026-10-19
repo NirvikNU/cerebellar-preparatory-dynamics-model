@@ -15,7 +15,7 @@ There is **no generic residual kappa feedback** in the final dynamics. This is a
 
 ## Noise, geometry and prediction
 
-Each condition has eight targets × 30 trials per network. The primary stochastic setting is 0.10 initial-state / 0.10 temporal noise. Each one-factor prediction sweep uses 0.05, 0.10, 0.15 and 0.20, with the other source held at 0.10. The shared 0.10/0.10 anchor is one dataset, not two independent samples.
+Each condition has eight targets × 30 trials per network. The primary stochastic setting is 0.10 initial-state / 0.10 temporal noise. The Fig6g,h one-factor prediction sweeps use 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35 and 0.40, with the other source held at 0.05. The shared 0.05/0.05 anchor is computed once per network/policy and reused exactly: fifteen unique pairs, 300 cases and 72,000 trials. The original 0.10/0.10 primary reference and prior seven-pair study are preserved separately.
 
 Standardized trial draws use `mt19937ar`, seed `310000000 + 10000*network + 100*target + trial`: 200 initial Gaussian values followed by a 200×2500 temporal Gaussian array. Temporal increments are multiplied by `s_temporal*sqrt(2*dt/tau)`. Conditions and amplitudes reuse the same standardized streams.
 
@@ -35,6 +35,6 @@ Peak-speed statistics retain all trials and all ten networks. The primary disper
 
 ## Frozen inference
 
-The network is the statistical unit. Descriptives are network medians ± sample SD of 10,000 whole-network bootstrap medians, with within-network percentage changes summarized separately. Paired tests use Anderson–Darling on network differences, then two-sided paired t or Wilcoxon as prescribed. Fig.6a/b each have their own eight-comparison BH family. Behaviour and calibration comparisons have no shared multiplicity correction. Four noise omnibus tests use Friedman df3, n10, raw p without cross-test BH or post-hoc tests. The promoted `statistics.json` contains the unchanged full-precision values; regeneration never replaces them.
+The network is the statistical unit. Descriptives are network medians ± sample SD of 10,000 whole-network bootstrap medians, with within-network percentage changes summarized separately. Paired tests use Anderson–Darling on network differences, then two-sided paired t or Wilcoxon as prescribed. Fig.6a/b each have their own eight-comparison BH family. Behaviour and calibration comparisons have no shared multiplicity correction. Four noise omnibus tests use Friedman df7, n10, full-precision chi-square-approximation p without cross-test BH or post-hoc tests. The updated `statistics.json` changes only Fig6g,h noise values; all other inference is unchanged. Regeneration audits the committed values and original saved bootstrap draws; it does not replace inference or fit new models.
 
 The exact K=0 categorical endpoint in Fig.6a/b retains tonic input `x*-h-W*ReLU(x*)`, with precisely zero feedback effort. The manuscript shorthand “No input” therefore means no anticipatory-feedback input, not no cortical input.

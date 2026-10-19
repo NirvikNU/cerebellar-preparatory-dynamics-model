@@ -6,7 +6,7 @@ Current map: Fig6a–h and ED7a–c. [Model](final_v3/production/MODEL.md), [leg
 |---|---|
 | Public commands | `run_paper_figures.m`, `run_paper_model.m` |
 | Native figure reconstruction and audit | `analysis/paper_ready/final_v3/production/pf_figures.m`, `pf_draw.m`, `pf_snapshot.m`, `pf_validate_sources.m` |
-| Frozen model replay | `pf_model.m`, `pf_prepare.m`, `pf_move.m`, `pf_noise.m` in the same production folder |
+| Frozen model replay | `pf_model.m`, `pf_replay_noise.m`, `pf_noise_grid.m`, `pf_prepare.m`, `pf_move.m`, `pf_noise.m` in the same production folder |
 | Feature extraction/prediction | `pf_features.m`, `pf_folds.m`, `pf_ridge.m`, `pf_prediction.m` |
 | Sweep/grid/frozen illustration replay | `pf_replay_lambda.m`, `pf_replay_geometry.m`, `pf_replay_illustrations.m` |
 | All-trial behavior | `pf_behavior.m`, `pf_audit_behavior.m` |

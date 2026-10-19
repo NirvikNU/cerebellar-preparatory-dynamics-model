@@ -1,5 +1,5 @@
 {
-  "task": "Publication-ready cleanup — 13 October 2026",
+  "task": "19 October 2026 Fig6g,h common-baseline noise update; all other panels preserved",
   "scientificBaseCommit": "16aed212496647858770733919fb34c628dac85f",
   "scientificParameters": {
     "eta": 0,
@@ -297,7 +297,7 @@
     "minimumActive": 8,
     "insetTrialsPerCondition": 30
   },
-  "statisticsChanged": false,
+  "statisticsChanged": true,
   "illustrationsDefineStatistics": false,
   "schematicEditableSourceAvailable": false,
   "schematicSource": {
@@ -312,5 +312,94 @@
       1110,
       2048
     ]
+  },
+  "statisticsChangedScope": "Only Fig6g,h: eight-level sweeps, other noise fixed at .05; other inference unchanged",
+  "Fig6ghNoise": {
+    "levels": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ],
+    "pairs": [
+      [
+        0.05,
+        0.05
+      ],
+      [
+        0.1,
+        0.05
+      ],
+      [
+        0.15,
+        0.05
+      ],
+      [
+        0.2,
+        0.05
+      ],
+      [
+        0.25,
+        0.05
+      ],
+      [
+        0.3,
+        0.05
+      ],
+      [
+        0.35,
+        0.05
+      ],
+      [
+        0.4,
+        0.05
+      ],
+      [
+        0.05,
+        0.1
+      ],
+      [
+        0.05,
+        0.15
+      ],
+      [
+        0.05,
+        0.2
+      ],
+      [
+        0.05,
+        0.25
+      ],
+      [
+        0.05,
+        0.3
+      ],
+      [
+        0.05,
+        0.35
+      ],
+      [
+        0.05,
+        0.4
+      ]
+    ],
+    "fixedOtherNoise": 0.05,
+    "sharedAnchor": [
+      0.05,
+      0.05
+    ],
+    "primary": [
+      0.1,
+      0.1
+    ],
+    "networks": 10,
+    "uniquePolicyCases": 300,
+    "trials": 72000,
+    "bootstrapDraws": 10000,
+    "sourceTables": 26
   }
 }

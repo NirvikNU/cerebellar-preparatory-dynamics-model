@@ -19,7 +19,11 @@ function receipt=pf_figures(root,outputRoot)
             z=load(fullfile(source,[name '_graphics.mat']),'recipe'); f=pf_draw(z.recipe,name);
         end
         fig=fullfile(outputRoot,'fig',[name '.fig']); png=fullfile(outputRoot,'png',[name '.png']);
+        if any(strcmp(name,{'Fig6g','Fig6h'}))
+            receipt.noiseFigures.(name)=pf_save_noise_figure(f,fig,png);
+        else
         drawnow; savefig(f,fig); exportgraphics(f,png,'Resolution',160); close(f);
+        end
         reopened=openfig(fig,'invisible');
         if ~strcmp(name,'Fig6c')
             actual=pf_snapshot(reopened); expected=z.recipe;

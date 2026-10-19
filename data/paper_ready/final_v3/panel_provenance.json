@@ -26,13 +26,27 @@
   },
   {
     "panel": "Fig6g",
-    "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6i.fig",
-    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+    "sourcePath": "data/paper_ready/final_v3/tables/Fig6gh_values.json",
+    "baseCommit": "480753f3be0134a843ffbc350d6baa162a85aa7e",
+    "priorProvenance": {
+      "panel": "Fig6g",
+      "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6i.fig",
+      "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+    },
+    "update": "19 October 2026 prespecified common-baseline noise study",
+    "historicalArchive": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/manifest.json"
   },
   {
     "panel": "Fig6h",
-    "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6j.fig",
-    "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+    "sourcePath": "data/paper_ready/final_v3/tables/Fig6gh_values.json",
+    "baseCommit": "480753f3be0134a843ffbc350d6baa162a85aa7e",
+    "priorProvenance": {
+      "panel": "Fig6h",
+      "sourcePath": "plots/paper_ready/final_v3/fig6ij_fourlevel/fig/Fig6j.fig",
+      "baseCommit": "16aed212496647858770733919fb34c628dac85f"
+    },
+    "update": "19 October 2026 prespecified common-baseline noise study",
+    "historicalArchive": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/manifest.json"
   },
   {
     "panel": "ED7a",

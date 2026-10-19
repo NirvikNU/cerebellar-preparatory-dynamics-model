@@ -1,4 +1,4 @@
-# Final manuscript panel definitions and unchanged statistics
+# Final manuscript panel definitions and statistics
 
 All panels use the final Fig6a–h / ED7a–c numbering. Numerical values below are copied from the frozen source records, not recomputed inference. Native FIG/PNG masters: `plots/paper_ready/final_v3/production/{fig,png}/`. Statistical full precision: `data/paper_ready/final_v3/tables/statistics.json`.
 
@@ -148,57 +148,58 @@ Canonical files: `Fig6f.fig`, `Fig6f.png`.
 
 ## Fig6g — Absolute Control prediction versus noise
 
-Absolute Control preparatory→early-movement R² from the frozen epoch-specific PCA75→nested-ridge pipeline.
+Absolute Control preparatory-to-early-movement cross-validated R², computed as 1−SSE/SST. Initial-state noise is dashed; temporal noise is solid; original colors and error-bar styling are retained.
 
-Exactly four displayed/analyzed amplitudes .05,.10,.15,.20; other noise source fixed at.10; shared.10/.10 anchor. Same standardized streams, eight targets×30 trials and ten frozen networks. No post-GO or observation noise. Medians±whole-network bootstrap SE. Separate Friedman tests across four levels, df3,n10; raw p, no cross-test BH or post-hoc comparisons.
+Eight predeclared amplitudes 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35 and 0.40; the other noise source is fixed at 0.05. The shared 0.05/0.05 Control and Block cases are computed once per network and reused exactly, including the bootstrap stream. Fifteen unique pairs, ten frozen networks, two policies, eight targets × 30 trials: 300 cases / 72,000 canonical trials. Primary simulations and illustrations remain at 0.10/0.10. The original neural preprocessing, condition/epoch PCA75, movement-onset alignment and 3×3 nested ridge remain unchanged. No post-GO or observation noise. Statistical unit is the network (n=10); uncertainty is the sample SD of 10,000 whole-network bootstrap medians using the original saved draws.
 
-| Sweep | Noise | Median | Bootstrap SE |
-| --- | --- | --- | --- |
-| Initial-state | 0.05 | 0.9315906873203654 | 0.004598712469882511 |
-| Initial-state | 0.1 | 0.9242455100130416 | 0.0065456126935907214 |
-| Initial-state | 0.15 | 0.9188541183010039 | 0.005704521587348087 |
-| Initial-state | 0.2 | 0.9082978100299428 | 0.005857660076326775 |
-| Temporal | 0.05 | 0.9893550656832524 | 0.0020029888019608066 |
-| Temporal | 0.1 | 0.9242455100130416 | 0.0065456126935907214 |
-| Temporal | 0.15 | 0.8134087991083712 | 0.0036384595563064494 |
-| Temporal | 0.2 | 0.7359613370808137 | 0.0038888931375109384 |
+| Sweep | Noise | Control R² median ± SE | Block R² median ± SE | Relative Block loss (%) median ± SE | n |
+|---|---:|---:|---:|---:|---:|
+| Initial-state | 0.05 | 0.9918963588 ± 0.001254361609 | 0.9247129848 ± 0.02558105989 | 6.320889519 ± 2.666333263 | 10 |
+| Initial-state | 0.10 | 0.9893550657 ± 0.002002988802 | 0.9257463823 ± 0.02163971494 | 6.461656633 ± 2.180515888 | 10 |
+| Initial-state | 0.15 | 0.9852250373 ± 0.001439270407 | 0.9691477556 ± 0.01245573844 | 1.696929915 ± 1.328555151 | 10 |
+| Initial-state | 0.20 | 0.9800618691 ± 0.001721640993 | 0.960006298 ± 0.01013477488 | 2.050616217 ± 0.9589746161 | 10 |
+| Initial-state | 0.25 | 0.9691465933 ± 0.003228984939 | 0.9362583977 ± 0.01453459617 | 3.776466366 ± 1.48199302 | 10 |
+| Initial-state | 0.30 | 0.9524291261 ± 0.004923068761 | 0.9044934049 ± 0.01548107311 | 4.849887051 ± 1.570354685 | 10 |
+| Initial-state | 0.35 | 0.9406930023 ± 0.003599681189 | 0.8809739477 ± 0.01251339454 | 6.68675272 ± 1.388503891 | 10 |
+| Initial-state | 0.40 | 0.926746421 ± 0.005956182271 | 0.8574308939 ± 0.009876148734 | 7.000875652 ± 1.226355037 | 10 |
+| Temporal | 0.05 | 0.9918963588 ± 0.001254361609 | 0.9247129848 ± 0.02558105989 | 6.320889519 ± 2.666333263 | 10 |
+| Temporal | 0.10 | 0.9315906873 ± 0.00459871247 | 0.8434960856 ± 0.01164738656 | 9.917276909 ± 1.519439454 | 10 |
+| Temporal | 0.15 | 0.8152285757 ± 0.004451786223 | 0.7176454858 ± 0.01242573057 | 12.11028666 ± 1.481750303 | 10 |
+| Temporal | 0.20 | 0.7371942188 ± 0.004891086644 | 0.6301206094 ± 0.01429838958 | 13.96952429 ± 1.230811105 | 10 |
+| Temporal | 0.25 | 0.6703718666 ± 0.006606146026 | 0.5840813502 ± 0.009832280297 | 15.01622962 ± 2.245269443 | 10 |
+| Temporal | 0.30 | 0.6335957588 ± 0.005238121399 | 0.5541455673 ± 0.006658778568 | 13.25825463 ± 1.489004123 | 10 |
+| Temporal | 0.35 | 0.6035444622 ± 0.005273508786 | 0.530460751 ± 0.01027401057 | 13.13515751 ± 2.14862734 | 10 |
+| Temporal | 0.40 | 0.5761916597 ± 0.003974048523 | 0.4971671016 ± 0.006515305617 | 13.65533174 ± 1.244165915 | 10 |
 
-| Sweep | Friedman chi² | df | Raw p | n |
-| --- | --- | --- | --- | --- |
-| Initial-state | 26.519999999999996 | 3 | 0.000007421960923445147 | 10 |
-| Temporal | 30 | 3 | 0.0000013800570312932536 | 10 |
+| Sweep | Friedman χ² | df | Full-precision p | n |
+|---|---:|---:|---:|---:|
+| Initial-state | 67.633333333333326 | 7 | 4.437900838963797e-12 | 10 |
+| Temporal | 70 | 7 | 1.4774294932825119e-12 | 10 |
 
-Both four-point median curves decrease.
-Sources: [Fig6gh_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_network_values.csv); [Fig6gh_summaries.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_summaries.csv); [Fig6gh_values.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_values.json).
+Four separate repeated-measures Friedman omnibus tests use all eight levels (df=7). P values use the original MATLAB chi-square approximation, reported at full precision; they are not exact randomization probabilities. No cross-test correction, post-hoc comparisons or directional trend tests were added.
 
+All 300 cases retained all 240 required neural response windows, with finite states/features, valid folds and PCA ranks, positive SST and valid SSE. Minimum absolute Control denominator was 0.55178957543108276; the prespecified numerical guard is sqrt(machine epsilon). Negative Control R² cases: 0; negative Block R² cases: 0; negative relative-loss pairs: 0. No clipping, imputation, exclusion or retuning was used. Movement onset was checked only for the neural estimand; no new behavioral-performance analysis was performed.
+
+Sources: [network values and SSE/SST](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_network_values.csv), [summaries](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_summaries.csv), [full-precision JSON](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_values.json), [four tests](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_tests.csv), [300-case QC](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_case_qc.csv).
 
 Canonical files: `Fig6g.fig`, `Fig6g.png`.
 
 ## Fig6h — Relative Block prediction deficit versus noise
 
-Relative Block prediction deficit, 100×(R²Control−R²Block)/R²Control, calculated within network before summary.
+Relative Block deficit is 100×(R²Control−R²Block)/R²Control, computed within each network before the median and bootstrap SE. It is not the percentage difference between pooled medians. All sixteen rows, including Block absolute R², appear in the table above. The two sweeps use the same 0.05/0.05 baseline.
 
-Exactly four displayed/analyzed amplitudes .05,.10,.15,.20; other noise source fixed at.10; shared.10/.10 anchor. Same standardized streams, eight targets×30 trials and ten frozen networks. No post-GO or observation noise. Medians±whole-network bootstrap SE. Separate Friedman tests across four levels, df3,n10; raw p, no cross-test BH or post-hoc comparisons.
+| Sweep | Friedman χ² | df | Full-precision p | n |
+|---|---:|---:|---:|---:|
+| Initial-state | 31.366666666666674 | 7 | 5.3200756808134443e-05 | 10 |
+| Temporal | 28.100000000000023 | 7 | 0.00021090367511048577 | 10 |
 
-| Sweep | Noise | Median | Bootstrap SE |
-| --- | --- | --- | --- |
-| Initial-state | 0.05 | 9.917276908749677 | 1.5194394541529745 |
-| Initial-state | 0.1 | 9.271584687172439 | 1.7838513643810987 |
-| Initial-state | 0.15 | 10.079421334179804 | 1.9967495605547554 |
-| Initial-state | 0.2 | 9.96493087507309 | 1.6395535122622 |
-| Temporal | 0.05 | 6.46165663278711 | 2.1805158876975193 |
-| Temporal | 0.1 | 9.271584687172439 | 1.7838513643810987 |
-| Temporal | 0.15 | 12.911967259266167 | 1.5878014544585972 |
-| Temporal | 0.2 | 14.124730605296985 | 1.4731548149556652 |
+Four separate repeated-measures Friedman omnibus tests use all eight levels (df=7). P values use the original MATLAB chi-square approximation, reported at full precision; they are not exact randomization probabilities. No cross-test correction, post-hoc comparisons or directional trend tests were added.
 
-| Sweep | Friedman chi² | df | Raw p | n |
-| --- | --- | --- | --- | --- |
-| Initial-state | 3.24 | 3 | 0.35608120810907057 | 10 |
-| Temporal | 21.359999999999996 | 3 | 0.00008862187827753114 | 10 |
+Sources: [network values and SSE/SST](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_network_values.csv), [summaries](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_summaries.csv), [full-precision JSON](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_values.json), [four tests](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_tests.csv), [300-case QC](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_case_qc.csv).
 
-Temporal-loss medians increase across these four points; initial-loss medians are nonmonotonic. No directional trend test.
-Sources: [Fig6gh_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_network_values.csv); [Fig6gh_summaries.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_summaries.csv); [Fig6gh_values.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/Fig6gh_values.json).
+Prior four-level/seven-pair results and masters remain in `data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/` and executable Git checkpoint `480753f3be0134a843ffbc350d6baa162a85aa7e`; they are historical provenance only.
 
+Both Control median curves decrease across the eight displayed levels. Relative Block loss is nonmonotonic in each sweep: the initial-state curve has its lowest median at 0.15, and the temporal curve reaches its highest median at 0.25 before lower medians at later levels. These are descriptions of the complete displayed series, not post-hoc contrasts or directional trend tests.
 
 Canonical files: `Fig6h.fig`, `Fig6h.png`.
 

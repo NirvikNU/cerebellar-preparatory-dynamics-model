@@ -37,11 +37,11 @@ function receipt=validate_publication(outputRoot)
     files=dir(fullfile(root,'data/paper_ready/final_v3/tables','*'));
     for j=1:numel(files)
         if files(j).isdir, continue; end
-        a=fileread(fullfile(files(j).folder,files(j).name));
-        b=fileread(fullfile(outputRoot,'figures/source',files(j).name));
+        a=bytes(fullfile(files(j).folder,files(j).name));
+        b=bytes(fullfile(outputRoot,'figures/source',files(j).name));
         assert(isequal(a,b)); receipt.sourceTables=receipt.sourceTables+1;
     end
-    assert(receipt.sourceTables==24);
+    assert(receipt.sourceTables==26);
     for name={'Figure_6','Extended_Data_Figure_7'}
         a=openfig(fullfile(outputRoot,'figures/fig',[name{1} '.fig']),'invisible');
         assert(~any(strcmp(a.UserData.panels,'ED7d')));
@@ -54,5 +54,10 @@ function receipt=validate_publication(outputRoot)
     receipt.loadedCode=loaded; receipt.matlab=version; receipt.toolboxes=ver;
     receipt.notExecuted={'Full ten-network stochastic replay','Full ten-network geometry replay'};
     receipt.status='PASS'; pf_json(fullfile(outputRoot,'validation.json'),receipt);
-    fprintf('PUBLICATION VALIDATION PASS: 11 panels, 2 assemblies, 24 tables, actual 480-trial model check.\n');
+    fprintf('PUBLICATION VALIDATION PASS: 11 panels, 2 assemblies, 26 tables, actual 480-trial model check.\n');
+end
+
+function data=bytes(file)
+    fid=fopen(file,'rb');assert(fid>=0);cleanup=onCleanup(@()fclose(fid));
+    data=fread(fid,Inf,'*uint8');
 end
