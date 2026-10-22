@@ -1,0 +1,4 @@
+# Preserve the explicitly approved JSON bytes, including their CRLF terminators.
+# This applies only to these two new policy/provenance files.
+PROPOSED_CONSOLIDATED_GRAPHICAL_POLICY.json -text whitespace=cr-at-eol
+approval.json -text whitespace=cr-at-eol

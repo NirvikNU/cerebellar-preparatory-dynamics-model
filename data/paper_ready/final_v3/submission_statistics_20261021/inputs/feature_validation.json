@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cases": 230,
+  "trialsPerCase": 240,
+  "unshuffledPCAAndFullNestedFitExact": true,
+  "sourceR2SSE_SSTExact": true,
+  "readbackExact": true,
+  "noSimulationReplay": true
+}

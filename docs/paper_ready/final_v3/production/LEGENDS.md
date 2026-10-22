@@ -194,6 +194,12 @@ Manuscript-ready reporting: Initial-state noise caused only modest loss of intac
 
 Canonical files: `Fig6h.fig`, `Fig6h.png`. All original statistical tables are unchanged.
 
+### Additive submission statistics — 21 October authorization
+
+The preceding statements about tests added in the 19 October presentation revision describe that historical revision. The subsequent submission supplement adds eight prespecified paired Control-minus-Block temporal-level comparisons (ten networks; all AD normality checks nonrejected; two-sided paired t-tests, df=9; all eight BH q<0.001). Original Friedman tests, graphical medians and bootstrap SEs are unchanged. Mean±SEM of the ten network-specific medians across levels is 0.087319716383444795 ± 0.0078108922382883073 R².
+
+Shuffled R² mean±between-network SEM: Control initial −0.011067295611708512 ± 0.000086949259635277169; Control temporal −0.010469517317725174 ± 0.000022226884884234247; Block temporal −0.010467687327424858 ± 0.000015304576137065777. Each network value is the median across eight levels of the median over 2,000 complete nested-regression global trial-correspondence permutations. These caption/source controls do not alter any plotted curve or error bar. Full precision, Monte Carlo uncertainty, estimator limitations, normality statistics and raw/BH p-values are in [SUBMISSION_STATISTICS.md](SUBMISSION_STATISTICS.md) and its versioned paired/null source tables. Neither Google Doc was edited.
+
 ### Historical percentage-deficit presentation (release 6391528; not the current panel)
 
 Relative Block deficit is 100×(R²Control−R²Block)/R²Control, computed within each network before the median and bootstrap SE. It is not the percentage difference between pooled medians. All sixteen rows, including Block absolute R², appear in the table above. The two sweeps use the same 0.05/0.05 baseline.

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "approval": "Explicit user approval, 22 October 2026",
+  "approvedProposalSHA256": "951BADEF0C76E42C56AA19830E3E828C2872A4D1D448E0539E4DCFB3B215EFBC",
+  "hashConvention": "SHA256 of row-major uint8 decoded RGBA; dimensions exact separately",
+  "scientificAndNativeChecksUnchanged": true,
+  "automaticExpansionForbidden": true,
+  "outputs": [
+    {
+      "name": "Fig6a",
+      "dimensionsWH": [
+        1487,
+        959
+      ],
+      "referencePixelSHA256": "e294592001bda4006a8741437079bdba2580a4f827d9477bbcefc351f02f1cd7",
+      "allowedWholePixelArraySHA256": [
+        "e294592001bda4006a8741437079bdba2580a4f827d9477bbcefc351f02f1cd7"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6b",
+      "dimensionsWH": [
+        1470,
+        959
+      ],
+      "referencePixelSHA256": "68838ffafec6312e0ab1f9fa3685336d97abb897d47de2ebb45c245d7830a487",
+      "allowedWholePixelArraySHA256": [
+        "68838ffafec6312e0ab1f9fa3685336d97abb897d47de2ebb45c245d7830a487"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6c",
+      "dimensionsWH": [
+        1531,
+        1577
+      ],
+      "referencePixelSHA256": "0540cb8aeaba581c830704aa84109044f4e1a785eed89649f1dea4f89eec8ba1",
+      "allowedWholePixelArraySHA256": [
+        "0540cb8aeaba581c830704aa84109044f4e1a785eed89649f1dea4f89eec8ba1"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6d",
+      "dimensionsWH": [
+        2166,
+        1029
+      ],
+      "referencePixelSHA256": "8b5fcc532bb2f27762dd74ada2f05bd1e70d7a7723f27ad72cd4e9026e9045fa",
+      "allowedWholePixelArraySHA256": [
+        "8b5fcc532bb2f27762dd74ada2f05bd1e70d7a7723f27ad72cd4e9026e9045fa"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6e",
+      "dimensionsWH": [
+        1687,
+        935
+      ],
+      "referencePixelSHA256": "15c5dd2d5fca69701668834753317092bc452bc3bc0d850890eac2d585973e51",
+      "allowedWholePixelArraySHA256": [
+        "15c5dd2d5fca69701668834753317092bc452bc3bc0d850890eac2d585973e51"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6f",
+      "dimensionsWH": [
+        1388,
+        849
+      ],
+      "referencePixelSHA256": "a69de8a5f7ce72f4b7d9b1bf806a4d4da9bab805cc382b049d57aec1458b772c",
+      "allowedWholePixelArraySHA256": [
+        "a69de8a5f7ce72f4b7d9b1bf806a4d4da9bab805cc382b049d57aec1458b772c",
+        "f541b27c4ba4ec9418a23889e65bef75813dd78b728abb19053eb7778661e1ae"
+      ],
+      "exception": true
+    },
+    {
+      "name": "Fig6g",
+      "dimensionsWH": [
+        1587,
+        1010
+      ],
+      "referencePixelSHA256": "fcaa7b5d83300240d89a794c22368b50675a00a1c9de8523dacb8223a654c058",
+      "allowedWholePixelArraySHA256": [
+        "fcaa7b5d83300240d89a794c22368b50675a00a1c9de8523dacb8223a654c058"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Fig6h",
+      "dimensionsWH": [
+        1566,
+        997
+      ],
+      "referencePixelSHA256": "d4778d0cb811cdde9e8643ccd8e58da56345a2812178330f902736563f0636ea",
+      "allowedWholePixelArraySHA256": [
+        "d4778d0cb811cdde9e8643ccd8e58da56345a2812178330f902736563f0636ea"
+      ],
+      "exception": false
+    },
+    {
+      "name": "ED7a",
+      "dimensionsWH": [
+        1492,
+        1084
+      ],
+      "referencePixelSHA256": "8fa4ed34225d2f2082a011a41edf576d6b29ad121d2fee87e9c7baa6ea2a9efa",
+      "allowedWholePixelArraySHA256": [
+        "8fa4ed34225d2f2082a011a41edf576d6b29ad121d2fee87e9c7baa6ea2a9efa"
+      ],
+      "exception": false
+    },
+    {
+      "name": "ED7b",
+      "dimensionsWH": [
+        1498,
+        901
+      ],
+      "referencePixelSHA256": "74749eae633f72b9dacc02247220e3dac8bc7cd70ee76930e471c31cb2e14393",
+      "allowedWholePixelArraySHA256": [
+        "74749eae633f72b9dacc02247220e3dac8bc7cd70ee76930e471c31cb2e14393"
+      ],
+      "exception": false
+    },
+    {
+      "name": "ED7c",
+      "dimensionsWH": [
+        1518,
+        901
+      ],
+      "referencePixelSHA256": "224642348869da207fb0f7dc3aa5324d09f9f5f8ffba23edd98d5d75840c1d5d",
+      "allowedWholePixelArraySHA256": [
+        "04c98efc81d975b114a37cbb847dabbdee8e48b73eba2535db3fc8277486b0cb",
+        "224642348869da207fb0f7dc3aa5324d09f9f5f8ffba23edd98d5d75840c1d5d",
+        "3454624e798e0244aa5ccdc58c66d92534c41a38d375d6329309aca3d886569d",
+        "9923a339a58d6783c16f21d47c4b64055c856b14fd28316755f98ea956577ee3",
+        "a6d9d7d5d522caaffdaec86470a8927888c7f745459934b181d859d14d70e409",
+        "b55e06ba42bd343768e204b7a475780836e5f4e60b5273aa384f37a681438ba1",
+        "c44e597842005e90b76b48e61ac06e10090338f56a9a803b32974e5ff55f8171",
+        "f04c81067912a39177403e0718d59121bbbc24bb13d40502314e438e38bed75a"
+      ],
+      "exception": true
+    },
+    {
+      "name": "Figure_6",
+      "dimensionsWH": [
+        3596,
+        2567
+      ],
+      "referencePixelSHA256": "17cdbfbb37ec1393aafc9e31a8da5679489d4edbf374bebf8a32311857eaa28c",
+      "allowedWholePixelArraySHA256": [
+        "17cdbfbb37ec1393aafc9e31a8da5679489d4edbf374bebf8a32311857eaa28c"
+      ],
+      "exception": false
+    },
+    {
+      "name": "Extended_Data_Figure_7",
+      "dimensionsWH": [
+        2910,
+        2230
+      ],
+      "referencePixelSHA256": "3f45942aeed5314a2f47bb9cb31755f7db2f96507510570bf52b1c5ede750b42",
+      "allowedWholePixelArraySHA256": [
+        "186f3367e4c9ab12d34045609ef36a15d37160c00f60fd1a79d5b10dc3c21752",
+        "1f7ba76152e3571dd1a03b7442fde927bd4aa4c42688141edbce00e6678b3990",
+        "211f9a0e8446caa464fcb02bd2e12be56a84c89bb1839eb2f85b8758d2734275",
+        "3f45942aeed5314a2f47bb9cb31755f7db2f96507510570bf52b1c5ede750b42",
+        "57fa7738bc88c0080ecda25f91d83538f77c593161c57189ed179f580f3d6849",
+        "61f49038bbdbf66ff393d40d442ad5af3c72d4f3a15894f101a56c80815259a1",
+        "7a67ff3151ef345e2ff74c1c0e0b08ce2c87b3cafae21061f47be13a6e54b695",
+        "eba4f4dad72ac7af616f81ce07c64a2f3fe0bdf89b73d745f095ce779496c6f5"
+      ],
+      "exception": true
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "temporalNoise": 0.05,
+      "t": 5.421115018565807,
+      "df": 9,
+      "rawP": 0.0004212250764276717,
+      "ADStatistic": 0.6568521453945682,
+      "matlabADP": 0.060258273190390135,
+      "BHq": 0.0004212250764276717,
+      "independentADMonteCarloP": 0.06064,
+      "ADMonteCarloSE": 0.0005336796342376201
+    },
+    {
+      "temporalNoise": 0.1,
+      "t": 8.615340548691409,
+      "df": 9,
+      "rawP": 1.2187607315315613e-05,
+      "ADStatistic": 0.25939278674816535,
+      "matlabADP": 0.6750762136785096,
+      "BHq": 1.6250143087087486e-05,
+      "independentADMonteCarloP": 0.674165,
+      "ADMonteCarloSE": 0.0010480137231329558
+    },
+    {
+      "temporalNoise": 0.15,
+      "t": 8.762775119233476,
+      "df": 9,
+      "rawP": 1.0617647010370616e-05,
+      "ADStatistic": 0.44526441013112894,
+      "matlabADP": 0.23279893976596608,
+      "BHq": 1.6250143087087486e-05,
+      "independentADMonteCarloP": 0.23209,
+      "ADMonteCarloSE": 0.0009439921395329519
+    },
+    {
+      "temporalNoise": 0.2,
+      "t": 12.17813937656324,
+      "df": 9,
+      "rawP": 6.79090017371684e-07,
+      "ADStatistic": 0.56744608142996,
+      "matlabADP": 0.10731856344129104,
+      "BHq": 5.432720138973472e-06,
+      "independentADMonteCarloP": 0.107935,
+      "ADMonteCarloSE": 0.0006938480949566699
+    },
+    {
+      "temporalNoise": 0.25,
+      "t": 9.989433521034838,
+      "df": 9,
+      "rawP": 3.609861555196865e-06,
+      "ADStatistic": 0.509166101081469,
+      "matlabADP": 0.15584587373126998,
+      "BHq": 9.870353909587441e-06,
+      "independentADMonteCarloP": 0.15597,
+      "ADMonteCarloSE": 0.0008113056116532167
+    },
+    {
+      "temporalNoise": 0.3,
+      "t": 9.272572140431949,
+      "df": 9,
+      "rawP": 6.684608867821696e-06,
+      "ADStatistic": 0.5023156692918143,
+      "matlabADP": 0.1627559315468361,
+      "BHq": 1.3369217735643392e-05,
+      "independentADMonteCarloP": 0.16289,
+      "ADMonteCarloSE": 0.0008257022704946379
+    },
+    {
+      "temporalNoise": 0.35,
+      "t": 7.675622526685586,
+      "df": 9,
+      "rawP": 3.076248974461883e-05,
+      "ADStatistic": 0.39204646958531164,
+      "matlabADP": 0.3227580639940437,
+      "BHq": 3.5157131136707236e-05,
+      "independentADMonteCarloP": 0.322375,
+      "ADMonteCarloSE": 0.0010451061175186947
+    },
+    {
+      "temporalNoise": 0.4,
+      "t": 9.959419419418367,
+      "df": 9,
+      "rawP": 3.7013827160952906e-06,
+      "ADStatistic": 0.3704351429854533,
+      "matlabADP": 0.36715926124873977,
+      "BHq": 9.870353909587441e-06,
+      "independentADMonteCarloP": 0.366885,
+      "ADMonteCarloSE": 0.0010776836195632742
+    }
+  ],
+  "meanOfNetworkMedians": 0.0873197163834448,
+  "SEMOfNetworkMedians": 0.007810892238288307,
+  "networkMedians": [
+    0.07417380650231287,
+    0.06842021982837976,
+    0.09789076238942562,
+    0.1372088933340489,
+    0.08519757365796571,
+    0.09025631945359458,
+    0.05843078401398111,
+    0.05545385360046129,
+    0.10336582142192935,
+    0.10279912963234877
+  ],
+  "sourceCSV_SHA256": "9AA4336DCFB8B0256B7D878F71F11061DFFBFD72E417DC3C309420538FCA7CCC",
+  "codeSHA256": "3DAFDC82AE6502D3CF4599EFA39B47EED8D6920F22D082431C7D702DD129CF8B",
+  "normalityAudit": "Independent normal CDF AD statistic plus 200000 fixed-seed Gaussian reference samples of n=10; calibration audit only, no change to primary MATLAB policy",
+  "referenceSeed": 78261021,
+  "referenceReplicates": 200000,
+  "matlabCriticalExceedance": 0.05028,
+  "utc": "2026-10-21T21:17:31.662267+00:00"
+}

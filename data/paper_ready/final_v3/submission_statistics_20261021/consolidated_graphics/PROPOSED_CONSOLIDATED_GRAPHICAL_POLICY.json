@@ -1,0 +1,2774 @@
+{
+  "status": "PROPOSED_ONLY_REQUIRES_EXPLICIT_USER_APPROVAL",
+  "enabled": false,
+  "version": 1,
+  "baseScientificCommit": "7977e16de7c406210b6df7dd44d8e457670858d2",
+  "scope": "Fixed current production figure set and existing frozen sources; no new science or change to canonical publication masters.",
+  "coordinateConvention": "Zero-based x,y; top-left; decoded uint8 RGBA; row-major SHA256.",
+  "prerequisites": [
+    "Every pinned committed source Git blob must be exact. Binary scientific data, source tables and static schematic must be byte-exact; retain existing independent numerical and source-table gates without tolerance.",
+    "All native scientific arrays and every accessible/gettable native graphical property must match the persisted canonical readback graph exactly, including axes, limits, labels, legends, styles, ordering and layout. No float tolerance.",
+    "Use the exact production lifecycle: saved native FIG readback for Fig6g/h; never compare a pre-readback interaction cache as if it were the exported native instance.",
+    "Control runtime figure identities by isolated readback. In both reference and test, drawnow then pf_snapshot before traversing the complete property graph; this materializes lazy empty-axis labels in the same order. Verify actual FileName against its source path before representing only that path as a verified identifier. Serialization UUIDs and handle identities are not scientific payloads; no property differences are silently discarded.",
+    "PNG export uses a separate instance; canonical native FIG bytes and original source figures must remain unchanged. Saved/reopened scientific and full graphical content must pass before and after export.",
+    "No registration, translation, padding, crop, resize, color transformation, PSNR/RMSE threshold, image-wide tolerance or mask dilation is permitted.",
+    "Exact reference dimensions listed per output remain mandatory, including the already documented fixed reproduction dimensions for Fig6a/b/ED7a. This adds no one-pixel dimension exception.",
+    "Every assembly image CData must equal its own separately validated source panel PNG exactly; panel identities, object order, axes, annotations, styles and layout remain exact. Only derived raster textures inherit the same fixed edge rule; they cannot bypass it. Original assembly FIG bytes remain protected.",
+    "Every original scientific-data image CData, including the static Fig6c schematic, remains exact. Derived composite panel textures are explicitly distinct from scientific numerical arrays.",
+    "Use the qualified MATLAB R2025b Update 1 environment and unchanged exportgraphics PNG Resolution=160 settings recorded in evidence. An unqualified environment or any mismatch outside this fixed policy stops release."
+  ],
+  "acceptance": "All prerequisite gates AND all 13 pixel rules must pass. Whole-image hashes need not be previously observed if every changed pixel satisfies its fixed site-specific full RGBA palette and all remaining pixels are exact.",
+  "forbidden": "No automatic learning or expansion of sites, colors, counts, dimensions, source identities or native-property exceptions. Any new difference is STOP and requires independent diagnosis and explicit new approval.",
+  "limitations": "Finite bounded evidence cannot guarantee all future renderer states. Previously unobserved coordinates/colors must still stop. No promise of universal bitwise raster determinism.",
+  "qualifiedEnvironment": {
+    "matlab": "25.2.0.3042426 (R2025b) Update 1",
+    "renderer": {
+      "GraphicsRenderer": "WebGL",
+      "Vendor": "Google Inc. (NVIDIA)",
+      "Version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "RendererDevice": "ANGLE (NVIDIA, NVIDIA Quadro RTX 8000 (0x00001E30) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "Details": {
+        "HardwareSupportLevel": "Full",
+        "SupportsDepthPeelTransparency": true,
+        "SupportsAlignVertexCenters": true,
+        "SupportsGraphicsSmoothing": true,
+        "MaxTextureSize": 16384,
+        "MaxFrameBufferSize": 16384
+      }
+    },
+    "screenPixelsPerInch": 96,
+    "graphicsSmoothing": "on",
+    "resolutionDPI": 160
+  },
+  "pinnedScientificSources": [
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_audit_behavior.m",
+      "gitBlobObjectID": "8493444ebae221ad0fc91d6f2120df5feae34661"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_behavior.m",
+      "gitBlobObjectID": "ed10c342f8d7782541702bb43871fdedef640f41"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_draw.m",
+      "gitBlobObjectID": "f31345f77a7abe83f847a47ca91ddabcc7f78220"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_features.m",
+      "gitBlobObjectID": "3709ffc5d247d71a9471b2e6416a1e4c3b4aeb3a"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_figures.m",
+      "gitBlobObjectID": "320012fb36ee7f75777361a87c6fea05bc602b78"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_folds.m",
+      "gitBlobObjectID": "dd5da3ea6b8e8a3f4f2d92b705235c9bbe991a18"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_geometry.m",
+      "gitBlobObjectID": "b8d9bc1636f1230e6043e2421da2fe6692cc593d"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_json.m",
+      "gitBlobObjectID": "98f16f82585b0603f4c47ba5147d1ad4bc43dfa8"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_lambda_controller.m",
+      "gitBlobObjectID": "5ea232b64417f6235e1a78ecfcc773238e556c5f"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_lambda_null.m",
+      "gitBlobObjectID": "be553f2dc1a418cb9887a4a724fb133568a87990"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_lambda_prepare.m",
+      "gitBlobObjectID": "5fa2120978fda720ba5d309905efc5387def268e"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_model.m",
+      "gitBlobObjectID": "e4b8bf4c8c24a1b826c72c9039429a396076cb1a"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_move.m",
+      "gitBlobObjectID": "9f2aaad045dccb0e9dd7c0e8a696c42b0e5eff66"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_noise.m",
+      "gitBlobObjectID": "06db327c3055defaf144a3669b8f3cf1b5454359"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_noise_grid.m",
+      "gitBlobObjectID": "0ccc077bd4ea7a2bd22b52bd8b9828ce848f28ff"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_noise_snapshot.m",
+      "gitBlobObjectID": "f4d0ab0483ac4ea3cac234669143caa2ac372088"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_prediction.m",
+      "gitBlobObjectID": "e6322850073bce2454a9988b4a4edfbbe313744f"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_prepare.m",
+      "gitBlobObjectID": "4ff7e6076e6187ddf80ed1b6fc70c6a5cce0ddc0"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_projector.m",
+      "gitBlobObjectID": "b831fb89cfa29dbdb832efacedace4e50e8a4cba"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_replay_geometry.m",
+      "gitBlobObjectID": "42e18bccd945f604b4acd77498468bbc9a9a5bb6"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_replay_illustrations.m",
+      "gitBlobObjectID": "13abc63d5f0e0b33be8bd7a14b0ef14cdbc36868"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_replay_lambda.m",
+      "gitBlobObjectID": "bfab6055b98067e0ff71895ce89ab26af2e49999"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_replay_noise.m",
+      "gitBlobObjectID": "1280ec57994cc1f951b329b673fdc47886abf99e"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_ridge.m",
+      "gitBlobObjectID": "91f042082256367f0854715d61baeb15aabbd7ba"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_save_noise_figure.m",
+      "gitBlobObjectID": "bb4c717ccce73f61b0ea1013d04a2654baf26d70"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_snapshot.m",
+      "gitBlobObjectID": "d723b12781c9aebc6bcadc71f6099517178c73da"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_static.m",
+      "gitBlobObjectID": "4b46e536184a6b8295a8471a02f20d08e6cc8c51"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_validate_noise_sources.m",
+      "gitBlobObjectID": "1f1c8cfbacf74c14326eb7b4d6b8b12d8dcb52fa"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_validate_sources.m",
+      "gitBlobObjectID": "b6cda81cb3298e0cd9448d37aeb8a8efe3ee70f4"
+    },
+    {
+      "path": "analysis/paper_ready/final_v3/production/pf_visualization_replay.m",
+      "gitBlobObjectID": "190f018b85699069fbbfe14eafae2969adfb69e5"
+    },
+    {
+      "path": "data/paper_ready/final_v3/ED7a_graphics.mat",
+      "gitBlobObjectID": "15c899ec9b9e43db6d7d80b9833287f1170ae027"
+    },
+    {
+      "path": "data/paper_ready/final_v3/ED7b_graphics.mat",
+      "gitBlobObjectID": "491f5278d4d9ccd3a5a32477a3b988f903ce9f92"
+    },
+    {
+      "path": "data/paper_ready/final_v3/ED7c_graphics.mat",
+      "gitBlobObjectID": "709670704b22605ed2fff3fbbb0cd6bde017990e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6a_graphics.mat",
+      "gitBlobObjectID": "b954aa003d57e0908e886d8e09b4e9d937bfe435"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6b_graphics.mat",
+      "gitBlobObjectID": "f977a4bf3d28606f35b7cd30f69f07a6f24f1014"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6c_schematic.png",
+      "gitBlobObjectID": "1b0db61a4afe7943944a3a26a68134e9f8330a70"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6d_graphics.mat",
+      "gitBlobObjectID": "1971f742d5d0cd60e203225fa977c833573aa721"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6e_graphics.mat",
+      "gitBlobObjectID": "72ca18244b6f18724d489e75d6625740823b6fce"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6f_graphics.mat",
+      "gitBlobObjectID": "d9f97d908f1e824e79c6b9e19db8628682ca89e2"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6g_graphics.mat",
+      "gitBlobObjectID": "16963af3cb643142196a300fa337872148d9d860"
+    },
+    {
+      "path": "data/paper_ready/final_v3/Fig6h_graphics.mat",
+      "gitBlobObjectID": "3a992e98f597138b4c84637acb9fab9b91475a99"
+    },
+    {
+      "path": "data/paper_ready/final_v3/illustration_constants.mat",
+      "gitBlobObjectID": "4eab0d8764e00327f59360b61bd22c6ac2933fd5"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_01.mat",
+      "gitBlobObjectID": "46fe122873ca1450c85a1ffbcb17fe205ddfc54f"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_02.mat",
+      "gitBlobObjectID": "2eed28d513604e1b38833c3c8903f932b376860f"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_03.mat",
+      "gitBlobObjectID": "35618acf657ef825716407e355780ca3b94e8a65"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_04.mat",
+      "gitBlobObjectID": "b9114954bb3aff1328a2432a14a338419b033533"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_05.mat",
+      "gitBlobObjectID": "ff05da6a530a671e435e100d57fcab9082a4a72d"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_06.mat",
+      "gitBlobObjectID": "c73b5d0cdaa5ef944236dac2d54dcd76552a32c4"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_07.mat",
+      "gitBlobObjectID": "469c93c66e8ef270a0f248e0edde24a795da0150"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_08.mat",
+      "gitBlobObjectID": "425ab8b2791507692c65add6884e00c4c61fb1dd"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_09.mat",
+      "gitBlobObjectID": "86fad6ff0aa5137ee77b55d76ffc5dab09812820"
+    },
+    {
+      "path": "data/paper_ready/final_v3/model_provenance_10.mat",
+      "gitBlobObjectID": "331003e4ac652d6500f741b7763257e757fd4607"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_01.mat",
+      "gitBlobObjectID": "5544c193c0953913e7fbc31a20c19d51e873d4f1"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_02.mat",
+      "gitBlobObjectID": "b634f0a46799e3c27d5608d85d6150c05f907356"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_03.mat",
+      "gitBlobObjectID": "31f10023022af2d33fc45aaf24d67a942c082821"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_04.mat",
+      "gitBlobObjectID": "4a735ac7651603ec6898266ea20a775f0f3f0ced"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_05.mat",
+      "gitBlobObjectID": "1a02034dc151f6fa5f3fe30bf3c0eabef7d93c5a"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_06.mat",
+      "gitBlobObjectID": "767b82f10b4adade06e158ab87138f0fdc295e77"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_07.mat",
+      "gitBlobObjectID": "3ff0a44857afe882445dd45ccd27e613fb9ad2db"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_08.mat",
+      "gitBlobObjectID": "61f983d830f7fb14ca412ab5157d51a11af01b45"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_09.mat",
+      "gitBlobObjectID": "4da9a050a7fb4dd23fd79ade6e9bf01b21989bed"
+    },
+    {
+      "path": "data/paper_ready/final_v3/network_10.mat",
+      "gitBlobObjectID": "0c8ef043c529e668b156b5ca1c60e5c5b2e7d73f"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/bootstrap_indices.mat",
+      "gitBlobObjectID": "5d2133bc711b77830c791695f3f2c9d51f6fdc08"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6g.fig",
+      "gitBlobObjectID": "2f42f2201acd21d72e25f94e76e85ad37b692265"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6g.png",
+      "gitBlobObjectID": "b31253fceb94a4c7c357057d477063170d6fef2a"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6g_graphics.mat",
+      "gitBlobObjectID": "d85bee93de3053d468a35aca316d805154963222"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6gh_network_values.csv",
+      "gitBlobObjectID": "0f0b0fe9416b569b48c4830dc7f29f0d93d2187c"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6gh_summaries.csv",
+      "gitBlobObjectID": "666540548e36ed6963056c5256e3d9cc7847d80d"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6gh_values.json",
+      "gitBlobObjectID": "b59a15e6e2430567ef5aeef6e1ede87a25ae0d54"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6h.fig",
+      "gitBlobObjectID": "c678e0a7c88c5c5130ea98c82c073b6ba9b5b0cf"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6h.png",
+      "gitBlobObjectID": "a01d5dfe40bb5b082f4fbe5591425a360bab593e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Fig6h_graphics.mat",
+      "gitBlobObjectID": "f6372e75855e7ac25e0f23390798d3a43b854644"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Figure_6.fig",
+      "gitBlobObjectID": "accced54a3488c56e1ca30934e04e62213a4752b"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/Figure_6.png",
+      "gitBlobObjectID": "c99d20bdd04c9c3fe38c29ee9578a25685abcb36"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/LEGENDS.md",
+      "gitBlobObjectID": "2fd931068ac184bbcedbc4ab29e866e30e62c064"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/MODEL.md",
+      "gitBlobObjectID": "3a1e81d0a3954262441d3c7688204f576f57a509"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/README.md",
+      "gitBlobObjectID": "db11872d895d43d0473fd73971978d7c96fef71f"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/REPRODUCTION.md",
+      "gitBlobObjectID": "02018db91893a37d644caeafb0c279b61d1626ca"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/manifest.json",
+      "gitBlobObjectID": "8dd60ac72ca9ee066d60bf68adaca6e31d29d0af"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/pf_model.m",
+      "gitBlobObjectID": "7eec5c618aaa87874498ae275f74815b7cab1bca"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/statistics.json",
+      "gitBlobObjectID": "1f04e36659bf0f52b73f2dbceae8fef0af397990"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/primary_reference.json",
+      "gitBlobObjectID": "a7df6fe4f1af3a183879b97dbdea02a883e78216"
+    },
+    {
+      "path": "data/paper_ready/final_v3/noise_sensitivity_20261019/update_manifest.json",
+      "gitBlobObjectID": "e2e629267134863128789b90426c2faf72d20da3"
+    },
+    {
+      "path": "data/paper_ready/final_v3/panel_provenance.json",
+      "gitBlobObjectID": "3cb6fac0384ccb96d7508cb70a4a7ed9e207e26e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/production_manifest.json",
+      "gitBlobObjectID": "1940aca6e440590b0a5b5a3bbb2a10bc4974255a"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/ED7a_calibration_grid.csv",
+      "gitBlobObjectID": "4503b981078c82152101bdd90c8f8c0d6e894daf"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/ED7a_network_grid.csv",
+      "gitBlobObjectID": "02d88f1e0fe09ebe0923b7c535b7c6df1d94288e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/ED7bc_experiment.csv",
+      "gitBlobObjectID": "c737cab6b24adf2ad1f7aa3614a83eeedbaa955a"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/ED7bc_network_values.csv",
+      "gitBlobObjectID": "d2dc3ce89db70b82ac5e4fd8287aa9b64b53859e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6ab_network_values.csv",
+      "gitBlobObjectID": "a58df34789086a9283cbecd7967d983742308ffc"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6ab_tests.csv",
+      "gitBlobObjectID": "d28ce96263f110709aafd8a9d73cabd71b7028dc"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6d_displayed_native_paths.csv",
+      "gitBlobObjectID": "db4ce05cc9446ea0b85432fa75c3769403d994f5"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6d_same_four_phase_means.csv",
+      "gitBlobObjectID": "bdb181121566ecb7cc220fc3bafb8fdc0ad126e2"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6d_selected_trials.csv",
+      "gitBlobObjectID": "d4f1ba6fc52091847953ca7724fd6509e6e92f93"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6e_alltrial_peak_speed.csv",
+      "gitBlobObjectID": "81ce295714b63213657a1a874f1e422ecf0efb31"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6e_median_support.csv",
+      "gitBlobObjectID": "c05c6d5d85b331d0c3c05b49f08068dd67d5ac03"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6e_raw_thin_traces.csv",
+      "gitBlobObjectID": "31c7cac930f8bc9b3d918572db31cb09ad3351e7"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6ef_selected_trials.csv",
+      "gitBlobObjectID": "26188757301c2523a6f50d58d8fd2b1c4b5cbbbc"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6ef_selection.json",
+      "gitBlobObjectID": "17ec1abf31ce3a69c472162e17b99b4adeb1e158"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6f_all30_inset.csv",
+      "gitBlobObjectID": "83467af0b7bb2038084c07acb3c92db14b3fcf48"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6f_alltrial_matched_dispersion.csv",
+      "gitBlobObjectID": "9b308c46f4928fd1a6ea1368037dd42b95dad319"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6f_alltrial_unmatched_control.csv",
+      "gitBlobObjectID": "e81387c5de0bbd69fbe53bee4afd618031992e8b"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6f_display_paths.csv",
+      "gitBlobObjectID": "030b13f114ad715b417db12d109a7bce57930c8f"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6f_histogram_counts.csv",
+      "gitBlobObjectID": "81a9fc9fab873057b8482c78dc89a0dc9480b3d2"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_case_qc.csv",
+      "gitBlobObjectID": "5cc232d83ec1d2c13b5aed8c91c675909a5194ca"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_network_values.csv",
+      "gitBlobObjectID": "3570b206840c50b30c18eac95247e89d945beaf2"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_summaries.csv",
+      "gitBlobObjectID": "51e7256903ab67ec12b75d8610c768c789c32c3c"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_tests.csv",
+      "gitBlobObjectID": "2bc3237a6aa46c1b7d2d9570503c1d6d5cb53e26"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/Fig6gh_values.json",
+      "gitBlobObjectID": "4f4b4294568f31bd33fb8697c5169a63c6550a92"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/geometry_selection.json",
+      "gitBlobObjectID": "8ac0c3d61ff67063ccb9d8154d0f9127144e2e1e"
+    },
+    {
+      "path": "data/paper_ready/final_v3/tables/statistics.json",
+      "gitBlobObjectID": "1b56a46b50dac12b505c376dafb125a2282c6d31"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/ED7a.fig",
+      "gitBlobObjectID": "8db90ad8d5ed5f26df6c7a3361dc28aa208b2e8e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/ED7b.fig",
+      "gitBlobObjectID": "3e9fcb487f40c18676ee2fca610b0f4cb5bb9557"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/ED7c.fig",
+      "gitBlobObjectID": "d6df3136d0dfa3037da8043a6c714cdf74410ec9"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Extended_Data_Figure_7.fig",
+      "gitBlobObjectID": "8d1e255f5b146a4921890d8c051653772bb325ef"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6a.fig",
+      "gitBlobObjectID": "e1948169a12d3fe4beb4f6396f9ebe99880d5b7c"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6b.fig",
+      "gitBlobObjectID": "e3fc69675600ad5cafd59d665777f2ceb2204a62"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6c.fig",
+      "gitBlobObjectID": "9d1e6209a0b16e2f71bdfd2d60efeab02c395a1b"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6d.fig",
+      "gitBlobObjectID": "6e191baf9e4a95b3ea1347d9c799ebac0647e44e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6e.fig",
+      "gitBlobObjectID": "a8d481fa36f7dad9bb5e0fb5f7d995e5c29a8d2b"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6f.fig",
+      "gitBlobObjectID": "9d316deda1c9f2821d01c187eb0fb14d6bdb69a5"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6g.fig",
+      "gitBlobObjectID": "288bffdad5eaeb05aa0cfe87420813d17b766e6f"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6h.fig",
+      "gitBlobObjectID": "ff77d4e1fc485b10fededf3d8308ebcf2fe72063"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/fig/Figure_6.fig",
+      "gitBlobObjectID": "bcce4ec5445c19482e87442bba9576e6a2fc5ea2"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/ED7a.png",
+      "gitBlobObjectID": "a6b5b5676f7be19fd6b7a9e1e609077a401b017e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/ED7b.png",
+      "gitBlobObjectID": "b19fa793b906bfae593f6cf83b3feb87283a72ed"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/ED7c.png",
+      "gitBlobObjectID": "7bbe6db32dfae023be1b5d2fea7e819bac1205b6"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Extended_Data_Figure_7.png",
+      "gitBlobObjectID": "a1aa3d7cd2404ed9bd7dba054bcddf8f2879cffb"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6a.png",
+      "gitBlobObjectID": "1feea7e2e8ef3398ad9357b8a2df147395590905"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6b.png",
+      "gitBlobObjectID": "bebafe56dbdb8d18383127913b302bf093f7e70a"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6c.png",
+      "gitBlobObjectID": "32762af8dd35ee302839541d1b19344a3898a764"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6d.png",
+      "gitBlobObjectID": "3bd06dd63e2c21a32b7e5f3cfaf4ece9a5f36920"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6e.png",
+      "gitBlobObjectID": "9b1f738fe39486af22b28d5631422b0af293fbf3"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6f.png",
+      "gitBlobObjectID": "136739176a82a05fc142270a9d23a1099d744480"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6g.png",
+      "gitBlobObjectID": "ca74f24b855d8a900e58fded5fc7a598166cf552"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Fig6h.png",
+      "gitBlobObjectID": "f25dba2c34e7263d32051557ac56c5f39ec2099e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/png/Figure_6.png",
+      "gitBlobObjectID": "2929c0c7ea3d7cd03d490273fce95aaf4a4b5add"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/ED7a_calibration_grid.csv",
+      "gitBlobObjectID": "4503b981078c82152101bdd90c8f8c0d6e894daf"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/ED7a_network_grid.csv",
+      "gitBlobObjectID": "02d88f1e0fe09ebe0923b7c535b7c6df1d94288e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/ED7bc_experiment.csv",
+      "gitBlobObjectID": "c737cab6b24adf2ad1f7aa3614a83eeedbaa955a"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/ED7bc_network_values.csv",
+      "gitBlobObjectID": "d2dc3ce89db70b82ac5e4fd8287aa9b64b53859e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6ab_network_values.csv",
+      "gitBlobObjectID": "a58df34789086a9283cbecd7967d983742308ffc"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6ab_tests.csv",
+      "gitBlobObjectID": "d28ce96263f110709aafd8a9d73cabd71b7028dc"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6d_displayed_native_paths.csv",
+      "gitBlobObjectID": "db4ce05cc9446ea0b85432fa75c3769403d994f5"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6d_same_four_phase_means.csv",
+      "gitBlobObjectID": "bdb181121566ecb7cc220fc3bafb8fdc0ad126e2"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6d_selected_trials.csv",
+      "gitBlobObjectID": "d4f1ba6fc52091847953ca7724fd6509e6e92f93"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6e_alltrial_peak_speed.csv",
+      "gitBlobObjectID": "81ce295714b63213657a1a874f1e422ecf0efb31"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6e_median_support.csv",
+      "gitBlobObjectID": "c05c6d5d85b331d0c3c05b49f08068dd67d5ac03"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6e_raw_thin_traces.csv",
+      "gitBlobObjectID": "31c7cac930f8bc9b3d918572db31cb09ad3351e7"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6ef_selected_trials.csv",
+      "gitBlobObjectID": "26188757301c2523a6f50d58d8fd2b1c4b5cbbbc"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6ef_selection.json",
+      "gitBlobObjectID": "17ec1abf31ce3a69c472162e17b99b4adeb1e158"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6f_all30_inset.csv",
+      "gitBlobObjectID": "83467af0b7bb2038084c07acb3c92db14b3fcf48"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6f_alltrial_matched_dispersion.csv",
+      "gitBlobObjectID": "9b308c46f4928fd1a6ea1368037dd42b95dad319"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6f_alltrial_unmatched_control.csv",
+      "gitBlobObjectID": "e81387c5de0bbd69fbe53bee4afd618031992e8b"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6f_display_paths.csv",
+      "gitBlobObjectID": "030b13f114ad715b417db12d109a7bce57930c8f"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6f_histogram_counts.csv",
+      "gitBlobObjectID": "81a9fc9fab873057b8482c78dc89a0dc9480b3d2"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6gh_case_qc.csv",
+      "gitBlobObjectID": "5cc232d83ec1d2c13b5aed8c91c675909a5194ca"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6gh_network_values.csv",
+      "gitBlobObjectID": "3570b206840c50b30c18eac95247e89d945beaf2"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6gh_summaries.csv",
+      "gitBlobObjectID": "51e7256903ab67ec12b75d8610c768c789c32c3c"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6gh_tests.csv",
+      "gitBlobObjectID": "2bc3237a6aa46c1b7d2d9570503c1d6d5cb53e26"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/Fig6gh_values.json",
+      "gitBlobObjectID": "4f4b4294568f31bd33fb8697c5169a63c6550a92"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/geometry_selection.json",
+      "gitBlobObjectID": "8ac0c3d61ff67063ccb9d8154d0f9127144e2e1e"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/source/statistics.json",
+      "gitBlobObjectID": "1b56a46b50dac12b505c376dafb125a2282c6d31"
+    },
+    {
+      "path": "plots/paper_ready/final_v3/production/validation.json",
+      "gitBlobObjectID": "957c4c7c7efef90cef414ab00758731952a878e4"
+    },
+    {
+      "path": "run_paper_figures.m",
+      "gitBlobObjectID": "6ddd793d93260fe4527e65d3f30ef7d79d7dda91"
+    },
+    {
+      "path": "run_paper_model.m",
+      "gitBlobObjectID": "9e0f4bf0e117e648f901f10ac9a69cb788782058"
+    },
+    {
+      "path": "src/published_generator/calibrate_source_faithful_generator.m",
+      "gitBlobObjectID": "c46f21e5e34da17052eaf0f19264ac5e8ca7a57c"
+    },
+    {
+      "path": "src/published_generator/generate_source_faithful_recurrent.m",
+      "gitBlobObjectID": "052a83a4f6c3441e74dbbb2cbce532e6c6e9e6e3"
+    },
+    {
+      "path": "src/published_generator/load_published_generator.m",
+      "gitBlobObjectID": "2b399b2028ddafdf8440b213d59dbf46674b27e9"
+    },
+    {
+      "path": "src/published_generator/optimize_source_target_torques.m",
+      "gitBlobObjectID": "3024064808b7bcd1e71072a2a4fbf4e54cd7d031"
+    },
+    {
+      "path": "src/published_generator/published_movement_input.m",
+      "gitBlobObjectID": "fe6087602864ece94dcb311023b73e1fbf791373"
+    },
+    {
+      "path": "src/published_generator/simulate_published_arm.m",
+      "gitBlobObjectID": "bbb461c7fe0703dfb601c3360b636b97bb23b6c3"
+    },
+    {
+      "path": "src/published_generator/simulate_published_cortex.m",
+      "gitBlobObjectID": "1bacee869e1213d1715d0add3ee37a2b0b6c2b4e"
+    },
+    {
+      "path": "src/published_generator/source_calibration_objective_adjoint.m",
+      "gitBlobObjectID": "9cc95433155c1522c0774d47040545fff72bf623"
+    },
+    {
+      "path": "src/published_generator/source_calibration_parameter_objective.m",
+      "gitBlobObjectID": "80dcdb2badbb1d018b60c646c372aa72af28598b"
+    },
+    {
+      "path": "src/published_generator/source_calibration_unpack.m",
+      "gitBlobObjectID": "72d82d863e1fa0976696b031580587e263031c5d"
+    },
+    {
+      "path": "src/published_generator/source_calibration_unpack_vjp.m",
+      "gitBlobObjectID": "7cd49072b44ee2f1a73f34ccefc0d8098ae4f51d"
+    },
+    {
+      "path": "src/published_generator/source_target_hand_trajectories.m",
+      "gitBlobObjectID": "887924c5681dae43504d541a9477df893ebef09d"
+    },
+    {
+      "path": "src/published_generator/source_target_torque_objective.m",
+      "gitBlobObjectID": "f572b33cbc1e098d067704f120a4f9f93cfde4dd"
+    },
+    {
+      "path": "src/published_generator/source_target_torque_objective_adjoint.m",
+      "gitBlobObjectID": "9eb12a777b02f0f6b0118c99b20dc25dc91f22aa"
+    },
+    {
+      "path": "workflows/validate_publication.m",
+      "gitBlobObjectID": "89d5926e1fe1815886a37b32674134368647a82c"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Fig6a",
+      "dimensionsWH": [
+        1487,
+        959
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6a.png",
+      "referenceFileSHA256": "0B26549B8933E2695932B199013EE59E0A6C02AB872319923ED3B642C134D432",
+      "referenceDecodedRGBA_SHA256": "e294592001bda4006a8741437079bdba2580a4f827d9477bbcefc351f02f1cd7",
+      "maximumPermittedChangedPixels": 2,
+      "permittedSites": [
+        {
+          "x": 1365,
+          "y": 635,
+          "referenceRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "observedRGBA": [
+            [
+              198,
+              198,
+              198,
+              255
+            ],
+            [
+              199,
+              199,
+              199,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            198,
+            198,
+            198,
+            255
+          ],
+          "observedMaximumRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1364,
+          "y": 636,
+          "referenceRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "observedRGBA": [
+            [
+              198,
+              198,
+              198,
+              255
+            ],
+            [
+              199,
+              199,
+              199,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            198,
+            198,
+            198,
+            255
+          ],
+          "observedMaximumRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6b",
+      "dimensionsWH": [
+        1470,
+        959
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6b.png",
+      "referenceFileSHA256": "CD5E7305814261DBD906EF35334AC56A69AC5EB364FE5FACC66B78A04027387B",
+      "referenceDecodedRGBA_SHA256": "68838ffafec6312e0ab1f9fa3685336d97abb897d47de2ebb45c245d7830a487",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6c",
+      "dimensionsWH": [
+        1531,
+        1577
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6c.png",
+      "referenceFileSHA256": "6A276E75AA60207A9D74292DCC1F14C6E4929FADB32C5ED2369393C7A1B1267F",
+      "referenceDecodedRGBA_SHA256": "0540cb8aeaba581c830704aa84109044f4e1a785eed89649f1dea4f89eec8ba1",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6d",
+      "dimensionsWH": [
+        2166,
+        1029
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6d.png",
+      "referenceFileSHA256": "08AC48A77D906FE84FCF5F8A7B7BC1F51A2DED8B0515BFF98B05E0CF3712E807",
+      "referenceDecodedRGBA_SHA256": "8b5fcc532bb2f27762dd74ada2f05bd1e70d7a7723f27ad72cd4e9026e9045fa",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6e",
+      "dimensionsWH": [
+        1687,
+        935
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6e.png",
+      "referenceFileSHA256": "9BD2F2D19F9C3E7584A994344F804359DEB6FF83F610A4AF23A85D9A8A5E5317",
+      "referenceDecodedRGBA_SHA256": "15c5dd2d5fca69701668834753317092bc452bc3bc0d850890eac2d585973e51",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6f",
+      "dimensionsWH": [
+        1388,
+        849
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6f.png",
+      "referenceFileSHA256": "573FB9169BC98B56D042AB5FCBC1798B991279976B12475FE3A104D4DACF3238",
+      "referenceDecodedRGBA_SHA256": "a69de8a5f7ce72f4b7d9b1bf806a4d4da9bab805cc382b049d57aec1458b772c",
+      "maximumPermittedChangedPixels": 4,
+      "permittedSites": [
+        {
+          "x": 1303,
+          "y": 738,
+          "referenceRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              195,
+              166,
+              138,
+              255
+            ],
+            [
+              213,
+              174,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            213,
+            174,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            18,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "x": 1304,
+          "y": 739,
+          "referenceRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              195,
+              166,
+              138,
+              255
+            ],
+            [
+              213,
+              174,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            213,
+            174,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            18,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "x": 1307,
+          "y": 742,
+          "referenceRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              195,
+              166,
+              138,
+              255
+            ],
+            [
+              213,
+              174,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            213,
+            174,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            18,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "x": 1308,
+          "y": 743,
+          "referenceRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              195,
+              166,
+              138,
+              255
+            ],
+            [
+              213,
+              174,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            195,
+            166,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            213,
+            174,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            18,
+            8,
+            2,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6g",
+      "dimensionsWH": [
+        1587,
+        1010
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6g.png",
+      "referenceFileSHA256": "1FA99EEB1C0929A1C4B430AE0D29015633F58A39B6650E337CABA9978ECCBFB7",
+      "referenceDecodedRGBA_SHA256": "fcaa7b5d83300240d89a794c22368b50675a00a1c9de8523dacb8223a654c058",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Fig6h",
+      "dimensionsWH": [
+        1566,
+        997
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Fig6h.png",
+      "referenceFileSHA256": "4DD23FE261C7E101A8579991493FF8C1A917B7B4EF523C86994960A345A7F4A7",
+      "referenceDecodedRGBA_SHA256": "d4778d0cb811cdde9e8643ccd8e58da56345a2812178330f902736563f0636ea",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "ED7a",
+      "dimensionsWH": [
+        1492,
+        1084
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/ED7a.png",
+      "referenceFileSHA256": "90EB6CC1340DBF3AC1F9372E91122DE6C984E7CFA27DDF8756212FD52885873C",
+      "referenceDecodedRGBA_SHA256": "8fa4ed34225d2f2082a011a41edf576d6b29ad121d2fee87e9c7baa6ea2a9efa",
+      "maximumPermittedChangedPixels": 0,
+      "permittedSites": [],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "ED7b",
+      "dimensionsWH": [
+        1498,
+        901
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/ED7b.png",
+      "referenceFileSHA256": "F2B60A5FB05A34D1E8D70618594A63DD50FD2DBDFC09ED34951609A2081187E4",
+      "referenceDecodedRGBA_SHA256": "74749eae633f72b9dacc02247220e3dac8bc7cd70ee76930e471c31cb2e14393",
+      "maximumPermittedChangedPixels": 9,
+      "permittedSites": [
+        {
+          "x": 1078,
+          "y": 250,
+          "referenceRGBA": [
+            142,
+            100,
+            67,
+            255
+          ],
+          "observedRGBA": [
+            [
+              142,
+              99,
+              66,
+              255
+            ],
+            [
+              142,
+              100,
+              67,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            142,
+            99,
+            66,
+            255
+          ],
+          "observedMaximumRGBA": [
+            142,
+            100,
+            67,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1081,
+          "y": 251,
+          "referenceRGBA": [
+            241,
+            202,
+            171,
+            255
+          ],
+          "observedRGBA": [
+            [
+              240,
+              201,
+              171,
+              255
+            ],
+            [
+              241,
+              202,
+              171,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            240,
+            201,
+            171,
+            255
+          ],
+          "observedMaximumRGBA": [
+            241,
+            202,
+            171,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 1078,
+          "y": 252,
+          "referenceRGBA": [
+            184,
+            161,
+            143,
+            255
+          ],
+          "observedRGBA": [
+            [
+              174,
+              151,
+              133,
+              255
+            ],
+            [
+              184,
+              161,
+              143,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            174,
+            151,
+            133,
+            255
+          ],
+          "observedMaximumRGBA": [
+            184,
+            161,
+            143,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            10,
+            10,
+            10,
+            0
+          ]
+        },
+        {
+          "x": 1079,
+          "y": 252,
+          "referenceRGBA": [
+            124,
+            64,
+            16,
+            255
+          ],
+          "observedRGBA": [
+            [
+              124,
+              63,
+              15,
+              255
+            ],
+            [
+              124,
+              64,
+              16,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            124,
+            63,
+            15,
+            255
+          ],
+          "observedMaximumRGBA": [
+            124,
+            64,
+            16,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 942,
+          "y": 538,
+          "referenceRGBA": [
+            58,
+            120,
+            156,
+            255
+          ],
+          "observedRGBA": [
+            [
+              57,
+              120,
+              156,
+              255
+            ],
+            [
+              58,
+              120,
+              156,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            57,
+            120,
+            156,
+            255
+          ],
+          "observedMaximumRGBA": [
+            58,
+            120,
+            156,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 943,
+          "y": 538,
+          "referenceRGBA": [
+            112,
+            150,
+            172,
+            255
+          ],
+          "observedRGBA": [
+            [
+              112,
+              150,
+              172,
+              255
+            ],
+            [
+              112,
+              151,
+              174,
+              255
+            ],
+            [
+              113,
+              151,
+              174,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            112,
+            150,
+            172,
+            255
+          ],
+          "observedMaximumRGBA": [
+            113,
+            151,
+            174,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "x": 943,
+          "y": 540,
+          "referenceRGBA": [
+            86,
+            150,
+            187,
+            255
+          ],
+          "observedRGBA": [
+            [
+              85,
+              149,
+              186,
+              255
+            ],
+            [
+              86,
+              150,
+              187,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            85,
+            149,
+            186,
+            255
+          ],
+          "observedMaximumRGBA": [
+            86,
+            150,
+            187,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 945,
+          "y": 540,
+          "referenceRGBA": [
+            189,
+            201,
+            208,
+            255
+          ],
+          "observedRGBA": [
+            [
+              188,
+              197,
+              203,
+              255
+            ],
+            [
+              189,
+              201,
+              208,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            188,
+            197,
+            203,
+            255
+          ],
+          "observedMaximumRGBA": [
+            189,
+            201,
+            208,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            4,
+            5,
+            0
+          ]
+        },
+        {
+          "x": 943,
+          "y": 541,
+          "referenceRGBA": [
+            108,
+            169,
+            205,
+            255
+          ],
+          "observedRGBA": [
+            [
+              106,
+              165,
+              199,
+              255
+            ],
+            [
+              108,
+              169,
+              205,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            106,
+            165,
+            199,
+            255
+          ],
+          "observedMaximumRGBA": [
+            108,
+            169,
+            205,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            2,
+            4,
+            6,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "ED7c",
+      "dimensionsWH": [
+        1518,
+        901
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/ED7c.png",
+      "referenceFileSHA256": "B45B61D5F5591D0D8CFCDFBDDBE472B1AF7FBD85D4650C8ECEC72E31439D5A2B",
+      "referenceDecodedRGBA_SHA256": "224642348869da207fb0f7dc3aa5324d09f9f5f8ffba23edd98d5d75840c1d5d",
+      "maximumPermittedChangedPixels": 9,
+      "permittedSites": [
+        {
+          "x": 1100,
+          "y": 238,
+          "referenceRGBA": [
+            140,
+            140,
+            140,
+            255
+          ],
+          "observedRGBA": [
+            [
+              139,
+              139,
+              139,
+              255
+            ],
+            [
+              140,
+              140,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "observedMaximumRGBA": [
+            140,
+            140,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1100,
+          "y": 239,
+          "referenceRGBA": [
+            132,
+            132,
+            132,
+            255
+          ],
+          "observedRGBA": [
+            [
+              131,
+              131,
+              131,
+              255
+            ],
+            [
+              132,
+              132,
+              132,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            131,
+            131,
+            131,
+            255
+          ],
+          "observedMaximumRGBA": [
+            132,
+            132,
+            132,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1100,
+          "y": 240,
+          "referenceRGBA": [
+            138,
+            138,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              138,
+              138,
+              138,
+              255
+            ],
+            [
+              139,
+              139,
+              139,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            138,
+            138,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1101,
+          "y": 240,
+          "referenceRGBA": [
+            154,
+            154,
+            154,
+            255
+          ],
+          "observedRGBA": [
+            [
+              154,
+              154,
+              154,
+              255
+            ],
+            [
+              155,
+              155,
+              155,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            154,
+            154,
+            154,
+            255
+          ],
+          "observedMaximumRGBA": [
+            155,
+            155,
+            155,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1099,
+          "y": 241,
+          "referenceRGBA": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "observedRGBA": [
+            [
+              149,
+              149,
+              149,
+              255
+            ],
+            [
+              150,
+              150,
+              150,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            149,
+            149,
+            149,
+            255
+          ],
+          "observedMaximumRGBA": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 964,
+          "y": 470,
+          "referenceRGBA": [
+            156,
+            156,
+            156,
+            255
+          ],
+          "observedRGBA": [
+            [
+              156,
+              156,
+              156,
+              255
+            ],
+            [
+              179,
+              179,
+              179,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            156,
+            156,
+            156,
+            255
+          ],
+          "observedMaximumRGBA": [
+            179,
+            179,
+            179,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            23,
+            23,
+            23,
+            0
+          ]
+        },
+        {
+          "x": 965,
+          "y": 473,
+          "referenceRGBA": [
+            63,
+            63,
+            63,
+            255
+          ],
+          "observedRGBA": [
+            [
+              63,
+              63,
+              63,
+              255
+            ],
+            [
+              64,
+              64,
+              64,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            63,
+            63,
+            63,
+            255
+          ],
+          "observedMaximumRGBA": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 963,
+          "y": 498,
+          "referenceRGBA": [
+            37,
+            37,
+            37,
+            255
+          ],
+          "observedRGBA": [
+            [
+              36,
+              36,
+              36,
+              255
+            ],
+            [
+              37,
+              37,
+              37,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            36,
+            36,
+            36,
+            255
+          ],
+          "observedMaximumRGBA": [
+            37,
+            37,
+            37,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 964,
+          "y": 498,
+          "referenceRGBA": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "observedRGBA": [
+            [
+              157,
+              157,
+              157,
+              255
+            ],
+            [
+              163,
+              163,
+              163,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "observedMaximumRGBA": [
+            163,
+            163,
+            163,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            6,
+            6,
+            6,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Figure_6",
+      "dimensionsWH": [
+        3596,
+        2567
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Figure_6.png",
+      "referenceFileSHA256": "FB5A7D5EA02EDA5157FEEF1C85E43E1999ADC9E82F68A99A7C60BCC69D306EEE",
+      "referenceDecodedRGBA_SHA256": "17cdbfbb37ec1393aafc9e31a8da5679489d4edbf374bebf8a32311857eaa28c",
+      "maximumPermittedChangedPixels": 1,
+      "permittedSites": [
+        {
+          "x": 825,
+          "y": 537,
+          "referenceRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "observedRGBA": [
+            [
+              198,
+              198,
+              198,
+              255
+            ],
+            [
+              199,
+              199,
+              199,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            198,
+            198,
+            198,
+            255
+          ],
+          "observedMaximumRGBA": [
+            199,
+            199,
+            199,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    },
+    {
+      "name": "Extended_Data_Figure_7",
+      "dimensionsWH": [
+        2910,
+        2230
+      ],
+      "referencePath": "local_explorations/presentation_cleanup_20261019/remote_publication/figures/png/Extended_Data_Figure_7.png",
+      "referenceFileSHA256": "DBF790D23E3BB585E739D3AF308DF7A5DDE129158F692C12F704408E4C4BBAE7",
+      "referenceDecodedRGBA_SHA256": "3f45942aeed5314a2f47bb9cb31755f7db2f96507510570bf52b1c5ede750b42",
+      "maximumPermittedChangedPixels": 17,
+      "permittedSites": [
+        {
+          "x": 2515,
+          "y": 372,
+          "referenceRGBA": [
+            142,
+            100,
+            67,
+            255
+          ],
+          "observedRGBA": [
+            [
+              142,
+              99,
+              66,
+              255
+            ],
+            [
+              142,
+              100,
+              67,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            142,
+            99,
+            66,
+            255
+          ],
+          "observedMaximumRGBA": [
+            142,
+            100,
+            67,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 2517,
+          "y": 373,
+          "referenceRGBA": [
+            241,
+            202,
+            171,
+            255
+          ],
+          "observedRGBA": [
+            [
+              240,
+              201,
+              171,
+              255
+            ],
+            [
+              241,
+              202,
+              171,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            240,
+            201,
+            171,
+            255
+          ],
+          "observedMaximumRGBA": [
+            241,
+            202,
+            171,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 2515,
+          "y": 374,
+          "referenceRGBA": [
+            184,
+            161,
+            143,
+            255
+          ],
+          "observedRGBA": [
+            [
+              174,
+              151,
+              133,
+              255
+            ],
+            [
+              184,
+              161,
+              143,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            174,
+            151,
+            133,
+            255
+          ],
+          "observedMaximumRGBA": [
+            184,
+            161,
+            143,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            10,
+            10,
+            10,
+            0
+          ]
+        },
+        {
+          "x": 2516,
+          "y": 374,
+          "referenceRGBA": [
+            124,
+            64,
+            16,
+            255
+          ],
+          "observedRGBA": [
+            [
+              124,
+              63,
+              15,
+              255
+            ],
+            [
+              124,
+              64,
+              16,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            124,
+            63,
+            15,
+            255
+          ],
+          "observedMaximumRGBA": [
+            124,
+            64,
+            16,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 2387,
+          "y": 643,
+          "referenceRGBA": [
+            58,
+            120,
+            156,
+            255
+          ],
+          "observedRGBA": [
+            [
+              57,
+              120,
+              156,
+              255
+            ],
+            [
+              58,
+              120,
+              156,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            57,
+            120,
+            156,
+            255
+          ],
+          "observedMaximumRGBA": [
+            58,
+            120,
+            156,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 2388,
+          "y": 643,
+          "referenceRGBA": [
+            112,
+            150,
+            172,
+            255
+          ],
+          "observedRGBA": [
+            [
+              112,
+              150,
+              172,
+              255
+            ],
+            [
+              112,
+              151,
+              174,
+              255
+            ],
+            [
+              113,
+              151,
+              174,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            112,
+            150,
+            172,
+            255
+          ],
+          "observedMaximumRGBA": [
+            113,
+            151,
+            174,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "x": 2388,
+          "y": 645,
+          "referenceRGBA": [
+            86,
+            150,
+            187,
+            255
+          ],
+          "observedRGBA": [
+            [
+              85,
+              149,
+              186,
+              255
+            ],
+            [
+              86,
+              150,
+              187,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            85,
+            149,
+            186,
+            255
+          ],
+          "observedMaximumRGBA": [
+            86,
+            150,
+            187,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 2389,
+          "y": 645,
+          "referenceRGBA": [
+            189,
+            201,
+            208,
+            255
+          ],
+          "observedRGBA": [
+            [
+              188,
+              197,
+              203,
+              255
+            ],
+            [
+              189,
+              201,
+              208,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            188,
+            197,
+            203,
+            255
+          ],
+          "observedMaximumRGBA": [
+            189,
+            201,
+            208,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            4,
+            5,
+            0
+          ]
+        },
+        {
+          "x": 2388,
+          "y": 646,
+          "referenceRGBA": [
+            108,
+            169,
+            205,
+            255
+          ],
+          "observedRGBA": [
+            [
+              106,
+              165,
+              199,
+              255
+            ],
+            [
+              108,
+              169,
+              205,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            106,
+            165,
+            199,
+            255
+          ],
+          "observedMaximumRGBA": [
+            108,
+            169,
+            205,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            2,
+            4,
+            6,
+            0
+          ]
+        },
+        {
+          "x": 1022,
+          "y": 1614,
+          "referenceRGBA": [
+            140,
+            140,
+            140,
+            255
+          ],
+          "observedRGBA": [
+            [
+              139,
+              139,
+              139,
+              255
+            ],
+            [
+              140,
+              140,
+              140,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "observedMaximumRGBA": [
+            140,
+            140,
+            140,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1022,
+          "y": 1615,
+          "referenceRGBA": [
+            138,
+            138,
+            138,
+            255
+          ],
+          "observedRGBA": [
+            [
+              138,
+              138,
+              138,
+              255
+            ],
+            [
+              139,
+              139,
+              139,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            138,
+            138,
+            138,
+            255
+          ],
+          "observedMaximumRGBA": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1023,
+          "y": 1615,
+          "referenceRGBA": [
+            154,
+            154,
+            154,
+            255
+          ],
+          "observedRGBA": [
+            [
+              154,
+              154,
+              154,
+              255
+            ],
+            [
+              155,
+              155,
+              155,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            154,
+            154,
+            154,
+            255
+          ],
+          "observedMaximumRGBA": [
+            155,
+            155,
+            155,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 1021,
+          "y": 1616,
+          "referenceRGBA": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "observedRGBA": [
+            [
+              149,
+              149,
+              149,
+              255
+            ],
+            [
+              150,
+              150,
+              150,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            149,
+            149,
+            149,
+            255
+          ],
+          "observedMaximumRGBA": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 895,
+          "y": 1829,
+          "referenceRGBA": [
+            156,
+            156,
+            156,
+            255
+          ],
+          "observedRGBA": [
+            [
+              156,
+              156,
+              156,
+              255
+            ],
+            [
+              179,
+              179,
+              179,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            156,
+            156,
+            156,
+            255
+          ],
+          "observedMaximumRGBA": [
+            179,
+            179,
+            179,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            23,
+            23,
+            23,
+            0
+          ]
+        },
+        {
+          "x": 896,
+          "y": 1832,
+          "referenceRGBA": [
+            63,
+            63,
+            63,
+            255
+          ],
+          "observedRGBA": [
+            [
+              63,
+              63,
+              63,
+              255
+            ],
+            [
+              64,
+              64,
+              64,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            63,
+            63,
+            63,
+            255
+          ],
+          "observedMaximumRGBA": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 894,
+          "y": 1855,
+          "referenceRGBA": [
+            37,
+            37,
+            37,
+            255
+          ],
+          "observedRGBA": [
+            [
+              36,
+              36,
+              36,
+              255
+            ],
+            [
+              37,
+              37,
+              37,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            36,
+            36,
+            36,
+            255
+          ],
+          "observedMaximumRGBA": [
+            37,
+            37,
+            37,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 895,
+          "y": 1855,
+          "referenceRGBA": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "observedRGBA": [
+            [
+              157,
+              157,
+              157,
+              255
+            ],
+            [
+              163,
+              163,
+              163,
+              255
+            ]
+          ],
+          "observedMinimumRGBA": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "observedMaximumRGBA": [
+            163,
+            163,
+            163,
+            255
+          ],
+          "maxAbsoluteDeltaFromReference": [
+            6,
+            6,
+            6,
+            0
+          ]
+        }
+      ],
+      "outsideSites": "EXACT RGBA BYTE EQUALITY",
+      "insideSites": "RGBA must equal one complete explicitly enumerated observedRGBA tuple at this exact site. Min/max values are descriptive, NOT an independent box tolerance.",
+      "spatialTolerancePixels": 0,
+      "dimensionTolerancePixels": 0,
+      "alphaTolerance": 0
+    }
+  ]
+}

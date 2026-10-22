@@ -52,6 +52,12 @@ run_paper_model('check') % actual network1 primary Intact/Block replay + predict
 
 The full interface also provides `lambda`, `geometry`, `stochastic` and `illustrations` modes. It never retrains or reselects parameters. See [reproduction instructions](docs/paper_ready/final_v3/production/REPRODUCTION.md) for requirements, exact scope and executed checks. Full lambda replay requires Control System Toolbox; paper regeneration needs MATLAB graphics, not a licensed third-party checkout.
 
+## Submission statistics and shuffled controls
+
+The additive [submission supplement](docs/paper_ready/final_v3/production/SUBMISSION_STATISTICS.md) records eight paired temporal Control-versus-Block tests, their normality checks and BH correction, and three complete trial-shuffled noise-floor estimates. All original figure pixels/data, model inputs, bootstrap draws and prior source tables are preserved. New versioned inputs and full null statistics are under `data/paper_ready/final_v3/submission_statistics_20261021/`.
+
+From the repository root, add `workflows` and call `reproduce_submission_statistics` to independently reproduce the frozen 230-case, 2,000-permutation calculation without neural simulations. `validate_submission_graphics` applies only the explicitly approved fixed pixel sites and complete RGBA palettes; it does not relax native or scientific validation. See the supplement for exact commands, estimators, source hashes and limitations.
+
 ## Navigation
 
 - [Model specification](MODEL_SPEC.md)
@@ -67,4 +73,4 @@ Stage1/2/3 foundation code and accepted assets remain preserved. Their historica
 
 Completion of production is not new scientific acceptance. Stop for scientific review; no further fitting or model extension is authorized.
 
-Current authority is Main_text_v12: Fig6a–h and ED7a–c only. ED7d was retired with exact source/data/code/interpretation preservation at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4; its archive is not a runtime dependency.
+Current manuscript mapping is Main_text_v13 Fig6a–h and Extended Data Fig5a–c; the repository retains its original Fig6a–h / ED7a–c source filenames. ED7d was retired with exact source/data/code/interpretation preservation at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4; its archive is not a runtime dependency.

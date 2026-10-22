@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "network": 10,
+  "cases": 23,
+  "repeats": 2000,
+  "elapsedSeconds": 46.4135923,
+  "allOriginalUnshuffledExact": true,
+  "canonicalRidgePermutationsPerCase": 16,
+  "readbackExact": true
+}

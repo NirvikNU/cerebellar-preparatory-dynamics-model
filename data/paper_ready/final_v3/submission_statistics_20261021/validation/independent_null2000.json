@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "independentAggregation": true,
+  "all460000OrMoreSSE_SSTIdentities": true,
+  "allCaseMediansVerified": true,
+  "repeats": 2000,
+  "summaries": [
+    {
+      "summary": "Control_initial",
+      "mean": -0.011067295611708512,
+      "SEM": 8.694925963527717e-05,
+      "meanMonteCarloSE": 8.12237048657624e-05,
+      "SEMMonteCarloSE": 2.393867993023355e-06,
+      "precisionPass": true
+    },
+    {
+      "summary": "Control_temporal",
+      "mean": -0.010469517317725174,
+      "SEM": 2.2226884884234253e-05,
+      "meanMonteCarloSE": 1.9618901485962262e-05,
+      "SEMMonteCarloSE": 6.5954243652843386e-06,
+      "precisionPass": true
+    },
+    {
+      "summary": "Block_temporal",
+      "mean": -0.010467687327424858,
+      "SEM": 1.5304576137065777e-05,
+      "meanMonteCarloSE": 1.3767509841951577e-05,
+      "SEMMonteCarloSE": 1.7614566226770336e-06,
+      "precisionPass": true
+    }
+  ],
+  "sourceSHA256": "FCC1611CDC5AA6554842D47199D0FBB669117AB157703F826E790FE67664E834",
+  "scriptSHA256": "10247CC42ED9159DF2C3AE6BB2F1E9F087FE3390E333DA4B0F506566B04B4016"
+}

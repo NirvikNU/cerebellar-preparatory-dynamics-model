@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "allEightNormalityNonrejections": true,
+  "allEightBHBelow001": true,
+  "summaryMatchesExpectedRounding": true
+}
