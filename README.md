@@ -1,5 +1,7 @@
 # Cerebellar preparatory dynamics — final manuscript production
 
+**Publication documentation:** [Cerebellar Contributions to Cortical Preparatory Dynamics Model](https://nirviksinha.notion.site/Cerebellar-Contributions-to-Cortical-Preparatory-Dynamics-Model-Publication-Documentation-40226c94be3081e78c1dec482828cc37)
+
 The frozen effective model combines cortical/base preparation, target-dependent state setting and anticipatory control in ten independently instantiated 200-unit recurrent ReLU networks. It uses eight targets, **eta=0, lambda=10, V=1, shared alpha=0.5 and beta_norm=1.25**, with primary initial/temporal noise 0.10/0.10. There is no generic residual kappa feedback. This is a functional decomposition, not a claim of anatomically separate cerebellar pathways.
 
 For `f(x)=-x+W*ReLU(x)+h`, define `u_base=-f(xB)` and `b=f(xB)-f(x*)`.
@@ -62,7 +64,7 @@ From the repository root, add `workflows` and call `reproduce_submission_statist
 
 Current figure numbering follows **Main_text_v13: Fig. 6a–h and Extended Data Fig. 5a–c**. The [ED5 migration record](docs/paper_ready/final_v3/production/ED5_MIGRATION.md) maps the historical ED7 filenames to current ED5 names with exact source-byte and numerical preservation.
 
-Experimental figure assets are in the separate [Cerebellum_motor_preparation repository](https://github.com/NirvikNU/Cerebellum_motor_preparation). The existing Notion website was anonymously readable on 23 October 2026, but also exposed internal project records. A curated public documentation link is pending owner approval of publication/privacy separation; this README does not promote that mixed site as publication documentation.
+Experimental figure assets are in the separate [Cerebellum_motor_preparation repository](https://github.com/NirvikNU/Cerebellum_motor_preparation).
 
 ## Navigation
 
