@@ -42,10 +42,10 @@ function receipt=validate_publication(outputRoot)
         assert(isequal(a,b)); receipt.sourceTables=receipt.sourceTables+1;
     end
     assert(receipt.sourceTables==26);
-    for name={'Figure_6','Extended_Data_Figure_7'}
+    for name={'Figure_6','Extended_Data_Figure_5'}
         a=openfig(fullfile(outputRoot,'figures/fig',[name{1} '.fig']),'invisible');
         assert(~any(strcmp(a.UserData.panels,'ED7d')));
-        if strcmp(name{1},'Extended_Data_Figure_7'), assert(isequal(a.UserData.panels,{'ED7a','ED7b','ED7c'})); end
+        if strcmp(name{1},'Extended_Data_Figure_5'), assert(isequal(a.UserData.panels,{'ED5a','ED5b','ED5c'})); end
         close(a);
     end
     [mfiles,mexfiles]=inmem('-completenames'); loaded=[mfiles(:);mexfiles(:)];

@@ -1,7 +1,7 @@
 function receipt=pf_replay_geometry(root,outputRoot,networks)
     % Reproduce all fixed grid cells; the selected point stays 24, never reselected.
     if nargin<3, networks=1:10; end
-    source=fullfile(root,'data/paper_ready/final_v3'); frozen=readtable(fullfile(source,'tables/ED7a_network_grid.csv'));
+    source=fullfile(root,'data/paper_ready/final_v3'); frozen=readtable(fullfile(source,'tables/ED5a_network_grid.csv'));
     if ~isfolder(outputRoot), mkdir(outputRoot); end
     alpha=[.1 .2 .35 .5 .75 1]; beta=[.1 .25 .5 .75 1 1.25]; receipt=struct('status','RUNNING','maxError',0,'selectionPerformed',false,'selectedIndex',24); rows=[];
     for n=networks

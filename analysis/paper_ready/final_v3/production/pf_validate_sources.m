@@ -53,8 +53,8 @@ function audit=pf_validate_sources(source)
     assert(audit.rawMedianMaxError<1e-14 && audit.gaussianMaxError<1e-12 && audit.insetDistanceMaxError<1e-12);
     audit.noise=pf_validate_noise_sources(source);
     audit.quantitativeValueMaxError=audit.noise.quantitativeValueMaxError;
-    experimental=readtable(fullfile(folder,'ED7bc_experiment.csv'));
-    for name={'ED7b','ED7c'}
+    experimental=readtable(fullfile(folder,'ED5bc_experiment.csv'));
+    for name={'ED5b','ED5c'}
         z=load(fullfile(source,[name{1} '_graphics.mat'])); c=0;
         for j=1:numel(z.recipe.axes{1}.objects)
             o=z.recipe.axes{1}.objects{j};

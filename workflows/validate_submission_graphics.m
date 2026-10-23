@@ -12,6 +12,10 @@ function receipt=validate_submission_graphics(publicationFolder,receiptFile)
     rule=jsondecode(fileread(proposal));approval=jsondecode(fileread(fullfile(folder,'approval.json')));
     assert(strcmp(approval.approvedSHA256,expected)&&~approval.automaticExpansion);
     assert(~rule.enabled&&numel(rule.outputs)==13);
+    migrationFile=fullfile(root,'data/paper_ready/final_v3/ed5_migration.json');
+    assert(strcmp(sha(bytes(migrationFile),'SHA-256'),'C7F37997D0D6109028C061EC1DC60496EE64AED77217BFBC9ECE0D9ED514B702'),'ED5:MigrationMapHash');
+    migration=jsondecode(fileread(migrationFile));
+    assert(strcmp(migration.approvedPolicySHA256,expected));
     manifest=jsondecode(fileread(fullfile(source,'source_manifest.json')));
     for j=1:numel(manifest.files)
         item=manifest.files(j);
@@ -19,7 +23,8 @@ function receipt=validate_submission_graphics(publicationFolder,receiptFile)
             'Submission:SourceHash','Changed packaged source: %s',item.path);
     end
     for j=1:numel(rule.pinnedScientificSources)
-        item=rule.pinnedScientificSources(j);data=bytes(fullfile(root,item.path));
+        item=rule.pinnedScientificSources(j);
+        data=submission_ed5_source(root,item.path,migration);
         prefix=uint8(sprintf('blob %d%c',numel(data),0)).';
         assert(strcmpi(sha([prefix;data],'SHA-1'),item.gitBlobObjectID), ...
             'Submission:CommittedSource','Source bytes differ from committed Git blob: %s',item.path);
@@ -29,7 +34,7 @@ function receipt=validate_submission_graphics(publicationFolder,receiptFile)
     dest=[receiptFile '.evidence'];assert(~isfolder(dest));mkdir(dest);rows=cell(13,1);
     try
         for j=1:13
-            item=rule.outputs(j);name=item.name;
+            item=rule.outputs(j);name=submission_ed5_name(item.name);
             png=fullfile(publicationFolder,'figures/png',[name '.png']);
             reference=fullfile(folder,'png',[name '.png']);
             assert(strcmp(sha(bytes(reference),'SHA-256'),item.referenceFileSHA256));
@@ -48,6 +53,7 @@ function receipt=validate_submission_graphics(publicationFolder,receiptFile)
             panels={};if j>11,panels=f.UserData.panels;end
             close(f);
             saved=load(fullfile(folder,'native',[name '.mat']),'snapshot','graph');
+            saved=submission_ed5_native(saved,name);
             comparisonSnapshot=snapshot;comparisonGraph=graph;
             if j>11
                 [comparisonSnapshot,comparisonGraph]=submission_textures(snapshot,graph,fullfile(publicationFolder,'figures'),panels);
@@ -80,7 +86,7 @@ function receipt=validate_submission_graphics(publicationFolder,receiptFile)
         rethrow(problem);
     end
     receipt=struct('status','PASS','approvedPolicySHA256',expected,'outputs',{vertcat(rows{:})}, ...
-        'sourceFilesChecked',numel(manifest.files),'committedBlobPinsExact',numel(rule.pinnedScientificSources), ...
+        'namingMigrationSHA256','C7F37997D0D6109028C061EC1DC60496EE64AED77217BFBC9ECE0D9ED514B702','sourceFilesChecked',numel(manifest.files),'committedBlobPinsExact',numel(rule.pinnedScientificSources), ...
         'fullNativeContentExact',true,'fixedSiteFullRGBAPalettesOnly',true,'automaticExpansion',false, ...
         'strictOutsideMask',true,'exactDimensions',true,'matlab',version);
     pf_json(receiptFile,receipt);

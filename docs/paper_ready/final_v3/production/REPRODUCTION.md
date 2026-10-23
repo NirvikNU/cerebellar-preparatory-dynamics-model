@@ -9,7 +9,7 @@ restoredefaultpath
 run_paper_figures
 ```
 
-Outputs go to `generated/paper_figures/{fig,png,source}`. The eleven panels are Fig6a–h and ED7a–c; the two assemblies are Figure_6 and Extended_Data_Figure_7. An optional output-directory argument changes only where the outputs are written. No original cache or absolute project path is consulted.
+Outputs go to `generated/paper_figures/{fig,png,source}`. The eleven panels are Fig6a–h and ED5a–c; the two assemblies are Figure_6 and Extended_Data_Figure_5. An optional output-directory argument changes only where the outputs are written. No original cache or absolute project path is consulted.
 
 Use a new empty output folder. The renderer refuses to merge with an older output set, preventing historical panels/tables from silently surviving in a current export. All existing evidence is preserved; for a repeat use `run_paper_figures(fullfile(pwd,'generated','another_check'))`.
 
@@ -51,7 +51,7 @@ To repeat the post-push test, clone GitHub main into a new directory, verify its
 
 The full replay produces network/case evidence and compares it against immutable manuscript sources; it does not replace frozen inference, select geometry or retrain networks. For all-trial behavior it applies the unchanged matching implementation to primary Intact/Block evidence. Original preprocessing scales/covariances, accepted network arrays and accepted controller gains are explicitly versioned inputs. The historical metadata MAT files are provenance, never load paths.
 
-The [19 October presentation revision](PRESENTATION_UPDATE.md) keeps Fig6g unchanged and displays absolute Control/Block temporal-noise R² in Fig6h. All 26 source tables and all numerical model inputs remain byte-identical to release 6391528. The source validator also checks all eight Fig6h Control values and SEs directly against the Fig6g temporal series. Local reviewer success QC and exploratory caches are not publication dependencies.
+The [19 October presentation revision](PRESENTATION_UPDATE.md) keeps Fig6g unchanged and displays absolute Control/Block temporal-noise R² in Fig6h. All numerical model inputs remain byte-identical to release 6391528. The 23 October ED5 migration changes only explicitly mapped panel-label strings in source tables; every numerical token is unchanged and inverse naming conversion reproduces the original committed bytes. The source validator also checks all eight Fig6h Control values and SEs directly against the Fig6g temporal series. Local reviewer success QC and exploratory caches are not publication dependencies.
 
 ## Submission statistical supplement
 

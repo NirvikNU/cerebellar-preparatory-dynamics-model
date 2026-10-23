@@ -1,6 +1,6 @@
 # Final manuscript panel definitions and statistics
 
-All panels use the final Fig6a–h / ED7a–c numbering. Numerical values below are copied from the frozen source records, not recomputed inference. Native FIG/PNG masters: `plots/paper_ready/final_v3/production/{fig,png}/`. Statistical full precision: `data/paper_ready/final_v3/tables/statistics.json`.
+All panels use the final Fig6a–h / ED5a–c numbering. Numerical values below are copied from the frozen source records, not recomputed inference. Native FIG/PNG masters: `plots/paper_ready/final_v3/production/{fig,png}/`. Statistical full precision: `data/paper_ready/final_v3/tables/statistics.json`.
 
 ## Fig6a — Weakening anticipatory control: PR
 
@@ -218,18 +218,18 @@ Prior four-level/seven-pair results and masters remain in `data/paper_ready/fina
 Both Control median curves decrease across the eight displayed levels. Relative Block loss is nonmonotonic in each sweep: the initial-state curve has its lowest median at 0.15, and the temporal curve reaches its highest median at 0.25 before lower medians at later levels. These are descriptions of the complete displayed series, not post-hoc contrasts or directional trend tests.
 
 
-## ED7a — Shared geometry-calibration map
+## ED5a — Shared geometry-calibration map
 
 Frozen shared-geometry loss over the existing6×6 alpha/beta grid across allten networks. Only empirical paired ΔPR and expected−observed alignment deficit enter loss; no movement, convergence, R², noise-sensitivity or QC selection. Selected index24: **global alpha=.5, beta_norm=1.25**, V1, eta0, lambda10. Empirical targets ΔPR2.6453333944 and deficit16.802184percentage points; selected loss0.050363119828606938. No per-network geometry fit; selection predates downstream outcomes.
 
-Sources: [ED7a_calibration_grid.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7a_calibration_grid.csv); [ED7a_network_grid.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7a_network_grid.csv); [geometry_selection.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/geometry_selection.json).
+Sources: [ED5a_calibration_grid.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED5a_calibration_grid.csv); [ED5a_network_grid.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED5a_network_grid.csv); [geometry_selection.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/geometry_selection.json).
 
 
-Canonical files: `ED7a.fig`, `ED7a.png`.
+Canonical files: `ED5a.fig`, `ED5a.png`.
 
-## ED7b — Experimental/model PR calibration
+## ED5b — Experimental/model PR calibration
 
-Frozen experimental values (resample SD, not model bootstrap SE): Control5.3860834614584618±0.10849353351504434; Block8.0314168558827177±0.1492166304511115. These are copied exactly from the approved plot, without new empirical analysis; source `ED7bc_experiment.csv`.
+Frozen experimental values (resample SD, not model bootstrap SE): Control5.3860834614584618±0.10849353351504434; Block8.0314168558827177±0.1492166304511115. These are copied exactly from the approved plot, without new empirical analysis; source `ED5bc_experiment.csv`.
 
 Experimental and model Control/Block preparatory PR. **Calibration target, not independent validation.** Experimental resample SD and model network-median bootstrap SE are distinct uncertainties and explicitly labeled. Model n10; preserved paired comparison, no multiplicity correction.
 
@@ -241,16 +241,16 @@ Experimental and model Control/Block preparatory PR. **Calibration target, not i
 
 | Panel / contrast | AD reject; p; A² | Selected two-sided test | Statistic; df | Raw p | n |
 | --- | --- | --- | --- | --- | --- |
-| ED7b | false; 0.9067837919868639; 0.18286964780299364 | two-sided paired t-test | 27.34130554364507; 9 | 5.678500663708396e-10 | 10 |
+| ED5b | false; 0.9067837919868639; 0.18286964780299364 | two-sided paired t-test | 27.34130554364507; 9 | 5.678500663708396e-10 | 10 |
 
-Sources: [ED7bc_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7bc_network_values.csv); [statistics.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/statistics.json).
+Sources: [ED5bc_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED5bc_network_values.csv); [statistics.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/statistics.json).
 
 
-Canonical files: `ED7b.fig`, `ED7b.png`.
+Canonical files: `ED5b.fig`, `ED5b.png`.
 
-## ED7c — Experimental/model alignment calibration
+## ED5c — Experimental/model alignment calibration
 
-Frozen experimental values (percent; resample SD, not model bootstrap SE): Observed32.493121686164521±1.1226239345301614; Expected49.295305371483224±3.2987728284040356. These are copied exactly from the approved plot, without new empirical analysis; source `ED7bc_experiment.csv`.
+Frozen experimental values (percent; resample SD, not model bootstrap SE): Observed32.493121686164521±1.1226239345301614; Expected49.295305371483224±3.2987728284040356. These are copied exactly from the approved plot, without new empirical analysis; source `ED5bc_experiment.csv`.
 
 Experimental and model observed/expected alignment. **Calibration target, not independent validation.** Minimum Control-derived K reaching≥95% variance; that same K for comparison subspace, denominator and null. Experimental resample SD and model network-median bootstrap SE are distinct. Model n10; no multiplicity correction.
 
@@ -262,9 +262,9 @@ Experimental and model observed/expected alignment. **Calibration target, not in
 
 | Panel / contrast | AD reject; p; A² | Selected two-sided test | Statistic; df | Raw p | n |
 | --- | --- | --- | --- | --- | --- |
-| ED7c | false; 0.7314132843375539; 0.2421430900550412 | two-sided paired t-test | 14.560443948422693; 9 | 1.460201452339301e-7 | 10 |
+| ED5c | false; 0.7314132843375539; 0.2421430900550412 | two-sided paired t-test | 14.560443948422693; 9 | 1.460201452339301e-7 | 10 |
 
-Sources: [ED7bc_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED7bc_network_values.csv); [statistics.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/statistics.json).
+Sources: [ED5bc_network_values.csv](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/ED5bc_network_values.csv); [statistics.json](https://github.com/NirvikNU/cerebellar-preparatory-dynamics-model/blob/main/data/paper_ready/final_v3/tables/statistics.json).
 
 
-Canonical files: `ED7c.fig`, `ED7c.png`.
+Canonical files: `ED5c.fig`, `ED5c.png`.

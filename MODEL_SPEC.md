@@ -6,6 +6,6 @@ Ten accepted200-unit ReLU networks and eight targets are frozen. eta=0, lambda=1
 
 Native integration is0.2ms, saved sampling1ms, analysis sampling10ms. Primary noise .10/.10, Fig6g,h eight-level one-factor sweeps .05,.10,.15,.20,.25,.30,.35,.40 with the other noise fixed at .05; shared .05/.05 anchor. Noise stops at GO. Accepted network, movement, readout, arm, preprocessing, PCA75/ridge and inference parameters are immutable.
 
-ED7b/c explicitly show calibration targets, not independent validation. Success-conditioned Fig6d–f examples do not define behavioral inference. Final figures are Fig6a–h and ED7a–c. The exact K=0 sweep endpoint has zero feedback but retains tonic input.
+ED5b/c explicitly show calibration targets, not independent validation. Success-conditioned Fig6d–f examples do not define behavioral inference. Final figures are Fig6a–h and ED5a–c. The exact K=0 sweep endpoint has zero feedback but retains tonic input.
 
 Foundation construction and older Stage1/2/3 diagnostics are historical scientific provenance, retained separately. Their task-specific conditions are not alternatives to the frozen paper model and grant no execution authority.

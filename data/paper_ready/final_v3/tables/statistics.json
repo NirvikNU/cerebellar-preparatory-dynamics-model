@@ -343,7 +343,7 @@
   },
   "plannedPairedTests": [
     {
-      "panel": "ED7b",
+      "panel": "ED5b",
       "comparison": "Block minus Intact PR",
       "n": 10,
       "networkIDs": [
@@ -407,7 +407,7 @@
       "multiplicityCorrection": "none: separate planned comparison"
     },
     {
-      "panel": "ED7c",
+      "panel": "ED5c",
       "comparison": "Expected minus observed alignment (pp)",
       "n": 10,
       "networkIDs": [

@@ -1,6 +1,6 @@
 # Canonical manuscript code and data index
 
-Current map: Fig6a–h and ED7a–c. [Model](final_v3/production/MODEL.md), [legends/statistics](final_v3/production/LEGENDS.md), [publication cleanup](final_v3/production/PUBLICATION_CLEANUP.md), [reproduction](final_v3/production/REPRODUCTION.md).
+Current map: Fig6a–h and ED5a–c. [Model](final_v3/production/MODEL.md), [legends/statistics](final_v3/production/LEGENDS.md), [current ED5 naming and validation](final_v3/production/ED5_MIGRATION.md), [reproduction](final_v3/production/REPRODUCTION.md).
 
 | Layer | Repository path |
 |---|---|

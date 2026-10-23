@@ -6,7 +6,7 @@ function receipt=pf_figures(root,outputRoot)
             'Production:ExistingOutput','Choose a new empty output directory; preserve previous evidence.');
     end
     for sub={'fig','png','source'}, d=fullfile(outputRoot,sub{1}); if ~isfolder(d), mkdir(d); end, end
-    names=[arrayfun(@(c)['Fig6' c],'a':'h','UniformOutput',false) arrayfun(@(c)['ED7' c],'a':'c','UniformOutput',false)];
+    names=[arrayfun(@(c)['Fig6' c],'a':'h','UniformOutput',false) arrayfun(@(c)['ED5' c],'a':'c','UniformOutput',false)];
     receipt=struct('status','RUNNING','panels',{{}},'matlab',version,'sourceObjectsVerified',0);
     for k=1:numel(names)
         name=names{k};
@@ -49,7 +49,7 @@ function receipt=pf_figures(root,outputRoot)
     end
     assemble(outputRoot,'Figure_6',names(1:8),[.015 .665 .245 .32;.265 .665 .245 .32;.53 .36 .46 .63; ...
         .015 .36 .50 .30;.015 .015 .235 .315;.265 .015 .235 .315;.515 .015 .235 .315;.76 .015 .235 .315],[2200 1700]);
-    assemble(outputRoot,'Extended_Data_Figure_7',names(9:11),[.015 .52 .47 .46;.515 .52 .47 .46;.015 .02 .47 .46],[1800 1500]);
+    assemble(outputRoot,'Extended_Data_Figure_5',names(9:11),[.015 .52 .47 .46;.515 .52 .47 .46;.015 .02 .47 .46],[1800 1500]);
     sourceTables=dir(fullfile(source,'tables','*'));
     for k=1:numel(sourceTables)
         if ~sourceTables(k).isdir

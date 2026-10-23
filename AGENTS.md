@@ -18,7 +18,7 @@ Control input is base+b−L(x−x*); Block removes both b and L but keeps base. 
 - `src/published_generator/`: unchanged movement/arm foundation.
 - `generated/`: ignored replay/regeneration products; never a required input.
 
-Current map is Fig6a–h and ED7a–c, as tabulated in README. Do not restore superseded numbering, convergence figures, Q-diagnostic panels, residual-kappa models or review alternatives to current-facing documentation.
+Current map is Fig6a–h and ED5a–c, as tabulated in README. Do not restore superseded numbering, convergence figures, Q-diagnostic panels, residual-kappa models or review alternatives to current-facing documentation.
 
 Fig6d is exactly Option3/seed18003/network8: four frozen successful trials per target/condition, same-four arithmetic means on101 movement-phase points. Fig6e/f use the frozen fifteen network8/target6 IDs in the manifest; selected-fifteen median, minimum-active8 cutoff; dispersion inset all30 successes. These illustrations must never replace all-trial statistics.
 
@@ -32,4 +32,4 @@ After figure changes, reopen native FIGs, inspect PNGs, validate graphical data/
 
 No deletion, staging, commit, push, branch changes, tags or history rewriting without authorization. Use normal Git operations; stop on unresolved preservation, validation, concurrency, permissions or Git problems. No force push, reset, rebase, amend or substitute scientific results.
 
-The 13 October 2026 publication-cleanup task authorizes only ED7d retirement with archival provenance, reproduction checks, documentation and a normal main checkpoint. Fig6c is hand-drawn and static, not numerically generated. It ends at scientific review. Update Agent Log chronologically, Handoff and START HERE with verified outcomes, not intended outcomes. Keep foundation Stage1/2/3 scientific assets unchanged.
+The 23 October 2026 task authorizes only active ED7-to-ED5 naming, publication documentation and prescribed reproduction/release checks. The 13 October ED7d-retirement authorization is historical and must not be restarted. Fig6c is hand-drawn and static, not numerically generated. It ends at scientific review. Update Agent Log chronologically, Handoff and START HERE with verified outcomes, not intended outcomes. Keep foundation Stage1/2/3 scientific assets unchanged.

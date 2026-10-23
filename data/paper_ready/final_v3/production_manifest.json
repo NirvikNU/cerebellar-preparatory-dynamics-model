@@ -95,29 +95,29 @@
       "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
     },
     {
-      "panel": "ED7a",
+      "panel": "ED5a",
       "title": "Shared geometry-calibration map",
-      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7a.fig",
-      "png": "plots/paper_ready/final_v3/production/png/ED7a.png",
-      "input": "data/paper_ready/final_v3/ED7a_graphics.mat",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED5a.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED5a.png",
+      "input": "data/paper_ready/final_v3/ED5a_graphics.mat",
       "sourceTables": "data/paper_ready/final_v3/tables",
       "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
     },
     {
-      "panel": "ED7b",
+      "panel": "ED5b",
       "title": "Experimental/model PR calibration",
-      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7b.fig",
-      "png": "plots/paper_ready/final_v3/production/png/ED7b.png",
-      "input": "data/paper_ready/final_v3/ED7b_graphics.mat",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED5b.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED5b.png",
+      "input": "data/paper_ready/final_v3/ED5b_graphics.mat",
       "sourceTables": "data/paper_ready/final_v3/tables",
       "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
     },
     {
-      "panel": "ED7c",
+      "panel": "ED5c",
       "title": "Experimental/model alignment calibration",
-      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED7c.fig",
-      "png": "plots/paper_ready/final_v3/production/png/ED7c.png",
-      "input": "data/paper_ready/final_v3/ED7c_graphics.mat",
+      "nativeFigure": "plots/paper_ready/final_v3/production/fig/ED5c.fig",
+      "png": "plots/paper_ready/final_v3/production/png/ED5c.png",
+      "input": "data/paper_ready/final_v3/ED5c_graphics.mat",
       "sourceTables": "data/paper_ready/final_v3/tables",
       "historicalProvenance": "data/paper_ready/final_v3/panel_provenance.json"
     }

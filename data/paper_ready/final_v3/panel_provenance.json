@@ -49,17 +49,17 @@
     "historicalArchive": "data/paper_ready/final_v3/noise_sensitivity_20261019/historical_480753/manifest.json"
   },
   {
-    "panel": "ED7a",
+    "panel": "ED5a",
     "sourcePath": "plots/paper_ready/final_v3/fig/ED7a.fig",
     "baseCommit": "16aed212496647858770733919fb34c628dac85f"
   },
   {
-    "panel": "ED7b",
+    "panel": "ED5b",
     "sourcePath": "plots/paper_ready/final_v3/fig/Fig6d.fig",
     "baseCommit": "16aed212496647858770733919fb34c628dac85f"
   },
   {
-    "panel": "ED7c",
+    "panel": "ED5c",
     "sourcePath": "plots/paper_ready/final_v3/fig/Fig6e.fig",
     "baseCommit": "16aed212496647858770733919fb34c628dac85f"
   }
