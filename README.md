@@ -62,9 +62,9 @@ From the repository root, add `workflows` and call `reproduce_submission_statist
 
 ## Naming and documentation
 
-Current figure numbering follows **Main_text_v13: Fig. 6a–h and Extended Data Fig. 5a–c**. The [ED5 migration record](docs/paper_ready/final_v3/production/ED5_MIGRATION.md) maps the historical ED7 filenames to current ED5 names with exact source-byte and numerical preservation.
+The current publication figure map is **Fig. 6a–h and Extended Data Fig. 5a–c**. The [ED5 migration record](docs/paper_ready/final_v3/production/ED5_MIGRATION.md) maps the historical ED7 filenames to current ED5 names with exact source-byte and numerical preservation.
 
-Experimental figure assets are in the separate [Cerebellum_motor_preparation repository](https://github.com/NirvikNU/Cerebellum_motor_preparation).
+Experimental figure assets are in the separate [Cerebellum_motor_preparation repository](https://github.com/NirvikNU/Cerebellum_motor_preparation). Access to that repository is currently restricted. It contains manuscript figure-source assets, including presentation-edited versions of the model panels. This model repository supplies the canonical reproducible model masters, source tables and assemblies, including the preserved hand-drawn Fig6c. The panel numbering agrees across the repositories; native files and presentation details are not identical. Use the model masters and their legends for reproducibility checks.
 
 ## Navigation
 
@@ -82,4 +82,4 @@ Stage1/2/3 foundation code and accepted assets remain preserved. Their historica
 
 Completion of production is not new scientific acceptance. Stop for scientific review; no further fitting or model extension is authorized.
 
-Current manuscript mapping is Main_text_v13 Fig6a–h and Extended Data Fig5a–c; the current repository uses those same Fig6a–h / ED5a–c source filenames. ED7d was retired with exact source/data/code/interpretation preservation at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4; its archive is not a runtime dependency.
+Current manuscript mapping is Fig6a–h and Extended Data Fig5a–c; the current repository uses those same Fig6a–h / ED5a–c source filenames. ED7d was retired with exact source/data/code/interpretation preservation at checkpoint04a65d78d4901a8350473aa3b93ba1673d87fdd4; its archive is not a runtime dependency.
