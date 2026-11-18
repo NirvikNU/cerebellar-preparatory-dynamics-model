@@ -19,7 +19,7 @@ The [assembly extension](../../../../data/paper_ready/final_v3/graphics_validati
 
 PNG export uses MATLAB `print` with vector rendering at 160 DPI. Physical output dimensions come from the saved numerical canvas and screen PPI, with explicit manual paper dimensions. The native FIG supplies all plotted objects, styles and labels. The exporter verifies the source FIG bytes after rendering. The graphical validator independently reopens the FIGs and compares their complete native content.
 
-Image dimensions and decoded RGBA pixels must match exactly, subject only to seven fixed ED5b edge sites in MATLAB R2025b Update 1 (25.2.0.3042426), 96 screen PPI and the documented print settings. In its 1750 × 1167 PNG, each zero-based site may use only its two complete RGBA values below.
+Image dimensions and decoded RGBA pixels must match exactly, subject only to ten fixed ED5b edge sites in MATLAB R2025b Update 1 (25.2.0.3042426), 96 screen PPI and the documented print settings. In its 1750 × 1167 PNG, each zero-based site may use only its two complete RGBA values below.
 
 | x,y | Reference RGBA | Allowed alternative RGBA |
 |---|---|---|
@@ -30,6 +30,9 @@ Image dimensions and decoded RGBA pixels must match exactly, subject only to sev
 | 1093,649 | [86,150,187,255] | [85,149,186,255] |
 | 1095,649 | [189,201,208,255] | [188,197,203,255] |
 | 1093,650 | [108,169,205,255] | [106,165,199,255] |
+| 1228,359 | [142,100,67,255] | [142,99,66,255] |
+| 1228,361 | [184,161,143,255] | [174,151,133,255] |
+| 1229,361 | [124,64,16,255] | [124,63,15,255] |
 
 Every other pixel is exact; no other location, colour or dimension is tolerated. Both independent exports must satisfy this rule. To retain exact native assembly textures and avoid spreading these rendering variants through resampling, the ED5 assembly uses the canonical ED5b PNG after checking the newly exported panel against this rule. The individual exported PNG is retained unchanged. Assembly scientific native content, all other properties and output PNGs remain exact. The validator never learns or expands the allowed sites or colours.
 

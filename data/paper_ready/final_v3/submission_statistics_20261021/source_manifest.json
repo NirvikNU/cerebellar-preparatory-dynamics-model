@@ -39,8 +39,8 @@
     },
     {
       "path": "analysis/paper_ready/final_v3/production/pf_check_raster.m",
-      "bytes": 2094,
-      "sha256": "53E175E9B19AFEBBD6FE5DE2C98B4961AA922091C7A03DFD5B1881F030EAB68F"
+      "bytes": 2260,
+      "sha256": "C1641B6EC602B25C45E2BD3B7D96BE15B0BD3BC7B1D7D4399C91DAF94DE0F901"
     },
     {
       "path": "analysis/paper_ready/final_v3/production/pf_compare_native.m",
@@ -749,8 +749,8 @@
     },
     {
       "path": "docs/paper_ready/final_v3/production/REPRODUCTION.md",
-      "bytes": 6785,
-      "sha256": "99BFB42E7032A7F496229BE3D44005864CF803DF17549A9F265C5FC7CB0D3093"
+      "bytes": 6935,
+      "sha256": "32BC028B6DAC04DC2773EDA5443BDE299B0C3E7962B1782BD635945DB725314E"
     },
     {
       "path": "docs/paper_ready/final_v3/production/SUBMISSION_STATISTICS.md",
