@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "approvedSourceSHA256": "FF590FE555BF7049A4C068BF51BF07E5D65DBA7C50AE8663B379AEB51047AF3F",
+  "extendsPanelRuleSHA256": "4C034AC7626504AA55BEFE192D8D9DBA4675E42E46190569E36BEC6765266EC7",
+  "purpose": "Only the same fieldless runtime editor metadata on unused hidden assembly axes labels; no scientific or raster relaxation.",
+  "qualifiedEnvironment": {
+    "matlab": "25.2.0.3042426 (R2025b) Update 1",
+    "screenPixelsPerInch": 96,
+    "PNGResolutionDPI": 160,
+    "PNGRenderer": "vector"
+  },
+  "eligibleAssemblies": [
+    {
+      "assembly": "Figure_6",
+      "path": "plots/paper_ready/final_v3/production/fig/Figure_6.fig",
+      "canonicalSHA256": "4CB54D5C2EED15E0D5DDACFC4F81D09D2355F7C0D70F2AD7E5163CC34FA3B8D2"
+    },
+    {
+      "assembly": "Extended_Data_Figure_5",
+      "path": "plots/paper_ready/final_v3/production/fig/Extended_Data_Figure_5.fig",
+      "canonicalSHA256": "20E6767DF2FC98E68529B0E0A1C185C9B301B6E16B051D23494BE860771F1751"
+    }
+  ],
+  "property": "Interactions",
+  "textClass": "matlab.graphics.primitive.Text",
+  "eligibleRoles": [
+    "Title",
+    "Subtitle",
+    "XLabel",
+    "YLabel",
+    "ZLabel"
+  ],
+  "onlyPermittedNormalizedValues": [
+    {
+      "className": "double",
+      "size": [
+        0,
+        0
+      ],
+      "value": []
+    },
+    {
+      "className": "struct",
+      "size": [
+        1,
+        1
+      ],
+      "value": {
+        "valueClass": "matlab.graphics.interaction.interactions.EditInteraction",
+        "properties": {}
+      }
+    }
+  ],
+  "maximumDifferencesPerAxes": 5,
+  "extraMandatoryConditions": [
+    "Canonical assembly FIG bytes must retain their pinned hashes before and after export. Regenerated assembly MAT serialization may differ; its scientific snapshot and every other accessible native property must equal canonical content exactly.",
+    "Both reference and actual parent axes must have Visible=off. Both label String values must be empty and identical in class, shape and value.",
+    "The Text must be the exact handle referenced by a standard Title/Subtitle/XLabel/YLabel/ZLabel role on the same canonical assembly axes. All axes identities, positions, ordering, labels and every other property remain exact.",
+    "Only the two complete typed fieldless editor values listed here are permitted. Record all original values and identities; never modify/resave canonical figures or discard other native fields.",
+    "Every assembly image CData must equal its validated canonical panel texture, with the existing canonical-ED5b assembly rule unchanged. Panel order, annotations, fonts, styles, layout, source hashes and all scientific arrays remain exact.",
+    "Both assembly PNGs require exact whole-image dimensions and RGBA equality, including independent repeat exports. No assembly pixel exception or additional ED5b pixel location/colour.",
+    "No visible/nonempty axes labels, annotation Text, other objects, other Interaction classes, nonempty editor properties, new roles or other assemblies are eligible.",
+    "All numerical/statistical/source/preservation checks, original Fig6c bytes, both prior exact approved scopes and their original approval records remain unchanged. No automatic expansion."
+  ]
+}

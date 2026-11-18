@@ -1,6 +1,6 @@
-# Submission statistical supplement — 21 October 2026 authorization
+# Prediction statistics
 
-This additive supplement preserves every original scientific model result, bootstrap draw, source table and publication FIG/PNG from base commit `7977e16de7c406210b6df7dd44d8e457670858d2`. Fig6g remains the Control initial/temporal comparison; Fig6h remains absolute Control/Block temporal R². The figures and original four Friedman omnibus tests are unchanged. The repository ED7a–c assets correspond to manuscript-v13 Extended Data Fig.5a–c; no source filenames were renamed. Google Docs were not edited.
+Paired temporal-noise comparisons and trial-shuffled prediction floors for Fig. 6g,h.
 
 ## Paired temporal comparisons
 
@@ -41,41 +41,8 @@ Across the eight temporal-noise levels, Control R² exceeded Block R² in paired
 
 Trial-shuffled prediction gave mean ± between-network SEM R² values of −0.0110673 ± 0.0000869 for the Control initial-noise sweep, −0.0104695 ± 0.0000222 for the Control temporal-noise sweep, and −0.0104677 ± 0.0000153 for the Block temporal-noise sweep. Each network value was the median across eight noise levels of the median R² over 2,000 global trial-correspondence shuffles per case. Monte Carlo SEs of the three reported means were 0.0000812, 0.0000196 and 0.0000138, respectively; these are separate from the between-network SEMs.
 
-## Reproduction from this repository only
+## Reproduction
 
-MATLAB R2025b Update 1 and Statistics and Machine Learning Toolbox are required for the paired normality/tests. No ignored raw cache, historical checkout or remote attachment is an input. Run from the repository root into new output folders:
+From MATLAB R2025b at the repository root, run `addpath('workflows')` followed by `reproduce_submission_statistics` to reproduce all 230 × 2,000 nested null fits, paired comparisons and uncertainty summaries. Statistics and Machine Learning Toolbox is required. Complete original outputs are supplied under `data/paper_ready/final_v3/submission_statistics_20261021/`.
 
-```matlab
-restoredefaultpath
-addpath('workflows')
-validate_publication(fullfile(pwd,'generated','submission_publication'))
-addpath('workflows')
-validate_submission_graphics(fullfile(pwd,'generated','submission_publication'), ...
-    fullfile(pwd,'generated','submission_raster.json'))
-addpath('workflows')
-reproduce_submission_statistics(fullfile(pwd,'generated','submission_statistics'))
-```
-
-The publication workflow genuinely generates 11 panels/two assemblies, verifies 26 byte-exact original source tables and 261 native objects, retains the hand-drawn Fig6c and runs the real 480-trial primary model check. The statistical workflow verifies committed-source hashes, reproduces all 230×2,000 null fits and the paired tests, compares full numerical objects and CSV/JSON tables exactly, and writes its loaded-code/toolbox/Code Analyzer receipts. Parallel MATLAB processes can use `phase='compute'` with disjoint network IDs, followed by one `phase='validate'`; no output may be overwritten. Original calculation outputs are immutable references, not replaced by replay output.
-
-Source manifest: `data/paper_ready/final_v3/submission_statistics_20261021/source_manifest.json`. This includes source code, inputs, full null/paired/summary evidence and protected original sources. The source manifest itself is secured by Git. `validation/` preserves independent initial Python audits. Required post-push execution receipts are recorded in the dated Notion Agent Log, because adding those generated receipts to the tested commit would change its SHA.
-
-## Historical exact-image qualification — superseded by the approved consolidated rule
-
-Independent repeated rendering found only edge-coverage/compositing variation with exact native scientific content. On 22 October the user approved proposal SHA256 `951BADEF0C76E42C56AA19830E3E828C2872A4D1D448E0539E4DCFB3B215EFBC`. `raster_acceptance.json` permits exactly two complete decoded images for Fig6f, eight for ED7c and eight for the ED7 assembly. Dimensions and whole-image RGBA SHA256 must match the finite list. Every other panel/assembly has one exact reference hash. No image-wide tolerance, automatic extension, crop/resize or original-master overwrite is allowed. Any unobserved variant stops release. Native scientific/layout/label/style checks and source hashes remain strict. Assembly textures must exactly equal their corresponding validated panel PNGs; all other assembly content remains exact. Existing earlier master-size qualifications are unchanged.
-
-The PNG file bytes and decoded pixel identities are distinct provenance: metadata-distinct PNG files are not assumed to be byte-identical duplicates. The original source masters remain untouched.
-
-## Current consolidated graphical policy — approved 22 October 2026
-
-The active validator is `workflows/validate_submission_graphics.m`. It implements the original, unchanged proposal SHA256 `98B575FDC9E76E7FE294941B1A112B0DE535127CDD269FAD401EE62476AF08A8`, with the user approval recorded separately. The old exact-image validator and proposal are historical provenance, not the current gate.
-
-All 13 outputs require exact dimensions and exact decoded RGBA pixels outside the individually listed edge sites. Each approved site admits only explicitly enumerated complete RGBA tuples; descriptive minima/maxima do not define a tolerance. There are 24 panel sites and 18 assembly sites. No automatic growth, global tolerance, interpolation, registration, crop or resize is permitted. Unknown sites or colors stop release. Every scientific array and complete accessible native-property graph remains exact, including labels, axes, styles, ordering and layout. Composite image textures must equal their own validated panel PNGs exactly before comparing the remaining assembly content. The static schematic's image data remain exact.
-
-The versioned `consolidated_graphics/` package contains the exact approved policy, approval receipt, byte-identical reference PNGs and persisted canonical native graphs. The validator checks the pinned original Git blobs, all package-source SHA256 hashes, exact MATLAB R2025b Update 1 / NVIDIA Quadro RTX 8000 ANGLE WebGL renderer identity, 96 screen DPI, smoothing, and existing 160-DPI export settings. It exports through a separate native-readback instance, preserves each canonical FIG's bytes, and revalidates native content after export. In-memory negative controls reject changes outside sites, dimensions, alpha and unlisted colors. Bounded evidence does not guarantee all future renderer states.
-
-For byte-exact source checks on Windows, create the independent clone with `git -c core.autocrlf=false clone <GitHub URL> <new-folder>`; this invocation does not change the original repository's Git settings. Every exported source must match its committed blob, while the original Windows working-tree hashes are verified independently.
-
-## Current ED5 identifiers
-
-Main_text_v13 now uses ED5a–c and Extended_Data_Figure_5 consistently. The original policy JSON and historical ED7 records above remain unchanged. The fixed [naming migration](ED5_MIGRATION.md) translates only identifiers and paths, verifies reversible metadata changes against original Git blobs, and preserves every scientific/graphical acceptance requirement. Original statistical sources and numerical results remain exact.
+For a numerical audit of the supplied permutation results, copy that folder's `null/` directory to a new output directory and run `reproduce_submission_statistics(outputDirectory,'validate')`. This verifies complete result structures, recomputes the paired statistics and summaries, and checks all source tables and Monte Carlo precision.

@@ -1,5 +1,5 @@
 function f = pf_features(prep,movement,mo,scale)
-    % Time x neuron x trial. Boundaries exactly match validated Stage3 helper.
+    % Time x neuron x trial, with protected epoch boundaries.
     count=size(prep,3); neurons=size(prep,2);
     f.aligned=zeros(11,neurons,count,2); f.scale=scale;
     f.targets=repelem((1:8).',30); f.trials=repmat((1:30).',8,1);

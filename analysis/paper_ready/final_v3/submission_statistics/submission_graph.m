@@ -5,7 +5,24 @@ function out=submission_graph(f)
     while at<=numel(handles)
         outerHandle=handles{at};
         if isgraphics(outerHandle)
-            outerProps=get(outerHandle);
+            try
+                outerProps=get(outerHandle);
+            catch problem
+                assert(isa(outerHandle,'matlab.graphics.shape.internal.ButtonImage') ...
+                    &&contains(problem.message,'matlab.graphics.shape.internal.image.IconView') ...
+                    &&contains(problem.message,'FileName'),'Publication:NativeGetter','Unexpected inaccessible native property.');
+                outerProps=struct();outerNames=sort(properties(outerHandle));
+                for outerK=1:numel(outerNames)
+                    name=outerNames{outerK};
+                    try
+                        outerProps.(name)=outerHandle.(name);
+                    catch getterProblem
+                        assert(strcmp(name,'ImageFile')&&contains(getterProblem.message,'IconView') ...
+                            &&contains(getterProblem.message,'FileName'),'Publication:NativeGetter','Unexpected inaccessible property.');
+                        outerProps.(name)=struct('inaccessibleToolbarGetter',true,'identifier',getterProblem.identifier,'message',getterProblem.message);
+                    end
+                end
+            end
         else
             outerProps=struct();outerNames=sort(properties(outerHandle));
             for outerK=1:numel(outerNames),outerProps.(outerNames{outerK})=outerHandle.(outerNames{outerK});end

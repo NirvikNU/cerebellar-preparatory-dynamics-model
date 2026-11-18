@@ -1,0 +1,30 @@
+{
+  "figureSourceRepository": "https://github.com/NirvikNU/Cerebellum_motor_preparation",
+  "figureSourceCommit": "90ad5be7ce10a06a37c44b19f561ab2fd887e40a",
+  "panels": [
+    "Fig6a",
+    "Fig6b",
+    "Fig6d",
+    "Fig6e",
+    "Fig6f",
+    "Fig6g",
+    "Fig6h",
+    "ED5a",
+    "ED5b",
+    "ED5c"
+  ],
+  "ED5bTitle": [
+    "Experiment versus model",
+    "Geometry calibration target \u2014 not independent validation"
+  ],
+  "schematic": "Fig6c static source bytes preserved",
+  "numericalSources": "All numerical source tables and accepted networks preserved",
+  "PNGExport": {
+    "method": "MATLAB print -dpng -r160 -vector",
+    "nativeCanvasSource": "Versioned numerical graphics recipes; fixed assembly canvases",
+    "physicalDimensions": "Native canvas / screen pixels per inch",
+    "dimensionRounding": "ceil",
+    "qualifiedScreenPixelsPerInch": 96,
+    "pixelAcceptance": "Exact decoded RGBA and dimensions across independent exports"
+  }
+}

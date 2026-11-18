@@ -1,65 +1,25 @@
-# MATLAB temporary, autosave, build, and cache files
+/generated/
+/local_explorations/
+/archive/
+/artifacts/
+/results/
+/config/
+/figures/
+/third_party/
+/plots/stage_*/
+/analysis/stage_*/
+/analysis/published_generator/
+/src/stage_*/
 *.asv
 *.autosave
 *.m~
-*~
-slprj/
-codegen/
-*.mex*
-*.mlappinstall
-
-# Generated Stage-1 numerical artifacts remain local.
-/results/stage_1/**
-
-# Stage-2 trajectory/controller caches are local; compact audit/results stay tracked.
-/results/stage_2/current/cache/
-
-# Stage-3 reference/preparation trajectories remain local.
-/results/stage_3/current/cache/
-
-# Paper-specific raw trials are local; compact evidence and figure masters stay tracked.
-/results/paper_ready/cache/
-
-# Accepted per-stage PNG/FIG pairs are canonical project assets.
-/plots/stage_1/**
-!/plots/stage_1/
-!/plots/stage_1/png/
-!/plots/stage_1/png/*.png
-!/plots/stage_1/fig/
-!/plots/stage_1/fig/*.fig
-!/plots/stage_1/diagnostics/
-!/plots/stage_1/diagnostics/active_set_gate2/
-!/plots/stage_1/diagnostics/active_set_gate2/png/
-!/plots/stage_1/diagnostics/active_set_gate2/png/*.png
-!/plots/stage_1/diagnostics/active_set_gate2/fig/
-!/plots/stage_1/diagnostics/active_set_gate2/fig/*.fig
-!/plots/stage_1/diagnostics/movement_landscape/
-!/plots/stage_1/diagnostics/movement_landscape/png/
-!/plots/stage_1/diagnostics/movement_landscape/png/*.png
-!/plots/stage_1/diagnostics/movement_landscape/fig/
-!/plots/stage_1/diagnostics/movement_landscape/fig/*.fig
-
-# Logs, coverage, and temporary outputs
-/generated/
-# Production regeneration is local; canonical masters live under production/.
-/results/paper_ready/
-/plots/paper_ready/final_v3/review*/
 *.log
 *.tmp
 *.temp
-coverage/
-
-# Operating-system metadata
+slprj/
+codegen/
 .DS_Store
 Thumbs.db
 Desktop.ini
-desktop.ini
-
-# License-sensitive/project-local Kao source and native-reference cache
-/third_party/kao_optimal_preparation/local_cache/
-
-# Editor and IDE artifacts
 .vscode/
 .idea/
-*.swp
-*.swo

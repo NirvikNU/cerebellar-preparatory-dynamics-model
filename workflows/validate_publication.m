@@ -15,20 +15,23 @@ function receipt=validate_publication(outputRoot)
     receipt.masterChecks=cell(1,11);
     for j=1:11
         panel=manifest.panels(j);
-        a=openfig(fullfile(root,panel.nativeFigure),'invisible');
-        b=openfig(fullfile(outputRoot,'figures/fig',[panel.panel '.fig']),'invisible');
-        assert(isequaln(pf_snapshot(a),pf_snapshot(b)), ...
+        if strcmp(panel.panel,'Fig6c')
+            schematic=imfinfo(fullfile(root,'data/paper_ready/final_v3/Fig6c_schematic.png'));
+            canvas=[schematic.Width schematic.Height];
+        else
+            spec=load(fullfile(root,'data/paper_ready/final_v3',[panel.panel '_graphics.mat']),'recipe');
+            canvas=spec.recipe.size;
+        end
+        a=pf_read_native(fullfile(root,panel.nativeFigure),canvas);
+        expectedSnapshot=pf_snapshot(a);close(a);
+        b=pf_read_native(fullfile(outputRoot,'figures/fig',[panel.panel '.fig']),canvas);
+        assert(isequaln(expectedSnapshot,pf_snapshot(b)), ...
             'Publication:MasterMismatch','Native data/style/annotation mismatch: %s',panel.panel);
-        close(a); close(b);
+        close(b);
         canonical=imfinfo(fullfile(root,panel.png));
         generated=imfinfo(fullfile(outputRoot,'figures/png',[panel.panel '.png']));
-        % Raster crop/antialiasing can depend on the graphics environment.
-        % Record it separately from the exact native scientific/style comparison.
         dimensionsExact=isequal([canonical.Width canonical.Height],[generated.Width generated.Height]);
-        if ~dimensionsExact
-            warning('Publication:RasterSize','%s export %dx%d; master %dx%d. Inspect PNG; native snapshot matched.', ...
-                panel.panel,generated.Width,generated.Height,canonical.Width,canonical.Height);
-        end
+        assert(dimensionsExact,'Publication:RasterSize','Image dimensions differ: %s',panel.panel);
         receipt.masterChecks{j}=struct('panel',panel.panel,'nativeSnapshotExact',true, ...
             'width',generated.Width,'height',generated.Height,'masterWidth',canonical.Width, ...
             'masterHeight',canonical.Height,'rasterDimensionsExact',dimensionsExact);
@@ -44,7 +47,7 @@ function receipt=validate_publication(outputRoot)
     assert(receipt.sourceTables==26);
     for name={'Figure_6','Extended_Data_Figure_5'}
         a=openfig(fullfile(outputRoot,'figures/fig',[name{1} '.fig']),'invisible');
-        assert(~any(strcmp(a.UserData.panels,'ED7d')));
+        assert(all(ismember(a.UserData.panels,{manifest.panels.panel})));
         if strcmp(name{1},'Extended_Data_Figure_5'), assert(isequal(a.UserData.panels,{'ED5a','ED5b','ED5c'})); end
         close(a);
     end

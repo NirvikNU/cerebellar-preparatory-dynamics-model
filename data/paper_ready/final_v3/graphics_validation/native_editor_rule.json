@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "approvedSourceSHA256": "4C034AC7626504AA55BEFE192D8D9DBA4675E42E46190569E36BEC6765266EC7",
+  "purpose": "Separate MATLAB-generated axes-label editing metadata from byte-exact saved native/scientific content.",
+  "qualifiedEnvironment": {
+    "matlab": "25.2.0.3042426 (R2025b) Update 1",
+    "screenPixelsPerInch": 96,
+    "PNGResolutionDPI": 160,
+    "PNGRenderer": "vector"
+  },
+  "eligiblePanels": [
+    {
+      "panel": "Fig6a",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6a.fig",
+      "sha256": "A63FF1D125AB507ED2E400653C87EE47DF0CC01301BD45356199E5EB64BC07B5"
+    },
+    {
+      "panel": "Fig6b",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6b.fig",
+      "sha256": "9379756D149A12392B9E41A27276139095A65104101C2CEA498D5D511BA3A160"
+    },
+    {
+      "panel": "Fig6c",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6c.fig",
+      "sha256": "4B6032EDE95B443E8A5AAE7B00387D709456FB300A488EFDC1C8FABE4A4D5BFB"
+    },
+    {
+      "panel": "Fig6d",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6d.fig",
+      "sha256": "ED8BA183B8484FCE87715153D2A627948E49968D0611D0F51B55C497647D6592"
+    },
+    {
+      "panel": "Fig6e",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6e.fig",
+      "sha256": "FF31F4462A1C37D572FA440BE8AFEE321338BAE37CCB9C22374BF0B4770C9DB7"
+    },
+    {
+      "panel": "Fig6f",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6f.fig",
+      "sha256": "B0D2447990C555E99AB98ABEE27729567B1D5BCB97CC9347B9A1E472CB8E35FC"
+    },
+    {
+      "panel": "Fig6g",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6g.fig",
+      "sha256": "DCC130F394E844F026A044B3135E7E1E2368FB38E3023D7B0DECD7EF5F6E6902"
+    },
+    {
+      "panel": "Fig6h",
+      "path": "plots/paper_ready/final_v3/production/fig/Fig6h.fig",
+      "sha256": "4957DD8781D4FEA0AAB5CFEC72CDF3C4E775E2C36141FEEE02ACBDB8CF39FBDE"
+    },
+    {
+      "panel": "ED5a",
+      "path": "plots/paper_ready/final_v3/production/fig/ED5a.fig",
+      "sha256": "45120ABED065A7ECBD91E709E99007A3D38806152E8AEC2D827FAC75A1A6C0C4"
+    },
+    {
+      "panel": "ED5b",
+      "path": "plots/paper_ready/final_v3/production/fig/ED5b.fig",
+      "sha256": "A7146090E2834F43916262CC23C3BFC23D6466A05BC23459D05B5A5390CBDEE8"
+    },
+    {
+      "panel": "ED5c",
+      "path": "plots/paper_ready/final_v3/production/fig/ED5c.fig",
+      "sha256": "AD892CFA581054D8C9B0DF40C07AA2A67993A7AA7E3D6A641765F261B2207650"
+    }
+  ],
+  "assembliesEligible": false,
+  "property": "Interactions",
+  "textClass": "matlab.graphics.primitive.Text",
+  "eligibleRoles": [
+    "Title",
+    "Subtitle",
+    "XLabel",
+    "YLabel",
+    "ZLabel"
+  ],
+  "identity": "The actual Text must be the exact handle referenced by that role on a canonical scientific axes; axes class, Position, all other axes/text properties and graph ordering must match exactly.",
+  "onlyPermittedNormalizedValues": [
+    {
+      "className": "double",
+      "size": [
+        0,
+        0
+      ],
+      "value": []
+    },
+    {
+      "className": "struct",
+      "size": [
+        1,
+        1
+      ],
+      "value": {
+        "valueClass": "matlab.graphics.interaction.interactions.EditInteraction",
+        "properties": {}
+      }
+    }
+  ],
+  "maximumDifferencesPerAxes": 5,
+  "mandatoryPrerequisites": [
+    "Each eligible native FIG must match its pinned canonical bytes exactly, before and after export. The actual/regenerated FIG must be byte-identical to that canonical FIG.",
+    "All scientific arrays, native snapshots, labels, legend text, axes, limits, tick labels, styles, object ordering, font properties and layout remain exact. No numerical or graphical tolerance.",
+    "Every accessible/gettable property outside the precise standard-label Interactions field remains exact, including Interactions on axes, data objects, annotation Text and all other objects.",
+    "The differing field may contain only the two complete typed values above. A nonempty EditInteraction property struct, another class, shape or value is a new failure.",
+    "Record original reference/actual UI values, panel, canonical axes identity and label role in every receipt. Do not modify or resave either native figure.",
+    "All source hashes, statistical tables, quantitative checks, image dimensions and the separately owner-approved seven ED5b pixel sites/complete RGBA palettes remain unchanged.",
+    "Both assemblies and Fig6c original source assets retain their existing strict validation. No assembly native-property exception or new pixel exception.",
+    "No automatic learning, new eligible roles/objects/panels, palettes or property exceptions. Any other discrepancy stops release."
+  ]
+}
